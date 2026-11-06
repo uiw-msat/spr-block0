@@ -1,0 +1,86 @@
+{
+  "version": "2026fa-shell-0",
+  "preview": true,
+  "course": {
+    "code": "ATHP 6190",
+    "title": "Spine & Postural Restoration",
+    "block": "Block 0: Anatomy and Gait Foundations",
+    "program": "Master of Science in Athletic Training, University of the Incarnate Word",
+    "term": "Fall 2026",
+    "instructors": ["Lyle Danley, [credentials]", "Joanna Soles, [credentials]"],
+    "certificateDue": "2026-11-18",
+    "unit1": "2026-11-20",
+    "contact": "[course contact email]",
+    "canvasUrl": ""
+  },
+  "lessons": [
+    {
+      "id": "01", "slug": "01-conventions", "title": "Conventions",
+      "sub": "Planes, axes, open vs reversed action, the pelvic convention",
+      "minutes": [5, 15], "opensAt": "2026-11-06", "input": "Multiple choice",
+      "framing": [
+        "Most confusion in this material is not about anatomy; it is about naming. The same pelvis can be called rotated left or right depending on whose textbook you open. This lesson fixes the vocabulary the rest of the course uses.",
+        "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page."
+      ],
+      "where": [
+        { "label": "Neumann 2017, Ch. 1: Getting started (planes, axes, kinematics)", "url": "" },
+        { "label": "Neumann 2010, Kinesiology of the hip (JOSPT): femoral-on-pelvic vs pelvic-on-femoral", "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025" },
+        { "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/" }
+      ],
+      "cells": [
+        { "id": "conv.draft1", "type": "mc", "draft": true,
+          "prompt": "Viewed from above, the pelvis faces to the right. In this course's convention the pelvis is:",
+          "options": ["Oriented right", "Oriented left", "Rotated left", "Neutral; only the hemipelves are named"] },
+        { "id": "conv.draft2", "type": "mc", "draft": true,
+          "prompt": "With the right foot planted, the right gluteus maximus turns the pelvis over the fixed femur. This is described as:",
+          "options": ["Femur-on-pelvis (FA), open chain", "Pelvis-on-femur (AF), reversed action", "Neither; the gluteus maximus cannot act with the femur fixed"] },
+        { "id": "conv.draft3", "type": "mc", "draft": true,
+          "prompt": "In the Left AIC pattern, the left hemipelvis is:",
+          "options": ["Forward rotated and anteriorly tilted", "Backward rotated and posteriorly tilted", "Forward rotated and posteriorly tilted", "Backward rotated and anteriorly tilted"] }
+      ]
+    },
+    {
+      "id": "02", "slug": "02-landmarks", "title": "Landmarks",
+      "sub": "Innominate, sacrum, femur, rib cage, lumbar and thoracic spine",
+      "minutes": [5, 20], "opensAt": "2026-11-06", "input": "Dropdown per landmark",
+      "framing": ["Draft. Landmark list is derived from the attachments of the course's 25 muscles."],
+      "where": [{ "label": "OpenStax A&P 2e, 7.4 The Vertebral Column; 7.5 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis" }],
+      "cells": []
+    },
+    {
+      "id": "03", "slug": "03-viscera", "title": "Visceral anatomy",
+      "sub": "Which side the lateralized organs sit on",
+      "minutes": [5, 15], "opensAt": "2026-11-06", "input": "Dropdown per organ",
+      "framing": [
+        "The thoracic and abdominal cavities are not mirror images. Unit 1 begins from the sides and levels of the major organs, so this lesson asks you to state them once.",
+        "It asks only where the organs are. What that asymmetry does, if anything, to posture and gait is a question for Unit 1. Side answers refer to where the greater part of the organ lies relative to the midline in the anatomical position."
+      ],
+      "where": [
+        { "label": "OpenStax A&P 2e, 19.1 Heart Anatomy", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy" },
+        { "label": "OpenStax A&P 2e, 21.1 Anatomy of the Lymphatic and Immune Systems (spleen)", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems" },
+        { "label": "OpenStax A&P 2e, 22.2 The Lungs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs" },
+        { "label": "OpenStax A&P 2e, 23.4 The Stomach", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach" },
+        { "label": "OpenStax A&P 2e, 23.6 Accessory Organs in Digestion (liver)", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder" },
+        { "label": "OpenStax A&P 2e, 25.3 Gross Anatomy of the Kidney", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney" },
+        { "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/" }
+      ],
+      "cells": [
+        { "id": "visc.liver.side", "type": "select", "prompt": "Liver: side of most of its mass", "options": ["Left", "Right"] },
+        { "id": "visc.heart.side", "type": "select", "prompt": "Heart: side of the midline where most of it lies", "options": ["Left", "Right"] },
+        { "id": "visc.stomach.side", "type": "select", "prompt": "Stomach: side of most of its mass", "options": ["Left", "Right"] },
+        { "id": "visc.spleen.side", "type": "select", "prompt": "Spleen: side", "options": ["Left", "Right"] },
+        { "id": "visc.lung.right.lobes", "type": "select", "prompt": "Right lung: number of lobes", "options": ["1", "2", "3"] },
+        { "id": "visc.lung.left.lobes", "type": "select", "prompt": "Left lung: number of lobes", "options": ["1", "2", "3"] },
+        { "id": "visc.kidney.lower", "type": "select", "prompt": "Which kidney sits lower?", "options": ["Left", "Right"] },
+        { "id": "visc.hemidiaphragm.higher", "type": "select", "prompt": "Which hemidiaphragm sits higher at rest?", "options": ["Left", "Right"] }
+      ]
+    },
+    { "id": "04", "slug": "04-attachments", "title": "Attachments", "sub": "Origin and insertion for the course's 25 muscles", "minutes": [10, 40], "opensAt": "2026-11-06", "input": "Dropdown per cell", "framing": ["Draft."], "where": [{ "label": "Neumann 2017, Appendices (attachments and innervation)", "url": "" }], "cells": [] },
+    { "id": "05", "slug": "05-open-chain", "title": "Open-chain triplanar actions", "sub": "Femur-on-pelvis and arm-on-thorax, with fiber distinctions", "minutes": [10, 40], "opensAt": "2026-11-06", "input": "Chip select", "framing": ["Draft."], "where": [{ "label": "Neumann 2010, Kinesiology of the hip (JOSPT)", "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025" }], "cells": [] },
+    { "id": "06", "slug": "06-reversed", "title": "Reversed actions", "sub": "Pelvis-on-femur and thorax-on-arm, distal segment fixed", "minutes": [10, 40], "opensAt": "2026-11-13", "input": "Chip select", "framing": ["Draft."], "where": [], "cells": [] },
+    { "id": "07", "slug": "07-diaphragm", "title": "The diaphragm", "sub": "Attachments, crural vs costal, zone of apposition", "minutes": [5, 20], "opensAt": "2026-11-13", "input": "Dropdown and multiple choice", "framing": ["Draft."], "where": [], "cells": [] },
+    { "id": "08", "slug": "08-gait-chart", "title": "Gait phase chart", "sub": "Eight Rancho Los Amigos phases, one per screen", "minutes": [20, 60], "opensAt": "2026-11-13", "input": "Dropdowns and chips", "framing": ["Draft."], "where": [], "cells": [] },
+    { "id": "09", "slug": "09-pattern-map", "title": "Pattern-to-phase map", "sub": "Name the phase a resting pattern is parked in", "minutes": [5, 15], "opensAt": "2026-11-13", "input": "Multiple choice and matching", "framing": ["Draft."], "where": [], "cells": [] },
+    { "id": "10", "slug": "10-synthesis", "title": "Synthesis", "sub": "Three short written answers, read by the instructors", "minutes": [10, 20], "opensAt": "2026-11-13", "input": "Free text", "framing": ["Draft."], "where": [], "cells": [] }
+  ]
+}

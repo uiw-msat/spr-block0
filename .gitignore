@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SPR Block 0
+data/answer-key.xlsx
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
