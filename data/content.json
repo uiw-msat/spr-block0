@@ -1,438 +1,3448 @@
 {
-  "version": "2026fa-shell-0",
-  "preview": true,
-  "course": {
-    "code": "ATHP 6190",
-    "title": "Spine & Postural Restoration",
-    "block": "Block 0: Anatomy and Gait Foundations",
-    "program": "Master of Science in Athletic Training, University of the Incarnate Word",
-    "term": "Fall 2026",
-    "instructors": [
-      "Lyle Danley, MS, LAT, ATC, CSCS",
-      "E. Joanna Soles, DHSc, LAT, ATC"
-    ],
-    "certificateDue": "2026-11-18",
-    "unit1": "2026-11-20",
-    "contact": "danley@uiwtx.edu, soles@uiwtx.edu",
-    "canvasUrl": ""
-  },
-  "lessons": [
+ "preview": true,
+ "course": {
+  "code": "ATHP 6190",
+  "title": "Spine & Postural Restoration",
+  "block": "Block 0: Anatomy and Gait Foundations",
+  "program": "Master of Science in Athletic Training, University of the Incarnate Word",
+  "term": "Fall 2026",
+  "instructors": [
+   "Lyle Danley, MS, LAT, ATC, CSCS",
+   "E. Joanna Soles, DHSc, LAT, ATC"
+  ],
+  "certificateDue": "2026-11-18",
+  "unit1": "2026-11-20",
+  "contact": "danley@uiwtx.edu, soles@uiwtx.edu",
+  "canvasUrl": ""
+ },
+ "lessons": [
+  {
+   "id": "01",
+   "slug": "01-conventions",
+   "title": "Conventions",
+   "sub": "Planes, axes, open vs reversed action, the pelvic convention",
+   "minutes": [
+    5,
+    15
+   ],
+   "opensAt": "2026-11-06",
+   "input": "Multiple choice",
+   "framing": [
+    "Most confusion in this material is not about anatomy; it is about naming. The same pelvis can be called rotated left or right depending on whose textbook you open. This lesson fixes the vocabulary the rest of the course uses.",
+    "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page."
+   ],
+   "where": [
     {
-      "id": "01",
-      "slug": "01-conventions",
-      "title": "Conventions",
-      "sub": "Planes, axes, open vs reversed action, the pelvic convention",
-      "minutes": [
-        5,
-        15
-      ],
-      "opensAt": "2026-11-06",
-      "input": "Multiple choice",
-      "framing": [
-        "Most confusion in this material is not about anatomy; it is about naming. The same pelvis can be called rotated left or right depending on whose textbook you open. This lesson fixes the vocabulary the rest of the course uses.",
-        "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page."
-      ],
-      "where": [
-        {
-          "label": "Neumann 2017, Ch. 1: Getting started (planes, axes, kinematics)",
-          "url": ""
-        },
-        {
-          "label": "Neumann 2010, Kinesiology of the hip (JOSPT): femoral-on-pelvic vs pelvic-on-femoral",
-          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
-        },
-        {
-          "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
-        }
-      ],
-      "cells": [
-        {
-          "id": "conv.draft1",
-          "type": "mc",
-          "draft": true,
-          "prompt": "Viewed from above, the pelvis faces to the right. In this course's convention the pelvis is:",
-          "options": [
-            "Oriented right",
-            "Oriented left",
-            "Rotated left",
-            "Neutral; only the hemipelves are named"
-          ]
-        },
-        {
-          "id": "conv.draft2",
-          "type": "mc",
-          "draft": true,
-          "prompt": "With the right foot planted, the right gluteus maximus turns the pelvis over the fixed femur. This is described as:",
-          "options": [
-            "Femur-on-pelvis (FA), open chain",
-            "Pelvis-on-femur (AF), reversed action",
-            "Neither; the gluteus maximus cannot act with the femur fixed"
-          ]
-        },
-        {
-          "id": "conv.draft3",
-          "type": "mc",
-          "draft": true,
-          "prompt": "In the Left AIC pattern, the left hemipelvis is:",
-          "options": [
-            "Forward rotated and anteriorly tilted",
-            "Backward rotated and posteriorly tilted",
-            "Forward rotated and posteriorly tilted",
-            "Backward rotated and anteriorly tilted"
-          ]
-        }
-      ]
+     "label": "Neumann 2017, Ch. 1: Getting started (planes, axes, kinematics)",
+     "url": ""
     },
     {
-      "id": "02",
-      "slug": "02-landmarks",
-      "title": "Landmarks",
-      "sub": "Innominate, sacrum, femur, rib cage, lumbar and thoracic spine",
-      "minutes": [
-        5,
-        20
-      ],
-      "opensAt": "2026-11-06",
-      "input": "Dropdown per landmark",
-      "framing": [
-        "Draft. Landmark list is derived from the attachments of the course's 25 muscles."
-      ],
-      "where": [
-        {
-          "label": "OpenStax A&P 2e, 7.4 The Vertebral Column; 7.5 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
-        }
-      ],
-      "cells": []
+     "label": "Neumann 2010, Kinesiology of the hip (JOSPT): femoral-on-pelvic vs pelvic-on-femoral",
+     "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
     },
     {
-      "id": "03",
-      "slug": "03-viscera",
-      "title": "Visceral anatomy",
-      "sub": "Which side the lateralized organs sit on",
-      "minutes": [
-        5,
-        15
-      ],
-      "opensAt": "2026-11-06",
-      "input": "Dropdown per organ",
-      "framing": [
-        "The thoracic and abdominal cavities are not mirror images. Unit 1 begins from the sides and levels of the major organs, so this lesson asks you to state them once.",
-        "It asks only where the organs are. What that asymmetry does, if anything, to posture and gait is a question for Unit 1. Side answers refer to where the greater part of the organ lies relative to the midline in the anatomical position."
-      ],
-      "where": [
-        {
-          "label": "OpenStax A&P 2e, 19.1 Heart Anatomy",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
-        },
-        {
-          "label": "OpenStax A&P 2e, 21.1 Anatomy of the Lymphatic and Immune Systems (spleen)",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
-        },
-        {
-          "label": "OpenStax A&P 2e, 22.2 The Lungs",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
-        },
-        {
-          "label": "OpenStax A&P 2e, 23.4 The Stomach",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
-        },
-        {
-          "label": "OpenStax A&P 2e, 23.6 Accessory Organs in Digestion (liver)",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
-        },
-        {
-          "label": "OpenStax A&P 2e, 25.3 Gross Anatomy of the Kidney",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
-        },
-        {
-          "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
-        }
-      ],
-      "cells": [
-        {
-          "id": "visc.liver.side",
-          "type": "select",
-          "prompt": "Liver: side of most of its mass",
-          "options": [
-            "Left",
-            "Right"
-          ]
-        },
-        {
-          "id": "visc.heart.side",
-          "type": "select",
-          "prompt": "Heart: side of the midline where most of it lies",
-          "options": [
-            "Left",
-            "Right"
-          ]
-        },
-        {
-          "id": "visc.stomach.side",
-          "type": "select",
-          "prompt": "Stomach: side of most of its mass",
-          "options": [
-            "Left",
-            "Right"
-          ]
-        },
-        {
-          "id": "visc.spleen.side",
-          "type": "select",
-          "prompt": "Spleen: side",
-          "options": [
-            "Left",
-            "Right"
-          ]
-        },
-        {
-          "id": "visc.lung.right.lobes",
-          "type": "select",
-          "prompt": "Right lung: number of lobes",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ]
-        },
-        {
-          "id": "visc.lung.left.lobes",
-          "type": "select",
-          "prompt": "Left lung: number of lobes",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ]
-        },
-        {
-          "id": "visc.kidney.lower",
-          "type": "select",
-          "prompt": "Which kidney sits lower?",
-          "options": [
-            "Left",
-            "Right"
-          ]
-        },
-        {
-          "id": "visc.hemidiaphragm.higher",
-          "type": "select",
-          "prompt": "Which hemidiaphragm sits higher at rest?",
-          "options": [
-            "Left",
-            "Right"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "04",
-      "slug": "04-attachments",
-      "title": "Attachments",
-      "sub": "Origin and insertion for the course's 25 muscles",
-      "minutes": [
-        10,
-        40
-      ],
-      "opensAt": "2026-11-06",
-      "input": "Dropdown per cell",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Neumann 2017, Appendix II (upper extremity attachments): serratus anterior, lower trapezius, pectoralis minor, latissimus dorsi",
-          "url": ""
-        },
-        {
-          "label": "Neumann 2017, Appendix III (axial attachments): diaphragm, abdominals, erector spinae, quadratus lumborum, pelvic floor",
-          "url": ""
-        },
-        {
-          "label": "Neumann 2017, Appendix IV (lower extremity attachments): hip muscles",
-          "url": ""
-        },
-        {
-          "label": "OpenStax A&P 2e, 11.4 Axial Muscles of the Abdominal Wall and Thorax",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
-        }
-      ],
-      "cells": []
-    },
-    {
-      "id": "05",
-      "slug": "05-open-chain",
-      "title": "Open-chain triplanar actions",
-      "sub": "Femur-on-pelvis and arm-on-thorax, with fiber distinctions",
-      "minutes": [
-        10,
-        40
-      ],
-      "opensAt": "2026-11-06",
-      "input": "Chip select",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
-          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
-        },
-        {
-          "label": "Neumann 2017, Ch. 12: Hip",
-          "url": ""
-        },
-        {
-          "label": "Neumann 2017, Ch. 10: Axial skeleton, muscle and joint interactions (trunk)",
-          "url": ""
-        },
-        {
-          "label": "Neumann 2017, Ch. 5: Shoulder complex (scapular muscles, latissimus dorsi)",
-          "url": ""
-        }
-      ],
-      "cells": []
-    },
-    {
-      "id": "06",
-      "slug": "06-reversed",
-      "title": "Reversed actions",
-      "sub": "Pelvis-on-femur and thorax-on-arm, distal segment fixed",
-      "minutes": [
-        10,
-        40
-      ],
-      "opensAt": "2026-11-13",
-      "input": "Chip select",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Neumann 2010, Kinesiology of the hip (JOSPT): pelvic-on-femoral actions",
-          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
-        },
-        {
-          "label": "Neumann 2017, Ch. 12: Hip",
-          "url": ""
-        }
-      ],
-      "cells": []
-    },
-    {
-      "id": "07",
-      "slug": "07-diaphragm",
-      "title": "The diaphragm",
-      "sub": "Attachments, crural vs costal, zone of apposition",
-      "minutes": [
-        5,
-        20
-      ],
-      "opensAt": "2026-11-13",
-      "input": "Dropdown and multiple choice",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Neumann 2017, Ch. 11: Kinesiology of ventilation",
-          "url": ""
-        },
-        {
-          "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
-        },
-        {
-          "label": "Hodges & Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2269747/"
-        }
-      ],
-      "cells": []
-    },
-    {
-      "id": "08",
-      "slug": "08-gait-chart",
-      "title": "Gait phase chart",
-      "sub": "Eight Rancho Los Amigos phases, one per screen",
-      "minutes": [
-        20,
-        60
-      ],
-      "opensAt": "2026-11-13",
-      "input": "Dropdowns and chips",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Neumann 2017, Ch. 15: Kinesiology of walking",
-          "url": ""
-        },
-        {
-          "label": "Perry & Burnfield 2010, Gait Analysis, 2nd ed. (answer-key source)",
-          "url": ""
-        },
-        {
-          "label": "Physiopedia, Muscle Activity During Gait (orientation only; the key follows Perry)",
-          "url": "https://www.physio-pedia.com/Muscle_Activity_During_Gait"
-        },
-        {
-          "label": "Physiopedia, The Gait Cycle (orientation only)",
-          "url": "https://www.physio-pedia.com/The_Gait_Cycle"
-        }
-      ],
-      "cells": []
-    },
-    {
-      "id": "09",
-      "slug": "09-pattern-map",
-      "title": "Pattern-to-phase map",
-      "sub": "Name the phase a resting pattern is parked in",
-      "minutes": [
-        5,
-        15
-      ],
-      "opensAt": "2026-11-13",
-      "input": "Multiple choice and matching",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Your Lesson 8 chart and Lesson 6 reversed-action table",
-          "url": ""
-        },
-        {
-          "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
-        }
-      ],
-      "cells": []
-    },
-    {
-      "id": "10",
-      "slug": "10-synthesis",
-      "title": "Synthesis",
-      "sub": "Three short written answers, read by the instructors",
-      "minutes": [
-        10,
-        20
-      ],
-      "opensAt": "2026-11-13",
-      "input": "Free text",
-      "framing": [
-        "Draft."
-      ],
-      "where": [
-        {
-          "label": "Your Field Atlas pages from Lessons 1 to 9",
-          "url": ""
-        }
-      ],
-      "cells": []
+     "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
     }
+   ],
+   "layout": "mc",
+   "cells": [
+    {
+     "id": "conv.plane.hip_flex",
+     "type": "mc",
+     "prompt": "Hip flexion and extension occur in which plane, about which axis?",
+     "accept": [
+      "b2033bf60a4eabeee331440a245766578fcabee54975d53f7351610d0f451a73"
+     ],
+     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation",
+     "options": [
+      "Sagittal plane, mediolateral axis",
+      "Frontal plane, anteroposterior axis",
+      "Transverse plane, vertical axis",
+      "Sagittal plane, vertical axis"
+     ]
+    },
+    {
+     "id": "conv.plane.hip_rot",
+     "type": "mc",
+     "prompt": "Hip internal and external rotation occur in which plane, about which axis?",
+     "accept": [
+      "3b104667b47d6bc80c19d446608af7122984c7ec0183bb25e4dd9ea2cd9c8b11"
+     ],
+     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation",
+     "options": [
+      "Transverse plane, vertical axis",
+      "Frontal plane, anteroposterior axis",
+      "Sagittal plane, mediolateral axis",
+      "Transverse plane, anteroposterior axis"
+     ]
+    },
+    {
+     "id": "conv.plane.tilt",
+     "type": "mc",
+     "prompt": "Anterior or posterior tilt of a hemipelvis occurs in which plane?",
+     "accept": [
+      "a2c9c88ebd59b93a043069e5e7e6541abc1b4340bec5253932f1ddcdba69bf00"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
+     "options": [
+      "Sagittal",
+      "Frontal",
+      "Transverse"
+     ]
+    },
+    {
+     "id": "conv.pelvis.oriented",
+     "type": "mc",
+     "prompt": "Viewed from above, the whole pelvis faces to the right. In this course's convention the pelvis is:",
+     "accept": [
+      "1dc5967b9d427b06d5db07932891fa7807e22b68f623122468997b27610d0c12"
+     ],
+     "ref": "Course conventions (Decisions Log, Nov 5): PRI pelvic convention",
+     "options": [
+      "Oriented right",
+      "Oriented left",
+      "Neutral; only the hemipelves are named"
+     ]
+    },
+    {
+     "id": "conv.laic.left_hemi",
+     "type": "mc",
+     "prompt": "In the Left AIC pattern, the left hemipelvis is:",
+     "accept": [
+      "1929fd1f0b5fff848ef6ab0d9954394f426d4701c6ffcd480eab53172a4b5fc5"
+     ],
+     "ref": "Course conventions (Decisions Log, Nov 5): PRI pelvic convention; Boyle 2013 IJSPT (PMC3679640)",
+     "options": [
+      "Forward rotated and anteriorly tilted",
+      "Backward rotated and posteriorly tilted",
+      "Forward rotated and posteriorly tilted",
+      "Backward rotated and anteriorly tilted"
+     ]
+    },
+    {
+     "id": "conv.laic.right_hemi",
+     "type": "mc",
+     "prompt": "In the Left AIC pattern, the right hemipelvis is:",
+     "accept": [
+      "0f85e258fcd9a32dfbb5cd65f8bd7ea19deb37f97ab442dba63dafda812c2047"
+     ],
+     "ref": "Course conventions (Decisions Log, Nov 5): PRI pelvic convention; Boyle 2013 IJSPT (PMC3679640)",
+     "options": [
+      "Backward rotated and posteriorly tilted",
+      "Forward rotated and anteriorly tilted",
+      "Backward rotated and anteriorly tilted",
+      "Forward rotated and posteriorly tilted"
+     ]
+    },
+    {
+     "id": "conv.laic.right_hip",
+     "type": "mc",
+     "prompt": "In the Left AIC pattern, the right hip is described as:",
+     "accept": [
+      "7310d6599191646f155440d427add15171d184e4044d319f1692bb12443ccc0e"
+     ],
+     "ref": "Course conventions (Decisions Log, Nov 5): PRI pelvic convention; Boyle 2013 IJSPT",
+     "options": [
+      "Right AF internal rotation",
+      "Right AF external rotation",
+      "Right FA external rotation",
+      "Neutral"
+     ]
+    },
+    {
+     "id": "conv.chain.af",
+     "type": "mc",
+     "prompt": "With the right foot planted, the right gluteus maximus turns the pelvis over the fixed right femur. This is:",
+     "accept": [
+      "367d6b016ed66e460a7b8089245b367aa2451212012b04ac244905c0b7393e13"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
+     "options": [
+      "Pelvis-on-femur (AF), reversed action",
+      "Femur-on-pelvis (FA), open chain",
+      "Neither; gluteus maximus cannot act with the femur fixed"
+     ]
+    },
+    {
+     "id": "conv.chain.fa",
+     "type": "mc",
+     "prompt": "Seated, a patient lifts the left knee toward the chest while the pelvis stays still. At the left hip this is:",
+     "accept": [
+      "45f1c26cfce020b0d4981a3778716d68fb027fc2f01e9eb561a771babfab7aee"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
+     "options": [
+      "Femur-on-pelvis (FA) flexion, open chain",
+      "Pelvis-on-femur (AF) flexion, reversed action",
+      "Pelvis-on-femur (AF) extension, reversed action"
+     ]
+    },
+    {
+     "id": "conv.rings",
+     "type": "mc",
+     "prompt": "In this course, the word 'innominate' refers to:",
+     "accept": [
+      "672d6087f2ba41b5d784d4b10b19d478a1537caa5c075cf135b4ce1bde662203"
+     ],
+     "ref": "Course Roadmap, Course thesis (three rings)",
+     "options": [
+      "Any bony ring that positions a spinal region (pelvic ring, rib cage ring, cranium and mandible)",
+      "The ilium, ischium, and pubis only",
+      "The sacrum and both hip bones only",
+      "The rib cage only"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "slug": "02-landmarks",
+   "title": "Landmarks",
+   "sub": "Innominate, sacrum, femur, rib cage, lumbar and thoracic spine",
+   "minutes": [
+    5,
+    20
+   ],
+   "opensAt": "2026-11-06",
+   "input": "Dropdown per landmark",
+   "framing": [
+    "The muscles in this course attach to a small set of bony landmarks on the pelvis, femur, spine, rib cage, and scapula. Before naming attachments in Lesson 4, confirm which bone carries each landmark.",
+    "Pick the bone for each landmark. The Lesson 4 attachment list uses these same landmarks."
+   ],
+   "where": [
+    {
+     "label": "OpenStax A&P 2e, 7.4 The Vertebral Column; 7.5 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+    }
+   ],
+   "layout": "table",
+   "cells": [
+    {
+     "id": "lm.asis",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Anterior superior iliac spine (ASIS)",
+     "accept": [
+      "9208858aaec0983f1808dbedd06d609ad9e741128c147b4dd9c43901186fdece"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.iliac_crest",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Iliac crest",
+     "accept": [
+      "1b3ef529ecf0e75d43cd7ad24cc95e35692bc186145e28143f71879298699315"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.iliac_fossa",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Iliac fossa",
+     "accept": [
+      "00bf59a9ad07db47ebf9572dbfadfb49e969ca91c9cce8bbbab881cefe8ecf3a"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.gluteal_lines",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Anterior and posterior gluteal lines",
+     "accept": [
+      "d80e10a39e6c5eab35b3f334906b80e0fea5ffea5fda879b9cbf2b301a8fabf0"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.ischial_tuberosity",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Ischial tuberosity",
+     "accept": [
+      "5e313053317ffdc2ade3392c6f8d42478022a7ffac5ffe4faf83499fd15d579f"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.ischial_spine",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Ischial spine",
+     "accept": [
+      "15848802140b97d8ab42d3fcfb4fbc8363a30466099c69c622809a3f744af511"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.ischial_ramus",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Ischial ramus",
+     "accept": [
+      "47306efa0cc6714816be04f3803bff59be385da267e1f23d14387c9d0b7dee7a"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.inf_pubic_ramus",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Inferior pubic ramus",
+     "accept": [
+      "249f717c1f39efd6f61edbc15ddf978f46d1bbbbc6e1156ab1da5036d5a42922"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.pubic_crest",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Pubic crest",
+     "accept": [
+      "0ffc4be1b42479b991a4d8a0ce21710aacc5c05f8ddb0f1f26bd4dc7d53dfd2d"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.pubic_symphysis_face",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Symphyseal surface",
+     "accept": [
+      "c85e7122d7102707b45cec5c9a9fb7b89824818f658e444fbaaf1ba30f5c1ba4"
+     ],
+     "ref": "OpenStax A&P 2e, 8.3 The Pelvic Girdle and Pelvis",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.ant_sacral_foramina",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Anterior sacral foramina",
+     "accept": [
+      "5bd29829e19f5b3ea16e057204849882ef47bd47717da27b3f78aa9b26e4ce64"
+     ],
+     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.median_sacral_crest",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Median sacral crest",
+     "accept": [
+      "f51325a8676f38ebff9bb958de3126702b96e2a24e6330e79d7a0c1430b80da9"
+     ],
+     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.greater_troch",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Greater trochanter",
+     "accept": [
+      "507e99ae842a71a441872c6f245dcd7214c21bacae027d3f0365a0814cdfabca"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.trochanteric_fossa",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Trochanteric fossa",
+     "accept": [
+      "724a13f65b847ffeaf750fac97c867121f303422393fe140e147d936436eceaa"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.lesser_troch",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Lesser trochanter",
+     "accept": [
+      "2b0d32b71acde778ba5ef07b5c0a9c72f81379088f2a1af8ad5678a0e15e87e1"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.gluteal_tuberosity",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Gluteal tuberosity",
+     "accept": [
+      "1201db53369416aa05df89f7b5b3828505f0ede5ec423bdb08c244b5aed8a22a"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.linea_aspera",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Linea aspera",
+     "accept": [
+      "27841e60e3d4e504bbcba63d5f7e84fbe455dc0d5f6a1f914456313dbe64b574"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.adductor_tubercle",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Adductor tubercle",
+     "accept": [
+      "cfa2460152a7e14cbb398a7a59e784b27c168d8c916837c51ed07871340b60d3"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.fibular_head",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Head (apex region) of the fibula",
+     "accept": [
+      "92f2776559281a5dee00074425f37dc6d6d33a426c4436781f82885ddbd76094"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.medial_condyle",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Medial condyle (posteromedial surface)",
+     "accept": [
+      "7dde7aa01745ea71ac478bb61f45f0491f9ca676d81df27d2aeaaadffa693df7"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.gerdy",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Lateral tibial (Gerdy's) tubercle",
+     "accept": [
+      "a0989a2339fafa85b12ed98240b72d6d5478bf0477f6fdd6bed9291fe92b2641"
+     ],
+     "ref": "OpenStax A&P 2e, 8.4 Bones of the Lower Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.lumbar_tp",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Transverse process, L3",
+     "accept": [
+      "a76fd9c786a8e0c3c9b69b4fd6f2331dc600ba44b3577af1a57f29cbc597868b"
+     ],
+     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.mammillary",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Mammillary process",
+     "accept": [
+      "8c6956ff28aa03a3095b95260891ccf02b35c582195ec5c7819dc2a57facfc70"
+     ],
+     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.thoracic_sp",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Spinous process, T10",
+     "accept": [
+      "9648bee3fa42a1bba1e3123e4997befe0169a4a45e56584c833e728916008337"
+     ],
+     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.costal_facet",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Costal facets (demifacets) on the vertebral body",
+     "accept": [
+      "7360f8ba6230aa9cee55ab2f4ec2c7128e6c20a73279ac1df8298bd0b92d36dd"
+     ],
+     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.xiphoid",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Xiphoid process",
+     "accept": [
+      "b9de68d08bb71e04a254b1660df5f32764a0d764268be035db9b593b396f2702"
+     ],
+     "ref": "OpenStax A&P 2e, 7.5 The Thoracic Cage",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.rib_angle",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Costal angle (angle of the rib)",
+     "accept": [
+      "83bb84569e418a3783f44b52936c8df16c0302f070d48473ecaf44db2d98f260"
+     ],
+     "ref": "OpenStax A&P 2e, 7.5 The Thoracic Cage",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.coracoid",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Coracoid process",
+     "accept": [
+      "307f037d7211c477eb02733439b389428515cb3848fa7812d576fc4ae0bcfb5e"
+     ],
+     "ref": "OpenStax A&P 2e, 8.1 The Pectoral Girdle; 8.2 Bones of the Upper Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.medial_border",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Medial (vertebral) border",
+     "accept": [
+      "d9ad0e5289e1597abc6efc7391550b59da0e967abd212faed247d5d2b5fe32a9"
+     ],
+     "ref": "OpenStax A&P 2e, 8.1 The Pectoral Girdle; 8.2 Bones of the Upper Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.scap_spine",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Spine (root at the medial border)",
+     "accept": [
+      "fd1f8ab391701987e1fa2565c4422e9e8d0f66f6c6fab9f6d6ee4b2bcec52c6a"
+     ],
+     "ref": "OpenStax A&P 2e, 8.1 The Pectoral Girdle; 8.2 Bones of the Upper Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.inferior_angle",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Inferior angle",
+     "accept": [
+      "96fca05f88c6ce338a8b94fd9fc76dedfe7752dcb67a15a231e7880be09c83d1"
+     ],
+     "ref": "OpenStax A&P 2e, 8.1 The Pectoral Girdle; 8.2 Bones of the Upper Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    },
+    {
+     "id": "lm.intertubercular",
+     "type": "select",
+     "prompt": "Which bone bears this landmark? Intertubercular (bicipital) groove",
+     "accept": [
+      "9516c1f4da78e0de3acdb8a93958d34079fa694eeb2e2ad3105a9828dfead9ec"
+     ],
+     "ref": "OpenStax A&P 2e, 8.1 The Pectoral Girdle; 8.2 Bones of the Upper Limb",
+     "options": [
+      "Ilium",
+      "Ischium",
+      "Pubis",
+      "Sacrum",
+      "Coccyx",
+      "Femur",
+      "Tibia",
+      "Fibula",
+      "Lumbar vertebra",
+      "Thoracic vertebra",
+      "Rib",
+      "Sternum",
+      "Scapula",
+      "Humerus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "slug": "03-viscera",
+   "title": "Visceral anatomy",
+   "sub": "Which side the lateralized organs sit on",
+   "minutes": [
+    5,
+    15
+   ],
+   "opensAt": "2026-11-06",
+   "input": "Dropdown per organ",
+   "framing": [
+    "The thoracic and abdominal cavities are not mirror images. Unit 1 begins from the sides and levels of the major organs, so this lesson asks you to state them once.",
+    "It asks only where the organs are. What that asymmetry does, if anything, to posture and gait is a question for Unit 1. Side answers refer to where the greater part of the organ lies relative to the midline in the anatomical position."
+   ],
+   "where": [
+    {
+     "label": "OpenStax A&P 2e, 19.1 Heart Anatomy",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+    },
+    {
+     "label": "OpenStax A&P 2e, 21.1 Anatomy of the Lymphatic and Immune Systems (spleen)",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+    },
+    {
+     "label": "OpenStax A&P 2e, 22.2 The Lungs",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+    },
+    {
+     "label": "OpenStax A&P 2e, 23.4 The Stomach",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+    },
+    {
+     "label": "OpenStax A&P 2e, 23.6 Accessory Organs in Digestion (liver)",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+    },
+    {
+     "label": "OpenStax A&P 2e, 25.3 Gross Anatomy of the Kidney",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+    },
+    {
+     "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
+    }
+   ],
+   "layout": "table",
+   "cells": [
+    {
+     "id": "visc.liver.side",
+     "type": "select",
+     "prompt": "Liver: side of most of its mass",
+     "accept": [
+      "1838e34828b497ea240fb9a9617bd9d2445f7168693bd2af92882d68b607b949"
+     ],
+     "ref": "OpenStax 23.6",
+     "options": [
+      "Left",
+      "Right"
+     ]
+    },
+    {
+     "id": "visc.heart.side",
+     "type": "select",
+     "prompt": "Heart: side of the midline where most of it lies",
+     "accept": [
+      "3852e17e377f26603a88e213ebc79f159f227eed0732473779bff113010795db"
+     ],
+     "ref": "OpenStax 19.1",
+     "options": [
+      "Left",
+      "Right"
+     ]
+    },
+    {
+     "id": "visc.stomach.side",
+     "type": "select",
+     "prompt": "Stomach: side of most of its mass",
+     "accept": [
+      "bc2aad3ba4f2a65cbdf814d6f4781db47bbc37ad1b984f0df1dc5463c95cd6f2"
+     ],
+     "ref": "OpenStax 23.4",
+     "options": [
+      "Left",
+      "Right"
+     ]
+    },
+    {
+     "id": "visc.spleen.side",
+     "type": "select",
+     "prompt": "Spleen: side",
+     "accept": [
+      "14d61f351257e2174b50bcae01227d2b125fb47ef929aa35a143f9dcb446fafa"
+     ],
+     "ref": "OpenStax 21.1",
+     "options": [
+      "Left",
+      "Right"
+     ]
+    },
+    {
+     "id": "visc.lung.right.lobes",
+     "type": "select",
+     "prompt": "Right lung: number of lobes",
+     "accept": [
+      "6c24785cd462e3925a74f45feabdb8ce98497e8b941680cba10b6a59af8dc0fd"
+     ],
+     "ref": "OpenStax 22.2",
+     "options": [
+      "1",
+      "2",
+      "3"
+     ]
+    },
+    {
+     "id": "visc.lung.left.lobes",
+     "type": "select",
+     "prompt": "Left lung: number of lobes",
+     "accept": [
+      "db6b58be966541abbb05184568d996274b7a908f18efb7757caecf5f7a49594c"
+     ],
+     "ref": "OpenStax 22.2",
+     "options": [
+      "1",
+      "2",
+      "3"
+     ]
+    },
+    {
+     "id": "visc.kidney.lower",
+     "type": "select",
+     "prompt": "Which kidney sits lower?",
+     "accept": [
+      "b1c064da324beed79c8d4a51e2bf2db65bcd03432466131c6ecc6349c3b306a9"
+     ],
+     "ref": "OpenStax 25.3",
+     "options": [
+      "Left",
+      "Right"
+     ]
+    },
+    {
+     "id": "visc.hemidiaphragm.higher",
+     "type": "select",
+     "prompt": "Which hemidiaphragm sits higher at rest?",
+     "accept": [
+      "075e0f2d5eaa9859b4eee95dcada1fe7f4f55e239fa1c512752ecde87c83ebd4"
+     ],
+     "ref": "OpenStax 22.2 (right lung shorter); Boyle 2010 NAJSPT (PMC2971640)",
+     "options": [
+      "Left",
+      "Right"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "slug": "04-attachments",
+   "title": "Attachments",
+   "sub": "Origin and insertion for the course's 25 muscles",
+   "minutes": [
+    10,
+    40
+   ],
+   "opensAt": "2026-11-06",
+   "input": "Dropdown per cell",
+   "framing": [
+    "For each muscle, choose the origin and insertion from the attachment list. Where a muscle has a broad origin, any of its listed attachments is accepted.",
+    "Fiber distinctions the course uses are listed as separate rows: diaphragm crural vs costal, adductor magnus anterior vs posterior head, and gluteus maximus upper vs lower fibers."
+   ],
+   "where": [
+    {
+     "label": "Neumann 2017, Appendix II (upper extremity attachments): serratus anterior, lower trapezius, pectoralis minor, latissimus dorsi",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Appendix III (axial attachments): diaphragm, abdominals, erector spinae, quadratus lumborum, pelvic floor",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Appendix IV (lower extremity attachments): hip muscles",
+     "url": ""
+    },
+    {
+     "label": "OpenStax A&P 2e, 11.4 Axial Muscles of the Abdominal Wall and Thorax",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+    }
+   ],
+   "layout": "matrix",
+   "cells": [
+    {
+     "id": "att.diaphragm.crural.origin",
+     "type": "select",
+     "prompt": "Diaphragm, crural part: origin",
+     "accept": [
+      "10ed22c5cd90add4d9b64df6fb23296a5996d818e21b1ed2806d1d8454d42de8"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon",
+     "optionSet": "sites",
+     "row": "Diaphragm, crural part",
+     "col": "Origin"
+    },
+    {
+     "id": "att.diaphragm.costal.origin",
+     "type": "select",
+     "prompt": "Diaphragm, costal part: origin",
+     "accept": [
+      "3cb5b45b13e18740b33e12ab6c19e85b1782f8edd9f0d6db568ab65969f7f3f5"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon",
+     "optionSet": "sites",
+     "row": "Diaphragm, costal part",
+     "col": "Origin"
+    },
+    {
+     "id": "att.diaphragm.insertion",
+     "type": "select",
+     "prompt": "Diaphragm: insertion",
+     "accept": [
+      "744a8d7941374562ece9888591e75bdf86d1fcf9398565d2b8aa3b524712750b"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon",
+     "optionSet": "sites",
+     "row": "Diaphragm",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.psoas.origin",
+     "type": "select",
+     "prompt": "Psoas major: origin",
+     "accept": [
+      "e2ed529add1b1af5c548d2caeaffafac9c185fb52cea85af234a5eaaea4576f3"
+     ],
+     "ref": "Neumann 2017, App. IV: Psoas major",
+     "optionSet": "sites",
+     "row": "Psoas major",
+     "col": "Origin"
+    },
+    {
+     "id": "att.psoas.insertion",
+     "type": "select",
+     "prompt": "Psoas major: insertion",
+     "accept": [
+      "006c9a449bd04cb72f03ff6f1860e278dda48cb17eea3d5638e51d12b89379da"
+     ],
+     "ref": "Neumann 2017, App. IV: Psoas major",
+     "optionSet": "sites",
+     "row": "Psoas major",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.iliacus.origin",
+     "type": "select",
+     "prompt": "Iliacus: origin",
+     "accept": [
+      "0828c27e3b8fdc61999fda5a35de6a1277fd1db7249860ed2ae0f5e64d5f6eb2"
+     ],
+     "ref": "Neumann 2017, App. IV: Iliacus",
+     "optionSet": "sites",
+     "row": "Iliacus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.iliacus.insertion",
+     "type": "select",
+     "prompt": "Iliacus: insertion",
+     "accept": [
+      "89d31d939ecf35d3579067322a70d5c558edfa34b796ce4b993acbbeda528675"
+     ],
+     "ref": "Neumann 2017, App. IV: Iliacus",
+     "optionSet": "sites",
+     "row": "Iliacus",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.tfl.origin",
+     "type": "select",
+     "prompt": "Tensor fasciae latae: origin",
+     "accept": [
+      "0057287ffb23f0e8d114df58d650788a71df2361a254a2d1b0495b5cd271e129",
+      "3c006cee2c6cb4154b5351ffed19803f92e290f9d85ee5a40bc640400b2e7a4a"
+     ],
+     "ref": "Neumann 2017, App. IV: Tensor fasciae latae",
+     "optionSet": "sites",
+     "row": "Tensor fasciae latae",
+     "col": "Origin"
+    },
+    {
+     "id": "att.tfl.insertion",
+     "type": "select",
+     "prompt": "Tensor fasciae latae: insertion",
+     "accept": [
+      "cb300a23ab9d191c75a0d07ab3cb3e94740378097c097a2f5c0dbfb10758e5ff"
+     ],
+     "ref": "Neumann 2017, App. IV: Tensor fasciae latae",
+     "optionSet": "sites",
+     "row": "Tensor fasciae latae",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.bflh.origin",
+     "type": "select",
+     "prompt": "Biceps femoris, long head: origin",
+     "accept": [
+      "5b8203cc072277fbb9f034a8eb568182c2940a28e4d3bffa8f0e6f7fe230a8ab"
+     ],
+     "ref": "Neumann 2017, App. IV: Biceps femoris",
+     "optionSet": "sites",
+     "row": "Biceps femoris, long head",
+     "col": "Origin"
+    },
+    {
+     "id": "att.bflh.insertion",
+     "type": "select",
+     "prompt": "Biceps femoris, long head: insertion",
+     "accept": [
+      "dc75ef491d4a01b69af739952716a83a0857e2490654d9012decf141e8f931ba"
+     ],
+     "ref": "Neumann 2017, App. IV: Biceps femoris",
+     "optionSet": "sites",
+     "row": "Biceps femoris, long head",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.semimem.origin",
+     "type": "select",
+     "prompt": "Semimembranosus: origin",
+     "accept": [
+      "0591b8c71e8a53a92c9c5e9e48fea043318e872f4a756bbe677f67fe4c2084f6"
+     ],
+     "ref": "Neumann 2017, App. IV: Semimembranosus",
+     "optionSet": "sites",
+     "row": "Semimembranosus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.semimem.insertion",
+     "type": "select",
+     "prompt": "Semimembranosus: insertion",
+     "accept": [
+      "fa655eac8e1ad0d8aa0037f6b16736e498f4e16711f753a1416b6b9b9716cce2"
+     ],
+     "ref": "Neumann 2017, App. IV: Semimembranosus",
+     "optionSet": "sites",
+     "row": "Semimembranosus",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.semiten.origin",
+     "type": "select",
+     "prompt": "Semitendinosus: origin",
+     "accept": [
+      "7551f9228ae59c3c4445bff1885e242a146814d20c42f9aec059fe15f48a46b5"
+     ],
+     "ref": "Neumann 2017, App. IV: Semitendinosus",
+     "optionSet": "sites",
+     "row": "Semitendinosus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.semiten.insertion",
+     "type": "select",
+     "prompt": "Semitendinosus: insertion",
+     "accept": [
+      "59c583ce6a556f1ca34781e70429dd9486369bf6647ad32016002aeaaad29c92"
+     ],
+     "ref": "Neumann 2017, App. IV: Semitendinosus",
+     "optionSet": "sites",
+     "row": "Semitendinosus",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.addmag.ant.origin",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head: origin",
+     "accept": [
+      "fe7da62976b223ccf428070f479d8d97d48d07a2b05ffef8cad202cca084e15f"
+     ],
+     "ref": "Neumann 2017, App. IV: Adductor magnus",
+     "optionSet": "sites",
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Origin"
+    },
+    {
+     "id": "att.addmag.ant.insertion",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head: insertion",
+     "accept": [
+      "1c70207ce2a2032f4eb153cc51876463d332b9e34bd32b64b9d2b530d05771c2"
+     ],
+     "ref": "Neumann 2017, App. IV: Adductor magnus",
+     "optionSet": "sites",
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.addmag.post.origin",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head: origin",
+     "accept": [
+      "5a20da9815da92cf51445c1b706f3e3a4f586a912c04d389e8b6f8b46e77202b"
+     ],
+     "ref": "Neumann 2017, App. IV: Adductor magnus",
+     "optionSet": "sites",
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Origin"
+    },
+    {
+     "id": "att.addmag.post.insertion",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head: insertion",
+     "accept": [
+      "a6d20ce1be9bcb12d96d3247fe3122c95225aa0b59d602a72922d802fd228fa8"
+     ],
+     "ref": "Neumann 2017, App. IV: Adductor magnus",
+     "optionSet": "sites",
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.addlong.origin",
+     "type": "select",
+     "prompt": "Adductor longus: origin",
+     "accept": [
+      "b8d727ffe0bc76f60c9973031e2c5c8c432907a1679dc0a2ccc1de97a8df8797"
+     ],
+     "ref": "Neumann 2017, App. IV: Adductor longus",
+     "optionSet": "sites",
+     "row": "Adductor longus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.addlong.insertion",
+     "type": "select",
+     "prompt": "Adductor longus: insertion",
+     "accept": [
+      "06adabf8da37a6c8c63175a60e1d9ed30efa567d0400cdd81563046a78f796c1"
+     ],
+     "ref": "Neumann 2017, App. IV: Adductor longus",
+     "optionSet": "sites",
+     "row": "Adductor longus",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.gmed.origin",
+     "type": "select",
+     "prompt": "Gluteus medius: origin",
+     "accept": [
+      "676567b0b6e1bdc93cb39e2a21effc95f8613d0dc3faeed042035b8002b1ccc6"
+     ],
+     "ref": "Neumann 2017, App. IV: Gluteus medius",
+     "optionSet": "sites",
+     "row": "Gluteus medius",
+     "col": "Origin"
+    },
+    {
+     "id": "att.gmed.insertion",
+     "type": "select",
+     "prompt": "Gluteus medius: insertion",
+     "accept": [
+      "16aadcc9492dbde6a678fa7c67082d7ab85da7fdace28c4f860bc4565c7e26fc"
+     ],
+     "ref": "Neumann 2017, App. IV: Gluteus medius",
+     "optionSet": "sites",
+     "row": "Gluteus medius",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.gmax.origin",
+     "type": "select",
+     "prompt": "Gluteus maximus: origin",
+     "accept": [
+      "605066856aba8fe50467200c0b09d708a4460ad07be766deca3e377880d0ee5e",
+      "f173c1fec75e189d035182343db211ee441d40e61bb85debb78dd4d37c030408",
+      "fdf055bad26ec30f137f95e8bc5eb1ca32876ea00aa15dfe79f158009781f580"
+     ],
+     "ref": "Neumann 2017, App. IV: Gluteus maximus",
+     "optionSet": "sites",
+     "row": "Gluteus maximus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.gmax.upper.insertion",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers: insertion",
+     "accept": [
+      "7d6fa3bb0616c0b856a54ff7f83345dc432cd1a7a483fac11e9c2954a0b4469b"
+     ],
+     "ref": "Neumann 2017, App. IV: Gluteus maximus",
+     "optionSet": "sites",
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.gmax.lower.insertion",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers: insertion",
+     "accept": [
+      "f9ea664a61fdcfd068b1ce5d3cef22df70510dd128c68adb707f701e4ba96178"
+     ],
+     "ref": "Neumann 2017, App. IV: Gluteus maximus",
+     "optionSet": "sites",
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.io.origin",
+     "type": "select",
+     "prompt": "Internal oblique: origin",
+     "accept": [
+      "2b37f0368c224a72540d790249d2f835a806246fdaa3503c4a4f20ad7a100a1f",
+      "48fa796caf5ba03bd765d37ac9a8e20dcde18c503fa776f916afc0801e11b933",
+      "d742c84d7f06fa9a365380aa4c9498122271e7c3e4869b371e035bc26a6a5c44"
+     ],
+     "ref": "Neumann 2017, App. III: Internal oblique",
+     "optionSet": "sites",
+     "row": "Internal oblique",
+     "col": "Origin"
+    },
+    {
+     "id": "att.io.insertion",
+     "type": "select",
+     "prompt": "Internal oblique: insertion",
+     "accept": [
+      "2716456e3ea1e8be8df5bf93c4562ae6661b96250dd5dc23bf9f04640f01b09e",
+      "fd7d3d10a851b7bb4725b4ad4fa1b2509a376f74a43d70343a1f07ef7437994b"
+     ],
+     "ref": "Neumann 2017, App. III: Internal oblique",
+     "optionSet": "sites",
+     "row": "Internal oblique",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.ta.origin",
+     "type": "select",
+     "prompt": "Transversus abdominis: origin",
+     "accept": [
+      "0a2d58a2d28dede609f7f8ed6f95e281e08888dab25672c2a2b44d66c5c617ce",
+      "152a2b50b9d46d105dae3263a6c585bc8ad058b0005c218c4c0ffa49ac218150",
+      "43c0c5f75ccd77819eb5bed9f68bc2f1d79f923b7930848afb29776964572737",
+      "52dab74e7e58c762a34fce49ce49f4ab2b94fdec90655750a67b111142898ca8"
+     ],
+     "ref": "Neumann 2017, App. III: Transversus abdominis",
+     "optionSet": "sites",
+     "row": "Transversus abdominis",
+     "col": "Origin"
+    },
+    {
+     "id": "att.ta.insertion",
+     "type": "select",
+     "prompt": "Transversus abdominis: insertion",
+     "accept": [
+      "6fa0461f360fe2a9a3ea534170fbfe77f085654f6fe22e1f73865fb572b107b3"
+     ],
+     "ref": "Neumann 2017, App. III: Transversus abdominis",
+     "optionSet": "sites",
+     "row": "Transversus abdominis",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.eo.origin",
+     "type": "select",
+     "prompt": "External oblique: origin",
+     "accept": [
+      "986f4e6091f5ea4b41bf1be3fbb1505ba0049ad04ac81fc283f4e992409b1d0a"
+     ],
+     "ref": "Neumann 2017, App. III: External oblique",
+     "optionSet": "sites",
+     "row": "External oblique",
+     "col": "Origin"
+    },
+    {
+     "id": "att.eo.insertion",
+     "type": "select",
+     "prompt": "External oblique: insertion",
+     "accept": [
+      "3df5f19a909538f006aaf2ab6063f4f26497401a3302a228caa9617810fee99d",
+      "4f3b587d24f5a32b563c4a8350a807a68f157c0c2b597e12ea4383aee4ba64c7"
+     ],
+     "ref": "Neumann 2017, App. III: External oblique",
+     "optionSet": "sites",
+     "row": "External oblique",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.ra.origin",
+     "type": "select",
+     "prompt": "Rectus abdominis: origin",
+     "accept": [
+      "4ac34feb49e4ce5eb9937ef61c383c27e0767e00564db1cf1f665760e4245eec"
+     ],
+     "ref": "Neumann 2017, App. III: Rectus abdominis",
+     "optionSet": "sites",
+     "row": "Rectus abdominis",
+     "col": "Origin"
+    },
+    {
+     "id": "att.ra.insertion",
+     "type": "select",
+     "prompt": "Rectus abdominis: insertion",
+     "accept": [
+      "3383a8fb5f4e10fbe2e7c356ef9bafa973264d1fbc10169c50460874ec64b88d"
+     ],
+     "ref": "Neumann 2017, App. III: Rectus abdominis",
+     "optionSet": "sites",
+     "row": "Rectus abdominis",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.es.origin",
+     "type": "select",
+     "prompt": "Erector spinae (group): origin",
+     "accept": [
+      "3a7aa24e26aae111953541d291cb8d8978558db4b131130d4c298ce391e109ba",
+      "60301f82c883a6bd25c118bd06b188c4612448724664f1031a3ee32f03e86aaa"
+     ],
+     "ref": "Neumann 2017, App. III: Erector spinae",
+     "optionSet": "sites",
+     "row": "Erector spinae (group)",
+     "col": "Origin"
+    },
+    {
+     "id": "att.es.insertion",
+     "type": "select",
+     "prompt": "Erector spinae (group): insertion",
+     "accept": [
+      "58fbfdd3b82908680b0a26a4900f2e6eed91f81650fa4c9e9669635c4bb30a7f"
+     ],
+     "ref": "Neumann 2017, App. III: Erector spinae",
+     "optionSet": "sites",
+     "row": "Erector spinae (group)",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.ql.origin",
+     "type": "select",
+     "prompt": "Quadratus lumborum: origin",
+     "accept": [
+      "42eb721c32f9c80a2fceca6cdde8d2936db163da2fa6f2d1fa0bf9e7e7251443"
+     ],
+     "ref": "Neumann 2017, App. III: Quadratus lumborum",
+     "optionSet": "sites",
+     "row": "Quadratus lumborum",
+     "col": "Origin"
+    },
+    {
+     "id": "att.ql.insertion",
+     "type": "select",
+     "prompt": "Quadratus lumborum: insertion",
+     "accept": [
+      "c2e001569f75d2c18869fe62494ed3d4f029d78a9aae8abe699fd7545c4a59e2",
+      "dfb9b28b486aa666290384fc62ae7a7b3e3304f7c08817d238b9f82e2b826420"
+     ],
+     "ref": "Neumann 2017, App. III: Quadratus lumborum",
+     "optionSet": "sites",
+     "row": "Quadratus lumborum",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.sa.origin",
+     "type": "select",
+     "prompt": "Serratus anterior: origin",
+     "accept": [
+      "e5839c923f602e0cf4f0d7d6cc465ab6d4b8eff810827347f79bd335280f1011"
+     ],
+     "ref": "Neumann 2017, App. II: Serratus anterior",
+     "optionSet": "sites",
+     "row": "Serratus anterior",
+     "col": "Origin"
+    },
+    {
+     "id": "att.sa.insertion",
+     "type": "select",
+     "prompt": "Serratus anterior: insertion",
+     "accept": [
+      "56ee36bc85f75e6ef908626ff457ce3d718f6681708ff551c363fabb80f6a30a"
+     ],
+     "ref": "Neumann 2017, App. II: Serratus anterior",
+     "optionSet": "sites",
+     "row": "Serratus anterior",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.lt.origin",
+     "type": "select",
+     "prompt": "Lower trapezius: origin",
+     "accept": [
+      "8d766132b4a35daa5f3c98ad5f1d684156277cf561c3dec49f8acab80e19d512"
+     ],
+     "ref": "Neumann 2017, App. II: Trapezius",
+     "optionSet": "sites",
+     "row": "Lower trapezius",
+     "col": "Origin"
+    },
+    {
+     "id": "att.lt.insertion",
+     "type": "select",
+     "prompt": "Lower trapezius: insertion",
+     "accept": [
+      "30ecc185775694b7403d956d44b1d43fc5391061773e55d7f4a4a2ec886e5200"
+     ],
+     "ref": "Neumann 2017, App. II: Trapezius",
+     "optionSet": "sites",
+     "row": "Lower trapezius",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.pmin.origin",
+     "type": "select",
+     "prompt": "Pectoralis minor: origin",
+     "accept": [
+      "e31820a4c1606bc8281cc7f3e79d9dc81f350375be371faca1a09fd2e4c320c9"
+     ],
+     "ref": "Neumann 2017, App. II: Pectoralis minor",
+     "optionSet": "sites",
+     "row": "Pectoralis minor",
+     "col": "Origin"
+    },
+    {
+     "id": "att.pmin.insertion",
+     "type": "select",
+     "prompt": "Pectoralis minor: insertion",
+     "accept": [
+      "6edf8bc492754d32e0fb060e5126e1232d67d6b9d84de074e51334597c37abf7"
+     ],
+     "ref": "Neumann 2017, App. II: Pectoralis minor",
+     "optionSet": "sites",
+     "row": "Pectoralis minor",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.lat.origin",
+     "type": "select",
+     "prompt": "Latissimus dorsi: origin",
+     "accept": [
+      "00ee96c461cdb68b5265c9bbf6d7d04ba19f9a44554f43e2df080404d290510b",
+      "068fc7e66ea91173004c3cd2016066897e5a6ff1581224eb0bae00d3c2d834c7",
+      "5842449123128d54d937144cab781e75e39daf764813414547745e7089339bfa",
+      "b7edb9916ad8cc1a01cc52b57be6211aa090709b4e9e62cdce28d625d5920240"
+     ],
+     "ref": "Neumann 2017, App. II: Latissimus dorsi",
+     "optionSet": "sites",
+     "row": "Latissimus dorsi",
+     "col": "Origin"
+    },
+    {
+     "id": "att.lat.insertion",
+     "type": "select",
+     "prompt": "Latissimus dorsi: insertion",
+     "accept": [
+      "2c37715b0c9e6b0873352615563f1b85138e0243c84501af6f267cfa146fa7b0"
+     ],
+     "ref": "Neumann 2017, App. II: Latissimus dorsi",
+     "optionSet": "sites",
+     "row": "Latissimus dorsi",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.levani.origin",
+     "type": "select",
+     "prompt": "Levator ani (group): origin",
+     "accept": [
+      "4ce73096e2da6d79fbd99be001a9d860ae45f47168cb24aee23170bd6e567f4d",
+      "87715a032d945967761e0709144bc428726fbe506574622fcfc73b67a8b17ceb",
+      "99fa6e7f2869d8b87941e201b1f055c19698e1ea6b67442c1bd9d8fec4de6d19"
+     ],
+     "ref": "Neumann 2017, App. III: Levator ani",
+     "optionSet": "sites",
+     "row": "Levator ani (group)",
+     "col": "Origin"
+    },
+    {
+     "id": "att.levani.insertion",
+     "type": "select",
+     "prompt": "Levator ani (group): insertion",
+     "accept": [
+      "3d35689333a5dde9081e6be4b1116c0c7e4e872bb874534a5e64427515d52407",
+      "c4c1507daba43b4bde6a9e5c80ffb8c88ebb18bb803dbf6388394914b8155dc3"
+     ],
+     "ref": "Neumann 2017, App. III: Levator ani",
+     "optionSet": "sites",
+     "row": "Levator ani (group)",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.cocc.origin",
+     "type": "select",
+     "prompt": "Coccygeus: origin",
+     "accept": [
+      "d4eb10e8c5705275e425a47142dc5d177cc2c4339f4361f4c089992c67c0709a"
+     ],
+     "ref": "Neumann 2017, App. III: Coccygeus",
+     "optionSet": "sites",
+     "row": "Coccygeus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.cocc.insertion",
+     "type": "select",
+     "prompt": "Coccygeus: insertion",
+     "accept": [
+      "304ad833e39fd781c9d389c2bef67eadc8781f6fc9ec2fc14788545037d890ed"
+     ],
+     "ref": "Neumann 2017, App. III: Coccygeus",
+     "optionSet": "sites",
+     "row": "Coccygeus",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.oi.origin",
+     "type": "select",
+     "prompt": "Obturator internus: origin",
+     "accept": [
+      "e8de51c89977b99648ba473e39c32ac079421ae5df673b8fe3000a5ee839f2a2"
+     ],
+     "ref": "Neumann 2017, App. IV: Obturator internus",
+     "optionSet": "sites",
+     "row": "Obturator internus",
+     "col": "Origin"
+    },
+    {
+     "id": "att.oi.insertion",
+     "type": "select",
+     "prompt": "Obturator internus: insertion",
+     "accept": [
+      "3d8f8c66aa6e25763d0a0b17b54c1a06fd2515bdf1e880f4a2bbb23d762c69e5"
+     ],
+     "ref": "Neumann 2017, App. IV: Obturator internus",
+     "optionSet": "sites",
+     "row": "Obturator internus",
+     "col": "Insertion"
+    },
+    {
+     "id": "att.pir.origin",
+     "type": "select",
+     "prompt": "Piriformis: origin",
+     "accept": [
+      "cb5df760df02942651ff3a9e931e0bd2a617126bf10d25986b65729c4af27cea"
+     ],
+     "ref": "Neumann 2017, App. IV: Piriformis",
+     "optionSet": "sites",
+     "row": "Piriformis",
+     "col": "Origin"
+    },
+    {
+     "id": "att.pir.insertion",
+     "type": "select",
+     "prompt": "Piriformis: insertion",
+     "accept": [
+      "1afe36de8d88132f7856ad7f6ebc6afb8973384d0070148948347d9c6f25be57"
+     ],
+     "ref": "Neumann 2017, App. IV: Piriformis",
+     "optionSet": "sites",
+     "row": "Piriformis",
+     "col": "Insertion"
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "slug": "05-open-chain",
+   "title": "Open-chain triplanar actions",
+   "sub": "Femur-on-pelvis and arm-on-thorax, with fiber distinctions",
+   "minutes": [
+    10,
+    40
+   ],
+   "opensAt": "2026-11-06",
+   "input": "Dropdown per cell",
+   "framing": [
+    "Give each muscle's action in each plane, open chain, from anatomical position: the femur moving on a fixed pelvis for hip muscles, the thorax moving on a fixed pelvis for trunk muscles (one side contracting), and the scapula or arm moving on the thorax for shoulder muscles.",
+    "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the distal segment fixed."
+   ],
+   "where": [
+    {
+     "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
+     "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+    },
+    {
+     "label": "Neumann 2017, Ch. 12: Hip",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 10: Axial skeleton, muscle and joint interactions (trunk)",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 5: Shoulder complex (scapular muscles, latissimus dorsi)",
+     "url": ""
+    }
+   ],
+   "layout": "matrix",
+   "cells": [
+    {
+     "id": "act.psoas.sagittal",
+     "type": "select",
+     "prompt": "Psoas major, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "ee45fecf93514fafdb2861924c712c2bf01b4ca7b490975dbad091d949d9bcba"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Psoas major",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.psoas.frontal",
+     "type": "select",
+     "prompt": "Psoas major, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "083abaddf2794ce9f2a9279cc6f49c63c06aa7114a18c9b896b62cab8e64d700"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Psoas major",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.psoas.transverse",
+     "type": "select",
+     "prompt": "Psoas major, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "60715001cea67b660b504faa3e79c9676c98dcadadd8f81b8c21d8c1aebfe459",
+      "df4429755f12464eae153cbf99bdaf36c58d6ed458914fd9d8a2889118b6454e"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Psoas major",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.iliacus.sagittal",
+     "type": "select",
+     "prompt": "Iliacus, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "2ede1ea9a913c2beed7f214b27210ec7719f8237fe49f7a2c90c3b963088d916"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Iliacus",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.iliacus.frontal",
+     "type": "select",
+     "prompt": "Iliacus, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "cc72e2a41162aea7e557d4a605b48762169f47dbcc9e5a6f72fbe503fe82de16"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Iliacus",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.iliacus.transverse",
+     "type": "select",
+     "prompt": "Iliacus, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "7e2b5ea58d80dd2d37f062a5c8ee7ed33d15c335f82f9baa76ce8ba8024fa1be",
+      "c18f8df8541617a346ec0a5f88132b6073eeef686b66537632459fb62644909e"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Iliacus",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.tfl.sagittal",
+     "type": "select",
+     "prompt": "Tensor fasciae latae, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "3d9a4bb87292b149dc2bd93380a8c2b8088fc259fd4eee214be1c888307e0252"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Tensor fasciae latae",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.tfl.frontal",
+     "type": "select",
+     "prompt": "Tensor fasciae latae, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "717a522eced359b84d2bf0b8915826cbb57fe7069276d77920883555d2be13ac"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Tensor fasciae latae",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.tfl.transverse",
+     "type": "select",
+     "prompt": "Tensor fasciae latae, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "9f353e47e41e489dc44a7fef0ced92c8257449f454c16735fe6f92984fa268f4"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Tensor fasciae latae",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.bflh.sagittal",
+     "type": "select",
+     "prompt": "Biceps femoris, long head, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "aa7b60f4cfae1dd4fcb37db5c1a984a59bd19aa99aa119875f793a835f4d7391"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Biceps femoris, long head",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.bflh.frontal",
+     "type": "select",
+     "prompt": "Biceps femoris, long head, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "4128efdda4fc12c248968df4fcc6ebb32acd83116deda6670430e89fac848689",
+      "f6bc8b9c272fb133f7d64db248171d6c377c5becec54f0d24eb763d23d0f8de2"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Biceps femoris, long head",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.bflh.transverse",
+     "type": "select",
+     "prompt": "Biceps femoris, long head, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "93fda664bfdb96b0c092417d45370f14294d249a4df6604c5bb359e28dcfb80f"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Biceps femoris, long head",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.semimem.sagittal",
+     "type": "select",
+     "prompt": "Semimembranosus, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "6678afe1a512ea65f5d95af02f212bc5e11915d886db40da12d3e159cef013fa"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Semimembranosus",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.semimem.frontal",
+     "type": "select",
+     "prompt": "Semimembranosus, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "c225aa9fb4e10cb04147480a9f79097223861106a179c73b7c2676f57e7ab88b",
+      "c6671f5865da64c10e24fd9f28030bacc1fa834ecc12fb17f5004035c0b39ed0"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Semimembranosus",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.semimem.transverse",
+     "type": "select",
+     "prompt": "Semimembranosus, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "d5887f7319e3bba52076afef971a4bf388d1b61fb0d33bfc5c630978506644be"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Semimembranosus",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.semiten.sagittal",
+     "type": "select",
+     "prompt": "Semitendinosus, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "0c4a150d25d06cec2a6c788afe5b7b241e70f7700d3db1be74e0a3121465d887"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Semitendinosus",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.semiten.frontal",
+     "type": "select",
+     "prompt": "Semitendinosus, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "337479a459eb313b7bf705b160bc81528d0f5c5edf62cd0f31f05161702dfbde",
+      "e4a14ff0690fe41fec56a197ed6843014ef3ec9746afebd8001f1766703808bd"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Semitendinosus",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.semiten.transverse",
+     "type": "select",
+     "prompt": "Semitendinosus, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "b30726138e8bfd810c3305c2f83b4f575329889b71593b6a059cbb5629ec23cb"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Semitendinosus",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addmag.ant.sagittal",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "21484f73e16a37bc0c586493116810dcb60e4d3819143f811196ce139ba51540",
+      "ce2b82e10903094c053345febdb7639dff1fa0a44a959ebbf794221fd4468efc"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addmag.ant.frontal",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "fda5cbb7916b3000d81d397c988dbd530d8cf77fe90d3ea01666a96e12315ed7"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addmag.ant.transverse",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "b2087fcf10635d8425018332e3953bede555c0cfa5c9260059a7ce2a0613ee98",
+      "e0be1c34a6697dc6cfc09ecb4cd8e9a3370044bef5530bcc76509c74ecadfca0"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addmag.post.sagittal",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "2bf67450d177cdd62fbb1abd236d7fdd667a6c1bf6f6f2b0fd982e03f10e3798"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addmag.post.frontal",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "ce6cb7ff196e4cc826ce68c13a0f1900032e6014578a3c4bbd607ca047c630e4"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addmag.post.transverse",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "643326f4268a98e593969c31e7567d0131ec09599ee696bfc3ab871f7004060a",
+      "d0aa03a6fb2beeb181d9301887a067b762f0a0fcc6aa34d4c0020835c62bd36e"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addlong.sagittal",
+     "type": "select",
+     "prompt": "Adductor longus, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "7b4db3c24b6ba848faca95d518a92fe5dbd37f3437bcb996f9178c822dd5342a"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Adductor longus",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addlong.frontal",
+     "type": "select",
+     "prompt": "Adductor longus, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "75f70d6db93a25c949caaddedb3a1787e31af4dfc512729d74a0b8b718a218ba"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Adductor longus",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.addlong.transverse",
+     "type": "select",
+     "prompt": "Adductor longus, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "059c3f5bc79accd4920feaf438534ca4a8a5ed54d07e65093691e898e7da86e1"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Adductor longus",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmed.ant.sagittal",
+     "type": "select",
+     "prompt": "Gluteus medius, anterior fibers, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "061e9635c04a0c9dbd2c7316db3ca87892495a6f5d14f33f49ebc61ea2a6b568",
+      "4c6d139c1e1aa434655c6c56ece1509d55ead7ab06f0ae31682b949a33212787"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmed.ant.frontal",
+     "type": "select",
+     "prompt": "Gluteus medius, anterior fibers, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "c3d03e8bd62741b3ed043f9d749cc966dde315dbd981ad21e1bf1422613da68e"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmed.ant.transverse",
+     "type": "select",
+     "prompt": "Gluteus medius, anterior fibers, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "24f3839b7b11245acf195c7462dbdf8944f5c719f0344ae1a256cf7cf3958f51"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmed.post.sagittal",
+     "type": "select",
+     "prompt": "Gluteus medius, posterior fibers, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "f1dcdd40a2f46e17e7e71d325fb307fad1f99fd7b6afaee3d40345eee74f5a68",
+      "f39049a8953ad313edc7830e2bce6e64bc0b99c68a0177f01d6f0efcad9858bc"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmed.post.frontal",
+     "type": "select",
+     "prompt": "Gluteus medius, posterior fibers, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "5ea5a55a0ca9d284f5a60a37959834dfe992c52817c38696b5eb1b59f4a802f0"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmed.post.transverse",
+     "type": "select",
+     "prompt": "Gluteus medius, posterior fibers, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "db73629980569bb6c02fd55444f7fc039afe5ce1a8fd0e5d9673b2003239deae"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmax.upper.sagittal",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "2a9cc93546e8f0ab51a713c202602002f070c5ab88a141d1ae64fe7deb8b556d"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmax.upper.frontal",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "7ad86d9678e33442e9308db3d73bba09bdbaa97c00b92292d928c6f117ee83d9"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmax.upper.transverse",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "04603b221c2dba8dcbf3ca895db152845523050ddb234618b7d17f92392348e8"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmax.lower.sagittal",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "e04f95386202bee2670f39f7b5221037458bca25d716d0b2c0a05e4c3b505819"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmax.lower.frontal",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "80e52c1bd19f97ccdadb5afdba5b2a0f1af13b456df5bb409bbdf50723066129"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.gmax.lower.transverse",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "458d0b8c6a296fd919ee38faf85e8a7dd6d2607c966f73e33d3b4119edc0b015"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.pir.sagittal",
+     "type": "select",
+     "prompt": "Piriformis, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "38b975bb851c6daf8463cb86dbd81476478f36228687dd897290edf4f074774e",
+      "804cb5e3efd1ce085c1cfbce213a9ff696bff630de3bf86026c6656f44ecfee5"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Piriformis",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.pir.frontal",
+     "type": "select",
+     "prompt": "Piriformis, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "ffe00b385795fb673c760ee5e8de67a41bf4c23a4109cbcd29136e755195f26a"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Piriformis",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.pir.transverse",
+     "type": "select",
+     "prompt": "Piriformis, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "90dccfd3d6f4c36aef72568e6e3355cca6be941a7b93d078471c6cbe1f7212f6"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Piriformis",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.oi.sagittal",
+     "type": "select",
+     "prompt": "Obturator internus, femur-on-pelvis (FA), from anatomical position: sagittal plane",
+     "accept": [
+      "6b0f81b06131e60e67e600959f07c2e79c97807067f6352f2db2a37e7134252b"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Obturator internus",
+     "col": "Sagittal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.oi.frontal",
+     "type": "select",
+     "prompt": "Obturator internus, femur-on-pelvis (FA), from anatomical position: frontal plane",
+     "accept": [
+      "3ea9ca296e5a5d2a9a75538c003579b9b3786f32677f2d2c9e4f2acc28749a33",
+      "8b4b480e738edfa428d5530dd89969136cace22ece7e8f825c3b3979e3eaa1a0"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Obturator internus",
+     "col": "Frontal",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.oi.transverse",
+     "type": "select",
+     "prompt": "Obturator internus, femur-on-pelvis (FA), from anatomical position: transverse plane",
+     "accept": [
+      "6ae012517207328453260e830600d87e032f0b8a2f592a25f396f1d06c7916d8"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Obturator internus",
+     "col": "Transverse",
+     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+    },
+    {
+     "id": "act.io.sagittal",
+     "type": "select",
+     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "accept": [
+      "e487f9ee006e9bb7ee227e39b95bfeef512f429b7b1c03bc4a0a9f6447254669"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Internal oblique",
+     "col": "Sagittal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.io.frontal",
+     "type": "select",
+     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "accept": [
+      "4cd1c586618f104a49ddb0dcc53d0cceac115e98cc2834e59316fab306766764"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral lateral flexion",
+      "Contralateral lateral flexion",
+      "None"
+     ],
+     "row": "Internal oblique",
+     "col": "Frontal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.io.transverse",
+     "type": "select",
+     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "accept": [
+      "b7d4bde3a5eb92495bcf2ffd356bdf9ebf1aa36d16b99a767de94285601385a4"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral rotation",
+      "Contralateral rotation",
+      "None"
+     ],
+     "row": "Internal oblique",
+     "col": "Transverse",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ta.sagittal",
+     "type": "select",
+     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "accept": [
+      "396380396f3a3e6e89118247ee206e76363457ddade5e7a6c732016e962ba30c"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Transversus abdominis",
+     "col": "Sagittal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ta.frontal",
+     "type": "select",
+     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "accept": [
+      "6404caad54a57eb50d63c7d99d3d2a16f63f7341d9a8543040ee46e597b4abff"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral lateral flexion",
+      "Contralateral lateral flexion",
+      "None"
+     ],
+     "row": "Transversus abdominis",
+     "col": "Frontal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ta.transverse",
+     "type": "select",
+     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "accept": [
+      "bed2df53f99466707209286f738fdde861770f4fa9c77b353dd8428370c2cd73",
+      "c87fdd8f6e31fe5d74a955a79d28ab63d036d79e256b95dbdf7d0b171235d7fa"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral rotation",
+      "Contralateral rotation",
+      "None"
+     ],
+     "row": "Transversus abdominis",
+     "col": "Transverse",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.eo.sagittal",
+     "type": "select",
+     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "accept": [
+      "5221db673ad21edf166cfecc4b48d0e02c59b44a4829b58ff2370ded553c510e"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "External oblique",
+     "col": "Sagittal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.eo.frontal",
+     "type": "select",
+     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "accept": [
+      "46f4011e62f1a545b61dd9d6002a2091e55eee06b296a4c81ab6116c71c19113"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral lateral flexion",
+      "Contralateral lateral flexion",
+      "None"
+     ],
+     "row": "External oblique",
+     "col": "Frontal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.eo.transverse",
+     "type": "select",
+     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "accept": [
+      "abb08860577bf674db6af4193971f410343c5d6feb86899be53bf62cda594455"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral rotation",
+      "Contralateral rotation",
+      "None"
+     ],
+     "row": "External oblique",
+     "col": "Transverse",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ra.sagittal",
+     "type": "select",
+     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "accept": [
+      "5fcb30825078a0f654c06573750112483145b3c8d0d4a0d26d6b784af5e92b04"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Rectus abdominis",
+     "col": "Sagittal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ra.frontal",
+     "type": "select",
+     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "accept": [
+      "941e0e49e8f323bb724720437b3eb257ea76456fd79cbadfcf06b670df3c93be",
+      "ce2e756ddf7cd8f7f54cfa545c1ae227c92727a8b990280520b6f52a40c30cae"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral lateral flexion",
+      "Contralateral lateral flexion",
+      "None"
+     ],
+     "row": "Rectus abdominis",
+     "col": "Frontal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ra.transverse",
+     "type": "select",
+     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "accept": [
+      "a2e1364e75551668d9d7d6031d2047f5f64e60b80f0abddcd1c076dbe739984f"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "options": [
+      "Ipsilateral rotation",
+      "Contralateral rotation",
+      "None"
+     ],
+     "row": "Rectus abdominis",
+     "col": "Transverse",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.es.sagittal",
+     "type": "select",
+     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "accept": [
+      "3f04625a528b81556a77d90defcd3ddb2a2dcb7814c70e1cb40d4db135976ef2"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Erector spinae",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Erector spinae (group)",
+     "col": "Sagittal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.es.frontal",
+     "type": "select",
+     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "accept": [
+      "a5ba1e3a0628b7c2fa8b099aee47f5865a1e7881d06aef4a05093a4e772579da"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Erector spinae",
+     "options": [
+      "Ipsilateral lateral flexion",
+      "Contralateral lateral flexion",
+      "None"
+     ],
+     "row": "Erector spinae (group)",
+     "col": "Frontal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.es.transverse",
+     "type": "select",
+     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "accept": [
+      "11afe483ea147060752d56894753e9479e8459b1d1f00114ba858e8710e269e3",
+      "fa5412b10e0984641a6b68909207d6984d2e0dd4e97bdfd5f5fadd034708bb0c"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Erector spinae",
+     "options": [
+      "Ipsilateral rotation",
+      "Contralateral rotation",
+      "None"
+     ],
+     "row": "Erector spinae (group)",
+     "col": "Transverse",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ql.sagittal",
+     "type": "select",
+     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "accept": [
+      "610198f8f20a9214018b8922b20b44277801831c513d64da9e51ab276a6d16fd",
+      "9082d30308a59b3b0f5117139a76aadd84a8ef8624245105d07930f7cf4608b0"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Quadratus lumborum",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Quadratus lumborum",
+     "col": "Sagittal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ql.frontal",
+     "type": "select",
+     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "accept": [
+      "5bf9f0bf28c73e636ec2643baae7a4972afaa9bdee5c6bec0791162728913a4d"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Quadratus lumborum",
+     "options": [
+      "Ipsilateral lateral flexion",
+      "Contralateral lateral flexion",
+      "None"
+     ],
+     "row": "Quadratus lumborum",
+     "col": "Frontal",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.ql.transverse",
+     "type": "select",
+     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "accept": [
+      "57b74bf61ddb5d0081e567601006665edf89ee18456204f859dd4df69b065a3e"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Quadratus lumborum",
+     "options": [
+      "Ipsilateral rotation",
+      "Contralateral rotation",
+      "None"
+     ],
+     "row": "Quadratus lumborum",
+     "col": "Transverse",
+     "group": "Trunk muscles · thorax-on-pelvis, one side contracting"
+    },
+    {
+     "id": "act.sa.elev",
+     "type": "select",
+     "prompt": "Serratus anterior, scapula-on-thorax: elevation-depression",
+     "accept": [
+      "317935fbfa775b2740dc50d2485e4f5a5c4484178d67ce08830a93797c69f94b",
+      "a7d3374e1e3f2fd86734da62f85b22ee390c1f7bcb7bedb56c0f310954adb10a"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Serratus anterior",
+     "options": [
+      "Elevation",
+      "Depression",
+      "None"
+     ],
+     "row": "Serratus anterior",
+     "col": "Elevation-depression",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.sa.protr",
+     "type": "select",
+     "prompt": "Serratus anterior, scapula-on-thorax: protraction-retraction",
+     "accept": [
+      "222903bcd17d128668569807cd0ae24dfe61508ec61c54c3d3586c3251b00eba"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Serratus anterior",
+     "options": [
+      "Protraction",
+      "Retraction",
+      "None"
+     ],
+     "row": "Serratus anterior",
+     "col": "Protraction-retraction",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.sa.rot",
+     "type": "select",
+     "prompt": "Serratus anterior, scapula-on-thorax: upward-downward rotation",
+     "accept": [
+      "56b0e741aa6f7e61c02cd69b326aa3b3da7769dd116016493be89ebe57c4daa9"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Serratus anterior",
+     "options": [
+      "Upward rotation",
+      "Downward rotation",
+      "None"
+     ],
+     "row": "Serratus anterior",
+     "col": "Upward-downward rotation",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.lt.elev",
+     "type": "select",
+     "prompt": "Lower trapezius, scapula-on-thorax: elevation-depression",
+     "accept": [
+      "77233a1bc7fd8cf64af21b3d1d4b586374787c0c57a78145b639238e89885255"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers",
+     "options": [
+      "Elevation",
+      "Depression",
+      "None"
+     ],
+     "row": "Lower trapezius",
+     "col": "Elevation-depression",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.lt.protr",
+     "type": "select",
+     "prompt": "Lower trapezius, scapula-on-thorax: protraction-retraction",
+     "accept": [
+      "2a211b1288e8564ef1f66e5869ae76df749156bf8a22956664da5dd8ba21bd2b"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers",
+     "options": [
+      "Protraction",
+      "Retraction",
+      "None"
+     ],
+     "row": "Lower trapezius",
+     "col": "Protraction-retraction",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.lt.rot",
+     "type": "select",
+     "prompt": "Lower trapezius, scapula-on-thorax: upward-downward rotation",
+     "accept": [
+      "8443967084af4c31f228dd1345c5f47e0614cc7df431f60ecf1440d3dd361116"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers",
+     "options": [
+      "Upward rotation",
+      "Downward rotation",
+      "None"
+     ],
+     "row": "Lower trapezius",
+     "col": "Upward-downward rotation",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.pmin.elev",
+     "type": "select",
+     "prompt": "Pectoralis minor, scapula-on-thorax: elevation-depression",
+     "accept": [
+      "70885aa23230ad729c7645dd4ae62a2e2ef5b51d5fdacd2812becf64a8478085"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Pectoralis minor",
+     "options": [
+      "Elevation",
+      "Depression",
+      "None"
+     ],
+     "row": "Pectoralis minor",
+     "col": "Elevation-depression",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.pmin.protr",
+     "type": "select",
+     "prompt": "Pectoralis minor, scapula-on-thorax: protraction-retraction",
+     "accept": [
+      "51282eef9b90375772719b878a19d09aa55541ece12f781926c47ed1a8229892"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Pectoralis minor",
+     "options": [
+      "Protraction",
+      "Retraction",
+      "None"
+     ],
+     "row": "Pectoralis minor",
+     "col": "Protraction-retraction",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.pmin.rot",
+     "type": "select",
+     "prompt": "Pectoralis minor, scapula-on-thorax: upward-downward rotation",
+     "accept": [
+      "49050e9788f2232a5d4d93aaa1a7ad80b3eaf2322140992eeb06762f14b34443"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Pectoralis minor",
+     "options": [
+      "Upward rotation",
+      "Downward rotation",
+      "None"
+     ],
+     "row": "Pectoralis minor",
+     "col": "Upward-downward rotation",
+     "group": "Scapular muscles · scapula-on-thorax"
+    },
+    {
+     "id": "act.lat.sagittal",
+     "type": "select",
+     "prompt": "Latissimus dorsi, arm-on-thorax (glenohumeral): sagittal plane",
+     "accept": [
+      "2e8a64ca1314b02c40fcd44cffc2435fd6dadee3b6caa86f6828979a6e785f77"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi",
+     "options": [
+      "Flexion",
+      "Extension",
+      "None"
+     ],
+     "row": "Latissimus dorsi",
+     "col": "Sagittal",
+     "group": "Glenohumeral · arm-on-thorax"
+    },
+    {
+     "id": "act.lat.frontal",
+     "type": "select",
+     "prompt": "Latissimus dorsi, arm-on-thorax (glenohumeral): frontal plane",
+     "accept": [
+      "2eb88f618debc208b55ce0ee998541da6a0710c5020983b52c58bbb816a49704"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi",
+     "options": [
+      "Abduction",
+      "Adduction",
+      "None"
+     ],
+     "row": "Latissimus dorsi",
+     "col": "Frontal",
+     "group": "Glenohumeral · arm-on-thorax"
+    },
+    {
+     "id": "act.lat.transverse",
+     "type": "select",
+     "prompt": "Latissimus dorsi, arm-on-thorax (glenohumeral): transverse plane",
+     "accept": [
+      "25eced21ea644f5876948b31a13b16a171cd1c36a9de956a879280d678520bed"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi",
+     "options": [
+      "Internal rotation",
+      "External rotation",
+      "None"
+     ],
+     "row": "Latissimus dorsi",
+     "col": "Transverse",
+     "group": "Glenohumeral · arm-on-thorax"
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "slug": "06-reversed",
+   "title": "Reversed actions",
+   "sub": "Pelvis-on-femur and thorax-on-arm, distal segment fixed",
+   "minutes": [
+    10,
+    40
+   ],
+   "opensAt": "2026-11-13",
+   "input": "Chip select",
+   "framing": [
+    "Draft."
+   ],
+   "where": [
+    {
+     "label": "Neumann 2010, Kinesiology of the hip (JOSPT): pelvic-on-femoral actions",
+     "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+    },
+    {
+     "label": "Neumann 2017, Ch. 12: Hip",
+     "url": ""
+    }
+   ],
+   "cells": []
+  },
+  {
+   "id": "07",
+   "slug": "07-diaphragm",
+   "title": "The diaphragm",
+   "sub": "Attachments, crural vs costal, zone of apposition",
+   "minutes": [
+    5,
+    20
+   ],
+   "opensAt": "2026-11-13",
+   "input": "Dropdown and multiple choice",
+   "framing": [
+    "Draft."
+   ],
+   "where": [
+    {
+     "label": "Neumann 2017, Ch. 11: Kinesiology of ventilation",
+     "url": ""
+    },
+    {
+     "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
+    },
+    {
+     "label": "Hodges & Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2269747/"
+    }
+   ],
+   "cells": []
+  },
+  {
+   "id": "08",
+   "slug": "08-gait-chart",
+   "title": "Gait phase chart",
+   "sub": "Eight Rancho Los Amigos phases, one per screen",
+   "minutes": [
+    20,
+    60
+   ],
+   "opensAt": "2026-11-13",
+   "input": "Dropdowns and chips",
+   "framing": [
+    "Draft."
+   ],
+   "where": [
+    {
+     "label": "Neumann 2017, Ch. 15: Kinesiology of walking",
+     "url": ""
+    },
+    {
+     "label": "Perry & Burnfield 2010, Gait Analysis, 2nd ed. (answer-key source)",
+     "url": ""
+    },
+    {
+     "label": "Physiopedia, Muscle Activity During Gait (orientation only; the key follows Perry)",
+     "url": "https://www.physio-pedia.com/Muscle_Activity_During_Gait"
+    },
+    {
+     "label": "Physiopedia, The Gait Cycle (orientation only)",
+     "url": "https://www.physio-pedia.com/The_Gait_Cycle"
+    }
+   ],
+   "cells": []
+  },
+  {
+   "id": "09",
+   "slug": "09-pattern-map",
+   "title": "Pattern-to-phase map",
+   "sub": "Name the phase a resting pattern is parked in",
+   "minutes": [
+    5,
+    15
+   ],
+   "opensAt": "2026-11-13",
+   "input": "Multiple choice and matching",
+   "framing": [
+    "Draft."
+   ],
+   "where": [
+    {
+     "label": "Your Lesson 8 chart and Lesson 6 reversed-action table",
+     "url": ""
+    },
+    {
+     "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
+    }
+   ],
+   "cells": []
+  },
+  {
+   "id": "10",
+   "slug": "10-synthesis",
+   "title": "Synthesis",
+   "sub": "Three short written answers, read by the instructors",
+   "minutes": [
+    10,
+    20
+   ],
+   "opensAt": "2026-11-13",
+   "input": "Free text",
+   "framing": [
+    "Draft."
+   ],
+   "where": [
+    {
+     "label": "Your Field Atlas pages from Lessons 1 to 9",
+     "url": ""
+    }
+   ],
+   "cells": []
+  }
+ ],
+ "term": "2026fa",
+ "salt": "68969c65aaca24aee368e823d54ecdd2",
+ "optionSets": {
+  "sites": [
+   {
+    "label": "Innominate",
+    "options": [
+     "ASIS",
+     "Iliac crest, anterior",
+     "Iliac crest, posterior",
+     "Iliac fossa",
+     "Gluteal surface of ilium (between anterior and posterior gluteal lines)",
+     "Posterior ilium (behind the posterior gluteal line)",
+     "Ischial tuberosity",
+     "Ischial spine",
+     "Inferior pubic ramus and ischial ramus",
+     "Body of pubis",
+     "Pubic crest and symphysis",
+     "Obturator membrane and margin, pelvic surface"
+    ]
+   },
+   {
+    "label": "Sacrum and coccyx",
+    "options": [
+     "Anterior (pelvic) sacrum, S2-S4",
+     "Posterior sacrum",
+     "Lateral sacrum and coccyx"
+    ]
+   },
+   {
+    "label": "Femur",
+    "options": [
+     "Greater trochanter, superior border",
+     "Greater trochanter, lateral surface",
+     "Greater trochanter, medial surface",
+     "Lesser trochanter",
+     "Gluteal tuberosity",
+     "Linea aspera",
+     "Adductor tubercle"
+    ]
+   },
+   {
+    "label": "Leg",
+    "options": [
+     "Head of fibula",
+     "Posteromedial tibial condyle",
+     "Proximal medial tibia (pes anserinus)"
+    ]
+   },
+   {
+    "label": "Spine",
+    "options": [
+     "Bodies of L1-L3 (crura)",
+     "Bodies and discs T12-L5, and lumbar transverse processes",
+     "Transverse processes L1-L4",
+     "Spinous processes T7-T12",
+     "Spinous processes T6-T12",
+     "Ribs and vertebral processes superiorly (thoracic and cervical)"
+    ]
+   },
+   {
+    "label": "Rib cage",
+    "options": [
+     "Inner surfaces of ribs 7-12 and costal cartilages",
+     "Outer surfaces of ribs 5-12",
+     "Inferior borders of ribs 10-12",
+     "Rib 12",
+     "Outer surfaces of ribs 1-8 (or 9)",
+     "Ribs 3-5 near the costal cartilages",
+     "Xiphoid process and costal cartilages 5-7",
+     "Lower 3-4 ribs, posterior"
+    ]
+   },
+   {
+    "label": "Shoulder",
+    "options": [
+     "Coracoid process",
+     "Medial border of scapula, anterior (costal) surface",
+     "Spine of scapula, medial end",
+     "Inferior angle of scapula",
+     "Floor of intertubercular groove of humerus"
+    ]
+   },
+   {
+    "label": "Soft tissue",
+    "options": [
+     "Central tendon",
+     "Linea alba",
+     "Thoracolumbar fascia",
+     "Iliotibial tract",
+     "Inguinal ligament",
+     "Perineal body and anococcygeal ligament",
+     "Tendinous arch of the levator ani"
+    ]
+   }
   ]
+ },
+ "built": "2026-11-06T16:45Z",
+ "keySource": "current.xlsx"
 }

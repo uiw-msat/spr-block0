@@ -1,4 +1,4 @@
-"""Generate the thin lesson wrapper pages from data/content.json. Run from repo root."""
+"""Generate the thin lesson wrapper pages from data/lessons.json. Run from repo root."""
 import json, pathlib
 
 TPL = """<!DOCTYPE html>
@@ -27,12 +27,13 @@ TPL = """<!DOCTYPE html>
   <footer class="site-footer">
     <div class="wrap"><p><span data-course-code>ATHP 6190</span> · University of the Incarnate Word, MSAT · <span data-instructors></span></p></div>
   </footer>
+  <script src="../js/check.js"></script>
   <script src="../js/app.js"></script>
 </body>
 </html>
 """
 
-content = json.loads(pathlib.Path("data/content.json").read_text())
+content = json.loads(pathlib.Path("data/lessons.json").read_text())
 out = pathlib.Path("lessons")
 out.mkdir(exist_ok=True)
 for L in content["lessons"]:

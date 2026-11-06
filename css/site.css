@@ -269,3 +269,28 @@ tr.right .mark-text, .mc.right .mark-text { color: var(--ok); }
   .site-header, .site-footer, .banner, .btn, .check-bar, .pager, .where { display: none !important; }
   body { background: #fff; }
 }
+
+/* ---------- checking and matrix (v2) ---------- */
+.cell-ref { margin-top: .4rem; font-size: .8rem; color: var(--warn); background: var(--warn-soft); padding: .35rem .5rem; border-radius: 4px; }
+.cell-ref[hidden] { display: none; }
+.lesson-grid.wide { grid-template-columns: minmax(0, 1fr); }
+.lesson-grid > * { min-width: 0; }
+.lesson-grid.wide .where { position: static; }
+.matrix-group { font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); margin: 1.75rem 0 .5rem; }
+.matrix-group:first-child { margin-top: .5rem; }
+.cell-table.matrix th.row-head { font-weight: 600; font-size: .88rem; width: 15rem; text-transform: none; letter-spacing: 0; color: var(--ink); background: transparent; }
+.cell-table.matrix td { min-width: 10rem; }
+.cell-table.matrix td .mark-text { display: block; font-size: .75rem; margin-top: .2rem; min-height: 1em; }
+.cell-table.matrix td.na { color: var(--ink-3); text-align: center; }
+td.wrong { background: var(--bad-soft); }
+td.wrong select { border-color: var(--bad); }
+td.right { background: var(--ok-soft); }
+td.wrong .mark-text { color: var(--bad); font-weight: 600; }
+td.right .mark-text { color: var(--ok); font-weight: 600; }
+.check-bar { position: sticky; bottom: 0; z-index: 2; box-shadow: 0 -6px 16px rgba(29,31,34,.06); }
+.btn[hidden] { display: none; }
+.matrix-wrap { overflow-x: auto; }
+@media (max-width: 900px) { .cell-table.matrix th.row-head { width: auto; } }
+.where.where-inline { margin: .5rem 0 0; max-width: 760px; }
+.where.where-inline ul { columns: 2; column-gap: 2rem; }
+@media (max-width: 900px) { .where.where-inline ul { columns: 1; } }

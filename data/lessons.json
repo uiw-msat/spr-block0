@@ -1,0 +1,326 @@
+{
+  "preview": true,
+  "course": {
+    "code": "ATHP 6190",
+    "title": "Spine & Postural Restoration",
+    "block": "Block 0: Anatomy and Gait Foundations",
+    "program": "Master of Science in Athletic Training, University of the Incarnate Word",
+    "term": "Fall 2026",
+    "instructors": [
+      "Lyle Danley, MS, LAT, ATC, CSCS",
+      "E. Joanna Soles, DHSc, LAT, ATC"
+    ],
+    "certificateDue": "2026-11-18",
+    "unit1": "2026-11-20",
+    "contact": "danley@uiwtx.edu, soles@uiwtx.edu",
+    "canvasUrl": ""
+  },
+  "lessons": [
+    {
+      "id": "01",
+      "slug": "01-conventions",
+      "title": "Conventions",
+      "sub": "Planes, axes, open vs reversed action, the pelvic convention",
+      "minutes": [
+        5,
+        15
+      ],
+      "opensAt": "2026-11-06",
+      "input": "Multiple choice",
+      "framing": [
+        "Most confusion in this material is not about anatomy; it is about naming. The same pelvis can be called rotated left or right depending on whose textbook you open. This lesson fixes the vocabulary the rest of the course uses.",
+        "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page."
+      ],
+      "where": [
+        {
+          "label": "Neumann 2017, Ch. 1: Getting started (planes, axes, kinematics)",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2010, Kinesiology of the hip (JOSPT): femoral-on-pelvic vs pelvic-on-femoral",
+          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+        },
+        {
+          "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
+        }
+      ],
+      "layout": "mc"
+    },
+    {
+      "id": "02",
+      "slug": "02-landmarks",
+      "title": "Landmarks",
+      "sub": "Innominate, sacrum, femur, rib cage, lumbar and thoracic spine",
+      "minutes": [
+        5,
+        20
+      ],
+      "opensAt": "2026-11-06",
+      "input": "Dropdown per landmark",
+      "framing": [
+        "The muscles in this course attach to a small set of bony landmarks on the pelvis, femur, spine, rib cage, and scapula. Before naming attachments in Lesson 4, confirm which bone carries each landmark.",
+        "Pick the bone for each landmark. The Lesson 4 attachment list uses these same landmarks."
+      ],
+      "where": [
+        {
+          "label": "OpenStax A&P 2e, 7.4 The Vertebral Column; 7.5 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+        }
+      ],
+      "layout": "table"
+    },
+    {
+      "id": "03",
+      "slug": "03-viscera",
+      "title": "Visceral anatomy",
+      "sub": "Which side the lateralized organs sit on",
+      "minutes": [
+        5,
+        15
+      ],
+      "opensAt": "2026-11-06",
+      "input": "Dropdown per organ",
+      "framing": [
+        "The thoracic and abdominal cavities are not mirror images. Unit 1 begins from the sides and levels of the major organs, so this lesson asks you to state them once.",
+        "It asks only where the organs are. What that asymmetry does, if anything, to posture and gait is a question for Unit 1. Side answers refer to where the greater part of the organ lies relative to the midline in the anatomical position."
+      ],
+      "where": [
+        {
+          "label": "OpenStax A&P 2e, 19.1 Heart Anatomy",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+        },
+        {
+          "label": "OpenStax A&P 2e, 21.1 Anatomy of the Lymphatic and Immune Systems (spleen)",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+        },
+        {
+          "label": "OpenStax A&P 2e, 22.2 The Lungs",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+        },
+        {
+          "label": "OpenStax A&P 2e, 23.4 The Stomach",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+        },
+        {
+          "label": "OpenStax A&P 2e, 23.6 Accessory Organs in Digestion (liver)",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+        },
+        {
+          "label": "OpenStax A&P 2e, 25.3 Gross Anatomy of the Kidney",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+        },
+        {
+          "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
+        }
+      ],
+      "layout": "table"
+    },
+    {
+      "id": "04",
+      "slug": "04-attachments",
+      "title": "Attachments",
+      "sub": "Origin and insertion for the course's 25 muscles",
+      "minutes": [
+        10,
+        40
+      ],
+      "opensAt": "2026-11-06",
+      "input": "Dropdown per cell",
+      "framing": [
+        "For each muscle, choose the origin and insertion from the attachment list. Where a muscle has a broad origin, any of its listed attachments is accepted.",
+        "Fiber distinctions the course uses are listed as separate rows: diaphragm crural vs costal, adductor magnus anterior vs posterior head, and gluteus maximus upper vs lower fibers."
+      ],
+      "where": [
+        {
+          "label": "Neumann 2017, Appendix II (upper extremity attachments): serratus anterior, lower trapezius, pectoralis minor, latissimus dorsi",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Appendix III (axial attachments): diaphragm, abdominals, erector spinae, quadratus lumborum, pelvic floor",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Appendix IV (lower extremity attachments): hip muscles",
+          "url": ""
+        },
+        {
+          "label": "OpenStax A&P 2e, 11.4 Axial Muscles of the Abdominal Wall and Thorax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+        }
+      ],
+      "layout": "matrix"
+    },
+    {
+      "id": "05",
+      "slug": "05-open-chain",
+      "title": "Open-chain triplanar actions",
+      "sub": "Femur-on-pelvis and arm-on-thorax, with fiber distinctions",
+      "minutes": [
+        10,
+        40
+      ],
+      "opensAt": "2026-11-06",
+      "input": "Dropdown per cell",
+      "framing": [
+        "Give each muscle's action in each plane, open chain, from anatomical position: the femur moving on a fixed pelvis for hip muscles, the thorax moving on a fixed pelvis for trunk muscles (one side contracting), and the scapula or arm moving on the thorax for shoulder muscles.",
+        "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the distal segment fixed."
+      ],
+      "where": [
+        {
+          "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
+          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+        },
+        {
+          "label": "Neumann 2017, Ch. 12: Hip",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 10: Axial skeleton, muscle and joint interactions (trunk)",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 5: Shoulder complex (scapular muscles, latissimus dorsi)",
+          "url": ""
+        }
+      ],
+      "layout": "matrix"
+    },
+    {
+      "id": "06",
+      "slug": "06-reversed",
+      "title": "Reversed actions",
+      "sub": "Pelvis-on-femur and thorax-on-arm, distal segment fixed",
+      "minutes": [
+        10,
+        40
+      ],
+      "opensAt": "2026-11-13",
+      "input": "Chip select",
+      "framing": [
+        "Draft."
+      ],
+      "where": [
+        {
+          "label": "Neumann 2010, Kinesiology of the hip (JOSPT): pelvic-on-femoral actions",
+          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+        },
+        {
+          "label": "Neumann 2017, Ch. 12: Hip",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "07-diaphragm",
+      "title": "The diaphragm",
+      "sub": "Attachments, crural vs costal, zone of apposition",
+      "minutes": [
+        5,
+        20
+      ],
+      "opensAt": "2026-11-13",
+      "input": "Dropdown and multiple choice",
+      "framing": [
+        "Draft."
+      ],
+      "where": [
+        {
+          "label": "Neumann 2017, Ch. 11: Kinesiology of ventilation",
+          "url": ""
+        },
+        {
+          "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
+        },
+        {
+          "label": "Hodges & Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2269747/"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "08-gait-chart",
+      "title": "Gait phase chart",
+      "sub": "Eight Rancho Los Amigos phases, one per screen",
+      "minutes": [
+        20,
+        60
+      ],
+      "opensAt": "2026-11-13",
+      "input": "Dropdowns and chips",
+      "framing": [
+        "Draft."
+      ],
+      "where": [
+        {
+          "label": "Neumann 2017, Ch. 15: Kinesiology of walking",
+          "url": ""
+        },
+        {
+          "label": "Perry & Burnfield 2010, Gait Analysis, 2nd ed. (answer-key source)",
+          "url": ""
+        },
+        {
+          "label": "Physiopedia, Muscle Activity During Gait (orientation only; the key follows Perry)",
+          "url": "https://www.physio-pedia.com/Muscle_Activity_During_Gait"
+        },
+        {
+          "label": "Physiopedia, The Gait Cycle (orientation only)",
+          "url": "https://www.physio-pedia.com/The_Gait_Cycle"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "09-pattern-map",
+      "title": "Pattern-to-phase map",
+      "sub": "Name the phase a resting pattern is parked in",
+      "minutes": [
+        5,
+        15
+      ],
+      "opensAt": "2026-11-13",
+      "input": "Multiple choice and matching",
+      "framing": [
+        "Draft."
+      ],
+      "where": [
+        {
+          "label": "Your Lesson 8 chart and Lesson 6 reversed-action table",
+          "url": ""
+        },
+        {
+          "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "10-synthesis",
+      "title": "Synthesis",
+      "sub": "Three short written answers, read by the instructors",
+      "minutes": [
+        10,
+        20
+      ],
+      "opensAt": "2026-11-13",
+      "input": "Free text",
+      "framing": [
+        "Draft."
+      ],
+      "where": [
+        {
+          "label": "Your Field Atlas pages from Lessons 1 to 9",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "term": "2026fa",
+  "salt": "68969c65aaca24aee368e823d54ecdd2"
+}

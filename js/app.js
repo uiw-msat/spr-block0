@@ -1,18 +1,18 @@
-/* SPR Block 0 — routing, gating, progress store, rendering.
-   Vanilla JS, no dependencies. Answer checking (check.js) is not wired in the shell. */
+/* SPR Block 0 — routing, gating, progress store, rendering, answer checking.
+   Vanilla JS, no dependencies. Hashing lives in check.js. */
 (function () {
   "use strict";
 
   var ROOT = document.body.getAttribute("data-root") || ".";
   var PAGE = document.body.getAttribute("data-page");
   var STORE_KEY = "spr-block0-progress";
+  var MISSES_FOR_REF = 3;
 
   /* ---------- progress store: localStorage with in-memory fallback ---------- */
   var memory = null;
   var storageOK = true;
 
   function blank() { return { version: 1, studentName: "", lessons: {}, synthesis: {} }; }
-
   function load() {
     if (memory) return memory;
     try {
@@ -27,8 +27,12 @@
   }
   function lessonState(id) {
     var p = load();
-    if (!p.lessons[id]) p.lessons[id] = { answers: {}, passed: false, attempts: 0, passedAt: null };
-    return p.lessons[id];
+    var s = p.lessons[id] || (p.lessons[id] = {});
+    s.answers = s.answers || {};
+    s.misses = s.misses || {};
+    s.attempts = s.attempts || 0;
+    if (s.passed === undefined) { s.passed = false; s.passedAt = null; }
+    return s;
   }
 
   function exportProgress() {
@@ -67,7 +71,11 @@
     var d = new Date(iso + "T12:00:00");
     return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
   }
-  function today() { var d = new Date(); return d.toISOString().slice(0, 10); }
+  function today() {
+    var d = new Date();
+    return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+  }
+  function safeId(s) { return "f-" + s.replace(/[^a-z0-9]+/gi, "-"); }
 
   /* ---------- gating ---------- */
   function status(content, idx) {
@@ -76,8 +84,7 @@
     if (st.passed) return { key: "passed", label: "Passed" };
     if (content.preview) return { key: "open", label: "Open" };
     if (L.opensAt > today()) return { key: "locked", label: "Opens " + fmtDate(L.opensAt) };
-    if (idx > 0 && !lessonState(content.lessons[idx - 1].id).passed)
-      return { key: "locked", label: "Locked" };
+    if (idx > 0 && !lessonState(content.lessons[idx - 1].id).passed) return { key: "locked", label: "Locked" };
     return { key: "open", label: "Open" };
   }
 
@@ -86,13 +93,12 @@
     var c = content.course;
     document.querySelectorAll("[data-course-code]").forEach(function (n) { n.textContent = c.code; });
     document.querySelectorAll("[data-course-title]").forEach(function (n) { n.textContent = c.title; });
-    var foot = document.querySelector("[data-instructors]");
-    if (foot) foot.textContent = c.instructors.join(" · ");
+    document.querySelectorAll("[data-instructors]").forEach(function (n) { n.textContent = c.instructors.join(" · "); });
     if (content.preview) {
       var b = el("div", { class: "banner", role: "status" }, [
         el("div", { class: "wrap" }, [
           el("strong", { text: "Preview" }),
-          el("span", { text: "Instructor review build. All lessons unlocked; answers are not checked; nothing here is final." })
+          el("span", { text: "Instructor review build. All lessons unlocked. Answers check against the draft key" + (content.built ? " built " + content.built.replace("T", " ") : "") + "." })
         ])
       ]);
       document.body.insertBefore(b, document.body.firstChild);
@@ -126,7 +132,7 @@
     Object.keys(halves).sort().forEach(function (date, h) {
       var idxs = halves[date];
       host.appendChild(el("div", { class: "half-label" }, [
-        el("span", { text: (h === 0 ? "First half" : "Second half") + " · Lessons " + content.lessons[idxs[0]].id.replace(/^0/, "") + "–" + content.lessons[idxs[idxs.length - 1]].id.replace(/^0/, "") }),
+        el("span", { text: (h === 0 ? "First half" : "Second half") + " · Lessons " + Number(content.lessons[idxs[0]].id) + "–" + Number(content.lessons[idxs[idxs.length - 1]].id) }),
         el("span", { text: "Opens " + fmtDate(date) })
       ]));
       var ul = el("ul", { class: "lesson-list" });
@@ -146,7 +152,8 @@
       host.appendChild(ul);
     });
 
-    var first = content.lessons.findIndex(function (L, i) { return status(content, i).key === "open"; });
+    var first = -1;
+    content.lessons.forEach(function (L, i) { if (first < 0 && status(content, i).key === "open") first = i; });
     var start = document.getElementById("start");
     if (first >= 0) { start.href = "lessons/" + content.lessons[first].slug + ".html"; start.textContent = passed ? "Continue" : "Start Lesson 1"; }
     else start.setAttribute("aria-disabled", "true");
@@ -162,17 +169,118 @@
       file.addEventListener("change", function () {
         if (!file.files[0]) return;
         importProgress(file.files[0], function (err) {
-          alert(err ? "That file could not be read as SPR progress." : "Progress imported.");
-          if (!err) location.reload();
+          var msg = document.getElementById("import-msg");
+          if (msg) msg.textContent = err ? "That file could not be read as SPR progress." : "Progress imported.";
+          if (!err) setTimeout(function () { location.reload(); }, 600);
         });
       });
     }
   }
 
+  /* ---------- inputs ---------- */
+  function buildSelect(c, st, content, label) {
+    var sel = el("select", { id: safeId(c.id), "aria-label": label || c.prompt });
+    sel.appendChild(el("option", { value: "", text: "Choose…" }));
+    var addOpt = function (parent, o) {
+      var opt = el("option", { value: o, text: o });
+      if (st.answers[c.id] === o) opt.selected = true;
+      parent.appendChild(opt);
+    };
+    if (c.optionSet) {
+      content.optionSets[c.optionSet].forEach(function (g) {
+        var og = el("optgroup", { label: g.label });
+        g.options.forEach(function (o) { addOpt(og, o); });
+        sel.appendChild(og);
+      });
+    } else c.options.forEach(function (o) { addOpt(sel, o); });
+    sel.addEventListener("change", function () { st.answers[c.id] = sel.value; save(); clearMark(c.id); });
+    return sel;
+  }
+
+  function refNode(c) { return el("div", { class: "cell-ref", "data-ref": c.id, hidden: "" }, [el("strong", { text: "Where to look: " }), c.ref || "See the panel on the right."]); }
+
+  function selectTable(cells, st, content) {
+    var tbody = el("tbody");
+    cells.forEach(function (c) {
+      tbody.appendChild(el("tr", { "data-cell": c.id }, [
+        el("td", null, [el("label", { for: safeId(c.id), text: c.prompt }), c.optional ? el("span", { class: "optional-tag", text: "Optional" }) : null, refNode(c)]),
+        el("td", { class: "answer" }, [buildSelect(c, st, content)]),
+        el("td", { class: "mark" }, [el("span", { class: "mark-text" })])
+      ]));
+    });
+    return el("table", { class: "cell-table" }, [
+      el("thead", null, [el("tr", null, [el("th", { text: "Item" }), el("th", { text: "Answer" }), el("th", { text: "" })])]),
+      tbody
+    ]);
+  }
+
+  function matrix(cells, st, content) {
+    var groups = [], byGroup = {};
+    cells.forEach(function (c) {
+      var g = c.group || "";
+      if (!byGroup[g]) { byGroup[g] = { rows: [], map: {}, cols: [] }; groups.push(g); }
+      var G = byGroup[g];
+      if (G.cols.indexOf(c.col) < 0) G.cols.push(c.col);
+      if (!G.map[c.row]) { G.map[c.row] = {}; G.rows.push(c.row); }
+      G.map[c.row][c.col] = c;
+    });
+    var wrap = el("div", { class: "matrix-wrap" });
+    groups.forEach(function (g) {
+      if (g) wrap.appendChild(el("h3", { class: "matrix-group", text: g }));
+      var cols = byGroup[g].cols;
+      var head = el("tr", null, [el("th", { text: "Muscle" })].concat(cols.map(function (k) { return el("th", { text: k }); })));
+      var tbody = el("tbody");
+      byGroup[g].rows.forEach(function (r) {
+        var tr = el("tr", null, [el("th", { scope: "row", class: "row-head", text: r })]);
+        cols.forEach(function (k) {
+          var c = byGroup[g].map[r][k];
+          if (!c) { tr.appendChild(el("td", { class: "na", text: "—" })); return; }
+          tr.appendChild(el("td", { "data-cell": c.id }, [buildSelect(c, st, content, r + ": " + k), el("span", { class: "mark-text" }), refNode(c)]));
+        });
+        tbody.appendChild(tr);
+      });
+      wrap.appendChild(el("table", { class: "cell-table matrix" }, [el("thead", null, [head]), tbody]));
+    });
+    return wrap;
+  }
+
+  function mcItem(c, n, st) {
+    var opts = el("div", { class: "opts" });
+    c.options.forEach(function (o, i) {
+      var input = el("input", { type: "radio", name: c.id, value: o, id: safeId(c.id) + "-" + i });
+      if (st.answers[c.id] === o) input.checked = true;
+      input.addEventListener("change", function () { st.answers[c.id] = o; save(); clearMark(c.id); });
+      opts.appendChild(el("label", { for: safeId(c.id) + "-" + i }, [input, el("span", { text: o })]));
+    });
+    return el("fieldset", { class: "mc", "data-cell": c.id }, [
+      el("legend", null, [el("span", { class: "qnum", text: n + "." }), c.prompt]),
+      opts, el("span", { class: "mark-text" }), refNode(c)
+    ]);
+  }
+
+  function clearMark(id) {
+    var n = document.querySelector('[data-cell="' + id + '"]');
+    if (!n) return;
+    n.classList.remove("right", "wrong");
+    var m = n.querySelector(".mark-text"); if (m) m.textContent = "";
+  }
+
+  function mark(id, ok, misses) {
+    var n = document.querySelector('[data-cell="' + id + '"]');
+    if (!n) return;
+    n.classList.remove("right", "wrong");
+    n.classList.add(ok ? "right" : "wrong");
+    var m = n.querySelector(".mark-text");
+    if (m) m.textContent = ok ? "Correct" : "Not correct";
+    var ref = n.querySelector(".cell-ref");
+    if (ref) { if (!ok && misses >= MISSES_FOR_REF) ref.removeAttribute("hidden"); else ref.setAttribute("hidden", ""); }
+  }
+
   /* ---------- lesson ---------- */
   function renderLesson(content) {
     var id = document.body.getAttribute("data-lesson");
-    var idx = content.lessons.findIndex(function (L) { return L.id === id; });
+    var idx = -1;
+    content.lessons.forEach(function (L, i) { if (L.id === id) idx = i; });
     var L = content.lessons[idx];
     var st = lessonState(id);
     var s = status(content, idx);
@@ -182,12 +290,12 @@
     main.appendChild(el("nav", { class: "crumbs", "aria-label": "Breadcrumb" }, [
       el("a", { href: ROOT + "/index.html", text: "Block 0" }), " / Lesson " + Number(L.id)
     ]));
+    var statusSpan = el("span", { text: "Status: " + s.label });
     main.appendChild(el("header", { class: "lesson-head" }, [
       el("div", null, [el("p", { class: "eyebrow", text: "Lesson " + Number(L.id) + " of " + content.lessons.length }), el("h1", { text: L.title })]),
       el("div", { class: "lesson-meta" }, [
         el("span", { text: L.minutes[0] + " min fluent · " + L.minutes[1] + " min learning" }),
-        el("span", { text: L.input }),
-        el("span", { text: "Status: " + s.label })
+        el("span", { text: L.input }), statusSpan
       ])
     ]));
 
@@ -205,30 +313,61 @@
     L.framing.forEach(function (p) { framing.appendChild(el("p", { text: p })); });
     left.appendChild(framing);
 
+    var cells = L.cells || [];
+    var required = cells.filter(function (c) { return !c.optional; });
     var work = el("section", { class: "work", "aria-labelledby": "work-h" });
-    var required = L.cells.filter(function (c) { return !c.optional; }).length;
     work.appendChild(el("div", { class: "work-head" }, [
       el("h2", { id: "work-h", text: "Your answers" }),
-      el("span", { class: "work-count", text: L.cells.length ? required + " required" : "" })
+      el("span", { class: "work-count", text: cells.length ? required.length + " items" : "" })
     ]));
 
-    if (!L.cells.length) {
+    var next = content.lessons[idx + 1];
+    if (!cells.length) {
       work.appendChild(el("div", { class: "locked-panel" }, [el("p", { class: "muted", text: "Items for this lesson are not drafted yet." })]));
     } else {
-      var selects = L.cells.filter(function (c) { return c.type === "select"; });
-      var mcs = L.cells.filter(function (c) { return c.type === "mc"; });
-      if (selects.length) work.appendChild(selectTable(selects, st));
-      mcs.forEach(function (c, i) { work.appendChild(mcItem(c, i + 1, st)); });
+      if (L.layout === "mc") cells.forEach(function (c, i) { work.appendChild(mcItem(c, i + 1, st)); });
+      else if (L.layout === "matrix") work.appendChild(matrix(cells, st, content));
+      else work.appendChild(selectTable(cells, st, content));
 
-      var result = el("span", { class: "result", role: "status", "aria-live": "polite", text: "Answers save automatically." });
+      var result = el("span", { class: "result", role: "status", "aria-live": "polite",
+        text: st.passed ? "Lesson passed. You can still change answers; it stays passed." : "Answers save automatically." });
+      if (st.passed) result.className = "result ok";
       var btn = el("button", { class: "btn primary", type: "button", text: "Check answers" });
+      var nextBtn = next ? el("a", { class: "btn", href: next.slug + ".html", text: "Next lesson →" }) : el("a", { class: "btn", href: ROOT + "/certificate.html", text: "Certificate →" });
+      if (!st.passed) nextBtn.setAttribute("hidden", "");
       btn.addEventListener("click", function () {
-        var missing = L.cells.filter(function (c) { return !c.optional && !st.answers[c.id]; }).length;
-        if (missing) { result.className = "result bad"; result.textContent = missing + (missing === 1 ? " item is" : " items are") + " still blank."; return; }
-        result.className = "result";
-        result.textContent = content.preview ? "Preview build: answer checking is not wired yet." : "Checking…";
+        var blankN = required.filter(function (c) { return !st.answers[c.id]; }).length;
+        if (blankN) { result.className = "result bad"; result.textContent = blankN + (blankN === 1 ? " item is" : " items are") + " still blank."; return; }
+        btn.disabled = true;
+        window.SPRCheck.checkCells(content.salt, cells, st.answers).then(function (res) {
+          st.attempts += 1;
+          var wrong = 0;
+          cells.forEach(function (c) {
+            if (res[c.id] === null) return;
+            if (!res[c.id]) { wrong += 1; st.misses[c.id] = (st.misses[c.id] || 0) + 1; }
+            mark(c.id, res[c.id], st.misses[c.id] || 0);
+          });
+          if (!wrong) {
+            if (!st.passed) { st.passed = true; st.passedAt = new Date().toISOString(); }
+            result.className = "result ok";
+            result.textContent = "All correct. Lesson passed.";
+            statusSpan.textContent = "Status: Passed";
+            nextBtn.removeAttribute("hidden");
+          } else {
+            result.className = "result bad";
+            result.textContent = wrong + " of " + cells.length + " not correct. Wrong items are marked; items missed " + MISSES_FOR_REF + " times show where to look.";
+            var first = document.querySelector(".wrong select, .wrong input");
+            if (first) first.focus();
+          }
+          save();
+          btn.disabled = false;
+        }).catch(function () {
+          result.className = "result bad";
+          result.textContent = "This browser could not check answers. Use a current version of Chrome, Edge, Firefox, or Safari.";
+          btn.disabled = false;
+        });
       });
-      work.appendChild(el("div", { class: "check-bar" }, [result, btn]));
+      work.appendChild(el("div", { class: "check-bar" }, [result, el("div", { class: "btn-row" }, [btn, nextBtn])]));
     }
     left.appendChild(work);
 
@@ -239,53 +378,21 @@
     });
     if (!L.where.length) ul.appendChild(el("li", { class: "muted", text: "To be added." }));
     where.appendChild(ul);
-    where.appendChild(el("p", { class: "src-note", text: "A wrong answer is marked, never revealed. After three misses on the same item, its specific reference appears beside it." }));
+    where.appendChild(el("p", { class: "src-note", text: "A wrong answer is marked, never revealed. After " + MISSES_FOR_REF + " misses on the same item, its specific reference appears beside it." }));
 
-    main.appendChild(el("div", { class: "lesson-grid" }, [left, where]));
+    if (L.layout === "matrix") {
+      where.classList.add("where-inline");
+      left.insertBefore(where, work);
+      main.appendChild(el("div", { class: "lesson-grid wide" }, [left]));
+    } else {
+      main.appendChild(el("div", { class: "lesson-grid" }, [left, where]));
+    }
 
-    var prev = content.lessons[idx - 1], next = content.lessons[idx + 1];
+    var prev = content.lessons[idx - 1];
     main.appendChild(el("nav", { class: "pager", "aria-label": "Lesson navigation" }, [
       prev ? el("a", { href: prev.slug + ".html", text: "← " + prev.title }) : el("span"),
       next ? el("a", { href: next.slug + ".html", text: next.title + " →" }) : el("a", { href: ROOT + "/certificate.html", text: "Certificate →" })
     ]));
-  }
-
-  function selectTable(cells, st) {
-    var tbody = el("tbody");
-    cells.forEach(function (c) {
-      var sel = el("select", { id: "f-" + c.id, "aria-label": c.prompt });
-      sel.appendChild(el("option", { value: "", text: "Choose…" }));
-      c.options.forEach(function (o) {
-        var opt = el("option", { value: o, text: o });
-        if (st.answers[c.id] === o) opt.selected = true;
-        sel.appendChild(opt);
-      });
-      sel.addEventListener("change", function () { st.answers[c.id] = sel.value; save(); });
-      tbody.appendChild(el("tr", { "data-cell": c.id }, [
-        el("td", null, [el("label", { for: "f-" + c.id, text: c.prompt }), c.optional ? el("span", { class: "optional-tag", text: "Optional" }) : null]),
-        el("td", { class: "answer" }, [sel]),
-        el("td", { class: "mark" }, [el("span", { class: "mark-text" })])
-      ]));
-    });
-    return el("table", { class: "cell-table" }, [
-      el("thead", null, [el("tr", null, [el("th", { text: "Item" }), el("th", { text: "Answer" }), el("th", { text: "" })])]),
-      tbody
-    ]);
-  }
-
-  function mcItem(c, n, st) {
-    var opts = el("div", { class: "opts" });
-    c.options.forEach(function (o, i) {
-      var input = el("input", { type: "radio", name: c.id, value: o, id: c.id + "-" + i });
-      if (st.answers[c.id] === o) input.checked = true;
-      input.addEventListener("change", function () { st.answers[c.id] = o; save(); });
-      opts.appendChild(el("label", { for: c.id + "-" + i }, [input, el("span", { text: o })]));
-    });
-    return el("fieldset", { class: "mc", "data-cell": c.id }, [
-      el("legend", null, [el("span", { class: "qnum", text: n + "." }), c.prompt, c.draft ? el("span", { class: "optional-tag", text: "Draft item" }) : null]),
-      opts,
-      el("span", { class: "mark-text" })
-    ]);
   }
 
   /* ---------- sources ---------- */
@@ -299,6 +406,9 @@
       L.where.forEach(function (w) {
         ul.appendChild(el("li", null, [w.url ? el("a", { href: w.url, target: "_blank", rel: "noopener", text: w.label }) : document.createTextNode(w.label)]));
       });
+      var pages = {};
+      (L.cells || []).forEach(function (c) { if (c.ref && / p\. /.test(c.ref)) pages[c.ref] = true; });
+      Object.keys(pages).sort().forEach(function (r) { ul.appendChild(el("li", { text: r })); });
       host.appendChild(ul);
     });
   }
