@@ -288,6 +288,21 @@
     ]);
   }
 
+  /* ---------- sources ---------- */
+  function renderSources(content) {
+    var host = document.getElementById("by-lesson");
+    if (!host) return;
+    content.lessons.forEach(function (L) {
+      host.appendChild(el("h3", { text: "Lesson " + Number(L.id) + ": " + L.title }));
+      var ul = el("ul", { class: "ref-list" });
+      if (!L.where.length) ul.appendChild(el("li", { class: "muted", text: "To be added with this lesson." }));
+      L.where.forEach(function (w) {
+        ul.appendChild(el("li", null, [w.url ? el("a", { href: w.url, target: "_blank", rel: "noopener", text: w.label }) : document.createTextNode(w.label)]));
+      });
+      host.appendChild(ul);
+    });
+  }
+
   /* ---------- boot ---------- */
   load();
   fetch(ROOT + "/data/content.json", { cache: "no-cache" })
@@ -296,6 +311,7 @@
       chrome(content);
       if (PAGE === "index") renderIndex(content);
       else if (PAGE === "lesson") renderLesson(content);
+      else if (PAGE === "sources") renderSources(content);
       else wireProgressButtons();
     })
     .catch(function () {

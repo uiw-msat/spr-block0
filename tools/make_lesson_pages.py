@@ -18,7 +18,8 @@ TPL = """<!DOCTYPE html>
       <nav class="site-nav" aria-label="Site">
         <a href="../index.html">Lessons</a>
         <a href="../certificate.html">Certificate</a>
-        <a href="../about.html">About &amp; sources</a>
+        <a href="../sources.html">Sources</a>
+        <a href="../about.html">About</a>
       </nav>
     </div>
   </header>

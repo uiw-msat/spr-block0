@@ -244,8 +244,20 @@
       ],
       "where": [
         {
-          "label": "Neumann 2017, Appendices (attachments and innervation)",
+          "label": "Neumann 2017, Appendix II (upper extremity attachments): serratus anterior, lower trapezius, pectoralis minor, latissimus dorsi",
           "url": ""
+        },
+        {
+          "label": "Neumann 2017, Appendix III (axial attachments): diaphragm, abdominals, erector spinae, quadratus lumborum, pelvic floor",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Appendix IV (lower extremity attachments): hip muscles",
+          "url": ""
+        },
+        {
+          "label": "OpenStax A&P 2e, 11.4 Axial Muscles of the Abdominal Wall and Thorax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
         }
       ],
       "cells": []
@@ -266,8 +278,20 @@
       ],
       "where": [
         {
-          "label": "Neumann 2010, Kinesiology of the hip (JOSPT)",
+          "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
           "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+        },
+        {
+          "label": "Neumann 2017, Ch. 12: Hip",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 10: Axial skeleton, muscle and joint interactions (trunk)",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 5: Shoulder complex (scapular muscles, latissimus dorsi)",
+          "url": ""
         }
       ],
       "cells": []
@@ -286,7 +310,16 @@
       "framing": [
         "Draft."
       ],
-      "where": [],
+      "where": [
+        {
+          "label": "Neumann 2010, Kinesiology of the hip (JOSPT): pelvic-on-femoral actions",
+          "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
+        },
+        {
+          "label": "Neumann 2017, Ch. 12: Hip",
+          "url": ""
+        }
+      ],
       "cells": []
     },
     {
@@ -303,7 +336,20 @@
       "framing": [
         "Draft."
       ],
-      "where": [],
+      "where": [
+        {
+          "label": "Neumann 2017, Ch. 11: Kinesiology of ventilation",
+          "url": ""
+        },
+        {
+          "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
+        },
+        {
+          "label": "Hodges & Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2269747/"
+        }
+      ],
       "cells": []
     },
     {
@@ -320,7 +366,24 @@
       "framing": [
         "Draft."
       ],
-      "where": [],
+      "where": [
+        {
+          "label": "Neumann 2017, Ch. 15: Kinesiology of walking",
+          "url": ""
+        },
+        {
+          "label": "Perry & Burnfield 2010, Gait Analysis, 2nd ed. (answer-key source)",
+          "url": ""
+        },
+        {
+          "label": "Physiopedia, Muscle Activity During Gait (orientation only; the key follows Perry)",
+          "url": "https://www.physio-pedia.com/Muscle_Activity_During_Gait"
+        },
+        {
+          "label": "Physiopedia, The Gait Cycle (orientation only)",
+          "url": "https://www.physio-pedia.com/The_Gait_Cycle"
+        }
+      ],
       "cells": []
     },
     {
@@ -337,7 +400,16 @@
       "framing": [
         "Draft."
       ],
-      "where": [],
+      "where": [
+        {
+          "label": "Your Lesson 8 chart and Lesson 6 reversed-action table",
+          "url": ""
+        },
+        {
+          "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
+        }
+      ],
       "cells": []
     },
     {
@@ -354,7 +426,12 @@
       "framing": [
         "Draft."
       ],
-      "where": [],
+      "where": [
+        {
+          "label": "Your Field Atlas pages from Lessons 1 to 9",
+          "url": ""
+        }
+      ],
       "cells": []
     }
   ]
