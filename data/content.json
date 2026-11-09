@@ -1708,7 +1708,7 @@
      "type": "select",
      "prompt": "Lower trapezius: origin",
      "accept": [
-      "8d766132b4a35daa5f3c98ad5f1d684156277cf561c3dec49f8acab80e19d512"
+      "fd4f0120a930c2f757a5b6f95dc90ad57d2cfb6dc6f1af4a4229c5bfa3fb87a9"
      ],
      "ref": "Neumann 2017, App. II: Trapezius",
      "optionSet": "sites",
@@ -3391,7 +3391,7 @@
      "Anterior bodies, discs, and transverse processes of T12-L5",
      "Transverse processes L1-L4",
      "Spinous processes T7-T12",
-     "Spinous processes T6-T12",
+     "Spinous processes of the thoracic vertebrae",
      "Ribs and vertebral processes superiorly (thoracic and cervical)"
     ]
    },
@@ -3432,6 +3432,6 @@
    }
   ]
  },
- "built": "2026-11-09T20:35Z",
+ "built": "2026-11-09T20:40Z",
  "keySource": "current.xlsx"
 }
