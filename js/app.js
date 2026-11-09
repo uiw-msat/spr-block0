@@ -77,6 +77,21 @@
   }
   function safeId(s) { return "f-" + s.replace(/[^a-z0-9]+/gi, "-"); }
 
+  /* Stable per-student shuffle: each lesson gets a random seed once, so the order is
+     different between students but does not jump around on reload. */
+  function seededShuffle(arr, seedStr) {
+    var h = 2166136261;
+    for (var i = 0; i < seedStr.length; i++) { h ^= seedStr.charCodeAt(i); h = Math.imul(h, 16777619); }
+    var rnd = function () { h ^= h << 13; h ^= h >>> 17; h ^= h << 5; return ((h >>> 0) % 100000) / 100000; };
+    var a = arr.slice();
+    for (var j = a.length - 1; j > 0; j--) { var k = Math.floor(rnd() * (j + 1)); var t = a[j]; a[j] = a[k]; a[k] = t; }
+    return a;
+  }
+  function lessonSeed(st) {
+    if (!st.seed) { st.seed = Math.random().toString(36).slice(2, 10); save(); }
+    return st.seed;
+  }
+
   /* ---------- gating ---------- */
   function status(content, idx) {
     var L = content.lessons[idx];
@@ -246,7 +261,7 @@
 
   function mcItem(c, n, st) {
     var opts = el("div", { class: "opts" });
-    c.options.forEach(function (o, i) {
+    seededShuffle(c.options, lessonSeed(st) + c.id).forEach(function (o, i) {
       var input = el("input", { type: "radio", name: c.id, value: o, id: safeId(c.id) + "-" + i });
       if (st.answers[c.id] === o) input.checked = true;
       input.addEventListener("change", function () { st.answers[c.id] = o; save(); clearMark(c.id); });
@@ -327,7 +342,7 @@
     } else {
       if (L.layout === "mc") cells.forEach(function (c, i) { work.appendChild(mcItem(c, i + 1, st)); });
       else if (L.layout === "matrix") work.appendChild(matrix(cells, st, content));
-      else work.appendChild(selectTable(cells, st, content));
+      else work.appendChild(selectTable(L.shuffleRows ? seededShuffle(cells, lessonSeed(st)) : cells, st, content));
 
       var result = el("span", { class: "result", role: "status", "aria-live": "polite",
         text: st.passed ? "Lesson passed. You can still change answers; it stays passed." : "Answers save automatically." });

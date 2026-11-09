@@ -217,11 +217,12 @@
     }
    ],
    "layout": "table",
+   "shuffleRows": true,
    "cells": [
     {
      "id": "lm.asis",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Anterior superior iliac spine (ASIS)",
+     "prompt": "Anterior superior iliac spine (ASIS)",
      "accept": [
       "9208858aaec0983f1808dbedd06d609ad9e741128c147b4dd9c43901186fdece"
      ],
@@ -246,7 +247,7 @@
     {
      "id": "lm.iliac_crest",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Iliac crest",
+     "prompt": "Iliac crest",
      "accept": [
       "1b3ef529ecf0e75d43cd7ad24cc95e35692bc186145e28143f71879298699315"
      ],
@@ -271,7 +272,7 @@
     {
      "id": "lm.iliac_fossa",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Iliac fossa",
+     "prompt": "Iliac fossa",
      "accept": [
       "00bf59a9ad07db47ebf9572dbfadfb49e969ca91c9cce8bbbab881cefe8ecf3a"
      ],
@@ -296,7 +297,7 @@
     {
      "id": "lm.gluteal_lines",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Anterior and posterior gluteal lines",
+     "prompt": "Anterior and posterior gluteal lines",
      "accept": [
       "d80e10a39e6c5eab35b3f334906b80e0fea5ffea5fda879b9cbf2b301a8fabf0"
      ],
@@ -321,7 +322,7 @@
     {
      "id": "lm.ischial_tuberosity",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Ischial tuberosity",
+     "prompt": "Ischial tuberosity",
      "accept": [
       "5e313053317ffdc2ade3392c6f8d42478022a7ffac5ffe4faf83499fd15d579f"
      ],
@@ -346,7 +347,7 @@
     {
      "id": "lm.ischial_spine",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Ischial spine",
+     "prompt": "Ischial spine",
      "accept": [
       "15848802140b97d8ab42d3fcfb4fbc8363a30466099c69c622809a3f744af511"
      ],
@@ -371,7 +372,7 @@
     {
      "id": "lm.ischial_ramus",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Ischial ramus",
+     "prompt": "Ischial ramus",
      "accept": [
       "47306efa0cc6714816be04f3803bff59be385da267e1f23d14387c9d0b7dee7a"
      ],
@@ -396,7 +397,7 @@
     {
      "id": "lm.inf_pubic_ramus",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Inferior pubic ramus",
+     "prompt": "Inferior pubic ramus",
      "accept": [
       "249f717c1f39efd6f61edbc15ddf978f46d1bbbbc6e1156ab1da5036d5a42922"
      ],
@@ -421,7 +422,7 @@
     {
      "id": "lm.pubic_crest",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Pubic crest",
+     "prompt": "Pubic crest",
      "accept": [
       "0ffc4be1b42479b991a4d8a0ce21710aacc5c05f8ddb0f1f26bd4dc7d53dfd2d"
      ],
@@ -446,7 +447,7 @@
     {
      "id": "lm.pubic_symphysis_face",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Symphyseal surface",
+     "prompt": "Symphyseal surface",
      "accept": [
       "c85e7122d7102707b45cec5c9a9fb7b89824818f658e444fbaaf1ba30f5c1ba4"
      ],
@@ -471,7 +472,7 @@
     {
      "id": "lm.ant_sacral_foramina",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Anterior sacral foramina",
+     "prompt": "Anterior sacral foramina",
      "accept": [
       "5bd29829e19f5b3ea16e057204849882ef47bd47717da27b3f78aa9b26e4ce64"
      ],
@@ -496,7 +497,7 @@
     {
      "id": "lm.median_sacral_crest",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Median sacral crest",
+     "prompt": "Median sacral crest",
      "accept": [
       "f51325a8676f38ebff9bb958de3126702b96e2a24e6330e79d7a0c1430b80da9"
      ],
@@ -521,7 +522,7 @@
     {
      "id": "lm.greater_troch",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Greater trochanter",
+     "prompt": "Greater trochanter",
      "accept": [
       "507e99ae842a71a441872c6f245dcd7214c21bacae027d3f0365a0814cdfabca"
      ],
@@ -546,7 +547,7 @@
     {
      "id": "lm.trochanteric_fossa",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Trochanteric fossa",
+     "prompt": "Trochanteric fossa",
      "accept": [
       "724a13f65b847ffeaf750fac97c867121f303422393fe140e147d936436eceaa"
      ],
@@ -571,7 +572,7 @@
     {
      "id": "lm.lesser_troch",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Lesser trochanter",
+     "prompt": "Lesser trochanter",
      "accept": [
       "2b0d32b71acde778ba5ef07b5c0a9c72f81379088f2a1af8ad5678a0e15e87e1"
      ],
@@ -596,7 +597,7 @@
     {
      "id": "lm.gluteal_tuberosity",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Gluteal tuberosity",
+     "prompt": "Gluteal tuberosity",
      "accept": [
       "1201db53369416aa05df89f7b5b3828505f0ede5ec423bdb08c244b5aed8a22a"
      ],
@@ -621,7 +622,7 @@
     {
      "id": "lm.linea_aspera",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Linea aspera",
+     "prompt": "Linea aspera",
      "accept": [
       "27841e60e3d4e504bbcba63d5f7e84fbe455dc0d5f6a1f914456313dbe64b574"
      ],
@@ -646,7 +647,7 @@
     {
      "id": "lm.adductor_tubercle",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Adductor tubercle",
+     "prompt": "Adductor tubercle",
      "accept": [
       "cfa2460152a7e14cbb398a7a59e784b27c168d8c916837c51ed07871340b60d3"
      ],
@@ -671,7 +672,7 @@
     {
      "id": "lm.fibular_head",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Head (apex region) of the fibula",
+     "prompt": "Head (apex region) of the fibula",
      "accept": [
       "92f2776559281a5dee00074425f37dc6d6d33a426c4436781f82885ddbd76094"
      ],
@@ -696,7 +697,7 @@
     {
      "id": "lm.medial_condyle",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Medial condyle (posteromedial surface)",
+     "prompt": "Medial condyle (posteromedial surface)",
      "accept": [
       "7dde7aa01745ea71ac478bb61f45f0491f9ca676d81df27d2aeaaadffa693df7"
      ],
@@ -721,7 +722,7 @@
     {
      "id": "lm.gerdy",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Lateral tibial (Gerdy's) tubercle",
+     "prompt": "Lateral tibial (Gerdy's) tubercle",
      "accept": [
       "a0989a2339fafa85b12ed98240b72d6d5478bf0477f6fdd6bed9291fe92b2641"
      ],
@@ -746,7 +747,7 @@
     {
      "id": "lm.lumbar_tp",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Transverse process, L3",
+     "prompt": "Transverse process, L3",
      "accept": [
       "a76fd9c786a8e0c3c9b69b4fd6f2331dc600ba44b3577af1a57f29cbc597868b"
      ],
@@ -771,7 +772,7 @@
     {
      "id": "lm.mammillary",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Mammillary process",
+     "prompt": "Mammillary process",
      "accept": [
       "8c6956ff28aa03a3095b95260891ccf02b35c582195ec5c7819dc2a57facfc70"
      ],
@@ -796,7 +797,7 @@
     {
      "id": "lm.thoracic_sp",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Spinous process, T10",
+     "prompt": "Spinous process, T10",
      "accept": [
       "9648bee3fa42a1bba1e3123e4997befe0169a4a45e56584c833e728916008337"
      ],
@@ -821,7 +822,7 @@
     {
      "id": "lm.costal_facet",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Costal facets (demifacets) on the vertebral body",
+     "prompt": "Costal facets (demifacets) on the vertebral body",
      "accept": [
       "7360f8ba6230aa9cee55ab2f4ec2c7128e6c20a73279ac1df8298bd0b92d36dd"
      ],
@@ -846,7 +847,7 @@
     {
      "id": "lm.xiphoid",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Xiphoid process",
+     "prompt": "Xiphoid process",
      "accept": [
       "b9de68d08bb71e04a254b1660df5f32764a0d764268be035db9b593b396f2702"
      ],
@@ -871,7 +872,7 @@
     {
      "id": "lm.rib_angle",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Costal angle (angle of the rib)",
+     "prompt": "Costal angle (angle of the rib)",
      "accept": [
       "83bb84569e418a3783f44b52936c8df16c0302f070d48473ecaf44db2d98f260"
      ],
@@ -896,7 +897,7 @@
     {
      "id": "lm.coracoid",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Coracoid process",
+     "prompt": "Coracoid process",
      "accept": [
       "307f037d7211c477eb02733439b389428515cb3848fa7812d576fc4ae0bcfb5e"
      ],
@@ -921,7 +922,7 @@
     {
      "id": "lm.medial_border",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Medial (vertebral) border",
+     "prompt": "Medial (vertebral) border",
      "accept": [
       "d9ad0e5289e1597abc6efc7391550b59da0e967abd212faed247d5d2b5fe32a9"
      ],
@@ -946,7 +947,7 @@
     {
      "id": "lm.scap_spine",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Spine (root at the medial border)",
+     "prompt": "Spine (root at the medial border)",
      "accept": [
       "fd1f8ab391701987e1fa2565c4422e9e8d0f66f6c6fab9f6d6ee4b2bcec52c6a"
      ],
@@ -971,7 +972,7 @@
     {
      "id": "lm.inferior_angle",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Inferior angle",
+     "prompt": "Inferior angle",
      "accept": [
       "96fca05f88c6ce338a8b94fd9fc76dedfe7752dcb67a15a231e7880be09c83d1"
      ],
@@ -996,7 +997,7 @@
     {
      "id": "lm.intertubercular",
      "type": "select",
-     "prompt": "Which bone bears this landmark? Intertubercular (bicipital) groove",
+     "prompt": "Intertubercular (bicipital) groove",
      "accept": [
       "9516c1f4da78e0de3acdb8a93958d34079fa694eeb2e2ad3105a9828dfead9ec"
      ],
@@ -1251,7 +1252,7 @@
      "type": "select",
      "prompt": "Psoas major: origin",
      "accept": [
-      "e2ed529add1b1af5c548d2caeaffafac9c185fb52cea85af234a5eaaea4576f3"
+      "b1b57671f7027104513b1d2dd53d6ad42960202a607745722203851edd964c61"
      ],
      "ref": "Neumann 2017, App. IV: Psoas major",
      "optionSet": "sites",
@@ -1920,7 +1921,7 @@
      "accept": [
       "ee45fecf93514fafdb2861924c712c2bf01b4ca7b490975dbad091d949d9bcba"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -1937,7 +1938,7 @@
      "accept": [
       "083abaddf2794ce9f2a9279cc6f49c63c06aa7114a18c9b896b62cab8e64d700"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -1952,10 +1953,9 @@
      "type": "select",
      "prompt": "Psoas major, femur-on-pelvis (FA), from anatomical position: transverse plane",
      "accept": [
-      "60715001cea67b660b504faa3e79c9676c98dcadadd8f81b8c21d8c1aebfe459",
       "df4429755f12464eae153cbf99bdaf36c58d6ed458914fd9d8a2889118b6454e"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -1972,7 +1972,7 @@
      "accept": [
       "2ede1ea9a913c2beed7f214b27210ec7719f8237fe49f7a2c90c3b963088d916"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -1989,7 +1989,7 @@
      "accept": [
       "cc72e2a41162aea7e557d4a605b48762169f47dbcc9e5a6f72fbe503fe82de16"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2004,10 +2004,9 @@
      "type": "select",
      "prompt": "Iliacus, femur-on-pelvis (FA), from anatomical position: transverse plane",
      "accept": [
-      "7e2b5ea58d80dd2d37f062a5c8ee7ed33d15c335f82f9baa76ce8ba8024fa1be",
-      "c18f8df8541617a346ec0a5f88132b6073eeef686b66537632459fb62644909e"
+      "7e2b5ea58d80dd2d37f062a5c8ee7ed33d15c335f82f9baa76ce8ba8024fa1be"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2024,7 +2023,7 @@
      "accept": [
       "3d9a4bb87292b149dc2bd93380a8c2b8088fc259fd4eee214be1c888307e0252"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2041,7 +2040,7 @@
      "accept": [
       "717a522eced359b84d2bf0b8915826cbb57fe7069276d77920883555d2be13ac"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2058,7 +2057,7 @@
      "accept": [
       "9f353e47e41e489dc44a7fef0ced92c8257449f454c16735fe6f92984fa268f4"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip flexor muscles (iliopsoas, TFL); table of hip muscle actions if present",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: flexors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2075,7 +2074,7 @@
      "accept": [
       "aa7b60f4cfae1dd4fcb37db5c1a984a59bd19aa99aa119875f793a835f4d7391"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2090,10 +2089,9 @@
      "type": "select",
      "prompt": "Biceps femoris, long head, femur-on-pelvis (FA), from anatomical position: frontal plane",
      "accept": [
-      "4128efdda4fc12c248968df4fcc6ebb32acd83116deda6670430e89fac848689",
       "f6bc8b9c272fb133f7d64db248171d6c377c5becec54f0d24eb763d23d0f8de2"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2110,7 +2108,7 @@
      "accept": [
       "93fda664bfdb96b0c092417d45370f14294d249a4df6604c5bb359e28dcfb80f"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2127,7 +2125,7 @@
      "accept": [
       "6678afe1a512ea65f5d95af02f212bc5e11915d886db40da12d3e159cef013fa"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2142,10 +2140,9 @@
      "type": "select",
      "prompt": "Semimembranosus, femur-on-pelvis (FA), from anatomical position: frontal plane",
      "accept": [
-      "c225aa9fb4e10cb04147480a9f79097223861106a179c73b7c2676f57e7ab88b",
       "c6671f5865da64c10e24fd9f28030bacc1fa834ecc12fb17f5004035c0b39ed0"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2160,9 +2157,9 @@
      "type": "select",
      "prompt": "Semimembranosus, femur-on-pelvis (FA), from anatomical position: transverse plane",
      "accept": [
-      "d5887f7319e3bba52076afef971a4bf388d1b61fb0d33bfc5c630978506644be"
+      "e0d25af9489dc0ea1c9c5f8d3c4e8a9cb0bb5385187a1f48422a9e1e688718fb"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2179,7 +2176,7 @@
      "accept": [
       "0c4a150d25d06cec2a6c788afe5b7b241e70f7700d3db1be74e0a3121465d887"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2194,10 +2191,9 @@
      "type": "select",
      "prompt": "Semitendinosus, femur-on-pelvis (FA), from anatomical position: frontal plane",
      "accept": [
-      "337479a459eb313b7bf705b160bc81528d0f5c5edf62cd0f31f05161702dfbde",
-      "e4a14ff0690fe41fec56a197ed6843014ef3ec9746afebd8001f1766703808bd"
+      "337479a459eb313b7bf705b160bc81528d0f5c5edf62cd0f31f05161702dfbde"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2212,9 +2208,9 @@
      "type": "select",
      "prompt": "Semitendinosus, femur-on-pelvis (FA), from anatomical position: transverse plane",
      "accept": [
-      "b30726138e8bfd810c3305c2f83b4f575329889b71593b6a059cbb5629ec23cb"
+      "04d748096734ca60eafb7ac55701a1030c6019b79cb56769877a2f8df651550a"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2229,10 +2225,9 @@
      "type": "select",
      "prompt": "Adductor magnus, anterior (adductor) head, femur-on-pelvis (FA), from anatomical position: sagittal plane",
      "accept": [
-      "21484f73e16a37bc0c586493116810dcb60e4d3819143f811196ce139ba51540",
-      "ce2b82e10903094c053345febdb7639dff1fa0a44a959ebbf794221fd4468efc"
+      "827bbfb842aebbe2a60e9bb99bb99a8668ecf33c39a44431745a57d36f804647"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2249,7 +2244,7 @@
      "accept": [
       "fda5cbb7916b3000d81d397c988dbd530d8cf77fe90d3ea01666a96e12315ed7"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2264,10 +2259,9 @@
      "type": "select",
      "prompt": "Adductor magnus, anterior (adductor) head, femur-on-pelvis (FA), from anatomical position: transverse plane",
      "accept": [
-      "b2087fcf10635d8425018332e3953bede555c0cfa5c9260059a7ce2a0613ee98",
       "e0be1c34a6697dc6cfc09ecb4cd8e9a3370044bef5530bcc76509c74ecadfca0"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2284,7 +2278,7 @@
      "accept": [
       "2bf67450d177cdd62fbb1abd236d7fdd667a6c1bf6f6f2b0fd982e03f10e3798"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2301,7 +2295,7 @@
      "accept": [
       "ce6cb7ff196e4cc826ce68c13a0f1900032e6014578a3c4bbd607ca047c630e4"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2316,10 +2310,9 @@
      "type": "select",
      "prompt": "Adductor magnus, posterior (extensor) head, femur-on-pelvis (FA), from anatomical position: transverse plane",
      "accept": [
-      "643326f4268a98e593969c31e7567d0131ec09599ee696bfc3ab871f7004060a",
       "d0aa03a6fb2beeb181d9301887a067b762f0a0fcc6aa34d4c0020835c62bd36e"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2336,7 +2329,7 @@
      "accept": [
       "7b4db3c24b6ba848faca95d518a92fe5dbd37f3437bcb996f9178c822dd5342a"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2353,7 +2346,7 @@
      "accept": [
       "75f70d6db93a25c949caaddedb3a1787e31af4dfc512729d74a0b8b718a218ba"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2370,7 +2363,7 @@
      "accept": [
       "059c3f5bc79accd4920feaf438534ca4a8a5ed54d07e65093691e898e7da86e1"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip adductor muscles (adductor longus, adductor magnus heads; adductor longus IR vs ER discussion)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2385,10 +2378,9 @@
      "type": "select",
      "prompt": "Gluteus medius, anterior fibers, femur-on-pelvis (FA), from anatomical position: sagittal plane",
      "accept": [
-      "061e9635c04a0c9dbd2c7316db3ca87892495a6f5d14f33f49ebc61ea2a6b568",
-      "4c6d139c1e1aa434655c6c56ece1509d55ead7ab06f0ae31682b949a33212787"
+      "061e9635c04a0c9dbd2c7316db3ca87892495a6f5d14f33f49ebc61ea2a6b568"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: abductors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2405,7 +2397,7 @@
      "accept": [
       "c3d03e8bd62741b3ed043f9d749cc966dde315dbd981ad21e1bf1422613da68e"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: abductors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2422,7 +2414,7 @@
      "accept": [
       "24f3839b7b11245acf195c7462dbdf8944f5c719f0344ae1a256cf7cf3958f51"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: abductors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2437,10 +2429,9 @@
      "type": "select",
      "prompt": "Gluteus medius, posterior fibers, femur-on-pelvis (FA), from anatomical position: sagittal plane",
      "accept": [
-      "f1dcdd40a2f46e17e7e71d325fb307fad1f99fd7b6afaee3d40345eee74f5a68",
-      "f39049a8953ad313edc7830e2bce6e64bc0b99c68a0177f01d6f0efcad9858bc"
+      "f1dcdd40a2f46e17e7e71d325fb307fad1f99fd7b6afaee3d40345eee74f5a68"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: abductors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2457,7 +2448,7 @@
      "accept": [
       "5ea5a55a0ca9d284f5a60a37959834dfe992c52817c38696b5eb1b59f4a802f0"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: abductors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2474,7 +2465,7 @@
      "accept": [
       "db73629980569bb6c02fd55444f7fc039afe5ce1a8fd0e5d9673b2003239deae"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip abductor muscles (gluteus medius anterior/posterior fibers)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: abductors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2491,7 +2482,7 @@
      "accept": [
       "2a9cc93546e8f0ab51a713c202602002f070c5ab88a141d1ae64fe7deb8b556d"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2508,7 +2499,7 @@
      "accept": [
       "7ad86d9678e33442e9308db3d73bba09bdbaa97c00b92292d928c6f117ee83d9"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2525,7 +2516,7 @@
      "accept": [
       "04603b221c2dba8dcbf3ca895db152845523050ddb234618b7d17f92392348e8"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2542,7 +2533,7 @@
      "accept": [
       "e04f95386202bee2670f39f7b5221037458bca25d716d0b2c0a05e4c3b505819"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2559,7 +2550,7 @@
      "accept": [
       "80e52c1bd19f97ccdadb5afdba5b2a0f1af13b456df5bb409bbdf50723066129"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2576,7 +2567,7 @@
      "accept": [
       "458d0b8c6a296fd919ee38faf85e8a7dd6d2607c966f73e33d3b4119edc0b015"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip extensor muscles (gluteus maximus, hamstrings, adductor magnus posterior head)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: extensors, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2591,10 +2582,9 @@
      "type": "select",
      "prompt": "Piriformis, femur-on-pelvis (FA), from anatomical position: sagittal plane",
      "accept": [
-      "38b975bb851c6daf8463cb86dbd81476478f36228687dd897290edf4f074774e",
-      "804cb5e3efd1ce085c1cfbce213a9ff696bff630de3bf86026c6656f44ecfee5"
+      "38b975bb851c6daf8463cb86dbd81476478f36228687dd897290edf4f074774e"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: external rotators, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2611,7 +2601,7 @@
      "accept": [
       "ffe00b385795fb673c760ee5e8de67a41bf4c23a4109cbcd29136e755195f26a"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: external rotators, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2628,7 +2618,7 @@
      "accept": [
       "90dccfd3d6f4c36aef72568e6e3355cca6be941a7b93d078471c6cbe1f7212f6"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: external rotators, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -2645,7 +2635,7 @@
      "accept": [
       "6b0f81b06131e60e67e600959f07c2e79c97807067f6352f2db2a37e7134252b"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: external rotators, p. 499",
      "options": [
       "Flexion",
       "Extension",
@@ -2660,10 +2650,9 @@
      "type": "select",
      "prompt": "Obturator internus, femur-on-pelvis (FA), from anatomical position: frontal plane",
      "accept": [
-      "3ea9ca296e5a5d2a9a75538c003579b9b3786f32677f2d2c9e4f2acc28749a33",
       "8b4b480e738edfa428d5530dd89969136cace22ece7e8f825c3b3979e3eaa1a0"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: external rotators, p. 499",
      "options": [
       "Abduction",
       "Adduction",
@@ -2680,7 +2669,7 @@
      "accept": [
       "6ae012517207328453260e830600d87e032f0b8a2f592a25f396f1d06c7916d8"
      ],
-     "ref": "Neumann 2017, Ch. 12: Hip external rotators (piriformis, obturator internus; flexion reversal)",
+     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: external rotators, p. 499",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -3399,7 +3388,7 @@
     "label": "Spine",
     "options": [
      "Bodies of L1-L3 (crura)",
-     "Bodies and discs T12-L5, and lumbar transverse processes",
+     "Anterior bodies, discs, and transverse processes of T12-L5",
      "Transverse processes L1-L4",
      "Spinous processes T7-T12",
      "Spinous processes T6-T12",
@@ -3443,6 +3432,6 @@
    }
   ]
  },
- "built": "2026-11-06T16:45Z",
+ "built": "2026-11-09T20:35Z",
  "keySource": "current.xlsx"
 }

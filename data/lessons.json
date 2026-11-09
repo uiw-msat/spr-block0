@@ -68,7 +68,8 @@
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
         }
       ],
-      "layout": "table"
+      "layout": "table",
+      "shuffleRows": true
     },
     {
       "id": "03",

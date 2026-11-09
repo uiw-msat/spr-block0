@@ -74,6 +74,7 @@ def main(key_path):
                 continue
             cid = str(cid).strip()
             prompt = str(r[ix["prompt"]]).strip()
+            prompt = prompt.replace("Which bone bears this landmark? ", "")
             typ = str(r[ix["type"]]).strip()
             opt_raw = str(r[ix["options"]]).strip()
             accept = [a.strip() for a in str(r[ix["accept"]]).split("|") if a.strip()]
