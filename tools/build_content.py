@@ -94,8 +94,12 @@ def main(key_path):
                 if p["page"]:
                     ref += f", p. {p['page']}"
 
-            cell = {"id": cid, "type": typ, "prompt": prompt,
-                    "accept": sorted({h(salt, cid, a) for a in accept}), "ref": ref}
+            if typ == "multi":
+                # one correct SET: hash the sorted, normalized members joined with " + "
+                hashes = [h(salt, cid, " + ".join(sorted(norm(a) for a in accept)))]
+            else:
+                hashes = sorted({h(salt, cid, a) for a in accept})
+            cell = {"id": cid, "type": typ, "prompt": prompt, "accept": hashes, "ref": ref}
             if opt_raw == SITE_OPTS:
                 cell["optionSet"] = "sites"
             else:

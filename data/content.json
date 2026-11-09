@@ -79,10 +79,10 @@
     },
     {
      "id": "conv.plane.tilt",
-     "type": "mc",
-     "prompt": "Anterior or posterior tilt of a hemipelvis occurs in which plane?",
+     "type": "multi",
+     "prompt": "A hemipelvis moves in which planes? Select all that apply.",
      "accept": [
-      "a2c9c88ebd59b93a043069e5e7e6541abc1b4340bec5253932f1ddcdba69bf00"
+      "ca68eb4e4494528da3127fc1ed718b67689abb5a079f978b60a9dfa459c35ebe"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
      "options": [
@@ -1710,7 +1710,7 @@
      "accept": [
       "fd4f0120a930c2f757a5b6f95dc90ad57d2cfb6dc6f1af4a4229c5bfa3fb87a9"
      ],
-     "ref": "Neumann 2017, App. II: Trapezius",
+     "ref": "Neumann 2017, App. II: Trapezius, p. 312",
      "optionSet": "sites",
      "row": "Lower trapezius",
      "col": "Origin"
@@ -1722,7 +1722,7 @@
      "accept": [
       "30ecc185775694b7403d956d44b1d43fc5391061773e55d7f4a4a2ec886e5200"
      ],
-     "ref": "Neumann 2017, App. II: Trapezius",
+     "ref": "Neumann 2017, App. II: Trapezius, p. 312",
      "optionSet": "sites",
      "row": "Lower trapezius",
      "col": "Insertion"
@@ -3432,6 +3432,6 @@
    }
   ]
  },
- "built": "2026-11-09T20:40Z",
+ "built": "2026-11-09T20:42Z",
  "keySource": "current.xlsx"
 }

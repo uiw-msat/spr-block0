@@ -259,18 +259,34 @@
     return wrap;
   }
 
+  /* Checkbox answers are stored as the checked options, sorted by their normalized
+     text and joined with " + " (matches build_content.py). */
+  function multiValue(fieldset) {
+    var vals = [];
+    fieldset.querySelectorAll("input:checked").forEach(function (i) { vals.push(i.value); });
+    vals.sort(function (a, b) { var x = window.SPRCheck.norm(a), y = window.SPRCheck.norm(b); return x < y ? -1 : x > y ? 1 : 0; });
+    return vals.join(" + ");
+  }
+
   function mcItem(c, n, st) {
     var opts = el("div", { class: "opts" });
+    var multi = c.type === "multi";
+    var chosen = multi ? (st.answers[c.id] || "").split(" + ") : [];
+    var fs;
     seededShuffle(c.options, lessonSeed(st) + c.id).forEach(function (o, i) {
-      var input = el("input", { type: "radio", name: c.id, value: o, id: safeId(c.id) + "-" + i });
-      if (st.answers[c.id] === o) input.checked = true;
-      input.addEventListener("change", function () { st.answers[c.id] = o; save(); clearMark(c.id); });
+      var input = el("input", { type: multi ? "checkbox" : "radio", name: c.id, value: o, id: safeId(c.id) + "-" + i });
+      if (multi ? chosen.indexOf(o) !== -1 : st.answers[c.id] === o) input.checked = true;
+      input.addEventListener("change", function () {
+        st.answers[c.id] = multi ? multiValue(fs) : o;
+        save(); clearMark(c.id);
+      });
       opts.appendChild(el("label", { for: safeId(c.id) + "-" + i }, [input, el("span", { text: o })]));
     });
-    return el("fieldset", { class: "mc", "data-cell": c.id }, [
+    fs = el("fieldset", { class: "mc", "data-cell": c.id }, [
       el("legend", null, [el("span", { class: "qnum", text: n + "." }), c.prompt]),
       opts, el("span", { class: "mark-text" }), refNode(c)
     ]);
+    return fs;
   }
 
   function clearMark(id) {

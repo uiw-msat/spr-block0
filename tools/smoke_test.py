@@ -28,8 +28,12 @@ def key_answers(path):
                 continue
             opts = sites if str(r[hdr["options"]]).startswith("See Options") else str(r[hdr["options"]]).split("|")
             acc = str(r[hdr["accept"]]).split("|")
-            wrong = next(o for o in opts if o not in acc)
-            rows.append((r[0], acc[0], wrong, r[hdr["type"]]))
+            typ = r[hdr["type"]]
+            if typ == "multi":
+                rows.append((r[0], acc, [opts[0]], typ))   # right = the whole set; wrong = one box only
+            else:
+                wrong = next(o for o in opts if o not in acc)
+                rows.append((r[0], acc[0], wrong, typ))
         out[slug] = rows
     return out
 
@@ -40,7 +44,12 @@ def sid(cid):
 
 
 def answer(page, cid, typ, value):
-    if typ == "mc":
+    if typ == "multi":
+        for box in page.locator(f'[data-cell="{cid}"] input[type=checkbox]').all():
+            box.uncheck()
+        for v in value:
+            page.locator(f'[data-cell="{cid}"] input[value="{v}"]').check()
+    elif typ == "mc":
         page.locator(f'[data-cell="{cid}"] input[value="{value}"]').check()
     else:
         page.select_option(f"#{sid(cid)}", value)
