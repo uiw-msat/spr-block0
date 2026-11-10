@@ -306,3 +306,9 @@ td.right .mark-text { color: var(--ok); font-weight: 600; }
 .ref-figure figcaption strong { color: var(--ink); }
 .ref-figure .fig-note { color: var(--ink); }
 .figures .fig-access { font-family: var(--sans); font-size: .8rem; color: var(--ink-3); border-top: 1px solid var(--rule-2); padding-top: .75rem; }
+
+/* ---------- landing: before you start ---------- */
+.note-box.before-start { margin-top: 1.25rem; border-left: 3px solid var(--accent); }
+.note-box.before-start h3 { font-size: 1rem; margin-bottom: .4rem; }
+.note-box.before-start ol { margin: 0; padding-left: 1.25rem; }
+.note-box.before-start li { margin: .35rem 0; }
