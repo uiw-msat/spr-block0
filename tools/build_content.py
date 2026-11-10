@@ -20,11 +20,11 @@ SHEETS = {"L01_conventions": "01", "L02_landmarks": "02", "L03_viscera": "03",
           "L04_attachments": "04", "L05_open_chain": "05"}
 SITE_OPTS = "See Options sheet: Attachment sites"
 CHAINS = ["femur-on-pelvis (FA), from anatomical position", "thorax-on-pelvis, pelvis fixed, unilateral contraction",
-          "scapula-on-thorax", "arm-on-thorax (glenohumeral)"]
-CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA), open chain",
+          "scapula-on-thorax (ST)", "humerus-on-glenoid (HG)"]
+CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA)",
                CHAINS[1]: "Trunk muscles · thorax-on-pelvis, one side contracting",
-               CHAINS[2]: "Scapular muscles · scapula-on-thorax",
-               CHAINS[3]: "Glenohumeral · arm-on-thorax"}
+               CHAINS[2]: "Scapular muscles · scapula-on-thorax (ST)",
+               CHAINS[3]: "Latissimus dorsi · humerus-on-glenoid (HG)"}
 # Lesson 4: Neumann names attachments differently by region; one table per pair of terms.
 ATTACH_GROUP = {"proximal attachment": "Hip and shoulder muscles · proximal and distal attachments",
                 "distal attachment": "Hip and shoulder muscles · proximal and distal attachments",

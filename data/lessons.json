@@ -322,8 +322,8 @@
     {
       "id": "05",
       "slug": "05-open-chain",
-      "title": "Open-chain triplanar actions",
-      "sub": "Femur-on-pelvis and arm-on-thorax, with fiber distinctions",
+      "title": "Distal-on-proximal actions",
+      "sub": "Femur-on-pelvis, thorax-on-pelvis, scapula-on-thorax, and humerus-on-glenoid, with fiber distinctions",
       "minutes": [
         10,
         40
@@ -331,8 +331,8 @@
       "opensAt": "2026-11-06",
       "input": "Dropdown per cell",
       "framing": [
-        "Give each muscle's action in each plane, open chain, from anatomical position: the femur moving on a fixed pelvis for hip muscles, the thorax moving on a fixed pelvis for trunk muscles (one side contracting), and the scapula or arm moving on the thorax for shoulder muscles.",
-        "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the distal segment fixed."
+        "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles (one side contracting), the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
+        "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the segments reversed: the proximal segment moving on a fixed distal one."
       ],
       "where": [
         {
@@ -357,8 +357,8 @@
     {
       "id": "06",
       "slug": "06-reversed",
-      "title": "Reversed actions",
-      "sub": "Pelvis-on-femur and thorax-on-arm, distal segment fixed",
+      "title": "Proximal-on-distal actions",
+      "sub": "Pelvis-on-femur, thorax-on-scapula, and glenoid-on-humerus",
       "minutes": [
         10,
         40
@@ -457,7 +457,7 @@
       ],
       "where": [
         {
-          "label": "Your Lesson 8 chart and Lesson 6 reversed-action table",
+          "label": "Your Lesson 8 chart and Lesson 6 proximal-on-distal table",
           "url": ""
         },
         {

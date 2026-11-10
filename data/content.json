@@ -2047,8 +2047,8 @@
   {
    "id": "05",
    "slug": "05-open-chain",
-   "title": "Open-chain triplanar actions",
-   "sub": "Femur-on-pelvis and arm-on-thorax, with fiber distinctions",
+   "title": "Distal-on-proximal actions",
+   "sub": "Femur-on-pelvis, thorax-on-pelvis, scapula-on-thorax, and humerus-on-glenoid, with fiber distinctions",
    "minutes": [
     10,
     40
@@ -2056,8 +2056,8 @@
    "opensAt": "2026-11-06",
    "input": "Dropdown per cell",
    "framing": [
-    "Give each muscle's action in each plane, open chain, from anatomical position: the femur moving on a fixed pelvis for hip muscles, the thorax moving on a fixed pelvis for trunk muscles (one side contracting), and the scapula or arm moving on the thorax for shoulder muscles.",
-    "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the distal segment fixed."
+    "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles (one side contracting), the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
+    "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the segments reversed: the proximal segment moving on a fixed distal one."
    ],
    "where": [
     {
@@ -2094,7 +2094,7 @@
      ],
      "row": "Psoas major",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.psoas.frontal",
@@ -2111,7 +2111,7 @@
      ],
      "row": "Psoas major",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.psoas.transverse",
@@ -2128,7 +2128,7 @@
      ],
      "row": "Psoas major",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.iliacus.sagittal",
@@ -2145,7 +2145,7 @@
      ],
      "row": "Iliacus",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.iliacus.frontal",
@@ -2162,7 +2162,7 @@
      ],
      "row": "Iliacus",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.iliacus.transverse",
@@ -2179,7 +2179,7 @@
      ],
      "row": "Iliacus",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.tfl.sagittal",
@@ -2196,7 +2196,7 @@
      ],
      "row": "Tensor fasciae latae",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.tfl.frontal",
@@ -2213,7 +2213,7 @@
      ],
      "row": "Tensor fasciae latae",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.tfl.transverse",
@@ -2230,7 +2230,7 @@
      ],
      "row": "Tensor fasciae latae",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.bflh.sagittal",
@@ -2247,7 +2247,7 @@
      ],
      "row": "Biceps femoris, long head",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.bflh.frontal",
@@ -2264,7 +2264,7 @@
      ],
      "row": "Biceps femoris, long head",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.bflh.transverse",
@@ -2281,7 +2281,7 @@
      ],
      "row": "Biceps femoris, long head",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.semimem.sagittal",
@@ -2298,7 +2298,7 @@
      ],
      "row": "Semimembranosus",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.semimem.frontal",
@@ -2315,7 +2315,7 @@
      ],
      "row": "Semimembranosus",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.semimem.transverse",
@@ -2332,7 +2332,7 @@
      ],
      "row": "Semimembranosus",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.semiten.sagittal",
@@ -2349,7 +2349,7 @@
      ],
      "row": "Semitendinosus",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.semiten.frontal",
@@ -2366,7 +2366,7 @@
      ],
      "row": "Semitendinosus",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.semiten.transverse",
@@ -2383,7 +2383,7 @@
      ],
      "row": "Semitendinosus",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addmag.ant.sagittal",
@@ -2400,7 +2400,7 @@
      ],
      "row": "Adductor magnus, anterior (adductor) head",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addmag.ant.frontal",
@@ -2417,7 +2417,7 @@
      ],
      "row": "Adductor magnus, anterior (adductor) head",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addmag.ant.transverse",
@@ -2434,7 +2434,7 @@
      ],
      "row": "Adductor magnus, anterior (adductor) head",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addmag.post.sagittal",
@@ -2451,7 +2451,7 @@
      ],
      "row": "Adductor magnus, posterior (extensor) head",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addmag.post.frontal",
@@ -2468,7 +2468,7 @@
      ],
      "row": "Adductor magnus, posterior (extensor) head",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addmag.post.transverse",
@@ -2485,7 +2485,7 @@
      ],
      "row": "Adductor magnus, posterior (extensor) head",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addlong.sagittal",
@@ -2502,7 +2502,7 @@
      ],
      "row": "Adductor longus",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addlong.frontal",
@@ -2519,7 +2519,7 @@
      ],
      "row": "Adductor longus",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.addlong.transverse",
@@ -2536,7 +2536,7 @@
      ],
      "row": "Adductor longus",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmed.ant.sagittal",
@@ -2553,7 +2553,7 @@
      ],
      "row": "Gluteus medius, anterior fibers",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmed.ant.frontal",
@@ -2570,7 +2570,7 @@
      ],
      "row": "Gluteus medius, anterior fibers",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmed.ant.transverse",
@@ -2587,7 +2587,7 @@
      ],
      "row": "Gluteus medius, anterior fibers",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmed.post.sagittal",
@@ -2604,7 +2604,7 @@
      ],
      "row": "Gluteus medius, posterior fibers",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmed.post.frontal",
@@ -2621,7 +2621,7 @@
      ],
      "row": "Gluteus medius, posterior fibers",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmed.post.transverse",
@@ -2638,7 +2638,7 @@
      ],
      "row": "Gluteus medius, posterior fibers",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmax.upper.sagittal",
@@ -2655,7 +2655,7 @@
      ],
      "row": "Gluteus maximus, upper fibers",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmax.upper.frontal",
@@ -2672,7 +2672,7 @@
      ],
      "row": "Gluteus maximus, upper fibers",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmax.upper.transverse",
@@ -2689,7 +2689,7 @@
      ],
      "row": "Gluteus maximus, upper fibers",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmax.lower.sagittal",
@@ -2706,7 +2706,7 @@
      ],
      "row": "Gluteus maximus, lower fibers",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmax.lower.frontal",
@@ -2723,7 +2723,7 @@
      ],
      "row": "Gluteus maximus, lower fibers",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.gmax.lower.transverse",
@@ -2740,7 +2740,7 @@
      ],
      "row": "Gluteus maximus, lower fibers",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.pir.sagittal",
@@ -2757,7 +2757,7 @@
      ],
      "row": "Piriformis",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.pir.frontal",
@@ -2774,7 +2774,7 @@
      ],
      "row": "Piriformis",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.pir.transverse",
@@ -2791,7 +2791,7 @@
      ],
      "row": "Piriformis",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.oi.sagittal",
@@ -2808,7 +2808,7 @@
      ],
      "row": "Obturator internus",
      "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.oi.frontal",
@@ -2825,7 +2825,7 @@
      ],
      "row": "Obturator internus",
      "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.oi.transverse",
@@ -2842,7 +2842,7 @@
      ],
      "row": "Obturator internus",
      "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA), open chain"
+     "group": "Hip muscles · femur-on-pelvis (FA)"
     },
     {
      "id": "act.io.sagittal",
@@ -3157,7 +3157,7 @@
     {
      "id": "act.sa.elev",
      "type": "select",
-     "prompt": "Serratus anterior, scapula-on-thorax: elevation-depression",
+     "prompt": "Serratus anterior, scapula-on-thorax (ST): elevation-depression",
      "accept": [
       "317935fbfa775b2740dc50d2485e4f5a5c4484178d67ce08830a93797c69f94b",
       "a7d3374e1e3f2fd86734da62f85b22ee390c1f7bcb7bedb56c0f310954adb10a"
@@ -3170,12 +3170,12 @@
      ],
      "row": "Serratus anterior",
      "col": "Elevation-depression",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.sa.protr",
      "type": "select",
-     "prompt": "Serratus anterior, scapula-on-thorax: protraction-retraction",
+     "prompt": "Serratus anterior, scapula-on-thorax (ST): protraction-retraction",
      "accept": [
       "222903bcd17d128668569807cd0ae24dfe61508ec61c54c3d3586c3251b00eba"
      ],
@@ -3187,12 +3187,12 @@
      ],
      "row": "Serratus anterior",
      "col": "Protraction-retraction",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.sa.rot",
      "type": "select",
-     "prompt": "Serratus anterior, scapula-on-thorax: upward-downward rotation",
+     "prompt": "Serratus anterior, scapula-on-thorax (ST): upward-downward rotation",
      "accept": [
       "56b0e741aa6f7e61c02cd69b326aa3b3da7769dd116016493be89ebe57c4daa9"
      ],
@@ -3204,12 +3204,12 @@
      ],
      "row": "Serratus anterior",
      "col": "Upward-downward rotation",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.lt.elev",
      "type": "select",
-     "prompt": "Lower trapezius, scapula-on-thorax: elevation-depression",
+     "prompt": "Lower trapezius, scapula-on-thorax (ST): elevation-depression",
      "accept": [
       "77233a1bc7fd8cf64af21b3d1d4b586374787c0c57a78145b639238e89885255"
      ],
@@ -3221,12 +3221,12 @@
      ],
      "row": "Lower trapezius",
      "col": "Elevation-depression",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.lt.protr",
      "type": "select",
-     "prompt": "Lower trapezius, scapula-on-thorax: protraction-retraction",
+     "prompt": "Lower trapezius, scapula-on-thorax (ST): protraction-retraction",
      "accept": [
       "2a211b1288e8564ef1f66e5869ae76df749156bf8a22956664da5dd8ba21bd2b"
      ],
@@ -3238,12 +3238,12 @@
      ],
      "row": "Lower trapezius",
      "col": "Protraction-retraction",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.lt.rot",
      "type": "select",
-     "prompt": "Lower trapezius, scapula-on-thorax: upward-downward rotation",
+     "prompt": "Lower trapezius, scapula-on-thorax (ST): upward-downward rotation",
      "accept": [
       "8443967084af4c31f228dd1345c5f47e0614cc7df431f60ecf1440d3dd361116"
      ],
@@ -3255,12 +3255,12 @@
      ],
      "row": "Lower trapezius",
      "col": "Upward-downward rotation",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.pmin.elev",
      "type": "select",
-     "prompt": "Pectoralis minor, scapula-on-thorax: elevation-depression",
+     "prompt": "Pectoralis minor, scapula-on-thorax (ST): elevation-depression",
      "accept": [
       "70885aa23230ad729c7645dd4ae62a2e2ef5b51d5fdacd2812becf64a8478085"
      ],
@@ -3272,12 +3272,12 @@
      ],
      "row": "Pectoralis minor",
      "col": "Elevation-depression",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.pmin.protr",
      "type": "select",
-     "prompt": "Pectoralis minor, scapula-on-thorax: protraction-retraction",
+     "prompt": "Pectoralis minor, scapula-on-thorax (ST): protraction-retraction",
      "accept": [
       "51282eef9b90375772719b878a19d09aa55541ece12f781926c47ed1a8229892"
      ],
@@ -3289,12 +3289,12 @@
      ],
      "row": "Pectoralis minor",
      "col": "Protraction-retraction",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.pmin.rot",
      "type": "select",
-     "prompt": "Pectoralis minor, scapula-on-thorax: upward-downward rotation",
+     "prompt": "Pectoralis minor, scapula-on-thorax (ST): upward-downward rotation",
      "accept": [
       "49050e9788f2232a5d4d93aaa1a7ad80b3eaf2322140992eeb06762f14b34443"
      ],
@@ -3306,12 +3306,12 @@
      ],
      "row": "Pectoralis minor",
      "col": "Upward-downward rotation",
-     "group": "Scapular muscles · scapula-on-thorax"
+     "group": "Scapular muscles · scapula-on-thorax (ST)"
     },
     {
      "id": "act.lat.sagittal",
      "type": "select",
-     "prompt": "Latissimus dorsi, arm-on-thorax (glenohumeral): sagittal plane",
+     "prompt": "Latissimus dorsi, humerus-on-glenoid (HG): sagittal plane",
      "accept": [
       "2e8a64ca1314b02c40fcd44cffc2435fd6dadee3b6caa86f6828979a6e785f77"
      ],
@@ -3323,12 +3323,12 @@
      ],
      "row": "Latissimus dorsi",
      "col": "Sagittal",
-     "group": "Glenohumeral · arm-on-thorax"
+     "group": "Latissimus dorsi · humerus-on-glenoid (HG)"
     },
     {
      "id": "act.lat.frontal",
      "type": "select",
-     "prompt": "Latissimus dorsi, arm-on-thorax (glenohumeral): frontal plane",
+     "prompt": "Latissimus dorsi, humerus-on-glenoid (HG): frontal plane",
      "accept": [
       "2eb88f618debc208b55ce0ee998541da6a0710c5020983b52c58bbb816a49704"
      ],
@@ -3340,12 +3340,12 @@
      ],
      "row": "Latissimus dorsi",
      "col": "Frontal",
-     "group": "Glenohumeral · arm-on-thorax"
+     "group": "Latissimus dorsi · humerus-on-glenoid (HG)"
     },
     {
      "id": "act.lat.transverse",
      "type": "select",
-     "prompt": "Latissimus dorsi, arm-on-thorax (glenohumeral): transverse plane",
+     "prompt": "Latissimus dorsi, humerus-on-glenoid (HG): transverse plane",
      "accept": [
       "25eced21ea644f5876948b31a13b16a171cd1c36a9de956a879280d678520bed"
      ],
@@ -3357,15 +3357,15 @@
      ],
      "row": "Latissimus dorsi",
      "col": "Transverse",
-     "group": "Glenohumeral · arm-on-thorax"
+     "group": "Latissimus dorsi · humerus-on-glenoid (HG)"
     }
    ]
   },
   {
    "id": "06",
    "slug": "06-reversed",
-   "title": "Reversed actions",
-   "sub": "Pelvis-on-femur and thorax-on-arm, distal segment fixed",
+   "title": "Proximal-on-distal actions",
+   "sub": "Pelvis-on-femur, thorax-on-scapula, and glenoid-on-humerus",
    "minutes": [
     10,
     40
@@ -3467,7 +3467,7 @@
    ],
    "where": [
     {
-     "label": "Your Lesson 8 chart and Lesson 6 reversed-action table",
+     "label": "Your Lesson 8 chart and Lesson 6 proximal-on-distal table",
      "url": ""
     },
     {
@@ -3607,6 +3607,6 @@
    }
   ]
  },
- "built": "2026-11-10T13:52Z",
+ "built": "2026-11-10T13:54Z",
  "keySource": "current.xlsx"
 }
