@@ -201,7 +201,7 @@
    "id": "02",
    "slug": "02-landmarks",
    "title": "Landmarks",
-   "sub": "Innominate, sacrum, femur, rib cage, lumbar and thoracic spine",
+   "sub": "Hip bone, sacrum, femur, rib cage, lumbar and thoracic spine",
    "minutes": [
     5,
     20
@@ -214,7 +214,7 @@
    ],
    "where": [
     {
-     "label": "OpenStax A&P 2e, 7.4 The Vertebral Column; 7.5 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
+     "label": "OpenStax A&P 2e, 7.3 The Vertebral Column; 7.4 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
     }
    ],
@@ -478,7 +478,7 @@
      "accept": [
       "5bd29829e19f5b3ea16e057204849882ef47bd47717da27b3f78aa9b26e4ce64"
      ],
-     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "ref": "OpenStax A&P 2e, 7.3 The Vertebral Column",
      "options": [
       "Ilium",
       "Ischium",
@@ -503,7 +503,7 @@
      "accept": [
       "f51325a8676f38ebff9bb958de3126702b96e2a24e6330e79d7a0c1430b80da9"
      ],
-     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "ref": "OpenStax A&P 2e, 7.3 The Vertebral Column",
      "options": [
       "Ilium",
       "Ischium",
@@ -674,7 +674,7 @@
     {
      "id": "lm.fibular_head",
      "type": "select",
-     "prompt": "Head (apex region) of the fibula",
+     "prompt": "Head (apex region), lateral to the knee",
      "accept": [
       "92f2776559281a5dee00074425f37dc6d6d33a426c4436781f82885ddbd76094"
      ],
@@ -699,7 +699,7 @@
     {
      "id": "lm.medial_condyle",
      "type": "select",
-     "prompt": "Medial condyle (posteromedial surface)",
+     "prompt": "Medial condyle, posteromedial surface (below the knee joint line)",
      "accept": [
       "7dde7aa01745ea71ac478bb61f45f0491f9ca676d81df27d2aeaaadffa693df7"
      ],
@@ -753,7 +753,7 @@
      "accept": [
       "a76fd9c786a8e0c3c9b69b4fd6f2331dc600ba44b3577af1a57f29cbc597868b"
      ],
-     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "ref": "OpenStax A&P 2e, 7.3 The Vertebral Column",
      "options": [
       "Ilium",
       "Ischium",
@@ -778,7 +778,7 @@
      "accept": [
       "8c6956ff28aa03a3095b95260891ccf02b35c582195ec5c7819dc2a57facfc70"
      ],
-     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "ref": "OpenStax A&P 2e, 7.3 The Vertebral Column",
      "options": [
       "Ilium",
       "Ischium",
@@ -803,7 +803,7 @@
      "accept": [
       "9648bee3fa42a1bba1e3123e4997befe0169a4a45e56584c833e728916008337"
      ],
-     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "ref": "OpenStax A&P 2e, 7.3 The Vertebral Column",
      "options": [
       "Ilium",
       "Ischium",
@@ -828,7 +828,7 @@
      "accept": [
       "7360f8ba6230aa9cee55ab2f4ec2c7128e6c20a73279ac1df8298bd0b92d36dd"
      ],
-     "ref": "OpenStax A&P 2e, 7.4 The Vertebral Column",
+     "ref": "OpenStax A&P 2e, 7.3 The Vertebral Column",
      "options": [
       "Ilium",
       "Ischium",
@@ -853,7 +853,7 @@
      "accept": [
       "b9de68d08bb71e04a254b1660df5f32764a0d764268be035db9b593b396f2702"
      ],
-     "ref": "OpenStax A&P 2e, 7.5 The Thoracic Cage",
+     "ref": "OpenStax A&P 2e, 7.4 The Thoracic Cage",
      "options": [
       "Ilium",
       "Ischium",
@@ -878,7 +878,7 @@
      "accept": [
       "83bb84569e418a3783f44b52936c8df16c0302f070d48473ecaf44db2d98f260"
      ],
-     "ref": "OpenStax A&P 2e, 7.5 The Thoracic Cage",
+     "ref": "OpenStax A&P 2e, 7.4 The Thoracic Cage",
      "options": [
       "Ilium",
       "Ischium",
@@ -1064,6 +1064,10 @@
      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
     },
     {
+     "label": "Neumann 2017, Ch. 11, p. 457 (the right hemidiaphragm sits higher than the left)",
+     "url": ""
+    },
+    {
      "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
     }
@@ -1170,7 +1174,7 @@
      "accept": [
       "075e0f2d5eaa9859b4eee95dcada1fe7f4f55e239fa1c512752ecde87c83ebd4"
      ],
-     "ref": "OpenStax 22.2 (right lung shorter); Boyle 2010 NAJSPT (PMC2971640)",
+     "ref": "Neumann 2017, Ch. 11, p. 457; Boyle 2010 NAJSPT (PMC2971640)",
      "options": [
       "Left",
       "Right"
@@ -3434,6 +3438,6 @@
    }
   ]
  },
- "built": "2026-11-10T13:09Z",
+ "built": "2026-11-10T13:18Z",
  "keySource": "current.xlsx"
 }

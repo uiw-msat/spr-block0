@@ -53,7 +53,7 @@
       "id": "02",
       "slug": "02-landmarks",
       "title": "Landmarks",
-      "sub": "Innominate, sacrum, femur, rib cage, lumbar and thoracic spine",
+      "sub": "Hip bone, sacrum, femur, rib cage, lumbar and thoracic spine",
       "minutes": [
         5,
         20
@@ -66,7 +66,7 @@
       ],
       "where": [
         {
-          "label": "OpenStax A&P 2e, 7.4 The Vertebral Column; 7.5 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
+          "label": "OpenStax A&P 2e, 7.3 The Vertebral Column; 7.4 The Thoracic Cage; 8.3 The Pelvic Girdle and Pelvis; 8.4 Bones of the Lower Limb",
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
         }
       ],
@@ -112,6 +112,10 @@
         {
           "label": "OpenStax A&P 2e, 25.3 Gross Anatomy of the Kidney",
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+        },
+        {
+          "label": "Neumann 2017, Ch. 11, p. 457 (the right hemidiaphragm sits higher than the left)",
+          "url": ""
         },
         {
           "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)",
