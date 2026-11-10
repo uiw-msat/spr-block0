@@ -29,7 +29,8 @@
    "input": "Multiple choice",
    "framing": [
     "Most confusion in this material is not about anatomy; it is about naming. The same pelvis can be called rotated left or right depending on whose textbook you open. This lesson fixes the vocabulary the rest of the course uses.",
-    "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page."
+    "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page.",
+    "In standard anatomy, including Neumann, the innominate is the hip bone (ilium, ischium, pubis). This course borrows the word for any bony ring that positions a spinal region: the pelvic ring (lumbar), the rib cage ring (thoracic), and the cranium and mandible (cervical). This is course usage, not textbook usage."
    ],
    "where": [
     {
@@ -54,7 +55,7 @@
      "accept": [
       "b2033bf60a4eabeee331440a245766578fcabee54975d53f7351610d0f451a73"
      ],
-     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation",
+     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation, p. 5",
      "options": [
       "Sagittal plane, mediolateral axis",
       "Frontal plane, anteroposterior axis",
@@ -69,7 +70,7 @@
      "accept": [
       "3b104667b47d6bc80c19d446608af7122984c7ec0183bb25e4dd9ea2cd9c8b11"
      ],
-     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation",
+     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation, p. 5",
      "options": [
       "Transverse plane, vertical axis",
       "Frontal plane, anteroposterior axis",
@@ -84,7 +85,7 @@
      "accept": [
       "ca68eb4e4494528da3127fc1ed718b67689abb5a079f978b60a9dfa459c35ebe"
      ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-496",
      "options": [
       "Sagittal",
       "Frontal",
@@ -155,11 +156,11 @@
      "type": "mc",
      "prompt": "With the right foot planted, the right gluteus maximus turns the pelvis over the fixed right femur. This is:",
      "accept": [
-      "367d6b016ed66e460a7b8089245b367aa2451212012b04ac244905c0b7393e13"
+      "72797e039a950361acde86653258d7a16a264c3b3faab3122f2e288846d787fe"
      ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-496",
      "options": [
-      "Pelvis-on-femur (AF), reversed action",
+      "Pelvis-on-femur (AF)",
       "Femur-on-pelvis (FA), open chain",
       "Neither; gluteus maximus cannot act with the femur fixed"
      ]
@@ -171,11 +172,11 @@
      "accept": [
       "45f1c26cfce020b0d4981a3778716d68fb027fc2f01e9eb561a771babfab7aee"
      ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics (anterior/posterior tilt, pelvic rotation)",
+     "ref": "Neumann 2017, Ch. 12: Femoral-on-pelvic osteokinematics, p. 493",
      "options": [
       "Femur-on-pelvis (FA) flexion, open chain",
-      "Pelvis-on-femur (AF) flexion, reversed action",
-      "Pelvis-on-femur (AF) extension, reversed action"
+      "Pelvis-on-femur (AF) flexion",
+      "Pelvis-on-femur (AF) extension"
      ]
     },
     {
@@ -3432,6 +3433,6 @@
    }
   ]
  },
- "built": "2026-11-09T20:42Z",
+ "built": "2026-11-10T13:01Z",
  "keySource": "current.xlsx"
 }

@@ -92,7 +92,7 @@ def main(key_path):
                 p = pages[look]
                 ref = f"{p['book']}, {p['ch']}: {p['what']}"
                 if p["page"]:
-                    ref += f", p. {p['page']}"
+                    ref += f", {'pp.' if any(ch in p['page'] for ch in '-,') else 'p.'} {p['page']}"
 
             if typ == "multi":
                 # one correct SET: hash the sorted, normalized members joined with " + "
