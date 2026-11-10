@@ -55,7 +55,7 @@
      "accept": [
       "b2033bf60a4eabeee331440a245766578fcabee54975d53f7351610d0f451a73"
      ],
-     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation, p. 5",
+     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation, pp. 5-6",
      "options": [
       "Sagittal plane, mediolateral axis",
       "Frontal plane, anteroposterior axis",
@@ -70,7 +70,7 @@
      "accept": [
       "3b104667b47d6bc80c19d446608af7122984c7ec0183bb25e4dd9ea2cd9c8b11"
      ],
-     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation, p. 5",
+     "ref": "Neumann 2017, Ch. 1: Planes of motion and axes of rotation, pp. 5-6",
      "options": [
       "Transverse plane, vertical axis",
       "Frontal plane, anteroposterior axis",
@@ -3433,6 +3433,6 @@
    }
   ]
  },
- "built": "2026-11-10T13:03Z",
+ "built": "2026-11-10T13:05Z",
  "keySource": "current.xlsx"
 }
