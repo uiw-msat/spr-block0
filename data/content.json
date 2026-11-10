@@ -2057,6 +2057,7 @@
    "input": "Dropdown per cell",
    "framing": [
     "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles (one side contracting), the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
+    "For trunk muscles, sagittal answers are the action with both sides contracting; frontal and transverse answers are for one side.",
     "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the segments reversed: the proximal segment moving on a fixed distal one."
    ],
    "where": [
@@ -2065,15 +2066,15 @@
      "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
     },
     {
-     "label": "Neumann 2017, Ch. 12: Hip",
+     "label": "Neumann 2017, Ch. 12: Hip, Table 12.3 (p. 499): hip muscles by primary and secondary action",
      "url": ""
     },
     {
-     "label": "Neumann 2017, Ch. 10: Axial skeleton, muscle and joint interactions (trunk)",
+     "label": "Neumann 2017, Ch. 10: Table 10.3 (p. 403) and Table 10.4 (p. 407): actions of the trunk muscles",
      "url": ""
     },
     {
-     "label": "Neumann 2017, Ch. 5: Shoulder complex (scapular muscles, latissimus dorsi)",
+     "label": "Neumann 2017, Ch. 5: scapulothoracic muscles (p. 149); latissimus dorsi at the glenohumeral joint (pp. 160-161)",
      "url": ""
     }
    ],
@@ -2851,7 +2852,7 @@
      "accept": [
       "e487f9ee006e9bb7ee227e39b95bfeef512f429b7b1c03bc4a0a9f6447254669"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
@@ -2868,7 +2869,7 @@
      "accept": [
       "4cd1c586618f104a49ddb0dcc53d0cceac115e98cc2834e59316fab306766764"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral lateral flexion",
       "Contralateral lateral flexion",
@@ -2885,7 +2886,7 @@
      "accept": [
       "b7d4bde3a5eb92495bcf2ffd356bdf9ebf1aa36d16b99a767de94285601385a4"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral rotation",
       "Contralateral rotation",
@@ -2902,7 +2903,7 @@
      "accept": [
       "396380396f3a3e6e89118247ee206e76363457ddade5e7a6c732016e962ba30c"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
@@ -2919,7 +2920,7 @@
      "accept": [
       "6404caad54a57eb50d63c7d99d3d2a16f63f7341d9a8543040ee46e597b4abff"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral lateral flexion",
       "Contralateral lateral flexion",
@@ -2934,10 +2935,9 @@
      "type": "select",
      "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
      "accept": [
-      "bed2df53f99466707209286f738fdde861770f4fa9c77b353dd8428370c2cd73",
-      "c87fdd8f6e31fe5d74a955a79d28ab63d036d79e256b95dbdf7d0b171235d7fa"
+      "bed2df53f99466707209286f738fdde861770f4fa9c77b353dd8428370c2cd73"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral rotation",
       "Contralateral rotation",
@@ -2954,7 +2954,7 @@
      "accept": [
       "5221db673ad21edf166cfecc4b48d0e02c59b44a4829b58ff2370ded553c510e"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
@@ -2971,7 +2971,7 @@
      "accept": [
       "46f4011e62f1a545b61dd9d6002a2091e55eee06b296a4c81ab6116c71c19113"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral lateral flexion",
       "Contralateral lateral flexion",
@@ -2988,7 +2988,7 @@
      "accept": [
       "abb08860577bf674db6af4193971f410343c5d6feb86899be53bf62cda594455"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral rotation",
       "Contralateral rotation",
@@ -3005,7 +3005,7 @@
      "accept": [
       "5fcb30825078a0f654c06573750112483145b3c8d0d4a0d26d6b784af5e92b04"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
@@ -3020,10 +3020,9 @@
      "type": "select",
      "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
      "accept": [
-      "941e0e49e8f323bb724720437b3eb257ea76456fd79cbadfcf06b670df3c93be",
       "ce2e756ddf7cd8f7f54cfa545c1ae227c92727a8b990280520b6f52a40c30cae"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral lateral flexion",
       "Contralateral lateral flexion",
@@ -3040,7 +3039,7 @@
      "accept": [
       "a2e1364e75551668d9d7d6031d2047f5f64e60b80f0abddcd1c076dbe739984f"
      ],
-     "ref": "Neumann 2017, Ch. 10: Abdominal muscles: rectus abdominis, obliques, transversus abdominis",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Ipsilateral rotation",
       "Contralateral rotation",
@@ -3057,7 +3056,7 @@
      "accept": [
       "3f04625a528b81556a77d90defcd3ddb2a2dcb7814c70e1cb40d4db135976ef2"
      ],
-     "ref": "Neumann 2017, Ch. 10: Erector spinae",
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Erector spinae, p. 407",
      "options": [
       "Flexion",
       "Extension",
@@ -3074,7 +3073,7 @@
      "accept": [
       "a5ba1e3a0628b7c2fa8b099aee47f5865a1e7881d06aef4a05093a4e772579da"
      ],
-     "ref": "Neumann 2017, Ch. 10: Erector spinae",
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Erector spinae, p. 407",
      "options": [
       "Ipsilateral lateral flexion",
       "Contralateral lateral flexion",
@@ -3092,7 +3091,7 @@
       "11afe483ea147060752d56894753e9479e8459b1d1f00114ba858e8710e269e3",
       "fa5412b10e0984641a6b68909207d6984d2e0dd4e97bdfd5f5fadd034708bb0c"
      ],
-     "ref": "Neumann 2017, Ch. 10: Erector spinae",
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Erector spinae, p. 407",
      "options": [
       "Ipsilateral rotation",
       "Contralateral rotation",
@@ -3107,10 +3106,9 @@
      "type": "select",
      "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
      "accept": [
-      "610198f8f20a9214018b8922b20b44277801831c513d64da9e51ab276a6d16fd",
       "9082d30308a59b3b0f5117139a76aadd84a8ef8624245105d07930f7cf4608b0"
      ],
-     "ref": "Neumann 2017, Ch. 10: Quadratus lumborum",
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
      "options": [
       "Flexion",
       "Extension",
@@ -3127,7 +3125,7 @@
      "accept": [
       "5bf9f0bf28c73e636ec2643baae7a4972afaa9bdee5c6bec0791162728913a4d"
      ],
-     "ref": "Neumann 2017, Ch. 10: Quadratus lumborum",
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
      "options": [
       "Ipsilateral lateral flexion",
       "Contralateral lateral flexion",
@@ -3144,7 +3142,7 @@
      "accept": [
       "57b74bf61ddb5d0081e567601006665edf89ee18456204f859dd4df69b065a3e"
      ],
-     "ref": "Neumann 2017, Ch. 10: Quadratus lumborum",
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
      "options": [
       "Ipsilateral rotation",
       "Contralateral rotation",
@@ -3159,10 +3157,9 @@
      "type": "select",
      "prompt": "Serratus anterior, scapula-on-thorax (ST): elevation-depression",
      "accept": [
-      "317935fbfa775b2740dc50d2485e4f5a5c4484178d67ce08830a93797c69f94b",
       "a7d3374e1e3f2fd86734da62f85b22ee390c1f7bcb7bedb56c0f310954adb10a"
      ],
-     "ref": "Neumann 2017, Ch. 5: Serratus anterior",
+     "ref": "Neumann 2017, Ch. 5: Serratus anterior (muscles of the scapulothoracic joint), p. 149",
      "options": [
       "Elevation",
       "Depression",
@@ -3179,7 +3176,7 @@
      "accept": [
       "222903bcd17d128668569807cd0ae24dfe61508ec61c54c3d3586c3251b00eba"
      ],
-     "ref": "Neumann 2017, Ch. 5: Serratus anterior",
+     "ref": "Neumann 2017, Ch. 5: Serratus anterior (muscles of the scapulothoracic joint), p. 149",
      "options": [
       "Protraction",
       "Retraction",
@@ -3196,7 +3193,7 @@
      "accept": [
       "56b0e741aa6f7e61c02cd69b326aa3b3da7769dd116016493be89ebe57c4daa9"
      ],
-     "ref": "Neumann 2017, Ch. 5: Serratus anterior",
+     "ref": "Neumann 2017, Ch. 5: Serratus anterior (muscles of the scapulothoracic joint), p. 149",
      "options": [
       "Upward rotation",
       "Downward rotation",
@@ -3213,7 +3210,7 @@
      "accept": [
       "77233a1bc7fd8cf64af21b3d1d4b586374787c0c57a78145b639238e89885255"
      ],
-     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers",
+     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers (muscles of the scapulothoracic joint), p. 149",
      "options": [
       "Elevation",
       "Depression",
@@ -3230,7 +3227,7 @@
      "accept": [
       "2a211b1288e8564ef1f66e5869ae76df749156bf8a22956664da5dd8ba21bd2b"
      ],
-     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers",
+     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers (muscles of the scapulothoracic joint), p. 149",
      "options": [
       "Protraction",
       "Retraction",
@@ -3247,7 +3244,7 @@
      "accept": [
       "8443967084af4c31f228dd1345c5f47e0614cc7df431f60ecf1440d3dd361116"
      ],
-     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers",
+     "ref": "Neumann 2017, Ch. 5: Trapezius, lower fibers (muscles of the scapulothoracic joint), p. 149",
      "options": [
       "Upward rotation",
       "Downward rotation",
@@ -3264,7 +3261,7 @@
      "accept": [
       "70885aa23230ad729c7645dd4ae62a2e2ef5b51d5fdacd2812becf64a8478085"
      ],
-     "ref": "Neumann 2017, Ch. 5: Pectoralis minor",
+     "ref": "Neumann 2017, Ch. 5: Pectoralis minor (muscles of the scapulothoracic joint), pp. 149, 161",
      "options": [
       "Elevation",
       "Depression",
@@ -3279,9 +3276,9 @@
      "type": "select",
      "prompt": "Pectoralis minor, scapula-on-thorax (ST): protraction-retraction",
      "accept": [
-      "51282eef9b90375772719b878a19d09aa55541ece12f781926c47ed1a8229892"
+      "0e9cb107f99a1d344869229af155ee162e041f5ef4fd78d588b40eea3133901b"
      ],
-     "ref": "Neumann 2017, Ch. 5: Pectoralis minor",
+     "ref": "Neumann 2017, Ch. 5: Pectoralis minor (muscles of the scapulothoracic joint), pp. 149, 161",
      "options": [
       "Protraction",
       "Retraction",
@@ -3298,7 +3295,7 @@
      "accept": [
       "49050e9788f2232a5d4d93aaa1a7ad80b3eaf2322140992eeb06762f14b34443"
      ],
-     "ref": "Neumann 2017, Ch. 5: Pectoralis minor",
+     "ref": "Neumann 2017, Ch. 5: Pectoralis minor (muscles of the scapulothoracic joint), pp. 149, 161",
      "options": [
       "Upward rotation",
       "Downward rotation",
@@ -3315,7 +3312,7 @@
      "accept": [
       "2e8a64ca1314b02c40fcd44cffc2435fd6dadee3b6caa86f6828979a6e785f77"
      ],
-     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi",
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi, pp. 160-161",
      "options": [
       "Flexion",
       "Extension",
@@ -3332,7 +3329,7 @@
      "accept": [
       "2eb88f618debc208b55ce0ee998541da6a0710c5020983b52c58bbb816a49704"
      ],
-     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi",
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi, pp. 160-161",
      "options": [
       "Abduction",
       "Adduction",
@@ -3349,7 +3346,7 @@
      "accept": [
       "25eced21ea644f5876948b31a13b16a171cd1c36a9de956a879280d678520bed"
      ],
-     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi",
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi, pp. 160-161",
      "options": [
       "Internal rotation",
       "External rotation",
@@ -3607,6 +3604,6 @@
    }
   ]
  },
- "built": "2026-11-10T13:55Z",
+ "built": "2026-11-10T15:11Z",
  "keySource": "current.xlsx"
 }
