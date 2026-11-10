@@ -308,6 +308,37 @@
   }
 
   /* ---------- lesson ---------- */
+
+  /* Reference figures: shown only once the lesson is passed. Image src is set on reveal so
+     nothing is fetched before then. Every figure carries its own credit and license line. */
+  function figuresPanel(L, content) {
+    var src = content.figureSource;
+    if (!L.figures || !L.figures.length || !src) return null;
+    var box = el("section", { class: "figures", "aria-labelledby": "fig-h", hidden: "" }, [
+      el("h2", { id: "fig-h", text: "Reference figures" }),
+      el("p", { class: "fig-intro", text: "You passed this lesson. These figures show the structures you just named. They are OpenStax illustrations for orientation; where OpenStax and Neumann differ, the course follows Neumann." })
+    ]);
+    L.figures.forEach(function (f) {
+      var img = el("img", { alt: f.alt, "data-src": ROOT + "/" + src.dir + f.file });
+      var cap = el("figcaption", null, [
+        el("strong", { text: "Figure " + f.number + ", " + f.title + ". " }),
+        f.note ? el("span", { class: "fig-note", text: f.note + " " }) : null,
+        el("span", { class: "fig-credit" }, [
+          "From ", el("em", { text: src.book }), ", " + src.publisher + ", " + src.year + ", section ",
+          el("a", { href: f.url, target: "_blank", rel: "noopener", text: f.section }), ". Licensed ",
+          el("a", { href: src.licenseUrl, target: "_blank", rel: "noopener license", text: src.license }), ". " + src.changes
+        ])
+      ]);
+      box.appendChild(el("figure", { class: "ref-figure" }, [img, cap]));
+    });
+    box.appendChild(el("p", { class: "fig-access" }, ["Access the book for free at ", el("a", { href: src.bookUrl, target: "_blank", rel: "noopener", text: src.bookUrl.replace("https://", "") }), "."]));
+    box.reveal = function () {
+      box.querySelectorAll("img[data-src]").forEach(function (i) { i.src = i.getAttribute("data-src"); i.removeAttribute("data-src"); });
+      box.removeAttribute("hidden");
+    };
+    return box;
+  }
+
   function renderLesson(content) {
     var id = document.body.getAttribute("data-lesson");
     var idx = -1;
@@ -360,6 +391,7 @@
       else if (L.layout === "matrix") work.appendChild(matrix(cells, st, content));
       else work.appendChild(selectTable(L.shuffleRows ? seededShuffle(cells, lessonSeed(st)) : cells, st, content));
 
+      var figs = figuresPanel(L, content);
       var result = el("span", { class: "result", role: "status", "aria-live": "polite",
         text: st.passed ? "Lesson passed. You can still change answers; it stays passed." : "Answers save automatically." });
       if (st.passed) result.className = "result ok";
@@ -384,6 +416,7 @@
             result.textContent = "All correct. Lesson passed.";
             statusSpan.textContent = "Status: Passed";
             nextBtn.removeAttribute("hidden");
+            if (figs) figs.reveal();
           } else {
             result.className = "result bad";
             result.textContent = wrong + " of " + cells.length + " not correct. Wrong items are marked; items missed " + MISSES_FOR_REF + " times show where to look.";
@@ -401,6 +434,7 @@
       work.appendChild(el("div", { class: "check-bar" }, [result, el("div", { class: "btn-row" }, [btn, nextBtn])]));
     }
     left.appendChild(work);
+    if (figs) { left.appendChild(figs); if (st.passed) figs.reveal(); }
 
     var where = el("aside", { class: "where", "aria-labelledby": "where-h" }, [el("h2", { id: "where-h", text: "Where to look" })]);
     var ul = el("ul");

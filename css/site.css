@@ -294,3 +294,15 @@ td.right .mark-text { color: var(--ok); font-weight: 600; }
 .where.where-inline { margin: .5rem 0 0; max-width: 760px; }
 .where.where-inline ul { columns: 2; column-gap: 2rem; }
 @media (max-width: 900px) { .where.where-inline ul { columns: 1; } }
+
+/* ---------- reference figures (shown after a lesson is passed) ---------- */
+.figures { margin-top: 2rem; padding: 1.25rem 1.25rem .5rem; background: var(--panel); border: 1px solid var(--rule); border-radius: var(--radius); }
+.figures[hidden] { display: none; }
+.figures h2 { margin: 0 0 .35rem; font-size: 1.1rem; }
+.figures .fig-intro { margin: 0 0 1rem; font-size: .9rem; color: var(--ink-2, inherit); max-width: 46rem; }
+.ref-figure { margin: 0 0 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule-2); }
+.ref-figure img { display: block; max-width: 100%; height: auto; margin: 0 auto .6rem; background: #fff; }
+.ref-figure figcaption { font-family: var(--sans); font-size: .8rem; line-height: 1.45; color: var(--ink-3); }
+.ref-figure figcaption strong { color: var(--ink); }
+.ref-figure .fig-note { color: var(--ink); }
+.figures .fig-access { font-family: var(--sans); font-size: .8rem; color: var(--ink-3); border-top: 1px solid var(--rule-2); padding-top: .75rem; }

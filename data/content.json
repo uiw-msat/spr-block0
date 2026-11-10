@@ -220,6 +220,80 @@
    ],
    "layout": "table",
    "shuffleRows": true,
+   "figures": [
+    {
+     "file": "808_Hip_Bone.jpg",
+     "number": "8.13",
+     "title": "The Hip Bone",
+     "section": "8.3 The Pelvic Girdle and Pelvis",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis",
+     "alt": "Lateral and medial views of the right hip bone with the ilium, ischium, and pubis shaded and their landmarks labeled."
+    },
+    {
+     "file": "720_Sacrum_and_Coccyx.jpg",
+     "number": "7.29",
+     "title": "Sacrum and Coccyx",
+     "section": "7.3 The Vertebral Column",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+     "alt": "Anterior and posterior views of the sacrum and coccyx with foramina and crests labeled."
+    },
+    {
+     "file": "810_Femur_and_Patella.jpg",
+     "number": "8.16",
+     "title": "Femur and Patella",
+     "section": "8.4 Bones of the Lower Limb",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+     "alt": "Anterior and posterior views of the right femur with trochanters, linea aspera, gluteal tuberosity, and adductor tubercle labeled."
+    },
+    {
+     "file": "811_Tibia_and_fibula.jpg",
+     "number": "8.18",
+     "title": "Tibia and Fibula",
+     "section": "8.4 Bones of the Lower Limb",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+     "alt": "Anterior and posterior views of the right tibia and fibula with condyles and the head of the fibula labeled."
+    },
+    {
+     "file": "725_Lumbar_Vertebrae.jpg",
+     "number": "7.28",
+     "title": "Lumbar Vertebrae",
+     "section": "7.3 The Vertebral Column",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+     "alt": "Lateral view of lumbar vertebrae with body, transverse process, spinous process, and articular processes labeled."
+    },
+    {
+     "file": "719_Thoracic_Vertebra.jpg",
+     "number": "7.26",
+     "title": "Thoracic Vertebrae",
+     "section": "7.3 The Vertebral Column",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+     "alt": "Lateral view of thoracic vertebrae with spinous process, transverse process, and costal facets labeled."
+    },
+    {
+     "file": "721_Rib_Cage.jpg",
+     "number": "7.32",
+     "title": "Thoracic Cage",
+     "section": "7.4 The Thoracic Cage",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage",
+     "alt": "Anterior views of the sternum and of the rib cage with ribs numbered and the xiphoid process labeled."
+    },
+    {
+     "file": "803_The_Scapula.jpg",
+     "number": "8.4",
+     "title": "Scapula",
+     "section": "8.1 The Pectoral Girdle",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle",
+     "alt": "Anterior and posterior views of the right scapula with coracoid process, spine, medial border, and inferior angle labeled."
+    },
+    {
+     "file": "804_Humerus_and_Elbow.jpg",
+     "number": "8.5",
+     "title": "Humerus and Elbow Joint",
+     "section": "8.2 Bones of the Upper Limb",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb",
+     "alt": "Anterior and posterior views of the humerus with tubercles and the intertubercular groove labeled."
+    }
+   ],
    "cells": [
     {
      "id": "lm.asis",
@@ -1073,6 +1147,50 @@
     }
    ],
    "layout": "table",
+   "figures": [
+    {
+     "file": "111_Abdominal_Quadrant_Regions.jpg",
+     "number": "1.16",
+     "title": "Regions and Quadrants of the Peritoneal Cavity",
+     "section": "1.6 Anatomical Terminology",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
+     "alt": "Anterior view of the abdomen divided into nine regions and four quadrants, with the diaphragm outlined above the liver and stomach.",
+     "note": "Anterior view, so the body's right is on the left of the image. The liver fills the right upper quadrant; the stomach lies in the left upper quadrant."
+    },
+    {
+     "file": "2001_Heart_Position_in_ThoraxN.jpg",
+     "number": "19.2",
+     "title": "Position of the Heart in the Thorax",
+     "section": "19.1 Heart Anatomy",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+     "alt": "Anterior view of the open thorax with the heart between the lungs, its apex pointing to the left, resting on the diaphragm."
+    },
+    {
+     "file": "2312_Gross_Anatomy_of_the_Lungs.jpg",
+     "number": "22.13",
+     "title": "Gross Anatomy of the Lungs",
+     "section": "22.2 The Lungs",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs",
+     "alt": "Anterior view of both lungs: three lobes on the right, two lobes and the cardiac notch on the left."
+    },
+    {
+     "file": "2422_Accessory_Organs.jpg",
+     "number": "23.24",
+     "title": "Accessory Organs",
+     "section": "23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+     "alt": "Anterior view of the upper abdomen showing the liver on the right and the spleen on the left."
+    },
+    {
+     "file": "2608_Kidney_Position_in_Abdomen.jpg",
+     "number": "25.7",
+     "title": "Kidneys",
+     "section": "25.3 Gross Anatomy of the Kidney",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney",
+     "alt": "Posterior view of the trunk showing both kidneys beside the spine from T12 to L3 and the liver above the right kidney.",
+     "note": "Posterior view, so the body's right is on the right of the image. The liver and the lower kidney are both on the right side."
+    }
+   ],
    "cells": [
     {
      "id": "visc.liver.side",
@@ -1216,6 +1334,56 @@
     }
    ],
    "layout": "matrix",
+   "figures": [
+    {
+     "file": "1112_Muscles_of_the_Abdomen.jpg",
+     "number": "11.16",
+     "title": "Muscles of the Abdomen",
+     "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+     "alt": "Anterior lateral view of the abdominal wall layers and an anterior view of quadratus lumborum, psoas major, and iliacus."
+    },
+    {
+     "file": "1113_The_Diaphragm.jpg",
+     "number": "11.17",
+     "title": "Muscles of the Diaphragm",
+     "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+     "alt": "Inferior view of the diaphragm with its central tendon, crura on the vertebrae, and the openings for the vena cava, esophagus, and aorta."
+    },
+    {
+     "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+     "number": "11.19",
+     "title": "Muscles of the Pelvic Floor",
+     "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+     "alt": "Superior view of the pelvic diaphragm with the two parts of levator ani labeled."
+    },
+    {
+     "file": "1118_Muscles_that_Position_the_Pectoral_Girdle.jpg",
+     "number": "11.22",
+     "title": "Muscles That Position the Pectoral Girdle",
+     "section": "11.5 Muscles of the Pectoral Girdle and Upper Limbs",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+     "alt": "Anterior lateral and posterior views of the shoulder girdle muscles, including serratus anterior, pectoralis minor, and trapezius."
+    },
+    {
+     "file": "1119_Muscles_that_Move_the_Humerus.jpg",
+     "number": "11.23",
+     "title": "Muscles That Move the Humerus",
+     "section": "11.5 Muscles of the Pectoral Girdle and Upper Limbs",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+     "alt": "Four views of the shoulder muscles, including latissimus dorsi from front and back."
+    },
+    {
+     "file": "1122_Gluteal_Muscles_that_Move_the_Femur.jpg",
+     "number": "11.29",
+     "title": "Hip and Thigh Muscles",
+     "section": "11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+     "alt": "Anterior and posterior views of the hip and thigh muscles, superficial and deep, including the adductors, hamstrings, gluteals, and deep rotators."
+    }
+   ],
    "cells": [
     {
      "id": "att.diaphragm.crural.origin",
@@ -3397,6 +3565,17 @@
  ],
  "term": "2026fa",
  "salt": "68969c65aaca24aee368e823d54ecdd2",
+ "figureSource": {
+  "book": "Anatomy and Physiology 2e",
+  "publisher": "OpenStax, Rice University",
+  "authors": "Betts JG, Young KA, Wise JA, Johnson E, Poe B, Kruse DH, Korol O, Johnson JE, Womble M, DeSaix P",
+  "year": "2022",
+  "license": "CC BY-NC-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "bookUrl": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+  "dir": "assets/figures/openstax/",
+  "changes": "Resized or recompressed for the web; otherwise unchanged."
+ },
  "optionSets": {
   "sites": [
    {
@@ -3493,6 +3672,6 @@
    }
   ]
  },
- "built": "2026-11-10T13:36Z",
+ "built": "2026-11-10T13:48Z",
  "keySource": "current.xlsx"
 }

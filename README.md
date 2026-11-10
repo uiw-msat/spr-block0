@@ -35,4 +35,4 @@ Answers are hashed, not encrypted. With two or three options per item, a determi
 
 ## Licensing
 
-Code: MIT (see `LICENSE`). Lesson text and the answer key are course materials of the instructors. Anatomy figures carry their own CC BY credits. PRI terminology is attributed on the About page.
+Code: MIT (see `LICENSE`). Lesson text and the answer key are course materials of the instructors. Anatomy figures in `assets/figures/openstax/` are from OpenStax *Anatomy and Physiology 2e* under CC BY-NC-SA 4.0, not MIT; see `assets/figures/openstax/ATTRIBUTION.md`. PRI terminology is attributed on the About page.

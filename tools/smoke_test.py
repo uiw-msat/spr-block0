@@ -70,6 +70,9 @@ def main(path, base):
             for i, (cid, right, wrong, typ) in enumerate(rows):
                 answer(page, cid, typ, wrong if i == 0 else right)
             first = rows[0][0]
+            n_figs = page.locator(".figures figure").count()
+            if n_figs and page.locator(".figures").get_attribute("hidden") is None:
+                fails.append(f"{slug}: reference figures visible before the lesson is passed")
             for attempt in range(1, 4):
                 page.click("text=Check answers")
                 page.wait_for_function("document.querySelector('.result').textContent.includes('not correct')")
@@ -89,7 +92,15 @@ def main(path, base):
             if "passed" not in txt:
                 bad = [c for c in page.eval_on_selector_all(".wrong", "els => els.map(e => e.getAttribute('data-cell'))")]
                 fails.append(f"{slug}: did not pass with key answers; wrong: {bad}")
-            print(f"{slug}: {len(rows)} items checked; {txt.strip()}")
+            if n_figs and "passed" in txt:
+                if page.locator(".figures").get_attribute("hidden") is not None:
+                    fails.append(f"{slug}: reference figures still hidden after the pass")
+                page.locator(".figures").scroll_into_view_if_needed()
+                page.wait_for_function("Array.from(document.querySelectorAll('.figures img')).every(i => i.complete)")
+                broken = page.eval_on_selector_all(".figures img", "els => els.filter(i => !i.naturalWidth).map(i => i.getAttribute('src'))")
+                if broken:
+                    fails.append(f"{slug}: figures failed to load: {broken}")
+            print(f"{slug}: {len(rows)} items checked; {txt.strip()}" + (f" {n_figs} figures shown." if n_figs else ""))
         page.goto(f"{base}/index.html")
         page.wait_for_selector(".status")
         passed = page.locator(".status.passed").count()
