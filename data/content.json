@@ -1224,7 +1224,7 @@
      "accept": [
       "10ed22c5cd90add4d9b64df6fb23296a5996d818e21b1ed2806d1d8454d42de8"
      ],
-     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon",
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
      "optionSet": "sites",
      "row": "Diaphragm, crural part",
      "col": "Origin"
@@ -1236,7 +1236,7 @@
      "accept": [
       "3cb5b45b13e18740b33e12ab6c19e85b1782f8edd9f0d6db568ab65969f7f3f5"
      ],
-     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon",
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
      "optionSet": "sites",
      "row": "Diaphragm, costal part",
      "col": "Origin"
@@ -1248,7 +1248,7 @@
      "accept": [
       "744a8d7941374562ece9888591e75bdf86d1fcf9398565d2b8aa3b524712750b"
      ],
-     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon",
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
      "optionSet": "sites",
      "row": "Diaphragm",
      "col": "Insertion"
@@ -3438,6 +3438,6 @@
    }
   ]
  },
- "built": "2026-11-10T13:18Z",
+ "built": "2026-11-10T13:19Z",
  "keySource": "current.xlsx"
 }
