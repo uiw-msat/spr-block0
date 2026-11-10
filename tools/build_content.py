@@ -131,7 +131,7 @@ def main(key_path):
     meta["keySource"] = pathlib.Path(key_path).name
     (ROOT / "data/content.json").write_text(json.dumps(meta, indent=1, ensure_ascii=False) + "\n")
     n = sum(len(v) for v in cells_by_lesson.values())
-    missing = sorted({c["ref"] for v in cells_by_lesson.values() for c in v if ", p. " not in c["ref"] and c["ref"].startswith("Neumann 2017, ")})
+    missing = sorted({c["ref"] for v in cells_by_lesson.values() for c in v if ", p. " not in c["ref"] and ", pp. " not in c["ref"] and c["ref"].startswith("Neumann 2017, ")})
     print(f"content.json: {n} cells across {len(cells_by_lesson)} lessons; {len(missing)} Neumann refs still without a page")
 
 
