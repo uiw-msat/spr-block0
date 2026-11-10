@@ -321,7 +321,7 @@
     },
     {
       "id": "05",
-      "slug": "05-open-chain",
+      "slug": "05-distal-on-proximal",
       "title": "Distal-on-proximal actions",
       "sub": "Femur-on-pelvis, thorax-on-pelvis, scapula-on-thorax, and humerus-on-glenoid, with fiber distinctions",
       "minutes": [
@@ -356,7 +356,7 @@
     },
     {
       "id": "06",
-      "slug": "06-reversed",
+      "slug": "06-proximal-on-distal",
       "title": "Proximal-on-distal actions",
       "sub": "Pelvis-on-femur, thorax-on-scapula, and glenoid-on-humerus",
       "minutes": [

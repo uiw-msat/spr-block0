@@ -12,7 +12,7 @@ from openpyxl import load_workbook
 from playwright.sync_api import sync_playwright
 
 SHEETS = {"L01_conventions": "01-conventions", "L02_landmarks": "02-landmarks", "L03_viscera": "03-viscera",
-          "L04_attachments": "04-attachments", "L05_open_chain": "05-open-chain"}
+          "L04_attachments": "04-attachments", "L05_open_chain": "05-distal-on-proximal"}
 
 
 def key_answers(path):
