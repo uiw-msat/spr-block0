@@ -128,7 +128,7 @@
       "id": "04",
       "slug": "04-attachments",
       "title": "Attachments",
-      "sub": "Origin and insertion for the course's 25 muscles",
+      "sub": "Attachments of the course's 25 muscles, in Neumann's terms",
       "minutes": [
         10,
         40
@@ -136,20 +136,20 @@
       "opensAt": "2026-11-06",
       "input": "Dropdown per cell",
       "framing": [
-        "For each muscle, choose the origin and insertion from the attachment list. Where a muscle has a broad origin, any of its listed attachments is accepted.",
+        "For each muscle, choose its attachments from the list. The lesson uses Neumann's terms: proximal and distal for hip and shoulder muscles; inferior and superior for the diaphragm, erector spinae, rectus abdominis, and quadratus lumborum; lateral and medial for the obliques and transversus abdominis. Where a muscle has several attachments at one end, any one of them is accepted.",
         "Fiber distinctions the course uses are listed as separate rows: diaphragm crural vs costal, adductor magnus anterior vs posterior head, and gluteus maximus upper vs lower fibers."
       ],
       "where": [
         {
-          "label": "Neumann 2017, Appendix II (upper extremity attachments): serratus anterior, lower trapezius, pectoralis minor, latissimus dorsi",
+          "label": "Neumann 2017, Appendix II, Part F (pp. 311-312): serratus anterior, trapezius, pectoralis minor, latissimus dorsi",
           "url": ""
         },
         {
-          "label": "Neumann 2017, Appendix III (axial attachments): diaphragm, abdominals, erector spinae, quadratus lumborum, pelvic floor",
+          "label": "Neumann 2017, Appendix III, Part C (pp. 470-473): erector spinae, abdominal muscles, quadratus lumborum, diaphragm",
           "url": ""
         },
         {
-          "label": "Neumann 2017, Appendix IV (lower extremity attachments): hip muscles",
+          "label": "Neumann 2017, Appendix IV, Part D (pp. 731-732): hip muscles",
           "url": ""
         },
         {

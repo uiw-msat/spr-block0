@@ -25,6 +25,14 @@ CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA), open chain",
                CHAINS[1]: "Trunk muscles · thorax-on-pelvis, one side contracting",
                CHAINS[2]: "Scapular muscles · scapula-on-thorax",
                CHAINS[3]: "Glenohumeral · arm-on-thorax"}
+# Lesson 4: Neumann names attachments differently by region; one table per pair of terms.
+ATTACH_GROUP = {"proximal attachment": "Hip and shoulder muscles · proximal and distal attachments",
+                "distal attachment": "Hip and shoulder muscles · proximal and distal attachments",
+                "inferior attachment": "Diaphragm and trunk muscles · inferior and superior attachments",
+                "superior attachment": "Diaphragm and trunk muscles · inferior and superior attachments",
+                "lateral attachment": "Abdominal wall · lateral and medial attachments",
+                "medial attachment": "Abdominal wall · lateral and medial attachments",
+                "origin": "Pelvic floor", "insertion": "Pelvic floor"}
 
 
 def norm(s):
@@ -108,7 +116,7 @@ def main(key_path):
                 cell["optional"] = True
             if lid in ("04", "05"):
                 left, col = prompt.rsplit(": ", 1)
-                group = None
+                group = ATTACH_GROUP.get(col.strip().lower()) if lid == "04" else None
                 for ch in CHAINS:
                     if left.endswith(", " + ch):
                         left, group = left[: -len(ch) - 2], CHAIN_LABEL[ch]
