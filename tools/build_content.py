@@ -31,8 +31,7 @@ ATTACH_GROUP = {"proximal attachment": "Hip and shoulder muscles · proximal and
                 "inferior attachment": "Diaphragm and trunk muscles · inferior and superior attachments",
                 "superior attachment": "Diaphragm and trunk muscles · inferior and superior attachments",
                 "lateral attachment": "Abdominal wall · lateral and medial attachments",
-                "medial attachment": "Abdominal wall · lateral and medial attachments",
-                "origin": "Pelvic floor", "insertion": "Pelvic floor"}
+                "medial attachment": "Abdominal wall · lateral and medial attachments"}
 
 
 def norm(s):

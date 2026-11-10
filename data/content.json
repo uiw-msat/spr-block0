@@ -1304,7 +1304,7 @@
    "id": "04",
    "slug": "04-attachments",
    "title": "Attachments",
-   "sub": "Attachments of the course's 25 muscles, in Neumann's terms",
+   "sub": "Attachments of 23 muscles, in Neumann's terms",
    "minutes": [
     10,
     40
@@ -1350,14 +1350,6 @@
      "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
      "alt": "Inferior view of the diaphragm with its central tendon, crura on the vertebrae, and the openings for the vena cava, esophagus, and aorta."
-    },
-    {
-     "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
-     "number": "11.19",
-     "title": "Muscles of the Pelvic Floor",
-     "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
-     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
-     "alt": "Superior view of the pelvic diaphragm with the two parts of levator ani labeled."
     },
     {
      "file": "1118_Muscles_that_Position_the_Pectoral_Girdle.jpg",
@@ -1997,61 +1989,6 @@
      "row": "Latissimus dorsi",
      "col": "Distal attachment",
      "group": "Hip and shoulder muscles · proximal and distal attachments"
-    },
-    {
-     "id": "att.levani.origin",
-     "type": "select",
-     "prompt": "Levator ani (group): origin",
-     "accept": [
-      "4ce73096e2da6d79fbd99be001a9d860ae45f47168cb24aee23170bd6e567f4d",
-      "87715a032d945967761e0709144bc428726fbe506574622fcfc73b67a8b17ceb",
-      "99fa6e7f2869d8b87941e201b1f055c19698e1ea6b67442c1bd9d8fec4de6d19"
-     ],
-     "ref": "Neumann 2017, App. III, Part C: Levator ani",
-     "optionSet": "sites",
-     "row": "Levator ani (group)",
-     "col": "Origin",
-     "group": "Pelvic floor"
-    },
-    {
-     "id": "att.levani.insertion",
-     "type": "select",
-     "prompt": "Levator ani (group): insertion",
-     "accept": [
-      "3d35689333a5dde9081e6be4b1116c0c7e4e872bb874534a5e64427515d52407",
-      "c4c1507daba43b4bde6a9e5c80ffb8c88ebb18bb803dbf6388394914b8155dc3"
-     ],
-     "ref": "Neumann 2017, App. III, Part C: Levator ani",
-     "optionSet": "sites",
-     "row": "Levator ani (group)",
-     "col": "Insertion",
-     "group": "Pelvic floor"
-    },
-    {
-     "id": "att.cocc.origin",
-     "type": "select",
-     "prompt": "Coccygeus: origin",
-     "accept": [
-      "d4eb10e8c5705275e425a47142dc5d177cc2c4339f4361f4c089992c67c0709a"
-     ],
-     "ref": "Neumann 2017, App. III, Part C: Coccygeus",
-     "optionSet": "sites",
-     "row": "Coccygeus",
-     "col": "Origin",
-     "group": "Pelvic floor"
-    },
-    {
-     "id": "att.cocc.insertion",
-     "type": "select",
-     "prompt": "Coccygeus: insertion",
-     "accept": [
-      "304ad833e39fd781c9d389c2bef67eadc8781f6fc9ec2fc14788545037d890ed"
-     ],
-     "ref": "Neumann 2017, App. III, Part C: Coccygeus",
-     "optionSet": "sites",
-     "row": "Coccygeus",
-     "col": "Insertion",
-     "group": "Pelvic floor"
     },
     {
      "id": "att.oi.origin",
@@ -3665,13 +3602,11 @@
      "Thoracolumbar fascia",
      "Iliotibial tract",
      "Inguinal ligament",
-     "Perineal body and anococcygeal ligament",
-     "Tendinous arch of the levator ani",
      "Common tendon (sacrum, iliac crests, lumbar spinous processes)"
     ]
    }
   ]
  },
- "built": "2026-11-10T13:48Z",
+ "built": "2026-11-10T13:52Z",
  "keySource": "current.xlsx"
 }
