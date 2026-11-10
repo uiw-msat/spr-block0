@@ -20,7 +20,7 @@
       "id": "01",
       "slug": "01-conventions",
       "title": "Conventions",
-      "sub": "Planes, axes, open vs reversed action, the pelvic convention",
+      "sub": "Planes, axes, which segment moves, the pelvic convention",
       "minutes": [
         5,
         15
@@ -30,6 +30,7 @@
       "framing": [
         "Most confusion in this material is not about anatomy; it is about naming. The same pelvis can be called rotated left or right depending on whose textbook you open. This lesson fixes the vocabulary the rest of the course uses.",
         "The course names the whole pelvis by the direction it faces in the transverse plane (oriented right or left), each hemipelvis by its own forward or backward rotation and anterior or posterior tilt, and every hip motion as either femur-on-pelvis (FA) or pelvis-on-femur (AF). These terms come from the Postural Restoration Institute and are credited on the About page.",
+        "Joint motion is named segment-on-segment: the first segment named is the one moving, and the second is the one held fixed. FA is the femur moving on a fixed pelvis (acetabulum); AF is the pelvis moving on a fixed femur. The same rule gives scapula-on-thorax (ST) and thorax-on-scapula (TS), and humerus-on-glenoid (HG) and glenoid-on-humerus (GH).",
         "In standard anatomy, including Neumann, the innominate is the hip bone (ilium, ischium, pubis). This course borrows the word for any bony ring that positions a spinal region: the pelvic ring (lumbar), the rib cage ring (thoracic), and the cranium and mandible (cervical). This is course usage, not textbook usage."
       ],
       "where": [
