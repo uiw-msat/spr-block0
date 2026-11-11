@@ -431,7 +431,36 @@
     ]));
 
     var next = content.lessons[idx + 1];
-    if (!cells.length) {
+    if (L.layout === "synthesis") {
+      /* Free text, read by the instructors. Gated on word count only; saved to progress.synthesis. */
+      var store = load().synthesis || (load().synthesis = {});
+      var minWords = L.minWords || 60;
+      var words = function (t) { var m = String(t || "").trim().match(/\S+/g); return m ? m.length : 0; };
+      var sResult = el("span", { class: "result lesson-result" + (st.passed ? " ok" : ""), role: "status", "aria-live": "polite" });
+      var sNext = el("a", { class: "btn", href: ROOT + "/certificate.html", text: "Certificate \u2192" });
+      var boxes = [];
+      var refresh = function () {
+        var done = boxes.every(function (b) { return words(b.value) >= minWords; });
+        if (done && !st.passed) { st.passed = true; st.passedAt = new Date().toISOString(); }
+        save();
+        sResult.textContent = st.passed ? "Lesson passed. Your answers are saved and can still be edited." : "Each answer needs at least " + minWords + " words. Answers save as you type.";
+        sResult.className = "result lesson-result" + (st.passed ? " ok" : "");
+        if (st.passed) sNext.removeAttribute("hidden"); else sNext.setAttribute("hidden", "");
+      };
+      (L.prompts || []).forEach(function (pr, i) {
+        var id = "synth-" + pr.id;
+        var count = el("span", { class: "word-count" });
+        var ta = el("textarea", { class: "synth", id: id, rows: "7" });
+        ta.value = store[pr.id] || "";
+        var upd = function () { var n = words(ta.value); count.textContent = n + " of " + minWords + " words" + (n >= minWords ? " \u2713" : ""); };
+        ta.addEventListener("input", function () { store[pr.id] = ta.value; upd(); refresh(); });
+        upd(); boxes.push(ta);
+        work.appendChild(el("div", { class: "synth-item" }, [el("label", { for: id, text: (i + 1) + ". " + pr.text }), ta, count]));
+      });
+      work.querySelector(".work-count").textContent = boxes.length + " written answers";
+      refresh();
+      work.appendChild(el("div", { class: "check-bar static" }, [sResult, el("div", { class: "btn-row" }, [sNext])]));
+    } else if (!cells.length) {
       work.appendChild(el("div", { class: "locked-panel" }, [el("p", { class: "muted", text: "Items for this lesson are not drafted yet." })]));
     } else {
       var sectioned = L.layout === "matrix" && !!L.sectionCheck;

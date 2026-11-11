@@ -7717,19 +7717,30 @@
    "id": "09",
    "slug": "09-pattern-map",
    "title": "Pattern-to-phase map",
-   "sub": "Name the phase a resting pattern is parked in",
+   "sub": "Read a resting pattern as a moment of walking, then test the muscles against it",
    "minutes": [
     5,
     15
    ],
    "opensAt": "2026-11-13",
-   "input": "Multiple choice and matching",
+   "input": "Dropdowns",
    "framing": [
-    "Draft."
+    "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take six muscles from your Lesson 6 table and ask what each does to the pattern.",
+    "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. That the body rests in a position borrowed from walking is a clinical model, not an established finding; one item asks you to say so.",
+    "For each muscle, the femur on the named side is fixed, as in stance. Take the muscle's sagittal and transverse actions from your Lesson 6 table and decide whether each one moves the pelvis out of the pattern (opposes it), further into it (adds to it), or is not listed in Table 12.3.",
+    "Expect some textbook actions to add to the pattern. The muscles are the ones PRI names as oppositional, and the reasoning for each, including where the model goes beyond the table, is taken up in Unit 3."
    ],
    "where": [
     {
-     "label": "Your Lesson 8 chart and Lesson 6 proximal-on-distal table",
+     "label": "Your Lesson 8 gait chart",
+     "url": ""
+    },
+    {
+     "label": "Your Lesson 6 table (pelvis-on-femur)",
+     "url": ""
+    },
+    {
+     "label": "Lesson 1: the pelvic convention and the Left AIC pattern",
      "url": ""
     },
     {
@@ -7737,7 +7748,279 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
     }
    ],
-   "cells": []
+   "layout": "table",
+   "cells": [
+    {
+     "id": "pat.limbs",
+     "type": "select",
+     "prompt": "A resting body shows: pelvis oriented right, right hip internally rotated, left hip externally rotated and flexed relative to the right, right arm forward. Read as a moment of walking, which limb is in stance and which in swing?",
+     "accept": [
+      "a26051b517f5e5a2a52461f409c57e773d37c4e6d2469b30d928c8a24aeac14a"
+     ],
+     "ref": "Your Lesson 8 chart (Neumann 2017, Ch. 15)",
+     "options": [
+      "Right stance, left swing",
+      "Left stance, right swing",
+      "Double support, weight moving onto the right",
+      "Double support, weight moving onto the left"
+     ]
+    },
+    {
+     "id": "pat.phase",
+     "type": "select",
+     "prompt": "On your Lesson 8 chart, by the end of which right-limb phase has the pelvis first become oriented right?",
+     "accept": [
+      "5cc4e6b18dd9fc0bbc800e1a0b2c46c1c80cf3dee32b7e3e3b11e5f9ea796b89"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ]
+    },
+    {
+     "id": "pat.leftphase",
+     "type": "select",
+     "prompt": "At the end of that right-limb phase, the left limb is finishing which phase?",
+     "accept": [
+      "3e6c0c8869750348166f251d69086b18175d3f7cb5b3c6f87df1eea83c326cae"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ]
+    },
+    {
+     "id": "pat.mirror",
+     "type": "select",
+     "prompt": "The mirror position (pelvis oriented left, left hip internally rotated, left arm forward) is on your chart at the end of which right-limb phase?",
+     "accept": [
+      "39322bd6e1e37aa7a4157860b11f180194e70c821f75ea1db4c822fcf0d9704d"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ]
+    },
+    {
+     "id": "pat.status",
+     "type": "select",
+     "prompt": "The statement that the Left AIC pattern is a held position from the gait cycle is best described as:",
+     "accept": [
+      "66724b06148ac67ca48dc6c73891bf479cfa87f08233826bb175c36d19b5a4d6"
+     ],
+     "ref": "Course Roadmap (model versus evidence); Boyle 2013",
+     "options": [
+      "A clinical model from PRI, supported at the level of case reports",
+      "An experimental finding replicated in controlled trials",
+      "A definition from Neumann's text",
+      "A measurement from Perry and Burnfield's gait data"
+     ]
+    },
+    {
+     "id": "pat.pec",
+     "type": "select",
+     "prompt": "In the course's description, the PEC pattern differs from the Left AIC pattern in that:",
+     "accept": [
+      "0810bc3499bbd439f2d244f59e7d66094ee5a3d70fb1e89892342c87f891c981"
+     ],
+     "ref": "Course model (PRI); Course Roadmap",
+     "options": [
+      "Both hemipelves are forward and anteriorly tilted, with the rib cage elevated and the spine biased toward extension",
+      "The pelvis is oriented left instead of right",
+      "Only the right hemipelvis is anteriorly tilted",
+      "The pelvis is neutral and only the rib cage is involved"
+     ]
+    },
+    {
+     "id": "opp.semimem.sag",
+     "type": "select",
+     "prompt": "Left semimembranosus, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "accept": [
+      "9cfa8eefd94359a4de1099c7b837d8c33ad71ead3b80ec4044fdc59788dc6a30"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.semimem.tra",
+     "type": "select",
+     "prompt": "Left semimembranosus, left femur fixed. Its transverse action on the pelvis:",
+     "accept": [
+      "91f85740cf48d24f0f4e628a2fd16785c5f91e7794c344e86cf54162664a9186"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.addmag.sag",
+     "type": "select",
+     "prompt": "Left adductor magnus, posterior head, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "accept": [
+      "352dae15b53f16a2e65124a06fb07cb9e83663a0fa41b53a4b753b91d5155a1a"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.addmag.tra",
+     "type": "select",
+     "prompt": "Left adductor magnus, posterior head, left femur fixed. Its transverse action on the pelvis:",
+     "accept": [
+      "995b39fd1972f4eaf0f2117e261bb24a81859f2805e21e60d17b4b346448bb49"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.addlong.sag",
+     "type": "select",
+     "prompt": "Left adductor longus, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "accept": [
+      "85d2c1201453f345062859df46ad5d75a0682ac3b29c3af943785f8ca15478b0"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.addlong.tra",
+     "type": "select",
+     "prompt": "Left adductor longus, left femur fixed. Its transverse action on the pelvis:",
+     "accept": [
+      "597a28fc88cb3d38050f0d2628cc0ead80e268337182263d641061750f6fd2f2"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.gmedpostL.sag",
+     "type": "select",
+     "prompt": "Left gluteus medius, posterior fibers, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "accept": [
+      "3fb0b320def69029dafe28b270d1aca8a4d426920873e786215d93efb228a9dc"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.gmedpostL.tra",
+     "type": "select",
+     "prompt": "Left gluteus medius, posterior fibers, left femur fixed. Its transverse action on the pelvis:",
+     "accept": [
+      "f4cb20e2827276f1d6331ad0b9fa1955b41fec7441fa215017b8319ec0e62dce"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.gmaxR.sag",
+     "type": "select",
+     "prompt": "Right gluteus maximus, right femur fixed. Its sagittal action on the right hemipelvis:",
+     "accept": [
+      "4875832b4bc9f370cf5ce2bbcd6279a00f070ce4618406129c471d847a725183"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.gmaxR.tra",
+     "type": "select",
+     "prompt": "Right gluteus maximus, right femur fixed. Its transverse action on the pelvis:",
+     "accept": [
+      "206e0f4335427f160f89f256b5699ba7373b5b5214bd7f356fdf690d8fd29a33"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.gmedpostR.sag",
+     "type": "select",
+     "prompt": "Right gluteus medius, posterior fibers, right femur fixed. Its sagittal action on the right hemipelvis:",
+     "accept": [
+      "25134abf1447df45fbed155007d12899c511ade03d0d4ea6e17b0dce1f04a337"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    },
+    {
+     "id": "opp.gmedpostR.tra",
+     "type": "select",
+     "prompt": "Right gluteus medius, posterior fibers, right femur fixed. Its transverse action on the pelvis:",
+     "accept": [
+      "657d46ffd8eadeede16ba926235cbd78ce37489929b74cef51b5186166e26498"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposes the pattern",
+      "Adds to the pattern",
+      "No action listed"
+     ]
+    }
+   ]
   },
   {
    "id": "10",
@@ -7749,14 +8032,31 @@
     20
    ],
    "opensAt": "2026-11-13",
-   "input": "Free text",
+   "input": "Three written answers, 60 words each",
    "framing": [
-    "Draft."
+    "Three short written answers, each at least 60 words. They are not auto-graded: both instructors read them before Unit 1, and Unit 1 starts from what the class wrote.",
+    "Write from your own chart and tables. Use the course's terms for the pelvis and hip, and say where you are stating a measured fact and where you are stating the model."
    ],
    "where": [
     {
      "label": "Your Field Atlas pages from Lessons 1 to 9",
      "url": ""
+    }
+   ],
+   "layout": "synthesis",
+   "minWords": 60,
+   "prompts": [
+    {
+     "id": "describe",
+     "text": "Describe the moment of walking that the Left AIC pattern resembles. Give the orientation of the pelvis, the position of each hemipelvis, the position of each hip, and which arm is forward."
+    },
+    {
+     "id": "muscles",
+     "text": "Name the muscles that would move the body out of that position and into the opposite one (left stance, right swing). For at least three of them, name the fixed segment and the pelvic motion the muscle produces."
+    },
+    {
+     "id": "stuck",
+     "text": "Explain why a body might come to rest in that position instead of alternating evenly. Use the course's three premises, and say which parts of your explanation are supported by evidence and which are model."
     }
    ],
    "cells": []
@@ -8061,6 +8361,6 @@
    }
   ]
  },
- "built": "2026-11-11T20:32Z",
+ "built": "2026-11-11T20:37Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }

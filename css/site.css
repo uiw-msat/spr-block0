@@ -332,3 +332,10 @@ td.right .mark-text { color: var(--ok); font-weight: 600; }
 .paged .matrix-section { display: none; }
 .paged .matrix-section.current { display: block; }
 body.show-all-pages .paged .matrix-section { display: block; }
+
+/* Lesson 10: written answers */
+.synth-item { margin: 0 0 1.75rem; }
+.synth-item label { display: block; font-weight: 600; margin-bottom: .5rem; }
+textarea.synth { width: 100%; font: inherit; line-height: 1.5; padding: .7rem .8rem; border: 1px solid #c9c4b8; border-radius: 6px; background: #fff; resize: vertical; }
+textarea.synth:focus-visible { outline: 2px solid #1f3a5f; outline-offset: 1px; }
+.word-count { display: block; margin-top: .3rem; font-size: .85rem; color: #6b665c; }

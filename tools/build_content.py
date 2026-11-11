@@ -18,7 +18,7 @@ from openpyxl import load_workbook
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SHEETS = {"L01_conventions": "01", "L02_landmarks": "02", "L03_viscera": "03",
           "L04_attachments": "04", "L05_open_chain": "05",
-          "L06_proximal_on_distal": "06", "L07_diaphragm": "07", "L08_gait": "08"}
+          "L06_proximal_on_distal": "06", "L07_diaphragm": "07", "L08_gait": "08", "L09_pattern": "09"}
 SITE_OPTS = "See Options sheet: Attachment sites"
 CHAINS = ["femur-on-pelvis (FA), from anatomical position", "thorax-on-pelvis, pelvis fixed, unilateral contraction",
           "scapula-on-thorax (ST)", "humerus-on-glenoid (HG)"]

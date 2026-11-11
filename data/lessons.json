@@ -629,26 +629,38 @@
       "id": "09",
       "slug": "09-pattern-map",
       "title": "Pattern-to-phase map",
-      "sub": "Name the phase a resting pattern is parked in",
+      "sub": "Read a resting pattern as a moment of walking, then test the muscles against it",
       "minutes": [
         5,
         15
       ],
       "opensAt": "2026-11-13",
-      "input": "Multiple choice and matching",
+      "input": "Dropdowns",
       "framing": [
-        "Draft."
+        "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take six muscles from your Lesson 6 table and ask what each does to the pattern.",
+        "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. That the body rests in a position borrowed from walking is a clinical model, not an established finding; one item asks you to say so.",
+        "For each muscle, the femur on the named side is fixed, as in stance. Take the muscle's sagittal and transverse actions from your Lesson 6 table and decide whether each one moves the pelvis out of the pattern (opposes it), further into it (adds to it), or is not listed in Table 12.3.",
+        "Expect some textbook actions to add to the pattern. The muscles are the ones PRI names as oppositional, and the reasoning for each, including where the model goes beyond the table, is taken up in Unit 3."
       ],
       "where": [
         {
-          "label": "Your Lesson 8 chart and Lesson 6 proximal-on-distal table",
+          "label": "Your Lesson 8 gait chart",
+          "url": ""
+        },
+        {
+          "label": "Your Lesson 6 table (pelvis-on-femur)",
+          "url": ""
+        },
+        {
+          "label": "Lesson 1: the pelvic convention and the Left AIC pattern",
           "url": ""
         },
         {
           "label": "Boyle 2013, IJSPT: published description of the Left AIC pattern",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3679640/"
         }
-      ]
+      ],
+      "layout": "table"
     },
     {
       "id": "10",
@@ -660,14 +672,31 @@
         20
       ],
       "opensAt": "2026-11-13",
-      "input": "Free text",
+      "input": "Three written answers, 60 words each",
       "framing": [
-        "Draft."
+        "Three short written answers, each at least 60 words. They are not auto-graded: both instructors read them before Unit 1, and Unit 1 starts from what the class wrote.",
+        "Write from your own chart and tables. Use the course's terms for the pelvis and hip, and say where you are stating a measured fact and where you are stating the model."
       ],
       "where": [
         {
           "label": "Your Field Atlas pages from Lessons 1 to 9",
           "url": ""
+        }
+      ],
+      "layout": "synthesis",
+      "minWords": 60,
+      "prompts": [
+        {
+          "id": "describe",
+          "text": "Describe the moment of walking that the Left AIC pattern resembles. Give the orientation of the pelvis, the position of each hemipelvis, the position of each hip, and which arm is forward."
+        },
+        {
+          "id": "muscles",
+          "text": "Name the muscles that would move the body out of that position and into the opposite one (left stance, right swing). For at least three of them, name the fixed segment and the pelvic motion the muscle produces."
+        },
+        {
+          "id": "stuck",
+          "text": "Explain why a body might come to rest in that position instead of alternating evenly. Use the course's three premises, and say which parts of your explanation are supported by evidence and which are model."
         }
       ]
     }

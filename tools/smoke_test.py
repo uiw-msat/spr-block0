@@ -14,7 +14,7 @@ from playwright.sync_api import sync_playwright
 SHEETS = {"L01_conventions": "01-conventions", "L02_landmarks": "02-landmarks", "L03_viscera": "03-viscera",
           "L04_attachments": "04-attachments", "L05_open_chain": "05-distal-on-proximal",
           "L06_proximal_on_distal": "06-proximal-on-distal",
-          "L07_diaphragm": "07-diaphragm", "L08_gait": "08-gait-chart"}
+          "L07_diaphragm": "07-diaphragm", "L08_gait": "08-gait-chart", "L09_pattern": "09-pattern-map"}
 
 
 def key_answers(path):
@@ -134,6 +134,22 @@ def main(path, base):
                 if broken:
                     fails.append(f"{slug}: figures failed to load: {broken}")
             print(f"{slug}: {len(rows)} items checked; {txt.strip()}" + (f" {n_figs} figures shown." if n_figs else ""))
+        # Lesson 10: free text, gated on word count only
+        page.goto(f"{base}/lessons/10-synthesis.html")
+        if page.locator("textarea.synth").count():
+            boxes = page.locator("textarea.synth")
+            boxes.nth(0).fill("word " * 59)
+            if "passed" in page.text_content(".lesson-result"):
+                fails.append("10-synthesis: passed with one answer under the minimum")
+            for k in range(boxes.count()):
+                boxes.nth(k).fill("word " * 60)
+            page.wait_for_function("document.querySelector('.lesson-result').textContent.includes('passed')")
+            saved = page.evaluate("Object.keys(JSON.parse(localStorage.getItem('spr-block0-progress')).synthesis).length")
+            if saved != boxes.count():
+                fails.append("10-synthesis: answers not saved to progress")
+            print(f"10-synthesis: {boxes.count()} written answers; " + page.text_content(".lesson-result").strip())
+        else:
+            fails.append("10-synthesis: no text boxes (previous lessons not passed?)")
         page.goto(f"{base}/index.html")
         page.wait_for_selector(".status")
         passed = page.locator(".status.passed").count()
