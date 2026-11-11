@@ -4848,6 +4848,8 @@
     "This lesson builds a gait chart for one full cycle of the right limb, from right initial contact to the next right initial contact. There is one screen per phase, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names). Each phase heading gives its share of the cycle.",
     "Positions are asked at the end of each phase; for initial contact, at the moment of contact. Read them from the kinematic curves in Neumann, Ch. 15, at the percentage where the phase ends. Where a curve sits close to neutral at that point, the neutral option is the answer.",
     "The pelvis is named in the course convention. In the frontal plane, say whether the left side of the pelvis is lower or higher than the right. In the transverse plane, name the direction the whole pelvis faces: when the right side of the pelvis is forward of the left, the pelvis is oriented left. Neumann describes the same motion as rotation of the pelvis about the stance hip.",
+    "Each screen is one moment for the whole body, so it also charts the left side. The left limb runs half a cycle behind the right: name the phase the left limb is in, and give the left hip's position in each plane by reading the same curves 50% of the cycle later. Stance is longer than swing, so some screens span two left-limb phases; either is accepted there.",
+    "Screens 5 to 8 are screens 1 to 4 with the sides exchanged. Use that to check your chart against itself: the pelvis, the arms, and the two hips should mirror.",
     "Muscle rows ask whether the muscle is active through the phase, for part of it, or not at all, from the timing bars in Neumann's Fig. 15.29. The upper body rows ask which way the shoulder girdle faces and which arm is forward.",
     "Each phase has its own Check button. The lesson passes when all eight phases are correct. Lesson 9 reads directly from this chart."
    ],
@@ -4943,393 +4945,6 @@
      "col": "Position at the end of the phase"
     },
     {
-     "id": "gait.lr.hip.sag",
-     "type": "select",
-     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "14bb5fbaa92e01e413ec537f4ea00b9cb6b1cbf543af52dc773cd67acce1c060"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "2. Loading response · 2% to 12%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.lr.knee.sag",
-     "type": "select",
-     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "874892e94ff6c8d7ee15614612631f7f3b4d226734b9e095c50e790b457f2123"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "2. Loading response · 2% to 12%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.lr.ankle.sag",
-     "type": "select",
-     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "d4013f9b91fb1dd2e9c8fddff87112caccc971f0e8cff3517d50bb1e395cc28e",
-      "f1940c336dd68df25c444b29f26cd3eb41640fab34783c24186b158797f07b87"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "2. Loading response · 2% to 12%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.mst.hip.sag",
-     "type": "select",
-     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "0692bc71d912925b4cbc64b5603c1a18bd7195cc28a2510a10fbd666e703ed39"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "3. Mid stance · 12% to 31%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.mst.knee.sag",
-     "type": "select",
-     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "40a746ee992448e853b64a9944aee4b0d42489ef32cf751ff4f60df212b5cd07"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "3. Mid stance · 12% to 31%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.mst.ankle.sag",
-     "type": "select",
-     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "395d52e59a35f704965b7c843d3bcde4c50d1c48568923c815ae99be6cd16a18"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "3. Mid stance · 12% to 31%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.tst.hip.sag",
-     "type": "select",
-     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "11fb91e3550c3c605bf7fec80c2276f426c591b480cbcbd4af5a054ada7f166f"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "4. Terminal stance · 31% to 50%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.tst.knee.sag",
-     "type": "select",
-     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "ef79c6544d5aa5b7bdfc1aca9cf3f879b05c47a7e5b7cb0c13a5b91169be1a41"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "4. Terminal stance · 31% to 50%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.tst.ankle.sag",
-     "type": "select",
-     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "1b885f1f41bb1c961b5aa75c3d522771f045d7b2aae8422d1554c1261d79bd4c"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "4. Terminal stance · 31% to 50%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.psw.hip.sag",
-     "type": "select",
-     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "c6da0878f377398666bc799dfc8304dd2bf6d68f83128481e534a8b1fd8f65d9"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "5. Pre swing · 50% to 62%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.psw.knee.sag",
-     "type": "select",
-     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "060a51d562e1fde455c77a2e7cee4249a12ba662c60cd0222929b45f7e9c0260"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "5. Pre swing · 50% to 62%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.psw.ankle.sag",
-     "type": "select",
-     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "5fad320ad0abb9cf584b8b38bfb13b52f462f6b77b8655799ea53372e48272d8"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "5. Pre swing · 50% to 62%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.isw.hip.sag",
-     "type": "select",
-     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "360c51047f70e2f8dfd1047612d42dba3147474881a75e13af2e5c437827f0ff"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "6. Initial swing · 62% to 75%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.isw.knee.sag",
-     "type": "select",
-     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "c43e663663e0f2a19aef1f9580abb8248767dac6080429f92a2ca56ef727d173"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "6. Initial swing · 62% to 75%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.isw.ankle.sag",
-     "type": "select",
-     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "30d76a637cb61abce59cda98d5cfe6d1a645151b6a77f2b1adc99ef58c98d668",
-      "47a855ac794d9ea23d3f72f3f8ef10ff7ced7a1ca7d6a13e79c01101cbefa233"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "6. Initial swing · 62% to 75%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.msw.hip.sag",
-     "type": "select",
-     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "06ec0eabf9db07209c71092f279ffed18bc10d5a594c2f34d370c57af309c9ea"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "7. Mid swing · 75% to 87%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.msw.knee.sag",
-     "type": "select",
-     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "32dc4c989a2c645cb000b2f0304eeb692f6b2c13f555b2cc6df2b877f70231f9"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "7. Mid swing · 75% to 87%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.msw.ankle.sag",
-     "type": "select",
-     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "34d7126fd815025907e4818e8c11b825774c916bcb7a74cb3bbfeb5fa36fddab"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "7. Mid swing · 75% to 87%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.tsw.hip.sag",
-     "type": "select",
-     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Hip: position at the end of the phase",
-     "accept": [
-      "b0c5aa2e0f9d3d08af552af6c34a5826d29d7f3739d34c61a5dc436e5ef23b4d"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Flexed",
-      "Neutral (within about 5 degrees)",
-      "Extended"
-     ],
-     "section": "8. Terminal swing · 87% to 100%",
-     "group": "Right limb, sagittal plane",
-     "row": "Hip",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.tsw.knee.sag",
-     "type": "select",
-     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Knee: position at the end of the phase",
-     "accept": [
-      "582e0ce66f6c803136f63809fe4ad8d5acbba44245991b46bebe390876ad82df"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Near full extension",
-      "Flexed about 20 degrees",
-      "Flexed about 40 degrees",
-      "Flexed about 60 degrees"
-     ],
-     "section": "8. Terminal swing · 87% to 100%",
-     "group": "Right limb, sagittal plane",
-     "row": "Knee",
-     "col": "Position at the end of the phase"
-    },
-    {
-     "id": "gait.tsw.ankle.sag",
-     "type": "select",
-     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Ankle: position at the end of the phase",
-     "accept": [
-      "da9cba57de732caf8b632edf53fa5b61d6b0f7839965df20b423c36d4f0653a9"
-     ],
-     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
-     "options": [
-      "Plantar flexed",
-      "Neutral (within about 5 degrees)",
-      "Dorsiflexed"
-     ],
-     "section": "8. Terminal swing · 87% to 100%",
-     "group": "Right limb, sagittal plane",
-     "row": "Ankle",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.ic.pelvis.fro",
      "type": "select",
      "prompt": "1. Initial contact · 0% to 2% of the cycle | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -5401,6 +5016,85 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.ic.left.phase",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "145ad4af58f0cc94801cad2e0142bc05845e5a3dedcc0a068dbde9a61de9d8b1",
+      "8533873b56a728a321335670722d228ccedc6ad7b1bdd4d066fdd40b9242e0cb"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.ic.left.sag",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "22cc883f16ccb28ed8f71de26b731b0535d35f721270b45ffdf11b345f95bef8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.ic.left.fro",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "4d90a8cb2eb33081df4912beea780f7c684f9136da08cf7bd8de5d8be07629c9",
+      "6d5d78514eedd61dd0619a773bd1b7a6da65b3235fae7c9d00f58b6b10ae448b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.ic.left.tra",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "f9f4d952932c8cd18ee221df7a5940c6761ecc393b08c348e0060089e1836cf6"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.ic.trunk.tra",
@@ -5547,6 +5241,62 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.lr.hip.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "14bb5fbaa92e01e413ec537f4ea00b9cb6b1cbf543af52dc773cd67acce1c060"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.knee.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "874892e94ff6c8d7ee15614612631f7f3b4d226734b9e095c50e790b457f2123"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.ankle.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "d4013f9b91fb1dd2e9c8fddff87112caccc971f0e8cff3517d50bb1e395cc28e",
+      "f1940c336dd68df25c444b29f26cd3eb41640fab34783c24186b158797f07b87"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.lr.pelvis.fro",
      "type": "select",
      "prompt": "2. Loading response · 2% to 12% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -5617,6 +5367,84 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.lr.left.phase",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "7139585250e4049d627ca8f103e201077f1c15583fd4291f1c416bd4301863a9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.lr.left.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "60132d099ee16d6991d6318b509e244ee295a0ef328b08f8f1078e09da546a94"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.lr.left.fro",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "5a324cb5385b1516b7b88deb6e8d824109c05fc4ffb606f198871b3c9d2a9789"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.lr.left.tra",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "59484a5ca3bcedec52fea1ed81850dbcd59d0820cc354d952570b222e06a9676",
+      "e0a73c680d2fd4dd7450c607b1f27b33ff7d444801ea26a93a625ecb62a38728"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.lr.trunk.tra",
@@ -5764,6 +5592,61 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.mst.hip.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "0692bc71d912925b4cbc64b5603c1a18bd7195cc28a2510a10fbd666e703ed39"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.knee.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "40a746ee992448e853b64a9944aee4b0d42489ef32cf751ff4f60df212b5cd07"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.ankle.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "395d52e59a35f704965b7c843d3bcde4c50d1c48568923c815ae99be6cd16a18"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.mst.pelvis.fro",
      "type": "select",
      "prompt": "3. Mid stance · 12% to 31% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -5835,6 +5718,85 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.mst.left.phase",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "6145585e2dbf64e5e86a90eb44b535b519ff6a40e7fa906c6cd07bf6ad0d76d4",
+      "8b2dffabe9b626904b304feb1cca744c82a1cdb4fb37ff59b3454c51ac4fbee0"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.mst.left.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "6066d7b1ad9e617583baa11def86c2294f8635f38e0ef7defdc4fa88984a2a3f"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.mst.left.fro",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "63ee482cfd1e1f643af44adb87e194f7a7914d8e317f23e12e8b2063d5f44ad3",
+      "ae4216a765abc3c581bf0f9878b20a41f1d36f1b266d54877f5a86d8b2f9b6e7"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.mst.left.tra",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "07089a151cf00c87830548cbd915e387e3b17f9948a99482ec4d7ff3e4cceea8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.mst.trunk.tra",
@@ -5985,6 +5947,61 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.tst.hip.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "11fb91e3550c3c605bf7fec80c2276f426c591b480cbcbd4af5a054ada7f166f"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.knee.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "ef79c6544d5aa5b7bdfc1aca9cf3f879b05c47a7e5b7cb0c13a5b91169be1a41"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.ankle.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "1b885f1f41bb1c961b5aa75c3d522771f045d7b2aae8422d1554c1261d79bd4c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.tst.pelvis.fro",
      "type": "select",
      "prompt": "4. Terminal stance · 31% to 50% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -6058,6 +6075,85 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.tst.left.phase",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "24bced2e5f8a82fc6e1e32948777a2ad4e195a88e376efbe787b0da4056a51ba",
+      "aa157b43fe6675d10578dccfc69a08829e3e2396a31f0d8fa442200a2b9cef91"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.tst.left.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "059ece364a33cabfe9359a8975c4e1fa59dc7b94547732f863eee25b88d7e676"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.tst.left.fro",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "09f55e8478422608dcacce158a979d8154f5165bec4b025c98ab6100991b4d92"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.tst.left.tra",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "23a3401a0ff667832ad6bbefab972836972a774572b3cdbff57f6bf653f0d914",
+      "a2a2f0bcc20255485a1f0744420a4cbfe67827a3a0b816446f9d0b2ec7a5c7bc"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.tst.trunk.tra",
@@ -6207,6 +6303,61 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.psw.hip.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "c6da0878f377398666bc799dfc8304dd2bf6d68f83128481e534a8b1fd8f65d9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.knee.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "060a51d562e1fde455c77a2e7cee4249a12ba662c60cd0222929b45f7e9c0260"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.ankle.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "5fad320ad0abb9cf584b8b38bfb13b52f462f6b77b8655799ea53372e48272d8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.psw.pelvis.fro",
      "type": "select",
      "prompt": "5. Pre swing · 50% to 62% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -6278,6 +6429,84 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.psw.left.phase",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "792627e894a41bfbe6bd8746ac95d2d7199b39e8c7487f0efe3bc5d8771186cf",
+      "7f06a2ec4fcfb23cac5564948ac7d77dbe100f76b43b167d19f1e04b3a3ea23d"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.psw.left.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "6589f4859c28890ddb83bd1fe53719fdad77777e4fd9422caca1af0d98fa6110"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.psw.left.fro",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "3d98e1f1d6808e0534fd5d651103f086dad4776221432f68d40fc44f772ebfa2"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.psw.left.tra",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "1dd97e6d0291db30bcda018991569cd589c38a00c6265fb52cc8a7d64c324e60"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.psw.trunk.tra",
@@ -6425,6 +6654,62 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.isw.hip.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "360c51047f70e2f8dfd1047612d42dba3147474881a75e13af2e5c437827f0ff"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.knee.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "c43e663663e0f2a19aef1f9580abb8248767dac6080429f92a2ca56ef727d173"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.ankle.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "30d76a637cb61abce59cda98d5cfe6d1a645151b6a77f2b1adc99ef58c98d668",
+      "47a855ac794d9ea23d3f72f3f8ef10ff7ced7a1ca7d6a13e79c01101cbefa233"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.isw.pelvis.fro",
      "type": "select",
      "prompt": "6. Initial swing · 62% to 75% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -6495,6 +6780,85 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.isw.left.phase",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "af1fb8ccc7d88be1bf815b77c2ec640ee8ea6da8ea2f052bdb9750257a5ca56c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.isw.left.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "5cb3f48b7dae3a068841f2b03e19832f46939b6244cb13b32d13083e65f6041c",
+      "65e45410a21b686990253c7d4fd7bcfbcc994e39367fbce517f972480b726aa6"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.isw.left.fro",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "7cae14bfcee40ccaa685cbf1d80c7090235d798d1ac43ee2c99edf03326c0894"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.isw.left.tra",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "7bab30f4416bba20505327a87acb5007eefcdf149ae37bf724399c1899c39d08",
+      "f6b4ef62f38edf9b6ab7602578a36d09c01ec36328b1f48d3e6246b3c6c94766"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.isw.trunk.tra",
@@ -6641,6 +7005,61 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.msw.hip.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "06ec0eabf9db07209c71092f279ffed18bc10d5a594c2f34d370c57af309c9ea"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.knee.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "32dc4c989a2c645cb000b2f0304eeb692f6b2c13f555b2cc6df2b877f70231f9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.ankle.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "34d7126fd815025907e4818e8c11b825774c916bcb7a74cb3bbfeb5fa36fddab"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.msw.pelvis.fro",
      "type": "select",
      "prompt": "7. Mid swing · 75% to 87% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -6714,6 +7133,86 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.msw.left.phase",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "5428f07d15d594f6cb2e5e0a007d53021936f47b9e6bdd38792edc78a8c24836",
+      "ff65484494efb5c77aeb2d16214b6eb5a8d12e9a8017a44cc501a426a0571a0c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.msw.left.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "cdb89ac228fccd13fda610061a6dc74c3fa3667ab798fffd42702d503dfd25f8",
+      "ece2b4cc40f52f5c6e4401281bb4d2f424079fac9e33bbb574b80b2168533791"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.msw.left.fro",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "308428169d4a0114e892fbe4f1beb39a95bffe7644e33dae0e2293742f82b370",
+      "eb670cc34e47eb4143e02432633943fc88d230ae3af8d5ffebc414a6c3488237"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.msw.left.tra",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "c1d0d77a37209d6de2507f7035aa17300660fcc98182d0a8a6599f105343cb05"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.msw.trunk.tra",
@@ -6863,6 +7362,61 @@
      "col": "Activity during the phase"
     },
     {
+     "id": "gait.tsw.hip.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "b0c5aa2e0f9d3d08af552af6c34a5826d29d7f3739d34c61a5dc436e5ef23b4d"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.knee.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "582e0ce66f6c803136f63809fe4ad8d5acbba44245991b46bebe390876ad82df"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.ankle.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "da9cba57de732caf8b632edf53fa5b61d6b0f7839965df20b423c36d4f0653a9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
      "id": "gait.tsw.pelvis.fro",
      "type": "select",
      "prompt": "8. Terminal swing · 87% to 100% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
@@ -6934,6 +7488,84 @@
      "group": "Pelvis and right hip, frontal and transverse planes",
      "row": "Right hip",
      "col": "Transverse plane"
+    },
+    {
+     "id": "gait.tsw.left.phase",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Left limb at the same time | Left limb: the phase it is in during this screen: left side",
+     "accept": [
+      "527021b96ffd2ab89e60ecdf458a96a177f657b100846ec039b0ad089cee4b9e"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.12: Periods of the gait cycle (Perry and Burnfield terminology), p. 661",
+     "options": [
+      "Initial contact",
+      "Loading response",
+      "Mid stance",
+      "Terminal stance",
+      "Pre swing",
+      "Initial swing",
+      "Mid swing",
+      "Terminal swing"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Left limb at the same time",
+     "row": "Left limb: the phase it is in during this screen",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.tsw.left.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Left limb at the same time | Left hip, sagittal plane, at the end of the phase: left side",
+     "accept": [
+      "5455995c0824c42b255f6d7a976450dde2766a4152e9ec15403da43b82728cb1"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, sagittal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.tsw.left.fro",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Left limb at the same time | Left hip, frontal plane, at the end of the phase: left side",
+     "accept": [
+      "1998748fa5082e87c234a43485f6b47fa1f3df917310baac236c228b7ba2b367",
+      "87be35663dc0ac994d3afad92c4b3241c3301d461f55c224c8fd0aaf2b4395c0"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, frontal plane, at the end of the phase",
+     "col": "Left side"
+    },
+    {
+     "id": "gait.tsw.left.tra",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Left limb at the same time | Left hip, transverse plane, at the end of the phase: left side",
+     "accept": [
+      "8d9bb0676483effd2fc26ca22f5a8195576450160794eac6c4509adcc05a46ad"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Left limb at the same time",
+     "row": "Left hip, transverse plane, at the end of the phase",
+     "col": "Left side"
     },
     {
      "id": "gait.tsw.trunk.tra",
@@ -7429,6 +8061,6 @@
    }
   ]
  },
- "built": "2026-11-11T20:28Z",
+ "built": "2026-11-11T20:32Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }
