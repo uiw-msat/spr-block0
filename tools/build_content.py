@@ -17,7 +17,8 @@ from openpyxl import load_workbook
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SHEETS = {"L01_conventions": "01", "L02_landmarks": "02", "L03_viscera": "03",
-          "L04_attachments": "04", "L05_open_chain": "05"}
+          "L04_attachments": "04", "L05_open_chain": "05",
+          "L06_proximal_on_distal": "06"}
 SITE_OPTS = "See Options sheet: Attachment sites"
 CHAINS = ["femur-on-pelvis (FA), from anatomical position", "thorax-on-pelvis, pelvis fixed, unilateral contraction",
           "scapula-on-thorax (ST)", "humerus-on-glenoid (HG)"]
@@ -28,6 +29,9 @@ CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA)",
                CHAINS[2]: "Scapular muscles · scapula-on-thorax (ST)",
                CHAINS[3]: "Latissimus dorsi · humerus-on-glenoid (HG)"}
 CHAIN_LABEL[CHAINS[4]] = "Trunk muscles · thorax-on-pelvis"
+# Lesson 6: the proximal segment moves on a fixed distal one.
+CHAINS.append("pelvis-on-femur (AF), femur fixed")
+CHAIN_LABEL[CHAINS[5]] = "Hip muscles · pelvis-on-femur (AF)"
 # Lesson 4: one table per body section. The section comes from the key's options column
 # ("See Options sheet: Attachment sites, Hip"); its dropdown lists only the sites the Options
 # sheet assigns to that section. Neumann's attachment terms differ by region.
@@ -81,6 +85,8 @@ def main(key_path):
 
     problems, cells_by_lesson = [], {}
     for sheet, lid in SHEETS.items():
+        if sheet not in wb.sheetnames:      # a key that stops at an earlier lesson still builds
+            continue
         ws = wb[sheet]
         ix = header_index(ws)
         out = []
@@ -133,7 +139,7 @@ def main(key_path):
                 cell["options"] = options
             if optional:
                 cell["optional"] = True
-            if lid in ("04", "05"):
+            if lid in ("04", "05", "06"):
                 left, col = prompt.rsplit(": ", 1)
                 group = SECTION_LABEL.get(section) if lid == "04" else None
                 for ch in CHAINS:

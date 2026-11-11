@@ -3446,19 +3446,881 @@
    "opensAt": "2026-11-13",
    "input": "Dropdown per cell",
    "framing": [
-    "Draft."
+    "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes the distal segment and asks what the same muscle does to the proximal one. For the hip that is the pelvis moving on a fixed femur (AF), as in single-limb stance.",
+    "Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. As in Lesson 5, answer from anatomical position, and choose None where the table lists no action in that plane.",
+    "Answer for the side of the fixed femur, in the course's pelvic convention. Sagittal answers name the tilt of that hemipelvis. Frontal answers say whether the opposite side of the pelvis is raised or lowered. Transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
+    "The answers follow Neumann's Table 12.3. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic action the table does not list, the course says so in Unit 3; this lesson grades the table.",
+    "The muscles are in the same sections as Lesson 5. Each section has its own Check button, and the lesson passes when every section is correct."
    ],
    "where": [
     {
-     "label": "Neumann 2010, Kinesiology of the hip (JOSPT): pelvic-on-femoral actions",
+     "label": "Neumann 2017, Ch. 12, pp. 493-497: femoral-on-pelvic and pelvic-on-femoral osteokinematics",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 12, Table 12.3 (p. 499): hip muscles by primary and secondary action",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
      "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
     },
     {
-     "label": "Neumann 2017, Ch. 12: Hip",
+     "label": "Your Lesson 5 table",
      "url": ""
     }
    ],
-   "cells": []
+   "layout": "matrix",
+   "sectionCheck": true,
+   "sections": [
+    {
+     "label": "Anterior hip · pelvis-on-femur (AF)",
+     "rows": [
+      "Psoas major",
+      "Iliacus",
+      "Tensor fasciae latae"
+     ]
+    },
+    {
+     "label": "Posterior thigh · pelvis-on-femur (AF)",
+     "rows": [
+      "Biceps femoris, long head",
+      "Semimembranosus",
+      "Semitendinosus"
+     ]
+    },
+    {
+     "label": "Medial thigh · pelvis-on-femur (AF)",
+     "rows": [
+      "Adductor magnus, anterior (adductor) head",
+      "Adductor magnus, posterior (extensor) head",
+      "Adductor longus"
+     ]
+    },
+    {
+     "label": "Gluteal region · pelvis-on-femur (AF)",
+     "rows": [
+      "Gluteus medius, anterior fibers",
+      "Gluteus medius, posterior fibers",
+      "Gluteus maximus, upper fibers",
+      "Gluteus maximus, lower fibers",
+      "Piriformis",
+      "Obturator internus"
+     ]
+    }
+   ],
+   "cells": [
+    {
+     "id": "pod.psoas.sagittal",
+     "type": "select",
+     "prompt": "Psoas major, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "abbfafc8790d4add0da04d10d8ffe1bfd6df33b04643022016e9d524d96ed7b8"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Psoas major",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.psoas.frontal",
+     "type": "select",
+     "prompt": "Psoas major, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "1c39ea24d01ef4cabce7c458081001fdee864eba926349f453798871330c05a3"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Psoas major",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.psoas.transverse",
+     "type": "select",
+     "prompt": "Psoas major, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "f25a8908a11b87c328852cd387e3af04ffa9be9b4f41b1c2daec033900bb71ff"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Psoas major",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.iliacus.sagittal",
+     "type": "select",
+     "prompt": "Iliacus, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "7825ff5197b6329470e49ce2af6f7ac20e781e96f423c3700be8bba3f26e9369"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Iliacus",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.iliacus.frontal",
+     "type": "select",
+     "prompt": "Iliacus, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "abed5d665f08123f5b1596a838e732ab4734cffa7a549d3138ef097146b4f623"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Iliacus",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.iliacus.transverse",
+     "type": "select",
+     "prompt": "Iliacus, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "91994c4c9896579eeb84d28a83c5bc67b69a59a51a006d5a488451f23ff1942c"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Iliacus",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.tfl.sagittal",
+     "type": "select",
+     "prompt": "Tensor fasciae latae, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "3cb6ca9370d19161f09f42d44ac2a110887d1d5a8bbe9ff7eed9f4351fb7ef43"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Tensor fasciae latae",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.tfl.frontal",
+     "type": "select",
+     "prompt": "Tensor fasciae latae, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "80886ea00adf6294bc09faa08a243768e38b5d4eb05dce5ea83e68dde5ae73d1"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Tensor fasciae latae",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.tfl.transverse",
+     "type": "select",
+     "prompt": "Tensor fasciae latae, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "5c35580bee1c8068925ace95494ccc64f55155f2954915c21b3d700b85c921b7"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Tensor fasciae latae",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Anterior hip · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.bflh.sagittal",
+     "type": "select",
+     "prompt": "Biceps femoris, long head, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "08579257a6ad46d344cdcab19db9f30437893067bea14b3d511b66e9229fee4c"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Biceps femoris, long head",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.bflh.frontal",
+     "type": "select",
+     "prompt": "Biceps femoris, long head, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "011ba1203826050dc87a8fa2d8b04ae807b7a27a803364e3705010b1e042bd20"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Biceps femoris, long head",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.bflh.transverse",
+     "type": "select",
+     "prompt": "Biceps femoris, long head, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "b40de9a3fadf6dc2af48140cee74ac084a67f92c25897ab92a36a1c95c7d72b3"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Biceps femoris, long head",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.semimem.sagittal",
+     "type": "select",
+     "prompt": "Semimembranosus, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "caf8c55039f146538d01a300922e812954b91b01e40db4d7e6776340f23cd4ef"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Semimembranosus",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.semimem.frontal",
+     "type": "select",
+     "prompt": "Semimembranosus, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "5703bdb9845e77f1d5193e4268fe828031c2d9c167dc260431b9f9f1f74b18fb"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Semimembranosus",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.semimem.transverse",
+     "type": "select",
+     "prompt": "Semimembranosus, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "a8604cdc36f5bfc2ff4f5bd57adea2b40b807d60b960777fcef8175417d0ee53"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Semimembranosus",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.semiten.sagittal",
+     "type": "select",
+     "prompt": "Semitendinosus, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "751175424bca62d6dcf69525a17dfcfbaba56bc88ec06eea6606a1f2de2590bd"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Semitendinosus",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.semiten.frontal",
+     "type": "select",
+     "prompt": "Semitendinosus, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "f2f8fdd89338d364cb87aef98402e0baf5fb8ef4edc5eb51ced7f3e8d3d4252b"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Semitendinosus",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.semiten.transverse",
+     "type": "select",
+     "prompt": "Semitendinosus, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "da5b4ee068635c920db53357f59dffe69b8947410ce92763d2d98d75310e07fa"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Semitendinosus",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Posterior thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addmag.ant.sagittal",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "8fc64864d51b91b937ada2ed5ba25d80e616f26c81ada72f35d25f67ec13175d"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addmag.ant.frontal",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "3026113584441621a8202c301f943f36b66c0f57f19a5d54d650d0b3d2b07d19"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addmag.ant.transverse",
+     "type": "select",
+     "prompt": "Adductor magnus, anterior (adductor) head, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "759b6c93eddcac634dc498919d847085484b410ad02e6d27286a93d1126c11a7"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Adductor magnus, anterior (adductor) head",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addmag.post.sagittal",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "5305deac4cda8c449693d52cb0301a3800f32c96f1c5ce1736cf09c21ee96b13"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addmag.post.frontal",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "f07551c276fba1e18bba1170d9b82d2026c4c2390abb061ee832be773bdd1c38"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addmag.post.transverse",
+     "type": "select",
+     "prompt": "Adductor magnus, posterior (extensor) head, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "d98abb2f2c97184e46722c56c5a13e14615a53a07cf6d799bc9460e8b7b9d218"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Adductor magnus, posterior (extensor) head",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addlong.sagittal",
+     "type": "select",
+     "prompt": "Adductor longus, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "09fc07926aad4643b9729ac405300fed6f42bb2da42fdf32f66ff4633e7c1fa5"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Adductor longus",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addlong.frontal",
+     "type": "select",
+     "prompt": "Adductor longus, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "0a3699b5372680d6f878d86a69adbb5a5f31c3b7b5466c63310b7c01cdfdefaa"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Adductor longus",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.addlong.transverse",
+     "type": "select",
+     "prompt": "Adductor longus, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "7b24bdbff3ed2f2227055de1f5630cdf4149f42ac0434d35d94c1089def1f10c"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Adductor longus",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Medial thigh · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmed.ant.sagittal",
+     "type": "select",
+     "prompt": "Gluteus medius, anterior fibers, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "658fccfe080c678440a1253feb1c79ff1c4648476d67735714f0a1cff7befa4e"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmed.ant.frontal",
+     "type": "select",
+     "prompt": "Gluteus medius, anterior fibers, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "2ecb235569c0049146ab2a7066cfc1cb8159381efe0a2d657e95180c34b6f66d"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmed.ant.transverse",
+     "type": "select",
+     "prompt": "Gluteus medius, anterior fibers, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "efe82c52fa1d4d955d9b7dd61f0796dad00990760371277f6193971d59b74baf"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmed.post.sagittal",
+     "type": "select",
+     "prompt": "Gluteus medius, posterior fibers, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "e36ecfa2c38b88dc8860595eb84735016d2a0d900fb4eea7a411db47686f3eb0"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmed.post.frontal",
+     "type": "select",
+     "prompt": "Gluteus medius, posterior fibers, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "6925ebc4a503644e2387195bd2299cdd229eb2f2bfca06269b83ce3af573d878"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmed.post.transverse",
+     "type": "select",
+     "prompt": "Gluteus medius, posterior fibers, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "462f31f3983a09822ba4d4737e52b311de91c1572507d7f8c6230a681cd347b2"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmax.upper.sagittal",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "e75b874977e1b557b75186452e004960222d8988b6b4c6d1798800553998cd68"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmax.upper.frontal",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "d11516f1fb3b2a2d4819d88b5414b26a53bc082a53c8060a6b37e0c12c5f38ab"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmax.upper.transverse",
+     "type": "select",
+     "prompt": "Gluteus maximus, upper fibers, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "c0b36f835c601f3905ebf7a417ca7396964b967595013c974093997f54e4a7e1"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Gluteus maximus, upper fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmax.lower.sagittal",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "6b96278052fb9171a4cbe4941419ed4cf10d0f5d902b99453e6da06edd837d37"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmax.lower.frontal",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "01cd1dc4f1420c5389bfd53906427634702a0fc5f3d8a52a26429f82a4fb85e3"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.gmax.lower.transverse",
+     "type": "select",
+     "prompt": "Gluteus maximus, lower fibers, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "92c08a1360ad158ddda39734ee6e9b194382f25e84439daf811fd0bf2f9eb3a2"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Gluteus maximus, lower fibers",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.pir.sagittal",
+     "type": "select",
+     "prompt": "Piriformis, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "f950a43a8de43055aecb5b42e3cf3396314189c2f90afa1b9f7f4e3fd81152cf"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Piriformis",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.pir.frontal",
+     "type": "select",
+     "prompt": "Piriformis, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "ebfd46c12d82c9395677e7f0cd6616f0d17a8822784fc59e1456784de1259fce"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Piriformis",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.pir.transverse",
+     "type": "select",
+     "prompt": "Piriformis, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "8e373b4c690e7a0e6582bf34d2da448b92eca80c515bc1420bb0a4e789ffce69"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Piriformis",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.oi.sagittal",
+     "type": "select",
+     "prompt": "Obturator internus, pelvis-on-femur (AF), femur fixed: sagittal plane",
+     "accept": [
+      "5e93a0fba62e7f69828d147a14932f12fbcc7336902ff97c1de6d869a9172883"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Anterior tilt of that hemipelvis",
+      "Posterior tilt of that hemipelvis",
+      "None"
+     ],
+     "row": "Obturator internus",
+     "col": "Sagittal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.oi.frontal",
+     "type": "select",
+     "prompt": "Obturator internus, pelvis-on-femur (AF), femur fixed: frontal plane",
+     "accept": [
+      "5ccfbce20d15d17487328cb6ca6df500f0a851c844b7f977e73b3f0ebf8ede50"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Opposite side of the pelvis raised (AF abduction)",
+      "Opposite side of the pelvis lowered (AF adduction)",
+      "None"
+     ],
+     "row": "Obturator internus",
+     "col": "Frontal",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.oi.transverse",
+     "type": "select",
+     "prompt": "Obturator internus, pelvis-on-femur (AF), femur fixed: transverse plane",
+     "accept": [
+      "e5826d76406e8d623539a1f493ef325cf43521911a4761ad1affb67fdc8cafbb"
+     ],
+     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "options": [
+      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
+      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
+      "None"
+     ],
+     "row": "Obturator internus",
+     "col": "Transverse",
+     "group": "Hip muscles · pelvis-on-femur (AF)",
+     "section": "Gluteal region · pelvis-on-femur (AF)"
+    }
+   ]
   },
   {
    "id": "07",
@@ -3872,6 +4734,6 @@
    }
   ]
  },
- "built": "2026-11-11T17:48Z",
- "keySource": "SPR_answer_key_L01-L05.xlsx"
+ "built": "2026-11-11T18:04Z",
+ "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }

@@ -12,7 +12,8 @@ from openpyxl import load_workbook
 from playwright.sync_api import sync_playwright
 
 SHEETS = {"L01_conventions": "01-conventions", "L02_landmarks": "02-landmarks", "L03_viscera": "03-viscera",
-          "L04_attachments": "04-attachments", "L05_open_chain": "05-distal-on-proximal"}
+          "L04_attachments": "04-attachments", "L05_open_chain": "05-distal-on-proximal",
+          "L06_proximal_on_distal": "06-proximal-on-distal"}
 
 
 def key_answers(path):
@@ -25,6 +26,8 @@ def key_answers(path):
         return [r[0] for r in site_rows if not sec or sec in [x.strip() for x in str(r[2] or "").split("|")]]
     out = {}
     for sheet, slug in SHEETS.items():
+        if sheet not in wb.sheetnames:
+            continue
         ws = wb[sheet]
         hdr = {c.value: i for i, c in enumerate(ws[1])}
         rows = []
@@ -67,6 +70,8 @@ def main(path, base):
         b = p.chromium.launch(executable_path="/usr/bin/google-chrome")
         page = b.new_page(viewport={"width": 1280, "height": 900})
         errs = []
+        # lessons with a future release date are tested with the browser clock set past it
+        page.clock.set_fixed_time("2026-12-31T12:00:00")
         page.on("pageerror", lambda e: errs.append(str(e)))
         for slug, rows in data.items():
             page.goto(f"{base}/lessons/{slug}.html")

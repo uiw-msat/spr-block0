@@ -428,16 +428,67 @@
       "opensAt": "2026-11-13",
       "input": "Dropdown per cell",
       "framing": [
-        "Draft."
+        "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes the distal segment and asks what the same muscle does to the proximal one. For the hip that is the pelvis moving on a fixed femur (AF), as in single-limb stance.",
+        "Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. As in Lesson 5, answer from anatomical position, and choose None where the table lists no action in that plane.",
+        "Answer for the side of the fixed femur, in the course's pelvic convention. Sagittal answers name the tilt of that hemipelvis. Frontal answers say whether the opposite side of the pelvis is raised or lowered. Transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
+        "The answers follow Neumann's Table 12.3. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic action the table does not list, the course says so in Unit 3; this lesson grades the table.",
+        "The muscles are in the same sections as Lesson 5. Each section has its own Check button, and the lesson passes when every section is correct."
       ],
       "where": [
         {
-          "label": "Neumann 2010, Kinesiology of the hip (JOSPT): pelvic-on-femoral actions",
+          "label": "Neumann 2017, Ch. 12, pp. 493-497: femoral-on-pelvic and pelvic-on-femoral osteokinematics",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 12, Table 12.3 (p. 499): hip muscles by primary and secondary action",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
           "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
         },
         {
-          "label": "Neumann 2017, Ch. 12: Hip",
+          "label": "Your Lesson 5 table",
           "url": ""
+        }
+      ],
+      "layout": "matrix",
+      "sectionCheck": true,
+      "sections": [
+        {
+          "label": "Anterior hip · pelvis-on-femur (AF)",
+          "rows": [
+            "Psoas major",
+            "Iliacus",
+            "Tensor fasciae latae"
+          ]
+        },
+        {
+          "label": "Posterior thigh · pelvis-on-femur (AF)",
+          "rows": [
+            "Biceps femoris, long head",
+            "Semimembranosus",
+            "Semitendinosus"
+          ]
+        },
+        {
+          "label": "Medial thigh · pelvis-on-femur (AF)",
+          "rows": [
+            "Adductor magnus, anterior (adductor) head",
+            "Adductor magnus, posterior (extensor) head",
+            "Adductor longus"
+          ]
+        },
+        {
+          "label": "Gluteal region · pelvis-on-femur (AF)",
+          "rows": [
+            "Gluteus medius, anterior fibers",
+            "Gluteus medius, posterior fibers",
+            "Gluteus maximus, upper fibers",
+            "Gluteus maximus, lower fibers",
+            "Piriformis",
+            "Obturator internus"
+          ]
         }
       ]
     },
