@@ -4690,8 +4690,8 @@
    "title": "Gait phase chart",
    "sub": "Eight Rancho Los Amigos phases, one per screen",
    "minutes": [
-    20,
-    60
+    30,
+    75
    ],
    "opensAt": "2026-11-13",
    "input": "Dropdowns, one phase per screen",
@@ -4701,7 +4701,7 @@
     "The pelvis is named in the course convention. In the frontal plane, say whether the left side of the pelvis is lower or higher than the right. In the transverse plane, name the direction the whole pelvis faces: when the right side of the pelvis is forward of the left, the pelvis is oriented left. Neumann describes the same motion as rotation of the pelvis about the stance hip.",
     "Each screen is one moment for the whole body, so it also charts the left side. The left limb runs half a cycle behind the right: name the phase the left limb is in, and give the left hip's position in each plane by reading the same curves 50% of the cycle later. Stance is longer than swing, so some screens span two left-limb phases; either is accepted there.",
     "Screens 5 to 8 are screens 1 to 4 with the sides exchanged. Use that to check your chart against itself: the pelvis, the arms, and the two hips should mirror.",
-    "Muscle rows ask whether the muscle is active through the phase, for part of it, or not at all, from the timing bars in Neumann's Fig. 15.29. The upper body rows ask which way the shoulder girdle faces and which arm is forward.",
+    "Muscle rows ask whether the muscle is active through the phase, for part of it, or not at all, from the timing bars in Neumann's Fig. 15.29. The last row asks which arm is forward.",
     "Each phase has its own Check button. The lesson passes when all eight phases are correct. Lesson 9 reads directly from this chart."
    ],
    "where": [
@@ -4944,27 +4944,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.ic.trunk.tra",
-     "type": "select",
-     "prompt": "1. Initial contact · 0% to 2% of the cycle | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "c6dee6b45174abfe4599667bf2d75cfa1927f998be44b334e27b458a7a62c98b"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "1. Initial contact · 0% to 2% of the cycle",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.ic.arm",
      "type": "select",
-     "prompt": "1. Initial contact · 0% to 2% of the cycle | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "7970de4ae38d5a210a81a9ebcf88e11ed7212860725cfeb4213c3af92ecf9637"
      ],
@@ -4975,7 +4957,7 @@
       "Right arm"
      ],
      "section": "1. Initial contact · 0% to 2% of the cycle",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -5294,27 +5276,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.lr.trunk.tra",
-     "type": "select",
-     "prompt": "2. Loading response · 2% to 12% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "acfe536b228ab5cfde229edfc8a2896e1628e85350bd6d005016b0738923549c"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "2. Loading response · 2% to 12%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.lr.arm",
      "type": "select",
-     "prompt": "2. Loading response · 2% to 12% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "2. Loading response · 2% to 12% | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "5218def1284e4aaad26f8b8fa6542dd5976513725de3817bfa2f952fff144a09"
      ],
@@ -5325,7 +5289,7 @@
       "Right arm"
      ],
      "section": "2. Loading response · 2% to 12%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -5646,28 +5610,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.mst.trunk.tra",
-     "type": "select",
-     "prompt": "3. Mid stance · 12% to 31% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "42bbe52b2011d5347440d005e764a023fa89c09c19331a91df0e8fc4923f34e7",
-      "ad089df2985f8ac2402dab40218ac1a0985d68d68f4e35b4781556b6c2ec2eca"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "3. Mid stance · 12% to 31%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.mst.arm",
      "type": "select",
-     "prompt": "3. Mid stance · 12% to 31% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "3. Mid stance · 12% to 31% | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "af0f7f894d0ecf102499b98b243224090b8f068a0cc70d62f2dae6effb5b2db5",
       "cf2018ed3ce617bd6f87111ed419502a319ad6856498032ede066573af6a6d3d"
@@ -5679,7 +5624,7 @@
       "Right arm"
      ],
      "section": "3. Mid stance · 12% to 31%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -5816,6 +5761,7 @@
      "type": "select",
      "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Knee: position at the end of the phase",
      "accept": [
+      "ebb9aaecb846523c8b2b0365325ca50a27270f71ff67cde708976aa6e1ebcb6b",
       "ef79c6544d5aa5b7bdfc1aca9cf3f879b05c47a7e5b7cb0c13a5b91169be1a41"
      ],
      "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
@@ -6003,28 +5949,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.tst.trunk.tra",
-     "type": "select",
-     "prompt": "4. Terminal stance · 31% to 50% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "746479e570a85583782057947d7123ff78b493c2978c702cbcd7cd6fe1580e48",
-      "edd383af34ad7e8ffdae685e63f26730ee8903bb25a13b0faba574aabba1cd0b"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "4. Terminal stance · 31% to 50%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.tst.arm",
      "type": "select",
-     "prompt": "4. Terminal stance · 31% to 50% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "4. Terminal stance · 31% to 50% | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "23b8fdf9fba90ea80798c6f9ead26f0d9b93599cb5f4d074baca3a73f0c68a24"
      ],
@@ -6035,7 +5962,7 @@
       "Right arm"
      ],
      "section": "4. Terminal stance · 31% to 50%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -6356,27 +6283,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.psw.trunk.tra",
-     "type": "select",
-     "prompt": "5. Pre swing · 50% to 62% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "f4231a1aa9dc8cf0c9c2ad431ed700cec0938b732bbebcb691ff370bf24ec30a"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "5. Pre swing · 50% to 62%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.psw.arm",
      "type": "select",
-     "prompt": "5. Pre swing · 50% to 62% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "5. Pre swing · 50% to 62% | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "8e4f85c71b75f26c413273fd297450fa50498f66c0483c319440901b39875881"
      ],
@@ -6387,7 +6296,7 @@
       "Right arm"
      ],
      "section": "5. Pre swing · 50% to 62%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -6708,29 +6617,12 @@
      "col": "Left side"
     },
     {
-     "id": "gait.isw.trunk.tra",
-     "type": "select",
-     "prompt": "6. Initial swing · 62% to 75% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "9b0c017b5f5e3e77b1005310924ea876e6c681b6be625227fbc64370f5b63cb0"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "6. Initial swing · 62% to 75%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.isw.arm",
      "type": "select",
-     "prompt": "6. Initial swing · 62% to 75% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "6. Initial swing · 62% to 75% | Arms | Arm forward: position at the end of the phase",
      "accept": [
-      "8a0bd4ce99f0602fffa1bdd8246c3964e305e87af5d0aeff9818cff78f941bf4"
+      "8a0bd4ce99f0602fffa1bdd8246c3964e305e87af5d0aeff9818cff78f941bf4",
+      "e0e2a01c601912cfe5b281ba858e926b34b4376fd75791d5e284a2d39b3506cf"
      ],
      "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
      "options": [
@@ -6739,7 +6631,7 @@
       "Right arm"
      ],
      "section": "6. Initial swing · 62% to 75%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -6874,7 +6766,8 @@
      "type": "select",
      "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Knee: position at the end of the phase",
      "accept": [
-      "32dc4c989a2c645cb000b2f0304eeb692f6b2c13f555b2cc6df2b877f70231f9"
+      "32dc4c989a2c645cb000b2f0304eeb692f6b2c13f555b2cc6df2b877f70231f9",
+      "90881b3ce0e619d3240ec2af77a5e3194464f28a9d3f91a6c53ec23b802baee5"
      ],
      "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
      "options": [
@@ -7062,28 +6955,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.msw.trunk.tra",
-     "type": "select",
-     "prompt": "7. Mid swing · 75% to 87% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "002de73abe2d5e554c4130f6cdcd67766519bbde7bce505fc3138f081deff082",
-      "bf7995f680ea1a998db4b103c775e7826b3ad41ce061871d839bcd0b34441a2a"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "7. Mid swing · 75% to 87%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.msw.arm",
      "type": "select",
-     "prompt": "7. Mid swing · 75% to 87% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "7. Mid swing · 75% to 87% | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "4feca9f2f694ae5ff224042f297b464512c98c5a5d7c1c8441ee45c4095368e7"
      ],
@@ -7094,7 +6968,7 @@
       "Right arm"
      ],
      "section": "7. Mid swing · 75% to 87%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -7415,27 +7289,9 @@
      "col": "Left side"
     },
     {
-     "id": "gait.tsw.trunk.tra",
-     "type": "select",
-     "prompt": "8. Terminal swing · 87% to 100% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
-     "accept": [
-      "0ec53de19eaaaac2ff84b762da38dccaa0eccfc475f95ddcb72fff792d3ca416"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Oriented left",
-      "Neutral",
-      "Oriented right"
-     ],
-     "section": "8. Terminal swing · 87% to 100%",
-     "group": "Upper body",
-     "row": "Upper trunk (shoulder girdle), transverse plane",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.tsw.arm",
      "type": "select",
-     "prompt": "8. Terminal swing · 87% to 100% | Upper body | Arm forward: position at the end of the phase",
+     "prompt": "8. Terminal swing · 87% to 100% | Arms | Arm forward: position at the end of the phase",
      "accept": [
       "ca4e066f70dc589099ac58d110725532108b4fe9b814ece5047ebf95620a4b47"
      ],
@@ -7446,7 +7302,7 @@
       "Right arm"
      ],
      "section": "8. Terminal swing · 87% to 100%",
-     "group": "Upper body",
+     "group": "Arms",
      "row": "Arm forward",
      "col": "Position at the end of the phase"
     },
@@ -8206,6 +8062,6 @@
    }
   ]
  },
- "built": "2026-11-11T21:28Z",
+ "built": "2026-11-11T21:35Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }
