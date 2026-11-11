@@ -255,7 +255,7 @@
       "input": "Dropdown per cell",
       "framing": [
         "For each muscle, choose its attachments from the list. The lesson uses Neumann's terms: proximal and distal for hip and shoulder muscles; inferior and superior for the diaphragm, erector spinae, rectus abdominis, and quadratus lumborum; lateral and medial for the obliques and transversus abdominis. Where a muscle has several attachments at one end, any one of them is accepted.",
-        "The muscles are in four sections: diaphragm and trunk, hip, abdominal wall, and shoulder. Each section's list holds only the attachment sites on the segments those muscles attach to, and each section has its own Check button. The lesson passes when all four sections are correct.",
+        "The muscles are in seven sections: diaphragm and trunk; anterior hip; hamstrings; adductors; gluteal muscles and deep rotators; abdominal wall; and shoulder. Each section's list holds only the attachment sites on the segments those muscles attach to, and each section has its own Check button. The lesson passes when all seven sections are correct.",
         "Fiber distinctions the course uses are listed as separate rows: diaphragm crural vs costal, adductor magnus anterior vs posterior head, and gluteus maximus upper vs lower fibers."
       ],
       "where": [

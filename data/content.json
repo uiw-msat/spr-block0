@@ -1313,7 +1313,7 @@
    "input": "Dropdown per cell",
    "framing": [
     "For each muscle, choose its attachments from the list. The lesson uses Neumann's terms: proximal and distal for hip and shoulder muscles; inferior and superior for the diaphragm, erector spinae, rectus abdominis, and quadratus lumborum; lateral and medial for the obliques and transversus abdominis. Where a muscle has several attachments at one end, any one of them is accepted.",
-    "The muscles are in four sections: diaphragm and trunk, hip, abdominal wall, and shoulder. Each section's list holds only the attachment sites on the segments those muscles attach to, and each section has its own Check button. The lesson passes when all four sections are correct.",
+    "The muscles are in seven sections: diaphragm and trunk; anterior hip; hamstrings; adductors; gluteal muscles and deep rotators; abdominal wall; and shoulder. Each section's list holds only the attachment sites on the segments those muscles attach to, and each section has its own Check button. The lesson passes when all seven sections are correct.",
     "Fiber distinctions the course uses are listed as separate rows: diaphragm crural vs costal, adductor magnus anterior vs posterior head, and gluteus maximus upper vs lower fibers."
    ],
    "where": [
@@ -1426,10 +1426,10 @@
       "b616bab6c7d7dfdb1ddfd1cd0b07cd93e314361f58064c333c9a877c1e9c4f2f"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Psoas major, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Anterior hip",
      "row": "Psoas major",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Anterior hip muscles · proximal and distal attachments"
     },
     {
      "id": "att.psoas.insertion",
@@ -1439,10 +1439,10 @@
       "006c9a449bd04cb72f03ff6f1860e278dda48cb17eea3d5638e51d12b89379da"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Psoas major, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Anterior hip",
      "row": "Psoas major",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Anterior hip muscles · proximal and distal attachments"
     },
     {
      "id": "att.iliacus.origin",
@@ -1452,10 +1452,10 @@
       "0828c27e3b8fdc61999fda5a35de6a1277fd1db7249860ed2ae0f5e64d5f6eb2"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Iliacus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Anterior hip",
      "row": "Iliacus",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Anterior hip muscles · proximal and distal attachments"
     },
     {
      "id": "att.iliacus.insertion",
@@ -1465,10 +1465,10 @@
       "89d31d939ecf35d3579067322a70d5c558edfa34b796ce4b993acbbeda528675"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Iliacus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Anterior hip",
      "row": "Iliacus",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Anterior hip muscles · proximal and distal attachments"
     },
     {
      "id": "att.tfl.origin",
@@ -1478,10 +1478,10 @@
       "3c006cee2c6cb4154b5351ffed19803f92e290f9d85ee5a40bc640400b2e7a4a"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Tensor fasciae latae, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Anterior hip",
      "row": "Tensor fasciae latae",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Anterior hip muscles · proximal and distal attachments"
     },
     {
      "id": "att.tfl.insertion",
@@ -1491,10 +1491,10 @@
       "cb300a23ab9d191c75a0d07ab3cb3e94740378097c097a2f5c0dbfb10758e5ff"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Tensor fasciae latae, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Anterior hip",
      "row": "Tensor fasciae latae",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Anterior hip muscles · proximal and distal attachments"
     },
     {
      "id": "att.bflh.origin",
@@ -1504,10 +1504,10 @@
       "5b8203cc072277fbb9f034a8eb568182c2940a28e4d3bffa8f0e6f7fe230a8ab"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Biceps femoris, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Hamstrings",
      "row": "Biceps femoris, long head",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Hamstrings · proximal and distal attachments"
     },
     {
      "id": "att.bflh.insertion",
@@ -1517,10 +1517,10 @@
       "dc75ef491d4a01b69af739952716a83a0857e2490654d9012decf141e8f931ba"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Biceps femoris, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Hamstrings",
      "row": "Biceps femoris, long head",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Hamstrings · proximal and distal attachments"
     },
     {
      "id": "att.semimem.origin",
@@ -1530,10 +1530,10 @@
       "0591b8c71e8a53a92c9c5e9e48fea043318e872f4a756bbe677f67fe4c2084f6"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Semimembranosus, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Hamstrings",
      "row": "Semimembranosus",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Hamstrings · proximal and distal attachments"
     },
     {
      "id": "att.semimem.insertion",
@@ -1543,10 +1543,10 @@
       "fa655eac8e1ad0d8aa0037f6b16736e498f4e16711f753a1416b6b9b9716cce2"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Semimembranosus, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Hamstrings",
      "row": "Semimembranosus",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Hamstrings · proximal and distal attachments"
     },
     {
      "id": "att.semiten.origin",
@@ -1556,10 +1556,10 @@
       "7551f9228ae59c3c4445bff1885e242a146814d20c42f9aec059fe15f48a46b5"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Semitendinosus, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Hamstrings",
      "row": "Semitendinosus",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Hamstrings · proximal and distal attachments"
     },
     {
      "id": "att.semiten.insertion",
@@ -1569,10 +1569,10 @@
       "59c583ce6a556f1ca34781e70429dd9486369bf6647ad32016002aeaaad29c92"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Semitendinosus, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Hamstrings",
      "row": "Semitendinosus",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Hamstrings · proximal and distal attachments"
     },
     {
      "id": "att.addmag.ant.origin",
@@ -1582,10 +1582,10 @@
       "5d2db1eb65feb94d6d70bbdfcd22e572f83519f4410e143ceba4209eb3bd2148"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Adductor magnus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Adductors",
      "row": "Adductor magnus, anterior (adductor) head",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Adductors · proximal and distal attachments"
     },
     {
      "id": "att.addmag.ant.insertion",
@@ -1595,10 +1595,10 @@
       "1c70207ce2a2032f4eb153cc51876463d332b9e34bd32b64b9d2b530d05771c2"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Adductor magnus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Adductors",
      "row": "Adductor magnus, anterior (adductor) head",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Adductors · proximal and distal attachments"
     },
     {
      "id": "att.addmag.post.origin",
@@ -1608,10 +1608,10 @@
       "5a20da9815da92cf51445c1b706f3e3a4f586a912c04d389e8b6f8b46e77202b"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Adductor magnus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Adductors",
      "row": "Adductor magnus, posterior (extensor) head",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Adductors · proximal and distal attachments"
     },
     {
      "id": "att.addmag.post.insertion",
@@ -1621,10 +1621,10 @@
       "a6d20ce1be9bcb12d96d3247fe3122c95225aa0b59d602a72922d802fd228fa8"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Adductor magnus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Adductors",
      "row": "Adductor magnus, posterior (extensor) head",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Adductors · proximal and distal attachments"
     },
     {
      "id": "att.addlong.origin",
@@ -1634,10 +1634,10 @@
       "b8d727ffe0bc76f60c9973031e2c5c8c432907a1679dc0a2ccc1de97a8df8797"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Adductor longus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Adductors",
      "row": "Adductor longus",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Adductors · proximal and distal attachments"
     },
     {
      "id": "att.addlong.insertion",
@@ -1647,10 +1647,10 @@
       "06adabf8da37a6c8c63175a60e1d9ed30efa567d0400cdd81563046a78f796c1"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Adductor longus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Adductors",
      "row": "Adductor longus",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Adductors · proximal and distal attachments"
     },
     {
      "id": "att.gmed.origin",
@@ -1660,10 +1660,10 @@
       "7c321bcc59632c491df97351361d730aca25e0762726a0c995409c0a4c0ea3a6"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Gluteus medius, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Gluteus medius",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.gmed.insertion",
@@ -1673,10 +1673,10 @@
       "16aadcc9492dbde6a678fa7c67082d7ab85da7fdace28c4f860bc4565c7e26fc"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Gluteus medius, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Gluteus medius",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.gmax.origin",
@@ -1688,10 +1688,10 @@
       "fdf055bad26ec30f137f95e8bc5eb1ca32876ea00aa15dfe79f158009781f580"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Gluteus maximus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Gluteus maximus",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.gmax.upper.insertion",
@@ -1701,10 +1701,10 @@
       "7d6fa3bb0616c0b856a54ff7f83345dc432cd1a7a483fac11e9c2954a0b4469b"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Gluteus maximus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Gluteus maximus, upper fibers",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.gmax.lower.insertion",
@@ -1714,10 +1714,10 @@
       "f9ea664a61fdcfd068b1ce5d3cef22df70510dd128c68adb707f701e4ba96178"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Gluteus maximus, p. 731",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Gluteus maximus, lower fibers",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.io.origin",
@@ -2000,10 +2000,10 @@
       "e8de51c89977b99648ba473e39c32ac079421ae5df673b8fe3000a5ee839f2a2"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Obturator internus, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Obturator internus",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.oi.insertion",
@@ -2013,10 +2013,10 @@
       "3d8f8c66aa6e25763d0a0b17b54c1a06fd2515bdf1e880f4a2bbb23d762c69e5"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Obturator internus, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Obturator internus",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.pir.origin",
@@ -2026,10 +2026,10 @@
       "5eec1169e1863411603fd92417c623e98768e43c1c87d2a328f9d1d9432ea39a"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Piriformis, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Piriformis",
      "col": "Proximal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     },
     {
      "id": "att.pir.insertion",
@@ -2039,10 +2039,10 @@
       "5ae99ad561bd422fcb84422f9aa422377a9251e4f7378e50d8dd5b1f28133c73"
      ],
      "ref": "Neumann 2017, App. IV, Part D: Piriformis, p. 732",
-     "optionSet": "sites-Hip",
+     "optionSet": "sites-Gluteal",
      "row": "Piriformis",
      "col": "Distal attachment",
-     "group": "Hip muscles · proximal and distal attachments"
+     "group": "Gluteal muscles and deep rotators · proximal and distal attachments"
     }
    ]
   },
@@ -3513,7 +3513,7 @@
   "changes": "Resized or recompressed for the web; otherwise unchanged."
  },
  "optionSets": {
-  "sites-Hip": [
+  "sites-Anterior hip": [
    {
     "label": "Hip bone",
     "options": [
@@ -3522,21 +3522,8 @@
      "Iliac crest, posterior",
      "Iliac fossa",
      "Outer surface of ilium, above the anterior gluteal line",
-     "Posterior ilium (behind the posterior gluteal line)",
-     "Ischial tuberosity",
-     "Ischial spine",
-     "Ischial ramus",
      "Body of pubis",
-     "Pubic crest and symphysis",
-     "Obturator membrane and margin, pelvic surface"
-    ]
-   },
-   {
-    "label": "Sacrum and coccyx",
-    "options": [
-     "Anterior sacrum, between the sacral foramina",
-     "Posterior sacrum",
-     "Lateral sacrum and coccyx"
+     "Pubic crest and symphysis"
     ]
    },
    {
@@ -3549,14 +3536,6 @@
      "Gluteal tuberosity",
      "Linea aspera",
      "Adductor tubercle"
-    ]
-   },
-   {
-    "label": "Leg",
-    "options": [
-     "Head of fibula",
-     "Posteromedial tibial condyle",
-     "Proximal medial tibia (pes anserinus)"
     ]
    },
    {
@@ -3607,6 +3586,48 @@
      "Linea alba",
      "Thoracolumbar fascia",
      "Inguinal ligament"
+    ]
+   }
+  ],
+  "sites-Gluteal": [
+   {
+    "label": "Hip bone",
+    "options": [
+     "Iliac crest, anterior",
+     "Iliac crest, posterior",
+     "Iliac fossa",
+     "Outer surface of ilium, above the anterior gluteal line",
+     "Posterior ilium (behind the posterior gluteal line)",
+     "Ischial tuberosity",
+     "Ischial spine",
+     "Obturator membrane and margin, pelvic surface"
+    ]
+   },
+   {
+    "label": "Sacrum and coccyx",
+    "options": [
+     "Anterior sacrum, between the sacral foramina",
+     "Posterior sacrum",
+     "Lateral sacrum and coccyx"
+    ]
+   },
+   {
+    "label": "Femur",
+    "options": [
+     "Greater trochanter, apex",
+     "Greater trochanter, lateral surface",
+     "Greater trochanter, medial surface",
+     "Lesser trochanter",
+     "Gluteal tuberosity",
+     "Linea aspera",
+     "Adductor tubercle"
+    ]
+   },
+   {
+    "label": "Soft tissue",
+    "options": [
+     "Thoracolumbar fascia",
+     "Iliotibial tract"
     ]
    }
   ],
@@ -3709,8 +3730,74 @@
      "Thoracolumbar fascia"
     ]
    }
+  ],
+  "sites-Hamstrings": [
+   {
+    "label": "Hip bone",
+    "options": [
+     "Ischial tuberosity",
+     "Ischial spine",
+     "Ischial ramus",
+     "Body of pubis"
+    ]
+   },
+   {
+    "label": "Femur",
+    "options": [
+     "Lesser trochanter",
+     "Gluteal tuberosity",
+     "Linea aspera",
+     "Adductor tubercle"
+    ]
+   },
+   {
+    "label": "Leg",
+    "options": [
+     "Head of fibula",
+     "Posteromedial tibial condyle",
+     "Proximal medial tibia (pes anserinus)"
+    ]
+   },
+   {
+    "label": "Soft tissue",
+    "options": [
+     "Iliotibial tract"
+    ]
+   }
+  ],
+  "sites-Adductors": [
+   {
+    "label": "Hip bone",
+    "options": [
+     "Ischial tuberosity",
+     "Ischial spine",
+     "Ischial ramus",
+     "Body of pubis",
+     "Pubic crest and symphysis"
+    ]
+   },
+   {
+    "label": "Femur",
+    "options": [
+     "Greater trochanter, apex",
+     "Greater trochanter, lateral surface",
+     "Greater trochanter, medial surface",
+     "Lesser trochanter",
+     "Gluteal tuberosity",
+     "Linea aspera",
+     "Adductor tubercle"
+    ]
+   },
+   {
+    "label": "Leg",
+    "options": [
+     "Head of fibula",
+     "Posteromedial tibial condyle",
+     "Proximal medial tibia (pes anserinus)"
+    ]
+   }
   ]
  },
- "built": "2026-11-11T13:00Z",
+ "built": "2026-11-11T13:11Z",
  "keySource": "SPR_answer_key_L01-L05.xlsx"
 }

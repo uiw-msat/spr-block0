@@ -28,7 +28,10 @@ CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA)",
 # Lesson 4: one table per body section. The section comes from the key's options column
 # ("See Options sheet: Attachment sites, Hip"); its dropdown lists only the sites the Options
 # sheet assigns to that section. Neumann's attachment terms differ by region.
-SECTION_LABEL = {"Hip": "Hip muscles · proximal and distal attachments",
+SECTION_LABEL = {"Anterior hip": "Anterior hip muscles · proximal and distal attachments",
+                 "Hamstrings": "Hamstrings · proximal and distal attachments",
+                 "Adductors": "Adductors · proximal and distal attachments",
+                 "Gluteal": "Gluteal muscles and deep rotators · proximal and distal attachments",
                  "Shoulder": "Shoulder muscles · proximal and distal attachments",
                  "Trunk": "Diaphragm and trunk muscles · inferior and superior attachments",
                  "Abdominal wall": "Abdominal wall · lateral and medial attachments"}
