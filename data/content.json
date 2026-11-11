@@ -4702,6 +4702,7 @@
     "Each screen is one moment for the whole body, so it also charts the left side. The left limb runs half a cycle behind the right: name the phase the left limb is in, and give the left hip's position in each plane by reading the same curves 50% of the cycle later. Stance is longer than swing, so some screens span two left-limb phases; either is accepted there.",
     "Screens 5 to 8 are screens 1 to 4 with the sides exchanged. Use that to check your chart against itself: the pelvis, the arms, and the two hips should mirror.",
     "Muscle rows ask whether the muscle is active through the phase, for part of it, or not at all, from the timing bars in Neumann's Fig. 15.29. The last row asks which arm is forward.",
+    "Three more muscle rows on each screen are a best guess and are not graded: the anterior and posterior fibers of gluteus medius, and the posterior head of adductor magnus (the IC adductor). Neumann's figure does not report them separately. Your guesses are saved, and Unit 3 works through them.",
     "Each phase has its own Check button. The lesson passes when all eight phases are correct. Lesson 9 reads directly from this chart."
    ],
    "where": [
@@ -4944,24 +4945,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.ic.arm",
-     "type": "select",
-     "prompt": "1. Initial contact · 0% to 2% of the cycle | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "7970de4ae38d5a210a81a9ebcf88e11ed7212860725cfeb4213c3af92ecf9637"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "1. Initial contact · 0% to 2% of the cycle",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.ic.emg.gmax",
      "type": "select",
      "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -5068,6 +5051,81 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.guess.gmedant",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "29ab841e20113008181daf27f51ee6f3305675b02dac17148b9afa1cc84dbfab"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.guess.gmedpost",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "11fc950be346e77e0ac5d3ff2e5587ac4747c4256a902ecb43453eb374092f84"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.guess.icadd",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "e3726adebd902f890a5e35d60d0a59a23a3122a7dd49974644c97d292f9cf625"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.arm",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "7970de4ae38d5a210a81a9ebcf88e11ed7212860725cfeb4213c3af92ecf9637"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.lr.hip.sag",
@@ -5276,24 +5334,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.lr.arm",
-     "type": "select",
-     "prompt": "2. Loading response · 2% to 12% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "5218def1284e4aaad26f8b8fa6542dd5976513725de3817bfa2f952fff144a09"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "2. Loading response · 2% to 12%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.lr.emg.gmax",
      "type": "select",
      "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -5401,6 +5441,81 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.guess.gmedant",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "9c4fa31c47c779854c3da7d0a967d6d7ed6199a3d31d56d35fdec8fcb513fca0"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.guess.gmedpost",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "506e35d03751c84bed7eedcf6b967ad1ce780814c3086ffc4b2b1ba7bd680cb0"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.guess.icadd",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "d59612c3942adaa7eaf826b31092472b0fddccbc0708380f2c178b39da62c55a"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.arm",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "5218def1284e4aaad26f8b8fa6542dd5976513725de3817bfa2f952fff144a09"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.mst.hip.sag",
@@ -5610,25 +5725,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.mst.arm",
-     "type": "select",
-     "prompt": "3. Mid stance · 12% to 31% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "af0f7f894d0ecf102499b98b243224090b8f068a0cc70d62f2dae6effb5b2db5",
-      "cf2018ed3ce617bd6f87111ed419502a319ad6856498032ede066573af6a6d3d"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "3. Mid stance · 12% to 31%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.mst.emg.gmax",
      "type": "select",
      "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -5737,6 +5833,82 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.guess.gmedant",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "08301c56682fdf3d1b3c809dd83a54ef8e467240a72d90d93240d8dc45de7735"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.guess.gmedpost",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "2df14a7323bb855ee0dc89c74c765ac1f301761c7236a37c1c9de101758c7c74"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.guess.icadd",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "264e91fe0de0a39e627e11e5fa84365056cb858f9811223e3e714282bfd02359"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.arm",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "af0f7f894d0ecf102499b98b243224090b8f068a0cc70d62f2dae6effb5b2db5",
+      "cf2018ed3ce617bd6f87111ed419502a319ad6856498032ede066573af6a6d3d"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.tst.hip.sag",
@@ -5949,24 +6121,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.tst.arm",
-     "type": "select",
-     "prompt": "4. Terminal stance · 31% to 50% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "23b8fdf9fba90ea80798c6f9ead26f0d9b93599cb5f4d074baca3a73f0c68a24"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "4. Terminal stance · 31% to 50%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.tst.emg.gmax",
      "type": "select",
      "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -6075,6 +6229,81 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.guess.gmedant",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "0eecd450fe7b99d53df3c7cc5014bfb353789daa6d8528e9c8f41e39695498fa"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.guess.gmedpost",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "b9621104baa60047c17dca179e37778e38ec539acb6d20d29e4617b5226a6bdb"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.guess.icadd",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "e36f45a7b703068e478db9966ead85f39bdeafeb9f14fce1aecb20a7d6a872b4"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.arm",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "23b8fdf9fba90ea80798c6f9ead26f0d9b93599cb5f4d074baca3a73f0c68a24"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.psw.hip.sag",
@@ -6283,24 +6512,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.psw.arm",
-     "type": "select",
-     "prompt": "5. Pre swing · 50% to 62% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "8e4f85c71b75f26c413273fd297450fa50498f66c0483c319440901b39875881"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "5. Pre swing · 50% to 62%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.psw.emg.gmax",
      "type": "select",
      "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -6408,6 +6619,81 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.guess.gmedant",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "8579594a9209213baa824ceecaf359abbda020d94671db20f0d8b0bd9660c90a"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.guess.gmedpost",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "025ee4d182ad3a7ee0b59d4b88246aee2960af3d2dcdf6ee3509084ae7295a30"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.guess.icadd",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "36d2690e71fa3a6ab5b1ae70e2554b46c51162b05c8ca057e48115ab4e0e3490"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.arm",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "8e4f85c71b75f26c413273fd297450fa50498f66c0483c319440901b39875881"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.isw.hip.sag",
@@ -6617,25 +6903,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.isw.arm",
-     "type": "select",
-     "prompt": "6. Initial swing · 62% to 75% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "8a0bd4ce99f0602fffa1bdd8246c3964e305e87af5d0aeff9818cff78f941bf4",
-      "e0e2a01c601912cfe5b281ba858e926b34b4376fd75791d5e284a2d39b3506cf"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "6. Initial swing · 62% to 75%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.isw.emg.gmax",
      "type": "select",
      "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -6742,6 +7009,82 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.guess.gmedant",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "20acd39d4845798604f5ed83c8b68c75d0316b8b6c1a4d6add5f9c23c9224aee"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.guess.gmedpost",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "bdd325fd780d4f327ce8a71108b35acba55c41e1bdb706c76481fecdbfe5991a"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.guess.icadd",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "d229bdcaecc6715ebcbe945f8d091d390e7c0bd8a7d1052ca0d40256932feea4"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.arm",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "8a0bd4ce99f0602fffa1bdd8246c3964e305e87af5d0aeff9818cff78f941bf4",
+      "e0e2a01c601912cfe5b281ba858e926b34b4376fd75791d5e284a2d39b3506cf"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.msw.hip.sag",
@@ -6955,24 +7298,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.msw.arm",
-     "type": "select",
-     "prompt": "7. Mid swing · 75% to 87% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "4feca9f2f694ae5ff224042f297b464512c98c5a5d7c1c8441ee45c4095368e7"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "7. Mid swing · 75% to 87%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.msw.emg.gmax",
      "type": "select",
      "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -7081,6 +7406,81 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.guess.gmedant",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "3a88667bf5b2f0fba3278197d35daf2e2d777a8badc7cd8deafd1dbf57b6fcaa"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.guess.gmedpost",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "40506ebdd9e25dbb21a9bfac50578b9a2931aa3954aaf2999f38835a88f0ec06"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.guess.icadd",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "5b2944ad1fc8d78b5f5613b3895737c4bb5a3101a124a27a6631f12382237a1f"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.arm",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "4feca9f2f694ae5ff224042f297b464512c98c5a5d7c1c8441ee45c4095368e7"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     },
     {
      "id": "gait.tsw.hip.sag",
@@ -7289,24 +7689,6 @@
      "col": "Left side"
     },
     {
-     "id": "gait.tsw.arm",
-     "type": "select",
-     "prompt": "8. Terminal swing · 87% to 100% | Arms | Arm forward: position at the end of the phase",
-     "accept": [
-      "ca4e066f70dc589099ac58d110725532108b4fe9b814ece5047ebf95620a4b47"
-     ],
-     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
-     "options": [
-      "Left arm",
-      "About even",
-      "Right arm"
-     ],
-     "section": "8. Terminal swing · 87% to 100%",
-     "group": "Arms",
-     "row": "Arm forward",
-     "col": "Position at the end of the phase"
-    },
-    {
      "id": "gait.tsw.emg.gmax",
      "type": "select",
      "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Gluteus maximus: activity during the phase",
@@ -7413,6 +7795,81 @@
      "group": "Right limb muscles",
      "row": "Semitendinosus and semimembranosus",
      "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.guess.gmedant",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles, best guess (not graded) | Gluteus medius, anterior fibers: activity during the phase",
+     "accept": [
+      "7965e48ca193285b855937be2bf5897caa868987207c04bbea2dd9e8d7242141"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, anterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.guess.gmedpost",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles, best guess (not graded) | Gluteus medius, posterior fibers: activity during the phase",
+     "accept": [
+      "6469907479d232a8fb6cd4f520c5b94f49b79939bc41adc7a4166b4de0dbab53"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Gluteus medius, posterior fibers",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.guess.icadd",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles, best guess (not graded) | Adductor magnus, posterior head (IC adductor): activity during the phase",
+     "accept": [
+      "9cd2d2ba58c3c2b2b425e98708b6923a2e1ae18c31daf9a86e2e39ed01dd1916"
+     ],
+     "ref": "No per-phase data in Neumann 2017, Fig. 15.29, for these fibers; worked through in Unit 3",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "optional": true,
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles, best guess (not graded)",
+     "row": "Adductor magnus, posterior head (IC adductor)",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.arm",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Arms | Arm forward: position at the end of the phase",
+     "accept": [
+      "ca4e066f70dc589099ac58d110725532108b4fe9b814ece5047ebf95620a4b47"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Arms",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
     }
    ]
   },
@@ -7432,7 +7889,7 @@
     "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. PRI describes it as the body resting in right stance and left swing. On Neumann's gait data the pelvis is oriented right from the end of right terminal stance, and your chart will show that. That a resting body holds a position from walking is a clinical model, not an established finding; one item asks you to say so.",
     "PRI groups muscles into chains that hold a pattern and muscles of opposition that move the body out of it. For the Left AIC, the anterior interior chain includes the psoas, iliacus, tensor fasciae latae, and biceps femoris. The muscles of opposition are the hamstrings, the gluteals, and the internal obliques, and the course adds the left ischiocondylar adductor. The gluteals are specific by side: the anterior fibers of the left gluteus medius, and on the right the gluteus maximus and the posterior fibers of gluteus medius. The groupings are PRI's and are credited on the About page.",
     "PRI calls the part of adductor magnus that runs from the ischial tuberosity to the adductor tubercle, above the medial femoral condyle, the ischiocondylar (IC) adductor. Neumann calls the same fibers the posterior, or extensor, head.",
-    "For each muscle the fixed segment is named. Find the muscle's actions in your Lesson 6 table and choose the one that does what PRI's grouping says: holds the pelvis in the pattern, or moves it out. Each answer is an action Neumann lists. A muscle can have a second listed action that works the other way; Unit 3 takes those up."
+    "For each muscle the fixed segment is named. Find the muscle's actions in your Lesson 6 table and choose the one that does what PRI's grouping says: holds the pelvis in the pattern, or moves it out. Each answer is an action Neumann lists. A muscle can have a second listed action that works the other way; Unit 3 takes those up. The internal obliques are asked with both sides contracting, because that is the action on the pelvis Neumann lists; PRI's reasoning about the left side and rib position belongs to Units 1 and 3."
    ],
    "where": [
     {
@@ -7531,11 +7988,11 @@
      "type": "select",
      "prompt": "The statement that the Left AIC pattern is a held position from the gait cycle is best described as:",
      "accept": [
-      "66724b06148ac67ca48dc6c73891bf479cfa87f08233826bb175c36d19b5a4d6"
+      "b5010aed5a159f784788cdd40eecb5607a06b48f9bd024c4def833e16f7a66f6"
      ],
      "ref": "Course Roadmap (model versus evidence); Boyle 2013",
      "options": [
-      "A clinical model from PRI, supported at the level of case reports",
+      "A clinical model from PRI; trials have tested PRI exercises, not this claim",
       "An experimental finding replicated in controlled trials",
       "A definition from Neumann's text",
       "A measurement from Perry and Burnfield's gait data"
@@ -8062,6 +8519,6 @@
    }
   ]
  },
- "built": "2026-11-11T21:35Z",
+ "built": "2026-11-11T21:41Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }

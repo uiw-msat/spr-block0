@@ -16,11 +16,11 @@
     return crypto.subtle.digest("SHA-256", data).then(hex);
   }
 
-  /* Returns a Promise of { id: true|false|null } — null for blank optional cells. */
+  /* Returns a Promise of { id: true|false|null } — null for blank cells and for optional (ungraded) cells. */
   function checkCells(salt, cells, answers) {
     return Promise.all(cells.map(function (c) {
       var a = answers[c.id];
-      if (!a) return Promise.resolve([c.id, null]);
+      if (!a || c.optional) return Promise.resolve([c.id, null]);   // optional cells are saved, never graded
       return hash(salt, c.id, a).then(function (d) { return [c.id, c.accept.indexOf(d) !== -1]; });
     })).then(function (pairs) {
       var r = {};

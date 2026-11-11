@@ -38,7 +38,9 @@ def key_answers(path):
             opts = sites_for(str(r[hdr["options"]])) if str(r[hdr["options"]]).startswith("See Options") else str(r[hdr["options"]]).split("|")
             acc = str(r[hdr["accept"]]).split("|")
             typ = r[hdr["type"]]
-            if typ == "multi":
+            if str(r[hdr["flag"]] or "").strip().upper() == "OPTIONAL":
+                rows.append((r[0], opts[-1], opts[0], typ, opts))   # ungraded: any answer must do
+            elif typ == "multi":
                 rows.append((r[0], acc, [opts[0]], typ, opts))   # right = the whole set; wrong = one box only
             else:
                 wrong = next(o for o in opts if o not in acc)
