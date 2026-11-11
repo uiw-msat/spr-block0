@@ -3448,6 +3448,7 @@
    "framing": [
     "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes that segment and asks what the same muscle does to the proximal one: the pelvis on a fixed femur (AF), the pelvis on a fixed thorax, the thorax on a fixed scapula (TS), and the trunk on a fixed humerus (GH).",
     "Hip muscles. Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. Answer from anatomical position, for the side of the fixed femur, and choose None where the table lists no action in that plane. Sagittal answers name the tilt of that hemipelvis; frontal answers say whether the opposite side of the pelvis is raised or lowered; transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
+    "PRI calls the part of adductor magnus that runs from the ischial tuberosity to the adductor tubercle, above the medial femoral condyle, the ischiocondylar (IC) adductor. Neumann calls the same fibers the posterior, or extensor, head. This lesson uses Neumann's name in its tables.",
     "Trunk muscles. With the thorax held still, a muscle that attaches to both the thorax and the pelvis moves the pelvis (Ch. 10, p. 395). Each trunk muscle has one answer for both sides contracting. Quadratus lumborum also has an answer for one side contracting; the other cells in that column are blank because Neumann does not list a one-sided action on the pelvis for those muscles.",
     "Shoulder muscles. With the scapula or the humerus held still, as when the arms bear weight, these muscles move the thorax and pelvis instead of the limb. The scapular muscles and latissimus dorsi have separate tables because the fixed segment differs.",
     "The answers follow Neumann. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic or rib cage action the text does not list, the course says so in Unit 3; this lesson grades the text. Each section has its own Check button, and the lesson passes when all six sections are correct."
@@ -4480,14 +4481,15 @@
      "type": "select",
      "prompt": "Serratus anterior, thorax-on-scapula (TS), scapula fixed: effect on the thorax",
      "accept": [
-      "59f3543cc69d2bc14240479ef1c0b6fe71346b4e8273035f61e60aa65fc2bbdd"
+      "0f876d31e5bf7f6fcb137f2e0998fd98917406578d3b6e3b5b65b255d223e4a3",
+      "a12bf47ac9f9dc9aa443765f15350f615cb94df7bbe173d1f1878b458bc17118"
      ],
      "ref": "Neumann 2017, Ch. 5: Scapulothoracic protractors: serratus anterior, p. 152",
      "options": [
       "Thorax lifted superiorly toward the fixed scapula",
       "Thorax lowered away from the fixed scapula",
-      "Thorax moved posteriorly between the fixed scapulae",
-      "Thorax moved anteriorly between the fixed scapulae",
+      "Thorax moved posteriorly between the fixed scapulae (as in a push-up)",
+      "Ribs lifted, expanding the rib cage",
       "None"
      ],
      "row": "Serratus anterior",
@@ -4506,8 +4508,8 @@
      "options": [
       "Thorax lifted superiorly toward the fixed scapula",
       "Thorax lowered away from the fixed scapula",
-      "Thorax moved posteriorly between the fixed scapulae",
-      "Thorax moved anteriorly between the fixed scapulae",
+      "Thorax moved posteriorly between the fixed scapulae (as in a push-up)",
+      "Ribs lifted, expanding the rib cage",
       "None"
      ],
      "row": "Lower trapezius",
@@ -4520,14 +4522,14 @@
      "type": "select",
      "prompt": "Pectoralis minor, thorax-on-scapula (TS), scapula fixed: effect on the thorax",
      "accept": [
-      "29096a2f53ffdefe2c6a51bea88b4b1f5220000634317cbddd80a2015c19640e"
+      "dcaa3084b6ec061d533a7788372dfd3551d18cf93eed25a915a3dd48283c0258"
      ],
-     "ref": "Neumann 2017, Ch. 5: Scapulothoracic depressors; raising the thorax on a fixed scapula, pp. 150-151",
+     "ref": "Neumann 2017, Ch. 11, Table 11.5: Muscles of forced inspiration, p. 460",
      "options": [
       "Thorax lifted superiorly toward the fixed scapula",
       "Thorax lowered away from the fixed scapula",
-      "Thorax moved posteriorly between the fixed scapulae",
-      "Thorax moved anteriorly between the fixed scapulae",
+      "Thorax moved posteriorly between the fixed scapulae (as in a push-up)",
+      "Ribs lifted, expanding the rib cage",
       "None"
      ],
      "row": "Pectoralis minor",
@@ -4569,7 +4571,7 @@
    "input": "Multiple choice",
    "framing": [
     "Lesson 4 placed the diaphragm's attachments. This lesson treats it as a muscle: its three parts, what its contraction does to the thorax and the lower ribs, and what has to hold still for it to work.",
-    "The first thirteen items are textbook anatomy and mechanics from Neumann, Ch. 11. Two of them ask about muscles that act on the rib cage from a fixed attachment elsewhere, which is the proximal-on-distal reasoning of Lesson 6 applied to breathing.",
+    "The first twelve items are textbook anatomy and mechanics from Neumann, Ch. 11. One of them asks about muscles that hold the lower ribs still so the diaphragm can work.",
     "The last two items come from the research literature. The zone of apposition is a described anatomical region, and postural activation of the diaphragm is a measured finding. What a particular rib cage or pelvic position does to either one is a clinical model the course takes up in Unit 1, where it is labeled as model."
    ],
    "where": [
@@ -4784,21 +4786,6 @@
       "Sternocleidomastoid and scalenes",
       "Pectoralis minor and pectoralis major",
       "Latissimus dorsi and levator costarum"
-     ]
-    },
-    {
-     "id": "dia.pmin",
-     "type": "mc",
-     "prompt": "With the scapula stabilized, pectoralis minor acts as a muscle of forced inspiration by:",
-     "accept": [
-      "a13f0e4665f07e1cf2c66184b82cda1f03f178b9741f02bf674ad4d112f28169"
-     ],
-     "ref": "Neumann 2017, Ch. 11, Table 11.5: Muscles of forced inspiration, p. 460",
-     "options": [
-      "Elevating the upper ribs",
-      "Depressing the upper ribs",
-      "Elevating the lower ribs",
-      "Extending the trunk"
      ]
     },
     {
@@ -7721,9 +7708,10 @@
    "opensAt": "2026-11-13",
    "input": "Dropdowns",
    "framing": [
-    "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take muscles from your Lesson 6 table and ask how each relates to the pattern.",
+    "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last eleven take muscles from your Lesson 6 table and ask how each relates to the pattern.",
     "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. PRI describes it as the body resting in right stance and left swing. On Neumann's gait data the pelvis is oriented right from the end of right terminal stance, and your chart will show that. That a resting body holds a position from walking is a clinical model, not an established finding; one item asks you to say so.",
-    "PRI groups muscles into chains that hold a pattern and muscles of opposition that move the body out of it. For the Left AIC, the anterior interior chain includes the psoas, iliacus, tensor fasciae latae, and biceps femoris; the muscles of opposition are the hamstrings, the gluteals, and the internal obliques, and the course adds the left adductors. The groupings are PRI's and are credited on the About page.",
+    "PRI groups muscles into chains that hold a pattern and muscles of opposition that move the body out of it. For the Left AIC, the anterior interior chain includes the psoas, iliacus, tensor fasciae latae, and biceps femoris. The muscles of opposition are the hamstrings, the gluteals, and the internal obliques, and the course adds the left ischiocondylar adductor. The gluteals are specific by side: the anterior fibers of the left gluteus medius, and on the right the gluteus maximus and the posterior fibers of gluteus medius. The groupings are PRI's and are credited on the About page.",
+    "PRI calls the part of adductor magnus that runs from the ischial tuberosity to the adductor tubercle, above the medial femoral condyle, the ischiocondylar (IC) adductor. Neumann calls the same fibers the posterior, or extensor, head.",
     "For each muscle the fixed segment is named. Find the muscle's actions in your Lesson 6 table and choose the one that does what PRI's grouping says: holds the pelvis in the pattern, or moves it out. Each answer is an action Neumann lists. A muscle can have a second listed action that works the other way; Unit 3 takes those up."
    ],
    "where": [
@@ -7941,9 +7929,9 @@
     {
      "id": "opp.gmedL",
      "type": "select",
-     "prompt": "The left gluteus medius, posterior fibers is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
+     "prompt": "The left gluteus medius, anterior fibers, is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "852d1ee5209c736d42500c902ba1023a0a6e3631b19fda8e4ffe64f1e16a9274"
+      "a6436fb8921d7d6736705ebedc01456301806a6652b8259213d8c9bc15945395"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
@@ -7986,24 +7974,9 @@
     {
      "id": "opp.addmag",
      "type": "select",
-     "prompt": "The left adductor magnus, posterior head is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
+     "prompt": "The left ischiocondylar (IC) adductor, the posterior head of adductor magnus, is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
       "cfd24edd3be1fe6d50c191e807de434d4ac6c77c96a94b25d1d655546463ff44"
-     ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
-     "options": [
-      "Sagittal: anterior tilt of that hemipelvis",
-      "Sagittal: posterior tilt of that hemipelvis",
-      "Transverse: pelvis oriented right",
-      "Transverse: pelvis oriented left"
-     ]
-    },
-    {
-     "id": "opp.addlong",
-     "type": "select",
-     "prompt": "The left adductor longus is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
-     "accept": [
-      "4268fb65591583a3beee8e11fc3ff437fc07e5d63fc8ba000634015252fc8499"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
@@ -8369,6 +8342,6 @@
    }
   ]
  },
- "built": "2026-11-11T20:58Z",
+ "built": "2026-11-11T21:11Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }
