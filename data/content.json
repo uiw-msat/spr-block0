@@ -4332,25 +4332,272 @@
     20
    ],
    "opensAt": "2026-11-13",
-   "input": "Dropdown and multiple choice",
+   "input": "Multiple choice",
    "framing": [
-    "Draft."
+    "Lesson 4 placed the diaphragm's attachments. This lesson treats it as a muscle: its three parts, what its contraction does to the thorax and the lower ribs, and what has to hold still for it to work.",
+    "The first thirteen items are textbook anatomy and mechanics from Neumann, Ch. 11. Two of them ask about muscles that act on the rib cage from a fixed attachment elsewhere, which is the proximal-on-distal reasoning of Lesson 6 applied to breathing.",
+    "The last two items come from the research literature. The zone of apposition is a described anatomical region, and postural activation of the diaphragm is a measured finding. What a particular rib cage or pelvic position does to either one is a clinical model the course takes up in Unit 1, where it is labeled as model."
    ],
    "where": [
     {
-     "label": "Neumann 2017, Ch. 11: Kinesiology of ventilation",
+     "label": "Neumann 2017, Ch. 11, pp. 456-457: diaphragm muscle; Table 11.4, primary muscles of inspiration",
      "url": ""
     },
     {
-     "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon",
+     "label": "Neumann 2017, Ch. 11, p. 460: Table 11.5, muscles of forced inspiration",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Appendix III, Part C, p. 473: diaphragm attachments",
+     "url": ""
+    },
+    {
+     "label": "Boyle, Olinick and Lewis 2010, The value of blowing up a balloon (zone of apposition)",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
     },
     {
-     "label": "Hodges & Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
+     "label": "Hodges and Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2269747/"
     }
    ],
-   "cells": []
+   "layout": "mc",
+   "figures": [
+    {
+     "file": "1113_The_Diaphragm.jpg",
+     "number": "11.17",
+     "title": "Muscles of the Diaphragm",
+     "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
+     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+     "alt": "Inferior view of the diaphragm with its central tendon, crura on the vertebrae, and the openings for the vena cava, esophagus, and aorta."
+    }
+   ],
+   "cells": [
+    {
+     "id": "dia.parts",
+     "type": "mc",
+     "prompt": "Neumann describes the diaphragm in three parts, named for their bony attachments. Which set is correct?",
+     "accept": [
+      "4aaec7f72d8a4a82d65983b5061850ba1019bb218b003f63fc31c3fd2ba25e20"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Costal, sternal, and crural",
+      "Costal, vertebral, and central",
+      "Sternal, lumbar, and pelvic",
+      "Anterior, lateral, and posterior"
+     ]
+    },
+    {
+     "id": "dia.costal",
+     "type": "mc",
+     "prompt": "Costal part: where does it attach on the rib cage?",
+     "accept": [
+      "774c041b2cd581dd0e7ce5c4b88f3f5c18eded61021f89ca8d377461672e1a38"
+     ],
+     "ref": "Neumann 2017, App. III, Part C: Diaphragm, p. 473",
+     "options": [
+      "Inner surfaces of the cartilages and adjacent bone of ribs 6-12",
+      "Inner surfaces of the cartilages of ribs 1-6",
+      "Outer surfaces of ribs 9-12",
+      "Angles of ribs 6-12"
+     ]
+    },
+    {
+     "id": "dia.crura.level",
+     "type": "mc",
+     "prompt": "The right and left crus attach to the bodies of which vertebrae?",
+     "accept": [
+      "a9d540752f03763a50078d55810505ef547559e2f3593f35a8e344be700aeead"
+     ],
+     "ref": "Neumann 2017, App. III, Part C: Diaphragm, p. 473",
+     "options": [
+      "L1 to L3",
+      "T10 to T12",
+      "L3 to L5",
+      "T12 only"
+     ]
+    },
+    {
+     "id": "dia.crura.fibers",
+     "type": "mc",
+     "prompt": "Which part of the diaphragm contains its longest and most vertically oriented fibers?",
+     "accept": [
+      "8993a83d8f9b3e0102327d686cc5738809760f1cf960ade49bcb5c06bd110c53"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Crural part",
+      "Costal part",
+      "Sternal part",
+      "Central tendon"
+     ]
+    },
+    {
+     "id": "dia.crura.psoas",
+     "type": "mc",
+     "prompt": "Cadaveric dissection shows some crural fibers intermixing with the proximal attachments of which muscle?",
+     "accept": [
+      "48a19013ed7e71a1c7cf2344ca09a71bf8951aa152a1fb9823deceac06c77e05"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Psoas major",
+      "Iliacus",
+      "Rectus abdominis",
+      "Latissimus dorsi"
+     ]
+    },
+    {
+     "id": "dia.central",
+     "type": "mc",
+     "prompt": "The three parts of the diaphragm converge on which superior attachment?",
+     "accept": [
+      "80724a97d93d5b9e75bdbaa402d8f33a1e91894846392e24f8fa467f3c016dae"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Central tendon",
+      "Xiphoid process",
+      "Body of T8",
+      "Fibrous pericardium"
+     ]
+    },
+    {
+     "id": "dia.nerve",
+     "type": "mc",
+     "prompt": "Innervation of the diaphragm:",
+     "accept": [
+      "0f15695c9157d3deab06927b91f3f85104db1d2883a7d051d13d217ebeaead3e"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Phrenic nerve, C3 to C5",
+      "Vagus nerve",
+      "Intercostal nerves, T7 to T12",
+      "Phrenic nerve, C5 to C7"
+     ]
+    },
+    {
+     "id": "dia.higher",
+     "type": "mc",
+     "prompt": "At rest, which side of the diaphragm lies slightly higher, and what does Neumann attribute this to?",
+     "accept": [
+      "94cf2f7a8a3e76ea38805eebad77848224ae4f3ebc1013a8786979a1b687801d"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Right side; the position of the liver",
+      "Left side; the position of the heart",
+      "Right side; the three lobes of the right lung",
+      "Left side; the position of the stomach"
+     ]
+    },
+    {
+     "id": "dia.primary",
+     "type": "mc",
+     "prompt": "With the lower ribs stabilized, what does the initial contraction of the diaphragm do?",
+     "accept": [
+      "8515f6f59e31452cb337adeab69a337cfd80920f47f7021337f7ae92f1ecbcaf"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Lowers and flattens the dome, increasing the vertical diameter of the thorax",
+      "Raises the dome, decreasing the vertical diameter of the thorax",
+      "Elevates the upper ribs and sternum",
+      "Depresses the lower ribs"
+     ]
+    },
+    {
+     "id": "dia.resist",
+     "type": "mc",
+     "prompt": "Descent of the dome is resisted by intra-abdominal pressure, compressed abdominal contents, and passive tension in which stretched muscles?",
+     "accept": [
+      "63556bc67b1888572ea8bc04b287762c9d7995dd06e1ff7ec6ad6674eb7c2991"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Abdominal muscles, such as transversus abdominis",
+      "Erector spinae",
+      "Scalenes",
+      "Hip flexors"
+     ]
+    },
+    {
+     "id": "dia.secondary",
+     "type": "mc",
+     "prompt": "Once the abdomen stabilizes the dome, what does continued contraction of the diaphragm do?",
+     "accept": [
+      "1749214554deb1f4aa1ba71538d7d4685379d0016b5fd82fc99cfc97f3363c64"
+     ],
+     "ref": "Neumann 2017, Ch. 11: Diaphragm: attachments, crura, central tendon, p. 457",
+     "options": [
+      "Elevates the lower six ribs, expanding the thorax anterior-posteriorly and medial-laterally",
+      "Depresses the lower six ribs, narrowing the thorax",
+      "Extends the lumbar spine",
+      "Flexes the thoracic spine"
+     ]
+    },
+    {
+     "id": "dia.stabilizers",
+     "type": "mc",
+     "prompt": "In Neumann's table of muscles of forced inspiration, which two muscles stabilize the lower ribs for contraction of the diaphragm?",
+     "accept": [
+      "52331cd81f7d0c7ed1831ced35fc7d1218ac63866a05956941f9d5dcf0ebcdbb"
+     ],
+     "ref": "Neumann 2017, Ch. 11, Table 11.5: Muscles of forced inspiration, p. 460",
+     "options": [
+      "Serratus posterior inferior and quadratus lumborum",
+      "Sternocleidomastoid and scalenes",
+      "Pectoralis minor and pectoralis major",
+      "Latissimus dorsi and levator costarum"
+     ]
+    },
+    {
+     "id": "dia.pmin",
+     "type": "mc",
+     "prompt": "With the scapula stabilized, pectoralis minor acts as a muscle of forced inspiration by:",
+     "accept": [
+      "a13f0e4665f07e1cf2c66184b82cda1f03f178b9741f02bf674ad4d112f28169"
+     ],
+     "ref": "Neumann 2017, Ch. 11, Table 11.5: Muscles of forced inspiration, p. 460",
+     "options": [
+      "Elevating the upper ribs",
+      "Depressing the upper ribs",
+      "Elevating the lower ribs",
+      "Extending the trunk"
+     ]
+    },
+    {
+     "id": "dia.zoa",
+     "type": "mc",
+     "prompt": "The zone of apposition is:",
+     "accept": [
+      "38a8ef1f1b7b0d52768e9f5ac6081266acc9526306962cf06ce71a7ea48e9166"
+     ],
+     "ref": "Boyle, Olinick and Lewis 2010, The value of blowing up a balloon",
+     "options": [
+      "The part of the diaphragm that lies directly against the inner surface of the lower rib cage",
+      "The part of the central tendon beneath the heart",
+      "The opening between the crura that transmits the aorta",
+      "The area where the liver contacts the right dome"
+     ]
+    },
+    {
+     "id": "dia.postural",
+     "type": "mc",
+     "prompt": "Hodges and Gandevia (2000) recorded the diaphragm during repetitive arm movement. What did they find?",
+     "accept": [
+      "6b94e897fca59fd862f91e23483440cedefd650379c7499ddcc1e3c6ec0bfb84"
+     ],
+     "ref": "Hodges and Gandevia 2000, J Physiol 522(1):165-175",
+     "options": [
+      "Diaphragm activity was modulated with the arm movement as well as with breathing",
+      "The diaphragm was active only during inspiration",
+      "The diaphragm was silent while the arm moved",
+      "The diaphragm was active only during breath-holding"
+     ]
+    }
+   ]
   },
   {
    "id": "08",
@@ -4734,6 +4981,6 @@
    }
   ]
  },
- "built": "2026-11-11T18:04Z",
+ "built": "2026-11-11T20:14Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }

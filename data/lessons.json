@@ -502,22 +502,43 @@
         20
       ],
       "opensAt": "2026-11-13",
-      "input": "Dropdown and multiple choice",
+      "input": "Multiple choice",
       "framing": [
-        "Draft."
+        "Lesson 4 placed the diaphragm's attachments. This lesson treats it as a muscle: its three parts, what its contraction does to the thorax and the lower ribs, and what has to hold still for it to work.",
+        "The first thirteen items are textbook anatomy and mechanics from Neumann, Ch. 11. Two of them ask about muscles that act on the rib cage from a fixed attachment elsewhere, which is the proximal-on-distal reasoning of Lesson 6 applied to breathing.",
+        "The last two items come from the research literature. The zone of apposition is a described anatomical region, and postural activation of the diaphragm is a measured finding. What a particular rib cage or pelvic position does to either one is a clinical model the course takes up in Unit 1, where it is labeled as model."
       ],
       "where": [
         {
-          "label": "Neumann 2017, Ch. 11: Kinesiology of ventilation",
+          "label": "Neumann 2017, Ch. 11, pp. 456-457: diaphragm muscle; Table 11.4, primary muscles of inspiration",
           "url": ""
         },
         {
-          "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon",
+          "label": "Neumann 2017, Ch. 11, p. 460: Table 11.5, muscles of forced inspiration",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Appendix III, Part C, p. 473: diaphragm attachments",
+          "url": ""
+        },
+        {
+          "label": "Boyle, Olinick and Lewis 2010, The value of blowing up a balloon (zone of apposition)",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2971640/"
         },
         {
-          "label": "Hodges & Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
+          "label": "Hodges and Gandevia 2000, Activation of the human diaphragm during a repetitive postural task",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2269747/"
+        }
+      ],
+      "layout": "mc",
+      "figures": [
+        {
+          "file": "1113_The_Diaphragm.jpg",
+          "number": "11.17",
+          "title": "Muscles of the Diaphragm",
+          "section": "11.4 Axial Muscles of the Abdominal Wall, and Thorax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+          "alt": "Inferior view of the diaphragm with its central tendon, crura on the vertebrae, and the openings for the vena cava, esophagus, and aorta."
         }
       ]
     },
