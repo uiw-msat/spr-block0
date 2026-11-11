@@ -335,6 +335,7 @@
       "framing": [
         "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles (one side contracting), the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
         "For trunk muscles, sagittal answers are the action with both sides contracting; frontal and transverse answers are for one side.",
+        "The muscles are in six sections: anterior hip, posterior thigh, medial thigh, gluteal region, trunk, and shoulder. Each section has its own Check button, and the lesson passes when all six sections are correct. The shoulder section has two tables because the moving segment differs: the scapula on the thorax (ST) for the scapular muscles, the humerus on the glenoid (HG) for latissimus dorsi.",
         "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the roles swapped: the proximal segment moving on a fixed distal one."
       ],
       "where": [
@@ -355,7 +356,65 @@
           "url": ""
         }
       ],
-      "layout": "matrix"
+      "layout": "matrix",
+      "sectionCheck": true,
+      "sections": [
+        {
+          "label": "Anterior hip · femur-on-pelvis (FA)",
+          "rows": [
+            "Psoas major",
+            "Iliacus",
+            "Tensor fasciae latae"
+          ]
+        },
+        {
+          "label": "Posterior thigh · femur-on-pelvis (FA)",
+          "rows": [
+            "Biceps femoris, long head",
+            "Semimembranosus",
+            "Semitendinosus"
+          ]
+        },
+        {
+          "label": "Medial thigh · femur-on-pelvis (FA)",
+          "rows": [
+            "Adductor magnus, anterior (adductor) head",
+            "Adductor magnus, posterior (extensor) head",
+            "Adductor longus"
+          ]
+        },
+        {
+          "label": "Gluteal region · femur-on-pelvis (FA)",
+          "rows": [
+            "Gluteus medius, anterior fibers",
+            "Gluteus medius, posterior fibers",
+            "Gluteus maximus, upper fibers",
+            "Gluteus maximus, lower fibers",
+            "Piriformis",
+            "Obturator internus"
+          ]
+        },
+        {
+          "label": "Trunk muscles · thorax-on-pelvis, one side contracting",
+          "rows": [
+            "Internal oblique",
+            "Transversus abdominis",
+            "External oblique",
+            "Rectus abdominis",
+            "Erector spinae (group)",
+            "Quadratus lumborum"
+          ]
+        },
+        {
+          "label": "Shoulder muscles",
+          "rows": [
+            "Serratus anterior",
+            "Lower trapezius",
+            "Pectoralis minor",
+            "Latissimus dorsi"
+          ]
+        }
+      ]
     },
     {
       "id": "06",

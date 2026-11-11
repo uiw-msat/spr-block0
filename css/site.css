@@ -321,3 +321,5 @@ td.right .mark-text { color: var(--ok); font-weight: 600; }
 }
 @media print { .section-bar { display: none !important; } }
 .check-bar.static { position: static; box-shadow: none; }
+.matrix-subgroup { font-family: var(--sans); font-size: .8rem; font-weight: 600; color: var(--ink-2); margin: 1rem 0 .35rem; }
+.matrix-group + .matrix-subgroup { margin-top: .25rem; }

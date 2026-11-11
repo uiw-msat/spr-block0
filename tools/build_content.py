@@ -148,6 +148,31 @@ def main(key_path):
     if problems:
         sys.exit("Key problems, nothing written:\n  " + "\n  ".join(problems))
 
+    # lessons.json may group a matrix lesson's rows into sections (one Check button each):
+    # "sections": [{"label": ..., "rows": [row names]}]. Every row must be in exactly one.
+    for L in meta["lessons"]:
+        secs = L.get("sections")
+        if not secs:
+            continue
+        where = {}
+        for sec in secs:
+            for r in sec["rows"]:
+                if r in where:
+                    problems.append(f"lessons.json {L['id']}: row '{r}' is in two sections")
+                where[r] = sec["label"]
+        rows = {c["row"] for c in cells_by_lesson.get(L["id"], [])}
+        for r in sorted(rows - set(where)):
+            problems.append(f"lessons.json {L['id']}: row '{r}' is not in any section")
+        for r in sorted(set(where) - rows):
+            problems.append(f"lessons.json {L['id']}: section row '{r}' is not in the key")
+        order = {sec["label"]: i for i, sec in enumerate(secs)}
+        for c in cells_by_lesson.get(L["id"], []):
+            if c["row"] in where:
+                c["section"] = where[c["row"]]
+        cells_by_lesson[L["id"]] = sorted(cells_by_lesson.get(L["id"], []), key=lambda c: order.get(c.get("section"), 0))
+    if problems:
+        sys.exit("Section problems, nothing written:\n  " + "\n  ".join(problems))
+
     for L in meta["lessons"]:
         L["cells"] = cells_by_lesson.get(L["id"], [])
     used = {c.get("optionSet") for v in cells_by_lesson.values() for c in v}

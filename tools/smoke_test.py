@@ -110,7 +110,7 @@ def main(path, base):
             txt = page.text_content(".lesson-result")
             if sectioned:
                 # a saved answer that is not in a section's list comes back blank after a reload
-                page.evaluate("id => { const p = JSON.parse(localStorage.getItem('spr-block0-progress')); p.lessons['04'].answers[id] = 'Not a listed site'; localStorage.setItem('spr-block0-progress', JSON.stringify(p)); }", first)
+                page.evaluate("([id, lesson]) => { const p = JSON.parse(localStorage.getItem('spr-block0-progress')); p.lessons[lesson].answers[id] = 'Not a listed option'; localStorage.setItem('spr-block0-progress', JSON.stringify(p)); }", [first, slug[:2]])
                 page.reload(); page.wait_for_selector("[data-cell]")
                 if page.input_value(f"#{sid(first)}") != "" or "Section correct" not in page.text_content(f"{check} >> xpath=.."):
                     fails.append(f"{slug}: stale answer not cleared, or section state lost on reload")

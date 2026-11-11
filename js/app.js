@@ -212,8 +212,8 @@
     if (st.answers[c.id] && sel.value !== st.answers[c.id]) { delete st.answers[c.id]; save(); }
     sel.addEventListener("change", function () {
       st.answers[c.id] = sel.value;
-      if (st.sectionsOK && c.group && st.sectionsOK[c.group]) {
-        delete st.sectionsOK[c.group];
+      if (st.sectionsOK && st.sectionsOK[sectionOf(c)]) {
+        delete st.sectionsOK[sectionOf(c)];
         var sec = sel.closest(".matrix-section"), r = sec && sec.querySelector(".result");
         if (r) { r.className = "result"; r.textContent = "Answers save automatically."; }
       }
@@ -239,35 +239,45 @@
     ]);
   }
 
+  /* A section is what one Check button covers. It holds one table per group; most sections
+     are a single group, in which case the section and the group are the same thing. */
+  function sectionOf(c) { return c.section || c.group || ""; }
+
   function matrix(cells, st, content, sectionBar) {
-    var groups = [], byGroup = {};
+    var sections = [], bySection = {};
     cells.forEach(function (c) {
-      var g = c.group || "";
-      if (!byGroup[g]) { byGroup[g] = { rows: [], map: {}, cols: [] }; groups.push(g); }
-      var G = byGroup[g];
+      var sk = sectionOf(c), g = c.group || "";
+      if (!bySection[sk]) { bySection[sk] = { groups: [], byGroup: {} }; sections.push(sk); }
+      var S = bySection[sk];
+      if (!S.byGroup[g]) { S.byGroup[g] = { rows: [], map: {}, cols: [] }; S.groups.push(g); }
+      var G = S.byGroup[g];
       if (G.cols.indexOf(c.col) < 0) G.cols.push(c.col);
       if (!G.map[c.row]) { G.map[c.row] = {}; G.rows.push(c.row); }
       G.map[c.row][c.col] = c;
     });
     var wrap = el("div", { class: "matrix-wrap" });
-    groups.forEach(function (g) {
+    sections.forEach(function (sk) {
+      var S = bySection[sk];
       var sec = el("section", { class: "matrix-section" });
       wrap.appendChild(sec);
-      if (g) sec.appendChild(el("h3", { class: "matrix-group", text: g }));
-      var cols = byGroup[g].cols;
-      var head = el("tr", null, [el("th", { text: "Muscle" })].concat(cols.map(function (k) { return el("th", { text: k }); })));
-      var tbody = el("tbody");
-      byGroup[g].rows.forEach(function (r) {
-        var tr = el("tr", null, [el("th", { scope: "row", class: "row-head", text: r })]);
-        cols.forEach(function (k) {
-          var c = byGroup[g].map[r][k];
-          if (!c) { tr.appendChild(el("td", { class: "na", text: "—" })); return; }
-          tr.appendChild(el("td", { "data-cell": c.id }, [buildSelect(c, st, content, r + ": " + k), el("span", { class: "mark-text" }), refNode(c)]));
+      if (sk) sec.appendChild(el("h3", { class: "matrix-group", text: sk }));
+      S.groups.forEach(function (g) {
+        var G = S.byGroup[g];
+        if (g && g !== sk && S.groups.length > 1) sec.appendChild(el("h4", { class: "matrix-subgroup", text: g }));
+        var head = el("tr", null, [el("th", { text: "Muscle" })].concat(G.cols.map(function (k) { return el("th", { text: k }); })));
+        var tbody = el("tbody");
+        G.rows.forEach(function (r) {
+          var tr = el("tr", null, [el("th", { scope: "row", class: "row-head", text: r })]);
+          G.cols.forEach(function (k) {
+            var c = G.map[r][k];
+            if (!c) { tr.appendChild(el("td", { class: "na", text: "—" })); return; }
+            tr.appendChild(el("td", { "data-cell": c.id }, [buildSelect(c, st, content, r + ": " + k), el("span", { class: "mark-text" }), refNode(c)]));
+          });
+          tbody.appendChild(tr);
         });
-        tbody.appendChild(tr);
+        sec.appendChild(el("table", { class: "cell-table matrix" }, [el("thead", null, [head]), tbody]));
       });
-      sec.appendChild(el("table", { class: "cell-table matrix" }, [el("thead", null, [head]), tbody]));
-      if (sectionBar) sec.appendChild(sectionBar(g, cells.filter(function (c) { return (c.group || "") === g; })));
+      if (sectionBar) sec.appendChild(sectionBar(sk, cells.filter(function (c) { return sectionOf(c) === sk; })));
     });
     return wrap;
   }
@@ -431,7 +441,7 @@
             if (wrong) delete st.sectionsOK[group]; else st.sectionsOK[group] = true;
           }
           /* A sectioned lesson passes only when every section has itself been checked and is correct. */
-          if (sectioned) lessonOK = lessonOK && cells.every(function (c) { return st.sectionsOK[c.group || ""]; });
+          if (sectioned) lessonOK = lessonOK && cells.every(function (c) { return st.sectionsOK[sectionOf(c)]; });
           if (wrong) {
             out.className = base + " bad";
             out.textContent = wrong + " of " + scope.length + " not correct. Wrong items are marked; items missed " + MISSES_FOR_REF + " times show where to look.";
