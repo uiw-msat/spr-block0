@@ -2058,8 +2058,8 @@
    "opensAt": "2026-11-06",
    "input": "Dropdown per cell",
    "framing": [
-    "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles (one side contracting), the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
-    "For trunk muscles, sagittal answers are the action with both sides contracting; frontal and transverse answers are for one side.",
+    "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles, the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
+    "Trunk muscles are asked the way Neumann's Table 10.3 presents them: one answer for the action with both sides contracting, and one for the action with one side contracting. A one-sided action can combine lateral flexion and rotation; choose the option that names both.",
     "The muscles are in six sections: anterior hip, posterior thigh, medial thigh, gluteal region, trunk, and shoulder. Each section has its own Check button, and the lesson passes when all six sections are correct. The shoulder section has two tables because the moving segment differs: the scapula on the thorax (ST) for the scapular muscles, the humerus on the glenoid (HG) for latissimus dorsi.",
     "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the roles swapped: the proximal segment moving on a fixed distal one."
    ],
@@ -2120,7 +2120,7 @@
      ]
     },
     {
-     "label": "Trunk muscles · thorax-on-pelvis, one side contracting",
+     "label": "Trunk muscles · thorax-on-pelvis",
      "rows": [
       "Internal oblique",
       "Transversus abdominis",
@@ -2952,329 +2952,269 @@
      "section": "Gluteal region · femur-on-pelvis (FA)"
     },
     {
-     "id": "act.io.sagittal",
+     "id": "act.io.bilateral",
      "type": "select",
-     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
+     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed: both sides contracting (bilateral)",
      "accept": [
-      "e487f9ee006e9bb7ee227e39b95bfeef512f429b7b1c03bc4a0a9f6447254669"
+      "b5cf517e61d647a856d65ad8b7f841005690c8a7babf1557e048258dfae25d4a"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
+      "Compression of the abdominal cavity",
+      "Expansion of the abdominal cavity",
       "None"
      ],
      "row": "Internal oblique",
-     "col": "Sagittal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.io.frontal",
+     "id": "act.io.unilateral",
      "type": "select",
-     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed: one side contracting (unilateral)",
      "accept": [
-      "4cd1c586618f104a49ddb0dcc53d0cceac115e98cc2834e59316fab306766764"
+      "d7ef28aae8296c320535672a5a079eb9b1ebecb552b8199210f02a0d1b77ef71"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
-      "Ipsilateral lateral flexion",
-      "Contralateral lateral flexion",
+      "Ipsilateral lateral flexion and ipsilateral rotation",
+      "Ipsilateral lateral flexion and contralateral rotation",
+      "Ipsilateral lateral flexion only",
+      "Contralateral lateral flexion and ipsilateral rotation",
+      "Contralateral lateral flexion and contralateral rotation",
+      "Contralateral lateral flexion only",
+      "Ipsilateral rotation only",
+      "Contralateral rotation only",
       "None"
      ],
      "row": "Internal oblique",
-     "col": "Frontal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.io.transverse",
+     "id": "act.ta.bilateral",
      "type": "select",
-     "prompt": "Internal oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed: both sides contracting (bilateral)",
      "accept": [
-      "b7d4bde3a5eb92495bcf2ffd356bdf9ebf1aa36d16b99a767de94285601385a4"
-     ],
-     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
-     "options": [
-      "Ipsilateral rotation",
-      "Contralateral rotation",
-      "None"
-     ],
-     "row": "Internal oblique",
-     "col": "Transverse",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
-    },
-    {
-     "id": "act.ta.sagittal",
-     "type": "select",
-     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
-     "accept": [
-      "396380396f3a3e6e89118247ee206e76363457ddade5e7a6c732016e962ba30c"
+      "ede20b916736019aa2384b8d2e8e67ac47a3310688469d51c98c510afc04a061"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
+      "Compression of the abdominal cavity",
+      "Expansion of the abdominal cavity",
       "None"
      ],
      "row": "Transversus abdominis",
-     "col": "Sagittal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.ta.frontal",
+     "id": "act.ta.unilateral",
      "type": "select",
-     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed: one side contracting (unilateral)",
      "accept": [
-      "6404caad54a57eb50d63c7d99d3d2a16f63f7341d9a8543040ee46e597b4abff"
+      "86ea30287fdb14fc3053f4da8722a96423dd4d4b02f7cd6d307b6e841230a7a4"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
-      "Ipsilateral lateral flexion",
-      "Contralateral lateral flexion",
+      "Ipsilateral lateral flexion and ipsilateral rotation",
+      "Ipsilateral lateral flexion and contralateral rotation",
+      "Ipsilateral lateral flexion only",
+      "Contralateral lateral flexion and ipsilateral rotation",
+      "Contralateral lateral flexion and contralateral rotation",
+      "Contralateral lateral flexion only",
+      "Ipsilateral rotation only",
+      "Contralateral rotation only",
       "None"
      ],
      "row": "Transversus abdominis",
-     "col": "Frontal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.ta.transverse",
+     "id": "act.eo.bilateral",
      "type": "select",
-     "prompt": "Transversus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed: both sides contracting (bilateral)",
      "accept": [
-      "bed2df53f99466707209286f738fdde861770f4fa9c77b353dd8428370c2cd73"
-     ],
-     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
-     "options": [
-      "Ipsilateral rotation",
-      "Contralateral rotation",
-      "None"
-     ],
-     "row": "Transversus abdominis",
-     "col": "Transverse",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
-    },
-    {
-     "id": "act.eo.sagittal",
-     "type": "select",
-     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
-     "accept": [
-      "5221db673ad21edf166cfecc4b48d0e02c59b44a4829b58ff2370ded553c510e"
+      "0bc6a0d90fd9713bd1f395b4a716a5a5d765ad25d6c407fb3ca9a5d79014aa57"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
+      "Compression of the abdominal cavity",
+      "Expansion of the abdominal cavity",
       "None"
      ],
      "row": "External oblique",
-     "col": "Sagittal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.eo.frontal",
+     "id": "act.eo.unilateral",
      "type": "select",
-     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed: one side contracting (unilateral)",
      "accept": [
-      "46f4011e62f1a545b61dd9d6002a2091e55eee06b296a4c81ab6116c71c19113"
+      "7bb11c39491061d61a5f20942388b3fca7fe742905f5af19ef78bf6f704d21ac"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
-      "Ipsilateral lateral flexion",
-      "Contralateral lateral flexion",
+      "Ipsilateral lateral flexion and ipsilateral rotation",
+      "Ipsilateral lateral flexion and contralateral rotation",
+      "Ipsilateral lateral flexion only",
+      "Contralateral lateral flexion and ipsilateral rotation",
+      "Contralateral lateral flexion and contralateral rotation",
+      "Contralateral lateral flexion only",
+      "Ipsilateral rotation only",
+      "Contralateral rotation only",
       "None"
      ],
      "row": "External oblique",
-     "col": "Frontal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.eo.transverse",
+     "id": "act.ra.bilateral",
      "type": "select",
-     "prompt": "External oblique, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed: both sides contracting (bilateral)",
      "accept": [
-      "abb08860577bf674db6af4193971f410343c5d6feb86899be53bf62cda594455"
-     ],
-     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
-     "options": [
-      "Ipsilateral rotation",
-      "Contralateral rotation",
-      "None"
-     ],
-     "row": "External oblique",
-     "col": "Transverse",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
-    },
-    {
-     "id": "act.ra.sagittal",
-     "type": "select",
-     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
-     "accept": [
-      "5fcb30825078a0f654c06573750112483145b3c8d0d4a0d26d6b784af5e92b04"
+      "6f45c9ccb31e85496356405b0bafef40a9912c993a6a21a345f47d398d582954"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
       "Flexion",
       "Extension",
+      "Compression of the abdominal cavity",
+      "Expansion of the abdominal cavity",
       "None"
      ],
      "row": "Rectus abdominis",
-     "col": "Sagittal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.ra.frontal",
+     "id": "act.ra.unilateral",
      "type": "select",
-     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed: one side contracting (unilateral)",
      "accept": [
-      "ce2e756ddf7cd8f7f54cfa545c1ae227c92727a8b990280520b6f52a40c30cae"
+      "a7e3043a1b05e1a5efc7fe98df92d145b147309da1589651be2989500dfeefc4"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
-      "Ipsilateral lateral flexion",
-      "Contralateral lateral flexion",
+      "Ipsilateral lateral flexion and ipsilateral rotation",
+      "Ipsilateral lateral flexion and contralateral rotation",
+      "Ipsilateral lateral flexion only",
+      "Contralateral lateral flexion and ipsilateral rotation",
+      "Contralateral lateral flexion and contralateral rotation",
+      "Contralateral lateral flexion only",
+      "Ipsilateral rotation only",
+      "Contralateral rotation only",
       "None"
      ],
      "row": "Rectus abdominis",
-     "col": "Frontal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.ra.transverse",
+     "id": "act.es.bilateral",
      "type": "select",
-     "prompt": "Rectus abdominis, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed: both sides contracting (bilateral)",
      "accept": [
-      "a2e1364e75551668d9d7d6031d2047f5f64e60b80f0abddcd1c076dbe739984f"
-     ],
-     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
-     "options": [
-      "Ipsilateral rotation",
-      "Contralateral rotation",
-      "None"
-     ],
-     "row": "Rectus abdominis",
-     "col": "Transverse",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
-    },
-    {
-     "id": "act.es.sagittal",
-     "type": "select",
-     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
-     "accept": [
-      "3f04625a528b81556a77d90defcd3ddb2a2dcb7814c70e1cb40d4db135976ef2"
+      "4caba35015999fff6e9e42c273f10480d581cb23154158ce6944a94d65f1d761"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.4: Erector spinae, p. 407",
      "options": [
       "Flexion",
       "Extension",
+      "Compression of the abdominal cavity",
+      "Expansion of the abdominal cavity",
       "None"
      ],
      "row": "Erector spinae (group)",
-     "col": "Sagittal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.es.frontal",
+     "id": "act.es.unilateral",
      "type": "select",
-     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed: one side contracting (unilateral)",
      "accept": [
-      "a5ba1e3a0628b7c2fa8b099aee47f5865a1e7881d06aef4a05093a4e772579da"
+      "4a15bdd86bffd3d472b94ac3070ed5246fe9e0663c7f6cd56e5515d0d414c2bc",
+      "cc335af5f7934bab244cb66a63a18b7809987256c5f21820ebb4d7aedccaba99"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.4: Erector spinae, p. 407",
      "options": [
-      "Ipsilateral lateral flexion",
-      "Contralateral lateral flexion",
+      "Ipsilateral lateral flexion and ipsilateral rotation",
+      "Ipsilateral lateral flexion and contralateral rotation",
+      "Ipsilateral lateral flexion only",
+      "Contralateral lateral flexion and ipsilateral rotation",
+      "Contralateral lateral flexion and contralateral rotation",
+      "Contralateral lateral flexion only",
+      "Ipsilateral rotation only",
+      "Contralateral rotation only",
       "None"
      ],
      "row": "Erector spinae (group)",
-     "col": "Frontal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.es.transverse",
+     "id": "act.ql.bilateral",
      "type": "select",
-     "prompt": "Erector spinae (group), thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
+     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed: both sides contracting (bilateral)",
      "accept": [
-      "11afe483ea147060752d56894753e9479e8459b1d1f00114ba858e8710e269e3",
-      "fa5412b10e0984641a6b68909207d6984d2e0dd4e97bdfd5f5fadd034708bb0c"
-     ],
-     "ref": "Neumann 2017, Ch. 10, Table 10.4: Erector spinae, p. 407",
-     "options": [
-      "Ipsilateral rotation",
-      "Contralateral rotation",
-      "None"
-     ],
-     "row": "Erector spinae (group)",
-     "col": "Transverse",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
-    },
-    {
-     "id": "act.ql.sagittal",
-     "type": "select",
-     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: sagittal plane",
-     "accept": [
-      "9082d30308a59b3b0f5117139a76aadd84a8ef8624245105d07930f7cf4608b0"
+      "900171d3f85d6bca4bf7a75a3a89487b00d1ba438754526dce0f9533ebd164e1"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
      "options": [
       "Flexion",
       "Extension",
+      "Compression of the abdominal cavity",
+      "Expansion of the abdominal cavity",
       "None"
      ],
      "row": "Quadratus lumborum",
-     "col": "Sagittal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
-     "id": "act.ql.frontal",
+     "id": "act.ql.unilateral",
      "type": "select",
-     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: frontal plane",
+     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed: one side contracting (unilateral)",
      "accept": [
-      "5bf9f0bf28c73e636ec2643baae7a4972afaa9bdee5c6bec0791162728913a4d"
+      "810c87a24071657cd130a791d39ee794ca497a452a22d8515a3b071716acb929"
      ],
      "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
      "options": [
-      "Ipsilateral lateral flexion",
-      "Contralateral lateral flexion",
+      "Ipsilateral lateral flexion and ipsilateral rotation",
+      "Ipsilateral lateral flexion and contralateral rotation",
+      "Ipsilateral lateral flexion only",
+      "Contralateral lateral flexion and ipsilateral rotation",
+      "Contralateral lateral flexion and contralateral rotation",
+      "Contralateral lateral flexion only",
+      "Ipsilateral rotation only",
+      "Contralateral rotation only",
       "None"
      ],
      "row": "Quadratus lumborum",
-     "col": "Frontal",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
-    },
-    {
-     "id": "act.ql.transverse",
-     "type": "select",
-     "prompt": "Quadratus lumborum, thorax-on-pelvis, pelvis fixed, unilateral contraction: transverse plane",
-     "accept": [
-      "57b74bf61ddb5d0081e567601006665edf89ee18456204f859dd4df69b065a3e"
-     ],
-     "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
-     "options": [
-      "Ipsilateral rotation",
-      "Contralateral rotation",
-      "None"
-     ],
-     "row": "Quadratus lumborum",
-     "col": "Transverse",
-     "group": "Trunk muscles · thorax-on-pelvis, one side contracting",
-     "section": "Trunk muscles · thorax-on-pelvis, one side contracting"
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · thorax-on-pelvis",
+     "section": "Trunk muscles · thorax-on-pelvis"
     },
     {
      "id": "act.sa.elev",
@@ -3932,6 +3872,6 @@
    }
   ]
  },
- "built": "2026-11-11T13:39Z",
+ "built": "2026-11-11T17:48Z",
  "keySource": "SPR_answer_key_L01-L05.xlsx"
 }

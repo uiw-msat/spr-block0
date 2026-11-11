@@ -333,8 +333,8 @@
       "opensAt": "2026-11-06",
       "input": "Dropdown per cell",
       "framing": [
-        "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles (one side contracting), the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
-        "For trunk muscles, sagittal answers are the action with both sides contracting; frontal and transverse answers are for one side.",
+        "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles, the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
+        "Trunk muscles are asked the way Neumann's Table 10.3 presents them: one answer for the action with both sides contracting, and one for the action with one side contracting. A one-sided action can combine lateral flexion and rotation; choose the option that names both.",
         "The muscles are in six sections: anterior hip, posterior thigh, medial thigh, gluteal region, trunk, and shoulder. Each section has its own Check button, and the lesson passes when all six sections are correct. The shoulder section has two tables because the moving segment differs: the scapula on the thorax (ST) for the scapular muscles, the humerus on the glenoid (HG) for latissimus dorsi.",
         "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the roles swapped: the proximal segment moving on a fixed distal one."
       ],
@@ -395,7 +395,7 @@
           ]
         },
         {
-          "label": "Trunk muscles · thorax-on-pelvis, one side contracting",
+          "label": "Trunk muscles · thorax-on-pelvis",
           "rows": [
             "Internal oblique",
             "Transversus abdominis",

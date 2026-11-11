@@ -21,10 +21,13 @@ SHEETS = {"L01_conventions": "01", "L02_landmarks": "02", "L03_viscera": "03",
 SITE_OPTS = "See Options sheet: Attachment sites"
 CHAINS = ["femur-on-pelvis (FA), from anatomical position", "thorax-on-pelvis, pelvis fixed, unilateral contraction",
           "scapula-on-thorax (ST)", "humerus-on-glenoid (HG)"]
+# Trunk rows (Nov 11): one cell for both sides contracting, one for one side contracting.
+CHAINS.append("thorax-on-pelvis, pelvis fixed")
 CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA)",
                CHAINS[1]: "Trunk muscles · thorax-on-pelvis, one side contracting",
                CHAINS[2]: "Scapular muscles · scapula-on-thorax (ST)",
                CHAINS[3]: "Latissimus dorsi · humerus-on-glenoid (HG)"}
+CHAIN_LABEL[CHAINS[4]] = "Trunk muscles · thorax-on-pelvis"
 # Lesson 4: one table per body section. The section comes from the key's options column
 # ("See Options sheet: Attachment sites, Hip"); its dropdown lists only the sites the Options
 # sheet assigns to that section. Neumann's attachment terms differ by region.
