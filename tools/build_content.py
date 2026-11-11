@@ -25,13 +25,13 @@ CHAIN_LABEL = {CHAINS[0]: "Hip muscles · femur-on-pelvis (FA)",
                CHAINS[1]: "Trunk muscles · thorax-on-pelvis, one side contracting",
                CHAINS[2]: "Scapular muscles · scapula-on-thorax (ST)",
                CHAINS[3]: "Latissimus dorsi · humerus-on-glenoid (HG)"}
-# Lesson 4: Neumann names attachments differently by region; one table per pair of terms.
-ATTACH_GROUP = {"proximal attachment": "Hip and shoulder muscles · proximal and distal attachments",
-                "distal attachment": "Hip and shoulder muscles · proximal and distal attachments",
-                "inferior attachment": "Diaphragm and trunk muscles · inferior and superior attachments",
-                "superior attachment": "Diaphragm and trunk muscles · inferior and superior attachments",
-                "lateral attachment": "Abdominal wall · lateral and medial attachments",
-                "medial attachment": "Abdominal wall · lateral and medial attachments"}
+# Lesson 4: one table per body section. The section comes from the key's options column
+# ("See Options sheet: Attachment sites, Hip"); its dropdown lists only the sites the Options
+# sheet assigns to that section. Neumann's attachment terms differ by region.
+SECTION_LABEL = {"Hip": "Hip muscles · proximal and distal attachments",
+                 "Shoulder": "Shoulder muscles · proximal and distal attachments",
+                 "Trunk": "Diaphragm and trunk muscles · inferior and superior attachments",
+                 "Abdominal wall": "Abdominal wall · lateral and medial attachments"}
 
 
 def norm(s):
@@ -52,15 +52,18 @@ def main(key_path):
     wb = load_workbook(key_path, data_only=True)
 
     # attachment sites with groups (Lesson 4 option list)
-    sites, site_groups = [], []
+    # option sets: "sites" = every site; "sites-<section>" = the sites listed for that section
+    option_sets = {"sites": []}
     op = wb["Options"]
     for row in op.iter_rows(min_row=2, values_only=True):
         if not row[0] or not row[1] or str(row[0]).startswith("Lesson"):
             continue
-        sites.append(str(row[0]))
-        if not site_groups or site_groups[-1]["label"] != row[1]:
-            site_groups.append({"label": str(row[1]), "options": []})
-        site_groups[-1]["options"].append(str(row[0]))
+        secs = [x.strip() for x in str(row[2] or "").split("|") if x.strip()] if len(row) > 2 else []
+        for name in ["sites"] + ["sites-" + x for x in secs]:
+            groups = option_sets.setdefault(name, [])
+            if not groups or groups[-1]["label"] != row[1]:
+                groups.append({"label": str(row[1]), "options": []})
+            groups[-1]["options"].append(str(row[0]))
 
     # page lookups
     pages = {}
@@ -86,7 +89,18 @@ def main(key_path):
             opt_raw = str(r[ix["options"]]).strip()
             accept = [a.strip() for a in str(r[ix["accept"]]).split("|") if a.strip()]
             optional = str(r[ix["flag"]] or "").strip().upper() == "OPTIONAL"
-            options = sites if opt_raw == SITE_OPTS else [o.strip() for o in opt_raw.split("|")]
+            section, option_set = None, None
+            if opt_raw.startswith(SITE_OPTS):
+                section = opt_raw[len(SITE_OPTS):].lstrip(", ").strip() or None
+                option_set = "sites-" + section if section else "sites"
+                if option_set not in option_sets:
+                    problems.append(f"{sheet} {cid}: no sites listed for section '{section}' on the Options sheet")
+                    continue
+                if section and section not in SECTION_LABEL:
+                    problems.append(f"{sheet} {cid}: unknown section '{section}'")
+                options = [o for g in option_sets[option_set] for o in g["options"]]
+            else:
+                options = [o.strip() for o in opt_raw.split("|")]
             bad = [a for a in accept if norm(a) not in {norm(o) for o in options}]
             if bad or not accept:
                 problems.append(f"{sheet} {cid}: accept {bad or '(empty)'} not in options")
@@ -107,15 +121,15 @@ def main(key_path):
             else:
                 hashes = sorted({h(salt, cid, a) for a in accept})
             cell = {"id": cid, "type": typ, "prompt": prompt, "accept": hashes, "ref": ref}
-            if opt_raw == SITE_OPTS:
-                cell["optionSet"] = "sites"
+            if option_set:
+                cell["optionSet"] = option_set
             else:
                 cell["options"] = options
             if optional:
                 cell["optional"] = True
             if lid in ("04", "05"):
                 left, col = prompt.rsplit(": ", 1)
-                group = ATTACH_GROUP.get(col.strip().lower()) if lid == "04" else None
+                group = SECTION_LABEL.get(section) if lid == "04" else None
                 for ch in CHAINS:
                     if left.endswith(", " + ch):
                         left, group = left[: -len(ch) - 2], CHAIN_LABEL[ch]
@@ -133,7 +147,8 @@ def main(key_path):
 
     for L in meta["lessons"]:
         L["cells"] = cells_by_lesson.get(L["id"], [])
-    meta["optionSets"] = {"sites": site_groups}
+    used = {c.get("optionSet") for v in cells_by_lesson.values() for c in v}
+    meta["optionSets"] = {k: v for k, v in option_sets.items() if k in used}
     meta["built"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     meta["keySource"] = pathlib.Path(key_path).name
     (ROOT / "data/content.json").write_text(json.dumps(meta, indent=1, ensure_ascii=False) + "\n")

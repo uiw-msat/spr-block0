@@ -312,3 +312,11 @@ td.right .mark-text { color: var(--ok); font-weight: 600; }
 .note-box.before-start h3 { font-size: 1rem; margin-bottom: .4rem; }
 .note-box.before-start ol { margin: 0; padding-left: 1.25rem; }
 .note-box.before-start li { margin: .35rem 0; }
+
+/* ---------- per-section checking (Lesson 4) ---------- */
+.matrix-section { margin-bottom: 2.25rem; }
+.section-bar {
+  margin-top: .6rem; padding: .7rem 1rem; background: var(--panel); border: 1px solid var(--rule); border-radius: var(--radius);
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--sans);
+}
+@media print { .section-bar { display: none !important; } }

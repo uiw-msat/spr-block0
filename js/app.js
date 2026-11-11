@@ -208,7 +208,17 @@
         sel.appendChild(og);
       });
     } else c.options.forEach(function (o) { addOpt(sel, o); });
-    sel.addEventListener("change", function () { st.answers[c.id] = sel.value; save(); clearMark(c.id); });
+    /* A saved answer that is no longer in this list (the list was narrowed) counts as blank. */
+    if (st.answers[c.id] && sel.value !== st.answers[c.id]) { delete st.answers[c.id]; save(); }
+    sel.addEventListener("change", function () {
+      st.answers[c.id] = sel.value;
+      if (st.sectionsOK && c.group && st.sectionsOK[c.group]) {
+        delete st.sectionsOK[c.group];
+        var sec = sel.closest(".matrix-section"), r = sec && sec.querySelector(".result");
+        if (r) { r.className = "result"; r.textContent = "Answers save automatically."; }
+      }
+      save(); clearMark(c.id);
+    });
     return sel;
   }
 
@@ -229,7 +239,7 @@
     ]);
   }
 
-  function matrix(cells, st, content) {
+  function matrix(cells, st, content, sectionBar) {
     var groups = [], byGroup = {};
     cells.forEach(function (c) {
       var g = c.group || "";
@@ -241,7 +251,9 @@
     });
     var wrap = el("div", { class: "matrix-wrap" });
     groups.forEach(function (g) {
-      if (g) wrap.appendChild(el("h3", { class: "matrix-group", text: g }));
+      var sec = el("section", { class: "matrix-section" });
+      wrap.appendChild(sec);
+      if (g) sec.appendChild(el("h3", { class: "matrix-group", text: g }));
       var cols = byGroup[g].cols;
       var head = el("tr", null, [el("th", { text: "Muscle" })].concat(cols.map(function (k) { return el("th", { text: k }); })));
       var tbody = el("tbody");
@@ -254,7 +266,8 @@
         });
         tbody.appendChild(tr);
       });
-      wrap.appendChild(el("table", { class: "cell-table matrix" }, [el("thead", null, [head]), tbody]));
+      sec.appendChild(el("table", { class: "cell-table matrix" }, [el("thead", null, [head]), tbody]));
+      if (sectionBar) sec.appendChild(sectionBar(g, cells.filter(function (c) { return (c.group || "") === g; })));
     });
     return wrap;
   }
@@ -387,50 +400,79 @@
     if (!cells.length) {
       work.appendChild(el("div", { class: "locked-panel" }, [el("p", { class: "muted", text: "Items for this lesson are not drafted yet." })]));
     } else {
-      if (L.layout === "mc") cells.forEach(function (c, i) { work.appendChild(mcItem(c, i + 1, st)); });
-      else if (L.layout === "matrix") work.appendChild(matrix(cells, st, content));
-      else work.appendChild(selectTable(L.shuffleRows ? seededShuffle(cells, lessonSeed(st)) : cells, st, content));
-
+      var sectioned = L.layout === "matrix" && !!L.sectionCheck;
       var figs = figuresPanel(L, content);
-      var result = el("span", { class: "result", role: "status", "aria-live": "polite",
-        text: st.passed ? "Lesson passed. You can still change answers; it stays passed." : "Answers save automatically." });
-      if (st.passed) result.className = "result ok";
-      var btn = el("button", { class: "btn primary", type: "button", text: "Check answers" });
+      var result = el("span", { class: "result lesson-result", role: "status", "aria-live": "polite",
+        text: st.passed ? "Lesson passed. You can still change answers; it stays passed."
+          : sectioned ? "Check each section as you finish it. The lesson passes when every section is correct." : "Answers save automatically." });
+      if (st.passed) result.className = "result lesson-result ok";
       var nextBtn = next ? el("a", { class: "btn", href: next.slug + ".html", text: "Next lesson →" }) : el("a", { class: "btn", href: ROOT + "/certificate.html", text: "Certificate →" });
       if (!st.passed) nextBtn.setAttribute("hidden", "");
-      btn.addEventListener("click", function () {
-        var blankN = required.filter(function (c) { return !st.answers[c.id]; }).length;
-        if (blankN) { result.className = "result bad"; result.textContent = blankN + (blankN === 1 ? " item is" : " items are") + " still blank."; return; }
+
+      /* Check the cells in scope (the whole lesson, or one section). Every cell is hashed so the
+         lesson can pass as soon as all of it is correct, but only cells in scope are marked and
+         only their misses are counted. */
+      var runCheck = function (scope, out, btn, group) {
+        var blankN = scope.filter(function (c) { return !c.optional && !st.answers[c.id]; }).length;
+        if (blankN) { out.className = out.className.replace(/ (ok|bad)$/, "") + " bad"; out.textContent = blankN + (blankN === 1 ? " item is" : " items are") + " still blank."; return; }
+        var base = out.className.replace(/ (ok|bad)$/, "");
         btn.disabled = true;
         window.SPRCheck.checkCells(content.salt, cells, st.answers).then(function (res) {
           st.attempts += 1;
           var wrong = 0;
-          cells.forEach(function (c) {
+          scope.forEach(function (c) {
             if (res[c.id] === null) return;
             if (!res[c.id]) { wrong += 1; st.misses[c.id] = (st.misses[c.id] || 0) + 1; }
             mark(c.id, res[c.id], st.misses[c.id] || 0);
           });
-          if (!wrong) {
+          var lessonOK = cells.every(function (c) { return res[c.id] === true || (c.optional && res[c.id] === null); });
+          if (group !== undefined) {
+            st.sectionsOK = st.sectionsOK || {};
+            if (wrong) delete st.sectionsOK[group]; else st.sectionsOK[group] = true;
+          }
+          /* A sectioned lesson passes only when every section has itself been checked and is correct. */
+          if (sectioned) lessonOK = lessonOK && cells.every(function (c) { return st.sectionsOK[c.group || ""]; });
+          if (wrong) {
+            out.className = base + " bad";
+            out.textContent = wrong + " of " + scope.length + " not correct. Wrong items are marked; items missed " + MISSES_FOR_REF + " times show where to look.";
+            var first = btn.closest(".matrix-section, .work").querySelector(".wrong select, .wrong input");
+            if (first) first.focus();
+          } else if (!lessonOK) {
+            out.className = base + " ok";
+            out.textContent = "Section correct.";
+          }
+          if (lessonOK) {
             if (!st.passed) { st.passed = true; st.passedAt = new Date().toISOString(); }
-            result.className = "result ok";
-            result.textContent = "All correct. Lesson passed.";
+            if (out !== result) { out.className = base + " ok"; out.textContent = "Section correct."; }
+            result.className = "result lesson-result ok";
+            result.textContent = sectioned ? "All sections correct. Lesson passed." : "All correct. Lesson passed.";
             statusSpan.textContent = "Status: Passed";
             nextBtn.removeAttribute("hidden");
             if (figs) figs.reveal();
-          } else {
-            result.className = "result bad";
-            result.textContent = wrong + " of " + cells.length + " not correct. Wrong items are marked; items missed " + MISSES_FOR_REF + " times show where to look.";
-            var first = document.querySelector(".wrong select, .wrong input");
-            if (first) first.focus();
           }
           save();
           btn.disabled = false;
         }).catch(function () {
-          result.className = "result bad";
-          result.textContent = "This browser could not check answers. Use a current version of Chrome, Edge, Firefox, or Safari.";
+          out.className = base + " bad";
+          out.textContent = "This browser could not check answers. Use a current version of Chrome, Edge, Firefox, or Safari.";
           btn.disabled = false;
         });
-      });
+      };
+
+      var sectionBar = !sectioned ? null : function (group, scope) {
+        var ok = st.sectionsOK && st.sectionsOK[group];
+        var out = el("span", { class: "result" + (ok ? " ok" : ""), role: "status", "aria-live": "polite", text: ok ? "Section correct." : scope.length + " items in this section." });
+        var b = el("button", { class: "btn primary check", type: "button", text: "Check this section" });
+        b.addEventListener("click", function () { runCheck(scope, out, b, group); });
+        return el("div", { class: "section-bar" }, [out, b]);
+      };
+
+      if (L.layout === "mc") cells.forEach(function (c, i) { work.appendChild(mcItem(c, i + 1, st)); });
+      else if (L.layout === "matrix") work.appendChild(matrix(cells, st, content, sectionBar));
+      else work.appendChild(selectTable(L.shuffleRows ? seededShuffle(cells, lessonSeed(st)) : cells, st, content));
+
+      var btn = sectioned ? null : el("button", { class: "btn primary check", type: "button", text: "Check answers" });
+      if (btn) btn.addEventListener("click", function () { runCheck(cells, result, btn); });
       work.appendChild(el("div", { class: "check-bar" }, [result, el("div", { class: "btn-row" }, [btn, nextBtn])]));
     }
     left.appendChild(work);

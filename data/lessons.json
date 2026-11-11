@@ -255,6 +255,7 @@
       "input": "Dropdown per cell",
       "framing": [
         "For each muscle, choose its attachments from the list. The lesson uses Neumann's terms: proximal and distal for hip and shoulder muscles; inferior and superior for the diaphragm, erector spinae, rectus abdominis, and quadratus lumborum; lateral and medial for the obliques and transversus abdominis. Where a muscle has several attachments at one end, any one of them is accepted.",
+        "The muscles are in four sections: diaphragm and trunk, hip, abdominal wall, and shoulder. Each section's list holds only the attachment sites on the segments those muscles attach to, and each section has its own Check button. The lesson passes when all four sections are correct.",
         "Fiber distinctions the course uses are listed as separate rows: diaphragm crural vs costal, adductor magnus anterior vs posterior head, and gluteus maximus upper vs lower fibers."
       ],
       "where": [
@@ -317,7 +318,8 @@
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
           "alt": "Anterior and posterior views of the hip and thigh muscles, superficial and deep, including the adductors, hamstrings, gluteals, and deep rotators."
         }
-      ]
+      ],
+      "sectionCheck": true
     },
     {
       "id": "05",
