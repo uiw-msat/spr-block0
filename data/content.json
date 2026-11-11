@@ -4845,22 +4845,36 @@
    "opensAt": "2026-11-13",
    "input": "Dropdowns, one phase per screen",
    "framing": [
-    "DRAFT, first table only. This lesson builds a gait chart for the right limb, one phase per screen, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names).",
-    "For each phase, give the position of each joint at the end of that phase; for initial contact, at the moment of contact. Read the positions from the kinematic curves in Neumann, Ch. 15, using the percentages of the gait cycle shown on each phase's heading.",
-    "Each phase has its own Check button. The lesson passes when all eight phases are correct."
+    "This lesson builds a gait chart for one full cycle of the right limb, from right initial contact to the next right initial contact. There is one screen per phase, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names). Each phase heading gives its share of the cycle.",
+    "Positions are asked at the end of each phase; for initial contact, at the moment of contact. Read them from the kinematic curves in Neumann, Ch. 15, at the percentage where the phase ends. Where a curve sits close to neutral at that point, the neutral option is the answer.",
+    "The pelvis is named in the course convention. In the frontal plane, say whether the left side of the pelvis is lower or higher than the right. In the transverse plane, name the direction the whole pelvis faces: when the right side of the pelvis is forward of the left, the pelvis is oriented left. Neumann describes the same motion as rotation of the pelvis about the stance hip.",
+    "Muscle rows ask whether the muscle is active through the phase, for part of it, or not at all, from the timing bars in Neumann's Fig. 15.29. The upper body rows ask which way the shoulder girdle faces and which arm is forward.",
+    "Each phase has its own Check button. The lesson passes when all eight phases are correct. Lesson 9 reads directly from this chart."
    ],
    "where": [
     {
-     "label": "Neumann 2017, Ch. 15: Kinesiology of walking",
+     "label": "Neumann 2017, Ch. 15, pp. 660-661: gait cycle periods (Fig. 15.12)",
      "url": ""
     },
     {
-     "label": "Perry & Burnfield 2010, Gait Analysis, 2nd ed. (answer-key source)",
+     "label": "Neumann 2017, Ch. 15, pp. 662-664: sagittal plane kinematics (Fig. 15.13)",
      "url": ""
     },
     {
-     "label": "Physiopedia, Muscle Activity During Gait (orientation only; the key follows Perry)",
-     "url": "https://www.physio-pedia.com/Muscle_Activity_During_Gait"
+     "label": "Neumann 2017, Ch. 15, p. 665: frontal plane kinematics of the pelvis and hip (Fig. 15.15)",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 15, pp. 668-669: horizontal plane kinematics (Figs. 15.20, 15.21); trunk and shoulder",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 15, pp. 675-679: muscle activity (Fig. 15.29)",
+     "url": ""
+    },
+    {
+     "label": "Perry and Burnfield 2010, Gait Analysis, 2nd ed.",
+     "url": ""
     },
     {
      "label": "Physiopedia, The Gait Cycle (orientation only)",
@@ -4870,7 +4884,7 @@
    "layout": "matrix",
    "sectionCheck": true,
    "paged": true,
-   "rowHead": "Joint",
+   "rowHead": "Joint, segment, or muscle",
    "cells": [
     {
      "id": "gait.ic.hip.sag",
@@ -5314,6 +5328,1756 @@
      "group": "Right limb, sagittal plane",
      "row": "Ankle",
      "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.ic.pelvis.fro",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "108223621a0d2b196c82d4b10ded280550f785eb6ce83b9fa1d8b968fa3b9516"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.ic.pelvis.tra",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "f2b607c97af3d55e9d33240cf0b1d633f31c6c325c25d454ea2aec63c40ff1c4"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.ic.hip.fro",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "170dbca81cf24dfea498e68f0bfcc9868c5dbd1a71fbeb8ecb4902b78f4bf6a7"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.ic.hip.tra",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "78c062162b2dd7e2e500e6abd5c55460b79d4026f12d2e0fce34d60db2877b3a",
+      "8504dbfdda3d44fd87ccab3841cfb524b1c1f36d72c8194e25bf67a9c87bb27b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.ic.trunk.tra",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "c6dee6b45174abfe4599667bf2d75cfa1927f998be44b334e27b458a7a62c98b"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.ic.arm",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "7970de4ae38d5a210a81a9ebcf88e11ed7212860725cfeb4213c3af92ecf9637"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.ic.emg.gmax",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "b51d8e74d3cc326b099e0db308539bcf19c211e665f8d7fa61e1587ff78b0d66"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.emg.gmed",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "053a88847d855683571f5e786747e02c77ea5e539287f47cb4c82f021f8cc306"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.emg.tfl",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "b94ef8674ba2b4cb563a1f72dcbeff80bb3aafb4481dc4817bc8c2b225563cb9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.emg.iliopsoas",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "cba64e26d2bc099dc84cf2ce9e9c85513c3ba5cc9104bbf8858cdf0157f10a6c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.emg.bf",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "c7c74fe178f41bdf987c0d116f941310e5c4ee3b49938d6c5f53de1e06079da1"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.ic.emg.semis",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "e1233f80b768b29bf1326597fe1eb452cba34e9ef28ef031488e81203460698e"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.pelvis.fro",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "e9a6eea152e80994051b772441a836a2b3e67fe9402be0b38b933a9c98db7b05"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.lr.pelvis.tra",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "ea3a3ec466033ba4077327b955fd3dfffc06fa1e3f895b2a89ddd81d8f96c921"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.lr.hip.fro",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "f6905cd0325d5f5c0398cb0b589240fbecb595ec985cb2bdcf87c2164edb90d2"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.lr.hip.tra",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "5300b5c4f2611601cdcb0a95570a3d92c63dbf5e4a1b96861ce054a270ff4f19"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.lr.trunk.tra",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "acfe536b228ab5cfde229edfc8a2896e1628e85350bd6d005016b0738923549c"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.arm",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "5218def1284e4aaad26f8b8fa6542dd5976513725de3817bfa2f952fff144a09"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.emg.gmax",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "e822ad7571a3b18e1704a8df5d329240264a78ca3220416320f959c14fd72cbc"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.emg.gmed",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "34456ee989d3f9a3317797493e7b0a7f6bb7590d213f0196a3d7f6f975b20bbf"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.emg.tfl",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "6a60e8e4eaf7ac4f298e4286f1a8297f02f1ed04cb82a8e973cda8aed5778916"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.emg.iliopsoas",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "d76df7fd86a6bd08fe01f0fe5103e30e190f0823a85d1bf4ef77f33ecbffbf2c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.emg.bf",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "0a9927435a77850090ed05e3241b368aabf2a754e5aa6f1e4026b2059bdca6af",
+      "d01433635ae25f564582764af6abbb0b48f5f1dd0f2d7f30ac8070c862f66407"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.lr.emg.semis",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "9caa07c5e89089a0180e15e873f9128e6ae1aa725ac4f271c9c4716e978c256e"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.pelvis.fro",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "9f8e2f9dc99fcefe71207a4d0ee6be48d01e1927832064a77c7d790032576ea4"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.mst.pelvis.tra",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "7ea2ad85ad31154d10ef75b7f41aa6c191a5c789da0a573dd10b30a51e9bb46a",
+      "844d4cced46ef2a50772bf153183f9da6fed9353ab34e0e19d8e9841108eb943"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.mst.hip.fro",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "62c62c48768dec0f58bc0d531037beebd44f9340608fafb20fcf47d6b6b88097"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.mst.hip.tra",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "cc497561437b295e78a029f0ffe616088217ee9648d5653924d7694f911f9435"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.mst.trunk.tra",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "42bbe52b2011d5347440d005e764a023fa89c09c19331a91df0e8fc4923f34e7",
+      "ad089df2985f8ac2402dab40218ac1a0985d68d68f4e35b4781556b6c2ec2eca"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.arm",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "af0f7f894d0ecf102499b98b243224090b8f068a0cc70d62f2dae6effb5b2db5",
+      "cf2018ed3ce617bd6f87111ed419502a319ad6856498032ede066573af6a6d3d"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.emg.gmax",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "47dfe3ecd4e30298f689d0739840cfc34e53c468ac869b47e431592d04b2fc68",
+      "5eb9b99bb6a67834eb075afc2599ed5e063319270d13f48b3d057c3a823d5250"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.emg.gmed",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "c7479f51ca53b29ce7a82e698356420077f8c1d0ecebd095a7c08a424c247c0c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.emg.tfl",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "4708ec3e2875eee6c9da67d4a365f3f924fa2e24fa484083f582c25bfcb9dd20",
+      "5b28faac2b5905426d4e69ef8f51651e9c672c77b8a5695b9bffa27677ebad70"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.emg.iliopsoas",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "383d583e5e9ef71dedbb9a02c4e1131f20477f156f316b8267350beeaf846f84"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.emg.bf",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "d4d916da8b3a73b8df47247432b9a36e0f7371ba22afc41f2750fddcb0ce9912"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.mst.emg.semis",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "1b60fffb0d7ce1380dc6eb24239383635c6f3a793bc15493f53d335724a41612"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.pelvis.fro",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "0f598537549b3aa724e645c011091167431cc18d8473af08e228eb42f4120ec8",
+      "68362ec3007dd1ea04ae9e3c430013b56bb248e23b43e90484eb90b94e4db8f8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.tst.pelvis.tra",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "173acf5d9beeb54910f6bf42684dd43770fd6f98ad99bc7fc61d4dded929ecf0",
+      "d55717ea1e3d80a751b3a89400deb22fb7a6730f78099ac5079f2988e9eaf7be"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.tst.hip.fro",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "253e03cc49b6825cef6c9f1bb481c0f277a4defb9baad4244521d594157a387a",
+      "760414783101d957f8ba6fcda4cb46e8a00c4c647734fe64182cb780a2e6fb60"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.tst.hip.tra",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "77c686d367198164b5d33742102102da6e7d7a182af2be75314c24b68e47c0bc"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.tst.trunk.tra",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "746479e570a85583782057947d7123ff78b493c2978c702cbcd7cd6fe1580e48",
+      "edd383af34ad7e8ffdae685e63f26730ee8903bb25a13b0faba574aabba1cd0b"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.arm",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "23b8fdf9fba90ea80798c6f9ead26f0d9b93599cb5f4d074baca3a73f0c68a24"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.emg.gmax",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "2bfe22bdd360ecc5050461c7a7e90dfb9e6a7e6f76d16989445871ddf441263b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.emg.gmed",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "9893f7adc042b1cff49d63eff03e16ffc9f78b3f77e43eec62b0b824b55dbb12"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.emg.tfl",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "03e0863dc4c3f0815fe16c2b87331c514989a861239586c83f1e7a362dc69b8d",
+      "5d38c5bf241da95285fe53af25832f91e98d193a4313526bf6f76da7c58e7940"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.emg.iliopsoas",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "61805f064fe4a0ff52089d2c7f31756affcdeb147fb9a167ab00e240e420058a",
+      "dcfe2b836e314d1c6158029c351c461ac59507816b6cc2e1a508134434b8fa87"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.emg.bf",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "13584e5b7abb35d3e0c8f39945b100fe398153df34a9d4910ceb84da8a3a61a1"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tst.emg.semis",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "7b9a48e24f598ecd12bdb32e97a9c90b066903d9d84b04924200cd23e126d7ea"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.pelvis.fro",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "a082852768ebe4a72069ec399979e584dbeceed5b20251e0fb44c50a80328c39"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.psw.pelvis.tra",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "3aecf8b93c63ba2e0fffb36c371cd68c482962541f0b7a67d0aa6ec86e334037"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.psw.hip.fro",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "bf9f5391289e06120e88a6e9a0bf4ff61e0635209e552ac41b15f79170bee3bd"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.psw.hip.tra",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "a319c0fdd3bd0359e52a7c6bee7979a43141d1bf1d161294678c41a795af7a58",
+      "abb236de71ab11f3cc3f62d79b22401c6cd49089304f733bec0b3a8b5e7946dd"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.psw.trunk.tra",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "f4231a1aa9dc8cf0c9c2ad431ed700cec0938b732bbebcb691ff370bf24ec30a"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.arm",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "8e4f85c71b75f26c413273fd297450fa50498f66c0483c319440901b39875881"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.emg.gmax",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "fe4296b6db01bad513eeb399968eb8fd174511ac260300fc37d014e687c1f218"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.emg.gmed",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "54a58d1b4ceda68a5065ea08671cd14b526aea367bfb3a2335d044b3522915a0"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.emg.tfl",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "18433a6f2cb33a1466d5072118e8f92cc4bee3fc2ada3c1ebfa43ab0f306452e"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.emg.iliopsoas",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "5109bccf33b6550126cb6540c517c826a54060e7eda1f7a2a26ce24302313e4f",
+      "c1fad3f03dc730c445e4e1209ac4c69c63b37bb40b184ca1b4ca8cb6eec633e1"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.emg.bf",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "f461969c0de8710934a857ed21f56e91b3751266e01c15991064d57ac1842e10"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.psw.emg.semis",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "fa678cf4f6bdacfdae20feb380bd91763f3155686970d70a80c86e3fe97a8a13"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.pelvis.fro",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "f03618b67dc86e9067fe8cb36f18cc146e177ef9dec21a5f7026011754c84887"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.isw.pelvis.tra",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "96af6c8d088fa55894253e18b4c647ec966008c11f042a5d2d0af3b76d9665ec"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.isw.hip.fro",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "df5b2a1b409ee0efff0eec6795a3c572b14f7d80e30957ebdc649b43ed233290"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.isw.hip.tra",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "4173ea8a15d70dd80cd90a999eca1ff9addf58c4a26b2a1094a7b33f3ba202f8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.isw.trunk.tra",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "9b0c017b5f5e3e77b1005310924ea876e6c681b6be625227fbc64370f5b63cb0"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.arm",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "8a0bd4ce99f0602fffa1bdd8246c3964e305e87af5d0aeff9818cff78f941bf4"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.emg.gmax",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "021cfe44e441f280775b0df0f9e8e755854cdd9e7822cea30cb26dc000b9df66"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.emg.gmed",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "f1633d860ba7f9840a56abad14637203a0adccbc8c422240b878617d5d80b258"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.emg.tfl",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "b13944454654cf309450b4f7455ff97551e28ad21ebc5e11b19c1b4c70b4299d"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.emg.iliopsoas",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "62d048eee7fab140a1679ae69a83dc55a883240dee71c179aebe9ec42faccb8e"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.emg.bf",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "3039a34c5e5a4a76dc8549030f253f256cf6319789db1a34b4f783118754b45b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.isw.emg.semis",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "0ac3537013ccdc0012ccd401b6d0de7a31487fc0215ea2abb6783cec89e7a38b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.pelvis.fro",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "446ca8e17e74ee73556f2e77af3560306c3721912a178b30dcebac46dfaeb0b2",
+      "91438b957c739b6d6cbec496c0084246f8cf43bf4e5669db5767b9c5b43f5489"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.msw.pelvis.tra",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "330cb4370144791b316921593535238f5cde3f862df7e02285f99194825bf114",
+      "9223a3a004db56218f03ce650302df883831083945ec5c4a9a3f742af4ea346b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.msw.hip.fro",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "6cfd8d0d5159a01b1951517e3eaef1a35209176f4774f63c36a6faf963cfaf00",
+      "a949f76860538907ad6c1c662088342d2f5d1d020ca42c0c4391fa0912765fc0"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.msw.hip.tra",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "115ca1a4b00f503cb59b267d7866a4a37bca0e23fc9740e8a6a0b482e4892b53"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.msw.trunk.tra",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "002de73abe2d5e554c4130f6cdcd67766519bbde7bce505fc3138f081deff082",
+      "bf7995f680ea1a998db4b103c775e7826b3ad41ce061871d839bcd0b34441a2a"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.arm",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "4feca9f2f694ae5ff224042f297b464512c98c5a5d7c1c8441ee45c4095368e7"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.emg.gmax",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "81de565c2ac065d407ffdd34f6604d0ab0ce34d5c1247de8cbdb5de0e4e3437b"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.emg.gmed",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "412c276d91c5ce1d5c38e89ed5661e711d86021e600f29ea8ee383442a46126a"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.emg.tfl",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "4ecfe31524773255f2f60bb08485993607fd9ae4d344c51dcca52d5e0d215e02"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.emg.iliopsoas",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "a45a4ab27e590139324cf8a366e1dad0a597e33a40892e4fbe754461d2154eb6",
+      "f6248db1b9053d8e285b31337d088475a2e44dfd4643739b2bdf8e2822e2391f"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.emg.bf",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "8c1194aff8064cd0caa3175055b6b8e7bd021c5906ada37d50a5684a8f367fd6"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.msw.emg.semis",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "534bad42c9d96b499a83709adff0213a32c37bc225ad7f616ed2ee9a768065c0",
+      "ba8bb4400baf4bbc15a586e6e6dbbbd37ec55ee25b5c937d3289e50c7db60959"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.pelvis.fro",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Pelvis and right hip, frontal and transverse planes | Pelvis: frontal plane",
+     "accept": [
+      "bb5a33edde5162cb02db63df9b3ca84b9960359fa7b6689b1d23236c62254e04"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Left side lower",
+      "Level (within about 0.5 cm)",
+      "Left side higher"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.tsw.pelvis.tra",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Pelvis and right hip, frontal and transverse planes | Pelvis: transverse plane",
+     "accept": [
+      "e46eace9b363552db2b66b3b2c7441a0259a5d7764308e6b059f48d80a34e3e2"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Pelvis",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.tsw.hip.fro",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Pelvis and right hip, frontal and transverse planes | Right hip: frontal plane",
+     "accept": [
+      "3f8057d34f9b2eca8c03dd9f7bcf59e18ba8ddcb5a939c24620a06189faed775"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.15: Frontal plane kinematics of the pelvis and hip, p. 665",
+     "options": [
+      "Adducted",
+      "Neutral (within about 2 degrees)",
+      "Abducted"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Frontal plane"
+    },
+    {
+     "id": "gait.tsw.hip.tra",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Pelvis and right hip, frontal and transverse planes | Right hip: transverse plane",
+     "accept": [
+      "96b3fa57e393e2b69f4bba0aa85b678e32b3ff8ae543aedb140cedd7f9b4f3a4",
+      "f79af96a55b3cc4530f7f7d03d0cdd9a1b084f1f4d2b45403feb8a5a743d3d46"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Figs. 15.20 and 15.21: Horizontal plane kinematics of the pelvis and hip, p. 668",
+     "options": [
+      "Externally rotated",
+      "Neutral (within about 2 degrees)",
+      "Internally rotated"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Pelvis and right hip, frontal and transverse planes",
+     "row": "Right hip",
+     "col": "Transverse plane"
+    },
+    {
+     "id": "gait.tsw.trunk.tra",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Upper body | Upper trunk (shoulder girdle), transverse plane: position at the end of the phase",
+     "accept": [
+      "0ec53de19eaaaac2ff84b762da38dccaa0eccfc475f95ddcb72fff792d3ca416"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Oriented left",
+      "Neutral",
+      "Oriented right"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Upper body",
+     "row": "Upper trunk (shoulder girdle), transverse plane",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.arm",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Upper body | Arm forward: position at the end of the phase",
+     "accept": [
+      "ca4e066f70dc589099ac58d110725532108b4fe9b814ece5047ebf95620a4b47"
+     ],
+     "ref": "Neumann 2017, Ch. 15: Trunk and shoulder kinematics during walking, p. 669",
+     "options": [
+      "Left arm",
+      "About even",
+      "Right arm"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Upper body",
+     "row": "Arm forward",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.emg.gmax",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Gluteus maximus: activity during the phase",
+     "accept": [
+      "2e40b747622ad2e76267d7c4bfdd88c70081dc154444a054f2d45bb98e825e5a"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles",
+     "row": "Gluteus maximus",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.emg.gmed",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Gluteus medius: activity during the phase",
+     "accept": [
+      "1f60476281cbb45641f9f140fe0414af23a597be3ba34b718c79ad0cd98f9dc8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles",
+     "row": "Gluteus medius",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.emg.tfl",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Tensor fasciae latae: activity during the phase",
+     "accept": [
+      "4a13d21ed95b6dd8728e735dffd4992edfcefe085e624e0815a2b328d3dba6a7"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles",
+     "row": "Tensor fasciae latae",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.emg.iliopsoas",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Iliopsoas: activity during the phase",
+     "accept": [
+      "63fbd83315e6859d7125aedb142e50ff446177587d58d305edffa3f25b35e2d4"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles",
+     "row": "Iliopsoas",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.emg.bf",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Biceps femoris: activity during the phase",
+     "accept": [
+      "c253c4881df8db57b67711871dbbc48d52dfc5d76e14a3b939aa9bb873e75f6a"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles",
+     "row": "Biceps femoris",
+     "col": "Activity during the phase"
+    },
+    {
+     "id": "gait.tsw.emg.semis",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb muscles | Semitendinosus and semimembranosus: activity during the phase",
+     "accept": [
+      "e65400db36de2815cdd91da6364b526019f780168fd38160c47385eb4d8b69cf"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.29: Timing of muscle activation during walking, pp. 676, 678",
+     "options": [
+      "Active through the phase",
+      "Active for part of the phase",
+      "Not active"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb muscles",
+     "row": "Semitendinosus and semimembranosus",
+     "col": "Activity during the phase"
     }
    ]
   },
@@ -5665,6 +7429,6 @@
    }
   ]
  },
- "built": "2026-11-11T20:23Z",
+ "built": "2026-11-11T20:28Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }

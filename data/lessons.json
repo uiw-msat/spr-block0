@@ -582,22 +582,36 @@
       "opensAt": "2026-11-13",
       "input": "Dropdowns, one phase per screen",
       "framing": [
-        "DRAFT, first table only. This lesson builds a gait chart for the right limb, one phase per screen, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names).",
-        "For each phase, give the position of each joint at the end of that phase; for initial contact, at the moment of contact. Read the positions from the kinematic curves in Neumann, Ch. 15, using the percentages of the gait cycle shown on each phase's heading.",
-        "Each phase has its own Check button. The lesson passes when all eight phases are correct."
+        "This lesson builds a gait chart for one full cycle of the right limb, from right initial contact to the next right initial contact. There is one screen per phase, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names). Each phase heading gives its share of the cycle.",
+        "Positions are asked at the end of each phase; for initial contact, at the moment of contact. Read them from the kinematic curves in Neumann, Ch. 15, at the percentage where the phase ends. Where a curve sits close to neutral at that point, the neutral option is the answer.",
+        "The pelvis is named in the course convention. In the frontal plane, say whether the left side of the pelvis is lower or higher than the right. In the transverse plane, name the direction the whole pelvis faces: when the right side of the pelvis is forward of the left, the pelvis is oriented left. Neumann describes the same motion as rotation of the pelvis about the stance hip.",
+        "Muscle rows ask whether the muscle is active through the phase, for part of it, or not at all, from the timing bars in Neumann's Fig. 15.29. The upper body rows ask which way the shoulder girdle faces and which arm is forward.",
+        "Each phase has its own Check button. The lesson passes when all eight phases are correct. Lesson 9 reads directly from this chart."
       ],
       "where": [
         {
-          "label": "Neumann 2017, Ch. 15: Kinesiology of walking",
+          "label": "Neumann 2017, Ch. 15, pp. 660-661: gait cycle periods (Fig. 15.12)",
           "url": ""
         },
         {
-          "label": "Perry & Burnfield 2010, Gait Analysis, 2nd ed. (answer-key source)",
+          "label": "Neumann 2017, Ch. 15, pp. 662-664: sagittal plane kinematics (Fig. 15.13)",
           "url": ""
         },
         {
-          "label": "Physiopedia, Muscle Activity During Gait (orientation only; the key follows Perry)",
-          "url": "https://www.physio-pedia.com/Muscle_Activity_During_Gait"
+          "label": "Neumann 2017, Ch. 15, p. 665: frontal plane kinematics of the pelvis and hip (Fig. 15.15)",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 15, pp. 668-669: horizontal plane kinematics (Figs. 15.20, 15.21); trunk and shoulder",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 15, pp. 675-679: muscle activity (Fig. 15.29)",
+          "url": ""
+        },
+        {
+          "label": "Perry and Burnfield 2010, Gait Analysis, 2nd ed.",
+          "url": ""
         },
         {
           "label": "Physiopedia, The Gait Cycle (orientation only)",
@@ -607,7 +621,7 @@
       "layout": "matrix",
       "sectionCheck": true,
       "paged": true,
-      "rowHead": "Joint"
+      "rowHead": "Joint, segment, or muscle"
     },
     {
       "id": "09",
