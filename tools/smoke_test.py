@@ -14,7 +14,7 @@ from playwright.sync_api import sync_playwright
 SHEETS = {"L01_conventions": "01-conventions", "L02_landmarks": "02-landmarks", "L03_viscera": "03-viscera",
           "L04_attachments": "04-attachments", "L05_open_chain": "05-distal-on-proximal",
           "L06_proximal_on_distal": "06-proximal-on-distal",
-          "L07_diaphragm": "07-diaphragm"}
+          "L07_diaphragm": "07-diaphragm", "L08_gait": "08-gait-chart"}
 
 
 def key_answers(path):
@@ -77,6 +77,7 @@ def main(path, base):
         for slug, rows in data.items():
             page.goto(f"{base}/lessons/{slug}.html")
             page.wait_for_selector("[data-cell]")
+            page.evaluate("document.body.classList.add('show-all-pages')")   # paged lessons: every section on screen
             # fill all correctly except the first item, which gets a wrong answer
             sectioned = page.locator(".section-bar").count() > 0
             for i, (cid, right, wrong, typ, opts) in enumerate(rows):
@@ -117,7 +118,7 @@ def main(path, base):
             if sectioned:
                 # a saved answer that is not in a section's list comes back blank after a reload
                 page.evaluate("([id, lesson]) => { const p = JSON.parse(localStorage.getItem('spr-block0-progress')); p.lessons[lesson].answers[id] = 'Not a listed option'; localStorage.setItem('spr-block0-progress', JSON.stringify(p)); }", [first, slug[:2]])
-                page.reload(); page.wait_for_selector("[data-cell]")
+                page.reload(); page.wait_for_selector("[data-cell]"); page.evaluate("document.body.classList.add('show-all-pages')")
                 if page.input_value(f"#{sid(first)}") != "" or "Section correct" not in page.text_content(f"{check} >> xpath=.."):
                     fails.append(f"{slug}: stale answer not cleared, or section state lost on reload")
                 answer(page, first, rows[0][3], rows[0][1])

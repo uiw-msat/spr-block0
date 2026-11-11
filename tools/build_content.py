@@ -18,7 +18,7 @@ from openpyxl import load_workbook
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SHEETS = {"L01_conventions": "01", "L02_landmarks": "02", "L03_viscera": "03",
           "L04_attachments": "04", "L05_open_chain": "05",
-          "L06_proximal_on_distal": "06", "L07_diaphragm": "07"}
+          "L06_proximal_on_distal": "06", "L07_diaphragm": "07", "L08_gait": "08"}
 SITE_OPTS = "See Options sheet: Attachment sites"
 CHAINS = ["femur-on-pelvis (FA), from anatomical position", "thorax-on-pelvis, pelvis fixed, unilateral contraction",
           "scapula-on-thorax (ST)", "humerus-on-glenoid (HG)"]
@@ -32,6 +32,11 @@ CHAIN_LABEL[CHAINS[4]] = "Trunk muscles · thorax-on-pelvis"
 # Lesson 6: the proximal segment moves on a fixed distal one.
 CHAINS.append("pelvis-on-femur (AF), femur fixed")
 CHAIN_LABEL[CHAINS[5]] = "Hip muscles · pelvis-on-femur (AF)"
+for _c, _l in [("pelvis-on-thorax, thorax fixed", "Trunk muscles · pelvis-on-thorax"),
+               ("thorax-on-scapula (TS), scapula fixed", "Scapular muscles · thorax-on-scapula (TS)"),
+               ("glenoid-on-humerus (GH), humerus fixed", "Latissimus dorsi · glenoid-on-humerus (GH)")]:
+    CHAINS.append(_c)
+    CHAIN_LABEL[_c] = _l
 # Lesson 4: one table per body section. The section comes from the key's options column
 # ("See Options sheet: Attachment sites, Hip"); its dropdown lists only the sites the Options
 # sheet assigns to that section. Neumann's attachment terms differ by region.
@@ -139,6 +144,11 @@ def main(key_path):
                 cell["options"] = options
             if optional:
                 cell["optional"] = True
+            if lid == "08":
+                # Lesson 8 prompt: "<phase> | <table> | <row>: <column>"; a phase is one section.
+                sec8, grp8, rest = [x.strip() for x in prompt.split(" | ")]
+                row8, col8 = rest.rsplit(": ", 1)
+                cell.update({"section": sec8, "group": grp8, "row": row8, "col": col8[0].upper() + col8[1:]})
             if lid in ("04", "05", "06"):
                 left, col = prompt.rsplit(": ", 1)
                 group = SECTION_LABEL.get(section) if lid == "04" else None

@@ -420,7 +420,7 @@
       "id": "06",
       "slug": "06-proximal-on-distal",
       "title": "Proximal-on-distal actions",
-      "sub": "Pelvis-on-femur, thorax-on-scapula, and glenoid-on-humerus",
+      "sub": "Pelvis-on-femur, pelvis-on-thorax, thorax-on-scapula, and glenoid-on-humerus",
       "minutes": [
         10,
         40
@@ -428,11 +428,11 @@
       "opensAt": "2026-11-13",
       "input": "Dropdown per cell",
       "framing": [
-        "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes the distal segment and asks what the same muscle does to the proximal one. For the hip that is the pelvis moving on a fixed femur (AF), as in single-limb stance.",
-        "Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. As in Lesson 5, answer from anatomical position, and choose None where the table lists no action in that plane.",
-        "Answer for the side of the fixed femur, in the course's pelvic convention. Sagittal answers name the tilt of that hemipelvis. Frontal answers say whether the opposite side of the pelvis is raised or lowered. Transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
-        "The answers follow Neumann's Table 12.3. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic action the table does not list, the course says so in Unit 3; this lesson grades the table.",
-        "The muscles are in the same sections as Lesson 5. Each section has its own Check button, and the lesson passes when every section is correct."
+        "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes that segment and asks what the same muscle does to the proximal one: the pelvis on a fixed femur (AF), the pelvis on a fixed thorax, the thorax on a fixed scapula (TS), and the trunk on a fixed humerus (GH).",
+        "Hip muscles. Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. Answer from anatomical position, for the side of the fixed femur, and choose None where the table lists no action in that plane. Sagittal answers name the tilt of that hemipelvis; frontal answers say whether the opposite side of the pelvis is raised or lowered; transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
+        "Trunk muscles. With the thorax held still, a muscle that attaches to both the thorax and the pelvis moves the pelvis (Ch. 10, p. 395). Each trunk muscle has one answer for both sides contracting. Quadratus lumborum also has an answer for one side contracting; the other cells in that column are blank because Neumann does not list a one-sided action on the pelvis for those muscles.",
+        "Shoulder muscles. With the scapula or the humerus held still, as when the arms bear weight, these muscles move the thorax and pelvis instead of the limb. The scapular muscles and latissimus dorsi have separate tables because the fixed segment differs.",
+        "The answers follow Neumann. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic or rib cage action the text does not list, the course says so in Unit 3; this lesson grades the text. Each section has its own Check button, and the lesson passes when all six sections are correct."
       ],
       "where": [
         {
@@ -441,6 +441,14 @@
         },
         {
           "label": "Neumann 2017, Ch. 12, Table 12.3 (p. 499): hip muscles by primary and secondary action",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 10, p. 395 (which end of a trunk muscle is fixed); Table 10.3 (p. 403) and pp. 404, 406",
+          "url": ""
+        },
+        {
+          "label": "Neumann 2017, Ch. 5, pp. 150-152 (scapular depressors and protractors with the scapula fixed); p. 161 (latissimus dorsi)",
           "url": ""
         },
         {
@@ -488,6 +496,26 @@
             "Gluteus maximus, lower fibers",
             "Piriformis",
             "Obturator internus"
+          ]
+        },
+        {
+          "label": "Trunk muscles · pelvis-on-thorax",
+          "rows": [
+            "Internal oblique",
+            "Transversus abdominis",
+            "External oblique",
+            "Rectus abdominis",
+            "Erector spinae (group)",
+            "Quadratus lumborum"
+          ]
+        },
+        {
+          "label": "Shoulder muscles",
+          "rows": [
+            "Serratus anterior",
+            "Lower trapezius",
+            "Pectoralis minor",
+            "Latissimus dorsi"
           ]
         }
       ]
@@ -552,9 +580,11 @@
         60
       ],
       "opensAt": "2026-11-13",
-      "input": "Dropdowns and chips",
+      "input": "Dropdowns, one phase per screen",
       "framing": [
-        "Draft."
+        "DRAFT, first table only. This lesson builds a gait chart for the right limb, one phase per screen, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names).",
+        "For each phase, give the position of each joint at the end of that phase; for initial contact, at the moment of contact. Read the positions from the kinematic curves in Neumann, Ch. 15, using the percentages of the gait cycle shown on each phase's heading.",
+        "Each phase has its own Check button. The lesson passes when all eight phases are correct."
       ],
       "where": [
         {
@@ -573,7 +603,11 @@
           "label": "Physiopedia, The Gait Cycle (orientation only)",
           "url": "https://www.physio-pedia.com/The_Gait_Cycle"
         }
-      ]
+      ],
+      "layout": "matrix",
+      "sectionCheck": true,
+      "paged": true,
+      "rowHead": "Joint"
     },
     {
       "id": "09",

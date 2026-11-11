@@ -243,7 +243,31 @@
      are a single group, in which case the section and the group are the same thing. */
   function sectionOf(c) { return c.section || c.group || ""; }
 
-  function matrix(cells, st, content, sectionBar) {
+  /* Paged lessons (Lesson 8) show one section at a time, with a tab per section.
+     The open tab is remembered for the visit only. */
+  function pager(mx, lessonId) {
+    mx.classList.add("paged");
+    var secs = Array.prototype.slice.call(mx.querySelectorAll(".matrix-section"));
+    var nav = el("div", { class: "page-tabs", role: "tablist", "aria-label": "Sections" });
+    var tabs = secs.map(function (sec, i) {
+      var h = sec.querySelector(".matrix-group");
+      var b = el("button", { class: "page-tab", type: "button", role: "tab", text: (h ? h.textContent : "Section " + (i + 1)).split(" \u00b7 ")[0] });
+      b.addEventListener("click", function () { show(i); });
+      nav.appendChild(b);
+      return b;
+    });
+    function show(i) {
+      secs.forEach(function (sec, k) { sec.classList.toggle("current", k === i); });
+      tabs.forEach(function (b, k) { b.setAttribute("aria-selected", k === i ? "true" : "false"); });
+      try { sessionStorage.setItem("spr-page-" + lessonId, String(i)); } catch (e) {}
+    }
+    var start = 0;
+    try { start = parseInt(sessionStorage.getItem("spr-page-" + lessonId), 10) || 0; } catch (e) {}
+    show(Math.min(start, secs.length - 1));
+    return nav;
+  }
+
+  function matrix(cells, st, content, sectionBar, rowHead) {
     var sections = [], bySection = {};
     cells.forEach(function (c) {
       var sk = sectionOf(c), g = c.group || "";
@@ -264,7 +288,7 @@
       S.groups.forEach(function (g) {
         var G = S.byGroup[g];
         if (g && g !== sk && S.groups.length > 1) sec.appendChild(el("h4", { class: "matrix-subgroup", text: g }));
-        var head = el("tr", null, [el("th", { text: "Muscle" })].concat(G.cols.map(function (k) { return el("th", { text: k }); })));
+        var head = el("tr", null, [el("th", { text: rowHead || "Muscle" })].concat(G.cols.map(function (k) { return el("th", { text: k }); })));
         var tbody = el("tbody");
         G.rows.forEach(function (r) {
           var tr = el("tr", null, [el("th", { scope: "row", class: "row-head", text: r })]);
@@ -478,7 +502,11 @@
       };
 
       if (L.layout === "mc") cells.forEach(function (c, i) { work.appendChild(mcItem(c, i + 1, st)); });
-      else if (L.layout === "matrix") work.appendChild(matrix(cells, st, content, sectionBar));
+      else if (L.layout === "matrix") {
+        var mx = matrix(cells, st, content, sectionBar, L.rowHead);
+        if (L.paged) work.appendChild(pager(mx, L.id));
+        work.appendChild(mx);
+      }
       else work.appendChild(selectTable(L.shuffleRows ? seededShuffle(cells, lessonSeed(st)) : cells, st, content));
 
       var btn = sectioned ? null : el("button", { class: "btn primary check", type: "button", text: "Check answers" });

@@ -3438,7 +3438,7 @@
    "id": "06",
    "slug": "06-proximal-on-distal",
    "title": "Proximal-on-distal actions",
-   "sub": "Pelvis-on-femur, thorax-on-scapula, and glenoid-on-humerus",
+   "sub": "Pelvis-on-femur, pelvis-on-thorax, thorax-on-scapula, and glenoid-on-humerus",
    "minutes": [
     10,
     40
@@ -3446,11 +3446,11 @@
    "opensAt": "2026-11-13",
    "input": "Dropdown per cell",
    "framing": [
-    "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes the distal segment and asks what the same muscle does to the proximal one. For the hip that is the pelvis moving on a fixed femur (AF), as in single-limb stance.",
-    "Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. As in Lesson 5, answer from anatomical position, and choose None where the table lists no action in that plane.",
-    "Answer for the side of the fixed femur, in the course's pelvic convention. Sagittal answers name the tilt of that hemipelvis. Frontal answers say whether the opposite side of the pelvis is raised or lowered. Transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
-    "The answers follow Neumann's Table 12.3. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic action the table does not list, the course says so in Unit 3; this lesson grades the table.",
-    "The muscles are in the same sections as Lesson 5. Each section has its own Check button, and the lesson passes when every section is correct."
+    "Lesson 5 asked what each muscle does when the distal segment moves. This lesson fixes that segment and asks what the same muscle does to the proximal one: the pelvis on a fixed femur (AF), the pelvis on a fixed thorax, the thorax on a fixed scapula (TS), and the trunk on a fixed humerus (GH).",
+    "Hip muscles. Neumann describes every hip motion from both perspectives, femoral-on-pelvic and pelvic-on-femoral (Ch. 12, pp. 493-497). Work out which pelvic motion corresponds to each femoral motion, then apply it to the actions Table 12.3 lists for the muscle. Answer from anatomical position, for the side of the fixed femur, and choose None where the table lists no action in that plane. Sagittal answers name the tilt of that hemipelvis; frontal answers say whether the opposite side of the pelvis is raised or lowered; transverse answers say whether the whole pelvis becomes oriented toward or away from the side of the fixed femur.",
+    "Trunk muscles. With the thorax held still, a muscle that attaches to both the thorax and the pelvis moves the pelvis (Ch. 10, p. 395). Each trunk muscle has one answer for both sides contracting. Quadratus lumborum also has an answer for one side contracting; the other cells in that column are blank because Neumann does not list a one-sided action on the pelvis for those muscles.",
+    "Shoulder muscles. With the scapula or the humerus held still, as when the arms bear weight, these muscles move the thorax and pelvis instead of the limb. The scapular muscles and latissimus dorsi have separate tables because the fixed segment differs.",
+    "The answers follow Neumann. Where the clinical model the course draws on (PRI) credits a muscle with a pelvic or rib cage action the text does not list, the course says so in Unit 3; this lesson grades the text. Each section has its own Check button, and the lesson passes when all six sections are correct."
    ],
    "where": [
     {
@@ -3459,6 +3459,14 @@
     },
     {
      "label": "Neumann 2017, Ch. 12, Table 12.3 (p. 499): hip muscles by primary and secondary action",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 10, p. 395 (which end of a trunk muscle is fixed); Table 10.3 (p. 403) and pp. 404, 406",
+     "url": ""
+    },
+    {
+     "label": "Neumann 2017, Ch. 5, pp. 150-152 (scapular depressors and protractors with the scapula fixed); p. 161 (latissimus dorsi)",
      "url": ""
     },
     {
@@ -3506,6 +3514,26 @@
       "Gluteus maximus, lower fibers",
       "Piriformis",
       "Obturator internus"
+     ]
+    },
+    {
+     "label": "Trunk muscles · pelvis-on-thorax",
+     "rows": [
+      "Internal oblique",
+      "Transversus abdominis",
+      "External oblique",
+      "Rectus abdominis",
+      "Erector spinae (group)",
+      "Quadratus lumborum"
+     ]
+    },
+    {
+     "label": "Shoulder muscles",
+     "rows": [
+      "Serratus anterior",
+      "Lower trapezius",
+      "Pectoralis minor",
+      "Latissimus dorsi"
      ]
     }
    ],
@@ -4319,6 +4347,212 @@
      "col": "Transverse",
      "group": "Hip muscles · pelvis-on-femur (AF)",
      "section": "Gluteal region · pelvis-on-femur (AF)"
+    },
+    {
+     "id": "pod.io.bilateral",
+     "type": "select",
+     "prompt": "Internal oblique, pelvis-on-thorax, thorax fixed: both sides contracting (bilateral)",
+     "accept": [
+      "9bb392abf4662fdc1a747ad87366c2b07481ccc332437567d522bdc618c82a50"
+     ],
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
+     "options": [
+      "Anterior tilt of the pelvis",
+      "Posterior tilt of the pelvis",
+      "None"
+     ],
+     "row": "Internal oblique",
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.ta.bilateral",
+     "type": "select",
+     "prompt": "Transversus abdominis, pelvis-on-thorax, thorax fixed: both sides contracting (bilateral)",
+     "accept": [
+      "a82bc7f8aa53a68c0db0f53c378d4ca94ae3a0d91be1007bf555bb73b2aa359c"
+     ],
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
+     "options": [
+      "Anterior tilt of the pelvis",
+      "Posterior tilt of the pelvis",
+      "None"
+     ],
+     "row": "Transversus abdominis",
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.eo.bilateral",
+     "type": "select",
+     "prompt": "External oblique, pelvis-on-thorax, thorax fixed: both sides contracting (bilateral)",
+     "accept": [
+      "c335c2685769f28620ac1eb0ca2ce3b81ee5e2c5badd191089076164850a015a"
+     ],
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
+     "options": [
+      "Anterior tilt of the pelvis",
+      "Posterior tilt of the pelvis",
+      "None"
+     ],
+     "row": "External oblique",
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.ra.bilateral",
+     "type": "select",
+     "prompt": "Rectus abdominis, pelvis-on-thorax, thorax fixed: both sides contracting (bilateral)",
+     "accept": [
+      "9c858c8a079843fa30f4c0466f13e388715781d6bd233fc5c01c6c719bccc76a"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Rectus abdominis: bilateral action, pp. 403-404",
+     "options": [
+      "Anterior tilt of the pelvis",
+      "Posterior tilt of the pelvis",
+      "None"
+     ],
+     "row": "Rectus abdominis",
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.es.bilateral",
+     "type": "select",
+     "prompt": "Erector spinae (group), pelvis-on-thorax, thorax fixed: both sides contracting (bilateral)",
+     "accept": [
+      "b3628f3ffac7971198b43bf4192366f20ffdf9e04c2a7f7bc1510cd78854933f"
+     ],
+     "ref": "Neumann 2017, Ch. 10: Muscle action and fixation of attachments (erector spinae example), p. 395",
+     "options": [
+      "Anterior tilt of the pelvis",
+      "Posterior tilt of the pelvis",
+      "None"
+     ],
+     "row": "Erector spinae (group)",
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.ql.bilateral",
+     "type": "select",
+     "prompt": "Quadratus lumborum, pelvis-on-thorax, thorax fixed: both sides contracting (bilateral)",
+     "accept": [
+      "f5b0f6a49900a76eb95f42543dcb1b331485c0c789116232f20883a1ef727de0"
+     ],
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
+     "options": [
+      "Anterior tilt of the pelvis",
+      "Posterior tilt of the pelvis",
+      "None"
+     ],
+     "row": "Quadratus lumborum",
+     "col": "Both sides contracting (bilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.ql.unilateral",
+     "type": "select",
+     "prompt": "Quadratus lumborum, pelvis-on-thorax, thorax fixed: one side contracting (unilateral)",
+     "accept": [
+      "e71670eab11c8e6955dbfc248848926ef6520218a02902c3cfa2c0c5b01dfca7"
+     ],
+     "ref": "Neumann 2017, Ch. 10, Table 10.4: Quadratus lumborum, pp. 406-407",
+     "options": [
+      "Raises the pelvis on that side",
+      "Lowers the pelvis on that side",
+      "Rotates the pelvis toward that side",
+      "None"
+     ],
+     "row": "Quadratus lumborum",
+     "col": "One side contracting (unilateral)",
+     "group": "Trunk muscles · pelvis-on-thorax",
+     "section": "Trunk muscles · pelvis-on-thorax"
+    },
+    {
+     "id": "pod.sa.thorax",
+     "type": "select",
+     "prompt": "Serratus anterior, thorax-on-scapula (TS), scapula fixed: effect on the thorax",
+     "accept": [
+      "59f3543cc69d2bc14240479ef1c0b6fe71346b4e8273035f61e60aa65fc2bbdd"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Scapulothoracic protractors: serratus anterior, p. 152",
+     "options": [
+      "Thorax lifted superiorly toward the fixed scapula",
+      "Thorax lowered away from the fixed scapula",
+      "Thorax moved posteriorly between the fixed scapulae",
+      "Thorax moved anteriorly between the fixed scapulae",
+      "None"
+     ],
+     "row": "Serratus anterior",
+     "col": "Effect on the thorax",
+     "group": "Scapular muscles · thorax-on-scapula (TS)",
+     "section": "Shoulder muscles"
+    },
+    {
+     "id": "pod.lt.thorax",
+     "type": "select",
+     "prompt": "Lower trapezius, thorax-on-scapula (TS), scapula fixed: effect on the thorax",
+     "accept": [
+      "d2b248feb8d95cd7ec2b84fc6cbd5b703416c1598c926ec5eeb491adec11dcc5"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Scapulothoracic depressors; raising the thorax on a fixed scapula, pp. 150-151",
+     "options": [
+      "Thorax lifted superiorly toward the fixed scapula",
+      "Thorax lowered away from the fixed scapula",
+      "Thorax moved posteriorly between the fixed scapulae",
+      "Thorax moved anteriorly between the fixed scapulae",
+      "None"
+     ],
+     "row": "Lower trapezius",
+     "col": "Effect on the thorax",
+     "group": "Scapular muscles · thorax-on-scapula (TS)",
+     "section": "Shoulder muscles"
+    },
+    {
+     "id": "pod.pmin.thorax",
+     "type": "select",
+     "prompt": "Pectoralis minor, thorax-on-scapula (TS), scapula fixed: effect on the thorax",
+     "accept": [
+      "29096a2f53ffdefe2c6a51bea88b4b1f5220000634317cbddd80a2015c19640e"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Scapulothoracic depressors; raising the thorax on a fixed scapula, pp. 150-151",
+     "options": [
+      "Thorax lifted superiorly toward the fixed scapula",
+      "Thorax lowered away from the fixed scapula",
+      "Thorax moved posteriorly between the fixed scapulae",
+      "Thorax moved anteriorly between the fixed scapulae",
+      "None"
+     ],
+     "row": "Pectoralis minor",
+     "col": "Effect on the thorax",
+     "group": "Scapular muscles · thorax-on-scapula (TS)",
+     "section": "Shoulder muscles"
+    },
+    {
+     "id": "pod.lat.pelvis",
+     "type": "select",
+     "prompt": "Latissimus dorsi, glenoid-on-humerus (GH), humerus fixed: effect on the pelvis and thorax",
+     "accept": [
+      "b992c33e4c713f0793a27fa489629edf999daee0351d54a29d53e5b7c6389540"
+     ],
+     "ref": "Neumann 2017, Ch. 5: Latissimus dorsi, pp. 160-161",
+     "options": [
+      "Pelvis and thorax raised toward the fixed humerus",
+      "Pelvis and thorax lowered away from the fixed humerus",
+      "Pelvis tilted anteriorly only",
+      "None"
+     ],
+     "row": "Latissimus dorsi",
+     "col": "Effect on the pelvis and thorax",
+     "group": "Latissimus dorsi · glenoid-on-humerus (GH)",
+     "section": "Shoulder muscles"
     }
    ]
   },
@@ -4609,9 +4843,11 @@
     60
    ],
    "opensAt": "2026-11-13",
-   "input": "Dropdowns and chips",
+   "input": "Dropdowns, one phase per screen",
    "framing": [
-    "Draft."
+    "DRAFT, first table only. This lesson builds a gait chart for the right limb, one phase per screen, using the eight periods of the gait cycle in Perry and Burnfield's terminology (the Rancho Los Amigos names).",
+    "For each phase, give the position of each joint at the end of that phase; for initial contact, at the moment of contact. Read the positions from the kinematic curves in Neumann, Ch. 15, using the percentages of the gait cycle shown on each phase's heading.",
+    "Each phase has its own Check button. The lesson passes when all eight phases are correct."
    ],
    "where": [
     {
@@ -4631,7 +4867,455 @@
      "url": "https://www.physio-pedia.com/The_Gait_Cycle"
     }
    ],
-   "cells": []
+   "layout": "matrix",
+   "sectionCheck": true,
+   "paged": true,
+   "rowHead": "Joint",
+   "cells": [
+    {
+     "id": "gait.ic.hip.sag",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "58f9c6c6fcc0a4db5e4e0e65972b206559a41bd72a7588b88cb90321280358b8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.ic.knee.sag",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "967be5e1b6323067e1be75c59c05ba63d1668381da56772d8444f2753d867eea"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.ic.ankle.sag",
+     "type": "select",
+     "prompt": "1. Initial contact · 0% to 2% of the cycle | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "2c771df78794417c4c8f4901e5fd6813fd011108d3f1a393e9dc65a0eaa3c2ee",
+      "8bdc62b09d4acfd5505b84f75de3eec09de17767d9580bd1eb994cfdda0c57b1"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "1. Initial contact · 0% to 2% of the cycle",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.hip.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "14bb5fbaa92e01e413ec537f4ea00b9cb6b1cbf543af52dc773cd67acce1c060"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.knee.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "874892e94ff6c8d7ee15614612631f7f3b4d226734b9e095c50e790b457f2123"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.lr.ankle.sag",
+     "type": "select",
+     "prompt": "2. Loading response · 2% to 12% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "d4013f9b91fb1dd2e9c8fddff87112caccc971f0e8cff3517d50bb1e395cc28e",
+      "f1940c336dd68df25c444b29f26cd3eb41640fab34783c24186b158797f07b87"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "2. Loading response · 2% to 12%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.hip.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "0692bc71d912925b4cbc64b5603c1a18bd7195cc28a2510a10fbd666e703ed39"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.knee.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "40a746ee992448e853b64a9944aee4b0d42489ef32cf751ff4f60df212b5cd07"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.mst.ankle.sag",
+     "type": "select",
+     "prompt": "3. Mid stance · 12% to 31% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "395d52e59a35f704965b7c843d3bcde4c50d1c48568923c815ae99be6cd16a18"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "3. Mid stance · 12% to 31%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.hip.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "11fb91e3550c3c605bf7fec80c2276f426c591b480cbcbd4af5a054ada7f166f"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.knee.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "ef79c6544d5aa5b7bdfc1aca9cf3f879b05c47a7e5b7cb0c13a5b91169be1a41"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tst.ankle.sag",
+     "type": "select",
+     "prompt": "4. Terminal stance · 31% to 50% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "1b885f1f41bb1c961b5aa75c3d522771f045d7b2aae8422d1554c1261d79bd4c"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "4. Terminal stance · 31% to 50%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.hip.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "c6da0878f377398666bc799dfc8304dd2bf6d68f83128481e534a8b1fd8f65d9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.knee.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "060a51d562e1fde455c77a2e7cee4249a12ba662c60cd0222929b45f7e9c0260"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.psw.ankle.sag",
+     "type": "select",
+     "prompt": "5. Pre swing · 50% to 62% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "5fad320ad0abb9cf584b8b38bfb13b52f462f6b77b8655799ea53372e48272d8"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "5. Pre swing · 50% to 62%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.hip.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "360c51047f70e2f8dfd1047612d42dba3147474881a75e13af2e5c437827f0ff"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.knee.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "c43e663663e0f2a19aef1f9580abb8248767dac6080429f92a2ca56ef727d173"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.isw.ankle.sag",
+     "type": "select",
+     "prompt": "6. Initial swing · 62% to 75% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "30d76a637cb61abce59cda98d5cfe6d1a645151b6a77f2b1adc99ef58c98d668",
+      "47a855ac794d9ea23d3f72f3f8ef10ff7ced7a1ca7d6a13e79c01101cbefa233"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "6. Initial swing · 62% to 75%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.hip.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "06ec0eabf9db07209c71092f279ffed18bc10d5a594c2f34d370c57af309c9ea"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.knee.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "32dc4c989a2c645cb000b2f0304eeb692f6b2c13f555b2cc6df2b877f70231f9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.msw.ankle.sag",
+     "type": "select",
+     "prompt": "7. Mid swing · 75% to 87% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "34d7126fd815025907e4818e8c11b825774c916bcb7a74cb3bbfeb5fa36fddab"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "7. Mid swing · 75% to 87%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.hip.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Hip: position at the end of the phase",
+     "accept": [
+      "b0c5aa2e0f9d3d08af552af6c34a5826d29d7f3739d34c61a5dc436e5ef23b4d"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Flexed",
+      "Neutral (within about 5 degrees)",
+      "Extended"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb, sagittal plane",
+     "row": "Hip",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.knee.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Knee: position at the end of the phase",
+     "accept": [
+      "582e0ce66f6c803136f63809fe4ad8d5acbba44245991b46bebe390876ad82df"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Near full extension",
+      "Flexed about 20 degrees",
+      "Flexed about 40 degrees",
+      "Flexed about 60 degrees"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb, sagittal plane",
+     "row": "Knee",
+     "col": "Position at the end of the phase"
+    },
+    {
+     "id": "gait.tsw.ankle.sag",
+     "type": "select",
+     "prompt": "8. Terminal swing · 87% to 100% | Right limb, sagittal plane | Ankle: position at the end of the phase",
+     "accept": [
+      "da9cba57de732caf8b632edf53fa5b61d6b0f7839965df20b423c36d4f0653a9"
+     ],
+     "ref": "Neumann 2017, Ch. 15, Fig. 15.13: Sagittal plane kinematics of the pelvis, hip, knee, and ankle, pp. 662-664",
+     "options": [
+      "Plantar flexed",
+      "Neutral (within about 5 degrees)",
+      "Dorsiflexed"
+     ],
+     "section": "8. Terminal swing · 87% to 100%",
+     "group": "Right limb, sagittal plane",
+     "row": "Ankle",
+     "col": "Position at the end of the phase"
+    }
+   ]
   },
   {
    "id": "09",
@@ -4981,6 +5665,6 @@
    }
   ]
  },
- "built": "2026-11-11T20:14Z",
+ "built": "2026-11-11T20:23Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }
