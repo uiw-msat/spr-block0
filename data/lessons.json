@@ -612,10 +612,6 @@
           "url": ""
         },
         {
-          "label": "Perry and Burnfield 2010, Gait Analysis, 2nd ed.",
-          "url": ""
-        },
-        {
           "label": "Physiopedia, The Gait Cycle (orientation only)",
           "url": "https://www.physio-pedia.com/The_Gait_Cycle"
         }
@@ -637,10 +633,10 @@
       "opensAt": "2026-11-13",
       "input": "Dropdowns",
       "framing": [
-        "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take six muscles from your Lesson 6 table and ask what each does to the pattern.",
-        "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. That the body rests in a position borrowed from walking is a clinical model, not an established finding; one item asks you to say so.",
-        "For each muscle, the femur on the named side is fixed, as in stance. Take the muscle's sagittal and transverse actions from your Lesson 6 table and decide whether each one moves the pelvis out of the pattern (opposes it), further into it (adds to it), or is not listed in Table 12.3.",
-        "Expect some textbook actions to add to the pattern. The muscles are the ones PRI names as oppositional, and the reasoning for each, including where the model goes beyond the table, is taken up in Unit 3."
+        "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take muscles from your Lesson 6 table and ask how each relates to the pattern.",
+        "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. PRI describes it as the body resting in right stance and left swing. On Neumann's gait data the pelvis is oriented right from the end of right terminal stance, and your chart will show that. That a resting body holds a position from walking is a clinical model, not an established finding; one item asks you to say so.",
+        "PRI groups muscles into chains that hold a pattern and muscles of opposition that move the body out of it. For the Left AIC, the anterior interior chain includes the psoas, iliacus, tensor fasciae latae, and biceps femoris; the muscles of opposition are the hamstrings, the gluteals, and the internal obliques, and the course adds the left adductors. The groupings are PRI's and are credited on the About page.",
+        "For each muscle the fixed segment is named. Find the muscle's actions in your Lesson 6 table and choose the one that does what PRI's grouping says: holds the pelvis in the pattern, or moves it out. Each answer is an action Neumann lists. A muscle can have a second listed action that works the other way; Unit 3 takes those up."
       ],
       "where": [
         {

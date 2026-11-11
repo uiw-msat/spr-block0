@@ -4875,10 +4875,6 @@
      "url": ""
     },
     {
-     "label": "Perry and Burnfield 2010, Gait Analysis, 2nd ed.",
-     "url": ""
-    },
-    {
      "label": "Physiopedia, The Gait Cycle (orientation only)",
      "url": "https://www.physio-pedia.com/The_Gait_Cycle"
     }
@@ -7725,10 +7721,10 @@
    "opensAt": "2026-11-13",
    "input": "Dropdowns",
    "framing": [
-    "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take six muscles from your Lesson 6 table and ask what each does to the pattern.",
-    "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. That the body rests in a position borrowed from walking is a clinical model, not an established finding; one item asks you to say so.",
-    "For each muscle, the femur on the named side is fixed, as in stance. Take the muscle's sagittal and transverse actions from your Lesson 6 table and decide whether each one moves the pelvis out of the pattern (opposes it), further into it (adds to it), or is not listed in Table 12.3.",
-    "Expect some textbook actions to add to the pattern. The muscles are the ones PRI names as oppositional, and the reasoning for each, including where the model goes beyond the table, is taken up in Unit 3."
+    "This lesson uses the two tables you have built. The first six items read a resting posture against your Lesson 8 gait chart. The last twelve take muscles from your Lesson 6 table and ask how each relates to the pattern.",
+    "The pattern is the Left AIC as PRI describes it and as Lesson 1 defined it: pelvis oriented right, left hemipelvis forward and anteriorly tilted, right hemipelvis backward and posteriorly tilted. PRI describes it as the body resting in right stance and left swing. On Neumann's gait data the pelvis is oriented right from the end of right terminal stance, and your chart will show that. That a resting body holds a position from walking is a clinical model, not an established finding; one item asks you to say so.",
+    "PRI groups muscles into chains that hold a pattern and muscles of opposition that move the body out of it. For the Left AIC, the anterior interior chain includes the psoas, iliacus, tensor fasciae latae, and biceps femoris; the muscles of opposition are the hamstrings, the gluteals, and the internal obliques, and the course adds the left adductors. The groupings are PRI's and are credited on the About page.",
+    "For each muscle the fixed segment is named. Find the muscle's actions in your Lesson 6 table and choose the one that does what PRI's grouping says: holds the pelvis in the pattern, or moves it out. Each answer is an action Neumann lists. A muscle can have a second listed action that works the other way; Unit 3 takes those up."
    ],
    "where": [
     {
@@ -7853,171 +7849,183 @@
      ]
     },
     {
-     "id": "opp.semimem.sag",
+     "id": "chain.psoas",
      "type": "select",
-     "prompt": "Left semimembranosus, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "prompt": "PRI places the left psoas major in the anterior interior chain. With the left femur fixed, which of its Table 12.3 actions holds the pelvis in the Left AIC pattern?",
      "accept": [
-      "9cfa8eefd94359a4de1099c7b837d8c33ad71ead3b80ec4044fdc59788dc6a30"
+      "9bc70e6044b631290bef687f38c3d8cb4f2a4d98f5b5dae7930d165cd6de74fe"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.semimem.tra",
+     "id": "chain.iliacus",
      "type": "select",
-     "prompt": "Left semimembranosus, left femur fixed. Its transverse action on the pelvis:",
+     "prompt": "PRI places the left iliacus in the anterior interior chain. With the left femur fixed, which of its Table 12.3 actions holds the pelvis in the Left AIC pattern?",
      "accept": [
-      "91f85740cf48d24f0f4e628a2fd16785c5f91e7794c344e86cf54162664a9186"
+      "789360d371b9868c0c8dc82d7e2f60c2d37ee892192c626bf4a15260840d3511"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.addmag.sag",
+     "id": "chain.tfl",
      "type": "select",
-     "prompt": "Left adductor magnus, posterior head, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "prompt": "PRI places the left tensor fasciae latae in the anterior interior chain. With the left femur fixed, which of its Table 12.3 actions holds the pelvis in the Left AIC pattern?",
      "accept": [
-      "352dae15b53f16a2e65124a06fb07cb9e83663a0fa41b53a4b753b91d5155a1a"
+      "162f3b740f338f8a5c79fd5e037f59bce75a1d4f2e83fdccb9c08bade4441864"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.addmag.tra",
+     "id": "chain.bf",
      "type": "select",
-     "prompt": "Left adductor magnus, posterior head, left femur fixed. Its transverse action on the pelvis:",
+     "prompt": "PRI places the left biceps femoris, long head in the anterior interior chain. With the left femur fixed, which of its Table 12.3 actions holds the pelvis in the Left AIC pattern?",
      "accept": [
-      "995b39fd1972f4eaf0f2117e261bb24a81859f2805e21e60d17b4b346448bb49"
+      "073a54255e3c3cd772773ab56677225d28e28a981935f1245052ea02226f9fe7"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.addlong.sag",
+     "id": "opp.semimem",
      "type": "select",
-     "prompt": "Left adductor longus, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "prompt": "The left semimembranosus is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "85d2c1201453f345062859df46ad5d75a0682ac3b29c3af943785f8ca15478b0"
+      "354d7fde35ac3213d4691f906577577578b1b5b33bc7981964acc4aa43df2398"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.addlong.tra",
+     "id": "opp.semiten",
      "type": "select",
-     "prompt": "Left adductor longus, left femur fixed. Its transverse action on the pelvis:",
+     "prompt": "The left semitendinosus is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "597a28fc88cb3d38050f0d2628cc0ead80e268337182263d641061750f6fd2f2"
+      "fcb6407116a0b0735f61d0434c57e74a2d9a97730cfb5929950f45f7ff0535ce"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.gmedpostL.sag",
+     "id": "opp.gmedL",
      "type": "select",
-     "prompt": "Left gluteus medius, posterior fibers, left femur fixed. Its sagittal action on the left hemipelvis:",
+     "prompt": "The left gluteus medius, posterior fibers is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "3fb0b320def69029dafe28b270d1aca8a4d426920873e786215d93efb228a9dc"
+      "852d1ee5209c736d42500c902ba1023a0a6e3631b19fda8e4ffe64f1e16a9274"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.gmedpostL.tra",
+     "id": "opp.gmaxR",
      "type": "select",
-     "prompt": "Left gluteus medius, posterior fibers, left femur fixed. Its transverse action on the pelvis:",
+     "prompt": "The right gluteus maximus is a muscle of opposition. With the right femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "f4cb20e2827276f1d6331ad0b9fa1955b41fec7441fa215017b8319ec0e62dce"
+      "7fbc134d3678d01960d6d15ae242666c2c4264133779c6ad220ba6555d052f1a"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.gmaxR.sag",
+     "id": "opp.gmedR",
      "type": "select",
-     "prompt": "Right gluteus maximus, right femur fixed. Its sagittal action on the right hemipelvis:",
+     "prompt": "The right gluteus medius, posterior fibers is a muscle of opposition. With the right femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "4875832b4bc9f370cf5ce2bbcd6279a00f070ce4618406129c471d847a725183"
+      "5a00a1b3033414d242f31217ead0cf8d132e07d52e89e8e4f73ec5ab760fef1f"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.gmaxR.tra",
+     "id": "opp.addmag",
      "type": "select",
-     "prompt": "Right gluteus maximus, right femur fixed. Its transverse action on the pelvis:",
+     "prompt": "The left adductor magnus, posterior head is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "206e0f4335427f160f89f256b5699ba7373b5b5214bd7f356fdf690d8fd29a33"
+      "cfd24edd3be1fe6d50c191e807de434d4ac6c77c96a94b25d1d655546463ff44"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.gmedpostR.sag",
+     "id": "opp.addlong",
      "type": "select",
-     "prompt": "Right gluteus medius, posterior fibers, right femur fixed. Its sagittal action on the right hemipelvis:",
+     "prompt": "The left adductor longus is a muscle of opposition. With the left femur fixed, which of its Table 12.3 actions moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "25134abf1447df45fbed155007d12899c511ade03d0d4ea6e17b0dce1f04a337"
+      "4268fb65591583a3beee8e11fc3ff437fc07e5d63fc8ba000634015252fc8499"
      ],
      "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     },
     {
-     "id": "opp.gmedpostR.tra",
+     "id": "opp.io",
      "type": "select",
-     "prompt": "Right gluteus medius, posterior fibers, right femur fixed. Its transverse action on the pelvis:",
+     "prompt": "The internal obliques are muscles of opposition. With the thorax fixed and both sides contracting, which action moves the pelvis out of the Left AIC pattern?",
      "accept": [
-      "657d46ffd8eadeede16ba926235cbd78ce37489929b74cef51b5186166e26498"
+      "29ac459767252ca9c2dc6853b1f6db973a0727bb9923db60b064d7ccd250b53d"
      ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
+     "ref": "Neumann 2017, Ch. 10, Table 10.3; Table 10.4: Actions of the abdominal muscles, pp. 403, 407",
      "options": [
-      "Opposes the pattern",
-      "Adds to the pattern",
-      "No action listed"
+      "Sagittal: anterior tilt of that hemipelvis",
+      "Sagittal: posterior tilt of that hemipelvis",
+      "Transverse: pelvis oriented right",
+      "Transverse: pelvis oriented left"
      ]
     }
    ]
@@ -8361,6 +8369,6 @@
    }
   ]
  },
- "built": "2026-11-11T20:37Z",
+ "built": "2026-11-11T20:58Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }
