@@ -473,7 +473,7 @@
 
       var btn = sectioned ? null : el("button", { class: "btn primary check", type: "button", text: "Check answers" });
       if (btn) btn.addEventListener("click", function () { runCheck(cells, result, btn); });
-      work.appendChild(el("div", { class: "check-bar" }, [result, el("div", { class: "btn-row" }, [btn, nextBtn])]));
+      work.appendChild(el("div", { class: "check-bar" + (sectioned ? " static" : "") }, [result, el("div", { class: "btn-row" }, [btn, nextBtn])]));
     }
     left.appendChild(work);
     if (figs) { left.appendChild(figs); if (st.passed) figs.reveal(); }

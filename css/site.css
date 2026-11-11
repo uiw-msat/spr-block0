@@ -320,3 +320,4 @@ td.right .mark-text { color: var(--ok); font-weight: 600; }
   display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--sans);
 }
 @media print { .section-bar { display: none !important; } }
+.check-bar.static { position: static; box-shadow: none; }
