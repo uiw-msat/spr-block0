@@ -1304,7 +1304,7 @@
    "id": "04",
    "slug": "04-attachments",
    "title": "Attachments",
-   "sub": "Attachments of 23 muscles, in Neumann's terms",
+   "sub": "Attachments of 22 muscles, in Neumann's terms",
    "minutes": [
     10,
     40
@@ -1623,32 +1623,6 @@
      "ref": "Neumann 2017, App. IV, Part D: Adductor magnus, p. 731",
      "optionSet": "sites-Adductors",
      "row": "Adductor magnus, posterior (extensor) head",
-     "col": "Distal attachment",
-     "group": "Adductors · proximal and distal attachments"
-    },
-    {
-     "id": "att.addlong.origin",
-     "type": "select",
-     "prompt": "Adductor longus: proximal attachment",
-     "accept": [
-      "b8d727ffe0bc76f60c9973031e2c5c8c432907a1679dc0a2ccc1de97a8df8797"
-     ],
-     "ref": "Neumann 2017, App. IV, Part D: Adductor longus, p. 731",
-     "optionSet": "sites-Adductors",
-     "row": "Adductor longus",
-     "col": "Proximal attachment",
-     "group": "Adductors · proximal and distal attachments"
-    },
-    {
-     "id": "att.addlong.insertion",
-     "type": "select",
-     "prompt": "Adductor longus: distal attachment",
-     "accept": [
-      "06adabf8da37a6c8c63175a60e1d9ed30efa567d0400cdd81563046a78f796c1"
-     ],
-     "ref": "Neumann 2017, App. IV, Part D: Adductor longus, p. 731",
-     "optionSet": "sites-Adductors",
-     "row": "Adductor longus",
      "col": "Distal attachment",
      "group": "Adductors · proximal and distal attachments"
     },
@@ -2061,7 +2035,7 @@
     "Give each muscle's action in each plane, from anatomical position, with the first-named segment moving: the femur on a fixed pelvis for hip muscles (FA), the thorax on a fixed pelvis for trunk muscles, the scapula on the thorax for scapular muscles (ST), and the humerus on the glenoid for latissimus dorsi (HG).",
     "Trunk muscles are asked the way Neumann's Table 10.3 presents them: one answer for the action with both sides contracting, and one for the action with one side contracting. A one-sided action can combine lateral flexion and rotation; choose the option that names both.",
     "The muscles are in six sections: anterior hip, posterior thigh, medial thigh, gluteal region, trunk, and shoulder. Each section has its own Check button, and the lesson passes when all six sections are correct. The shoulder section has two tables because the moving segment differs: the scapula on the thorax (ST) for the scapular muscles, the humerus on the glenoid (HG) for latissimus dorsi.",
-    "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, adductor longus); answer for anatomical position. Lesson 6 asks the same muscles with the roles swapped: the proximal segment moving on a fixed distal one."
+    "Choose None where a muscle has no meaningful action in that plane. Some actions reverse with hip position (piriformis, for example); answer for anatomical position. Lesson 6 asks the same muscles with the roles swapped: the proximal segment moving on a fixed distal one."
    ],
    "where": [
     {
@@ -2104,8 +2078,7 @@
      "label": "Medial thigh · femur-on-pelvis (FA)",
      "rows": [
       "Adductor magnus, anterior (adductor) head",
-      "Adductor magnus, posterior (extensor) head",
-      "Adductor longus"
+      "Adductor magnus, posterior (extensor) head"
      ]
     },
     {
@@ -2569,60 +2542,6 @@
       "None"
      ],
      "row": "Adductor magnus, posterior (extensor) head",
-     "col": "Transverse",
-     "group": "Hip muscles · femur-on-pelvis (FA)",
-     "section": "Medial thigh · femur-on-pelvis (FA)"
-    },
-    {
-     "id": "act.addlong.sagittal",
-     "type": "select",
-     "prompt": "Adductor longus, femur-on-pelvis (FA), from anatomical position: sagittal plane",
-     "accept": [
-      "7b4db3c24b6ba848faca95d518a92fe5dbd37f3437bcb996f9178c822dd5342a"
-     ],
-     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
-     "options": [
-      "Flexion",
-      "Extension",
-      "None"
-     ],
-     "row": "Adductor longus",
-     "col": "Sagittal",
-     "group": "Hip muscles · femur-on-pelvis (FA)",
-     "section": "Medial thigh · femur-on-pelvis (FA)"
-    },
-    {
-     "id": "act.addlong.frontal",
-     "type": "select",
-     "prompt": "Adductor longus, femur-on-pelvis (FA), from anatomical position: frontal plane",
-     "accept": [
-      "75f70d6db93a25c949caaddedb3a1787e31af4dfc512729d74a0b8b718a218ba"
-     ],
-     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
-     "options": [
-      "Abduction",
-      "Adduction",
-      "None"
-     ],
-     "row": "Adductor longus",
-     "col": "Frontal",
-     "group": "Hip muscles · femur-on-pelvis (FA)",
-     "section": "Medial thigh · femur-on-pelvis (FA)"
-    },
-    {
-     "id": "act.addlong.transverse",
-     "type": "select",
-     "prompt": "Adductor longus, femur-on-pelvis (FA), from anatomical position: transverse plane",
-     "accept": [
-      "059c3f5bc79accd4920feaf438534ca4a8a5ed54d07e65093691e898e7da86e1"
-     ],
-     "ref": "Neumann 2017, Ch. 12, Table 12.3: Hip muscles by primary and secondary action: adductors, p. 499",
-     "options": [
-      "Internal rotation",
-      "External rotation",
-      "None"
-     ],
-     "row": "Adductor longus",
      "col": "Transverse",
      "group": "Hip muscles · femur-on-pelvis (FA)",
      "section": "Medial thigh · femur-on-pelvis (FA)"
@@ -3502,8 +3421,7 @@
      "label": "Medial thigh · pelvis-on-femur (AF)",
      "rows": [
       "Adductor magnus, anterior (adductor) head",
-      "Adductor magnus, posterior (extensor) head",
-      "Adductor longus"
+      "Adductor magnus, posterior (extensor) head"
      ]
     },
     {
@@ -3967,60 +3885,6 @@
       "None"
      ],
      "row": "Adductor magnus, posterior (extensor) head",
-     "col": "Transverse",
-     "group": "Hip muscles · pelvis-on-femur (AF)",
-     "section": "Medial thigh · pelvis-on-femur (AF)"
-    },
-    {
-     "id": "pod.addlong.sagittal",
-     "type": "select",
-     "prompt": "Adductor longus, pelvis-on-femur (AF), femur fixed: sagittal plane",
-     "accept": [
-      "09fc07926aad4643b9729ac405300fed6f42bb2da42fdf32f66ff4633e7c1fa5"
-     ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
-     "options": [
-      "Anterior tilt of that hemipelvis",
-      "Posterior tilt of that hemipelvis",
-      "None"
-     ],
-     "row": "Adductor longus",
-     "col": "Sagittal",
-     "group": "Hip muscles · pelvis-on-femur (AF)",
-     "section": "Medial thigh · pelvis-on-femur (AF)"
-    },
-    {
-     "id": "pod.addlong.frontal",
-     "type": "select",
-     "prompt": "Adductor longus, pelvis-on-femur (AF), femur fixed: frontal plane",
-     "accept": [
-      "0a3699b5372680d6f878d86a69adbb5a5f31c3b7b5466c63310b7c01cdfdefaa"
-     ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
-     "options": [
-      "Opposite side of the pelvis raised (AF abduction)",
-      "Opposite side of the pelvis lowered (AF adduction)",
-      "None"
-     ],
-     "row": "Adductor longus",
-     "col": "Frontal",
-     "group": "Hip muscles · pelvis-on-femur (AF)",
-     "section": "Medial thigh · pelvis-on-femur (AF)"
-    },
-    {
-     "id": "pod.addlong.transverse",
-     "type": "select",
-     "prompt": "Adductor longus, pelvis-on-femur (AF), femur fixed: transverse plane",
-     "accept": [
-      "7b24bdbff3ed2f2227055de1f5630cdf4149f42ac0434d35d94c1089def1f10c"
-     ],
-     "ref": "Neumann 2017, Ch. 12: Pelvic-on-femoral osteokinematics, pp. 494-497",
-     "options": [
-      "Pelvis oriented toward the side of the fixed femur (AF internal rotation)",
-      "Pelvis oriented away from the side of the fixed femur (AF external rotation)",
-      "None"
-     ],
-     "row": "Adductor longus",
      "col": "Transverse",
      "group": "Hip muscles · pelvis-on-femur (AF)",
      "section": "Medial thigh · pelvis-on-femur (AF)"
@@ -8342,6 +8206,6 @@
    }
   ]
  },
- "built": "2026-11-11T21:11Z",
+ "built": "2026-11-11T21:28Z",
  "keySource": "SPR_answer_key_L01-L10 DRAFT 2026-11-11.xlsx"
 }
