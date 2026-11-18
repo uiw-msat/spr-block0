@@ -128,7 +128,7 @@
   function renderIndex(content) {
     var c = content.course;
     var set = function (sel, txt) { var n = document.querySelector(sel); if (n) n.textContent = txt; };
-    set("[data-due]", fmtDate(c.certificateDue));
+    set("[data-due]", fmtDate(c.certificateDue) + (c.certificateDueTime ? ", " + c.certificateDueTime : ""));
     set("[data-unit1]", fmtDate(c.unit1));
     set("[data-term]", c.term);
 
@@ -587,6 +587,177 @@
     });
   }
 
+  /* ---------- certificate ----------
+     Opens only when every saved answer re-checks against content.json (the passed flags are not
+     trusted: a student can change answers after passing). The code ties the name, the completion
+     time, and every answer together; tools/verify.py recomputes it from the uploaded progress file. */
+  function wordCount(t) { var m = String(t || "").trim().match(/\S+/g); return m ? m.length : 0; }
+
+  function completionReport(content) {
+    var p = load();
+    return Promise.all(content.lessons.map(function (L) {
+      var st = p.lessons[L.id] || {};
+      if (L.layout === "synthesis") {
+        var min = L.minWords || 60, syn = p.synthesis || {};
+        var short = (L.prompts || []).filter(function (pr) { return wordCount(syn[pr.id]) < min; }).length;
+        return Promise.resolve({ L: L, ok: short === 0 && (L.prompts || []).length > 0, short: short, passedAt: st.passedAt });
+      }
+      var cells = (L.cells || []).filter(function (c) { return !c.optional; });
+      return window.SPRCheck.checkCells(content.salt, cells, st.answers || {}).then(function (res) {
+        var bad = cells.filter(function (c) { return res[c.id] !== true; }).length;
+        return { L: L, ok: cells.length > 0 && bad === 0, bad: bad, passedAt: st.passedAt };
+      });
+    }));
+  }
+
+  function longDate(iso) { return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }); }
+  function fileSafe(s) { return (s || "student").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase(); }
+
+  function certificatePDF(content, cert) {
+    var c = content.course;
+    var doc = new window.jspdf.jsPDF({ orientation: "landscape", unit: "pt", format: "letter" });
+    var W = 792, H = 612, cx = W / 2;
+    var ox = [122, 31, 43], ink = [29, 31, 34], grey = [95, 100, 108];
+    doc.setProperties({ title: c.code + " Block 0 certificate: " + cert.name, subject: c.title + ", " + c.block,
+      author: c.instructors.join("; "), creator: "SPR Block 0 site", keywords: "spr-code:" + cert.code + " term:" + content.term });
+
+    doc.setDrawColor.apply(doc, ox); doc.setLineWidth(2.5); doc.rect(28, 28, W - 56, H - 56);
+    doc.setLineWidth(0.6); doc.rect(36, 36, W - 72, H - 72);
+
+    doc.setFont("helvetica", "normal"); doc.setFontSize(10); doc.setTextColor.apply(doc, grey);
+    doc.text(c.program.toUpperCase(), cx, 82, { align: "center", charSpace: 0.6 });
+
+    doc.setFont("times", "bold"); doc.setFontSize(26); doc.setTextColor.apply(doc, ox);
+    doc.text(c.code + "  " + c.title.replace("&", "and"), cx, 128, { align: "center" });
+    doc.setFont("times", "italic"); doc.setFontSize(15); doc.setTextColor.apply(doc, ink);
+    doc.text(c.block + " · " + c.term, cx, 154, { align: "center" });
+
+    doc.setFont("helvetica", "bold"); doc.setFontSize(11); doc.setTextColor.apply(doc, grey);
+    doc.text("RECORD OF COMPLETION", cx, 208, { align: "center", charSpace: 1.2 });
+
+    doc.setFont("times", "bold"); doc.setTextColor.apply(doc, ink);
+    var size = 36; doc.setFontSize(size);
+    while (doc.getTextWidth(cert.name) > W - 200 && size > 18) { size -= 2; doc.setFontSize(size); }
+    doc.text(cert.name, cx, 262, { align: "center" });
+    doc.setDrawColor.apply(doc, grey); doc.setLineWidth(0.5); doc.line(cx - 220, 276, cx + 220, 276);
+
+    doc.setFont("times", "normal"); doc.setFontSize(14);
+    doc.text("completed all " + content.lessons.length + " lessons of the asynchronous Block 0 primer", cx, 306, { align: "center" });
+    doc.text("on " + longDate(cert.completedAt) + ".", cx, 326, { align: "center" });
+
+    doc.setFont("helvetica", "bold"); doc.setFontSize(9); doc.setTextColor.apply(doc, grey);
+    doc.text("INSTRUCTORS", cx, 380, { align: "center", charSpace: 1 });
+    doc.setFont("times", "normal"); doc.setFontSize(13); doc.setTextColor.apply(doc, ink);
+    c.instructors.forEach(function (n, i) { doc.text(n, cx, 400 + i * 18, { align: "center" }); });
+
+    doc.setFont("helvetica", "bold"); doc.setFontSize(9); doc.setTextColor.apply(doc, grey);
+    doc.text("VERIFICATION CODE", cx, 470, { align: "center", charSpace: 1 });
+    doc.setFont("courier", "bold"); doc.setFontSize(20); doc.setTextColor.apply(doc, ox);
+    doc.text(window.SPRCheck.shortCode(cert.code), cx, 494, { align: "center", charSpace: 1 });
+    doc.setFont("helvetica", "normal"); doc.setFontSize(8.5); doc.setTextColor.apply(doc, grey);
+    doc.text("Valid only with the progress file submitted with it. Instructors verify the code against that file.", cx, 512, { align: "center" });
+
+    doc.setFontSize(8);
+    doc.text("A completion record for a university course primer. Not a Postural Restoration Institute course or credential.", cx, 552, { align: "center" });
+    doc.text("Issued " + longDate(cert.issuedAt) + " · term " + content.term + " · code " + cert.code, cx, 564, { align: "center" });
+
+    if (content.preview) {
+      doc.setFont("helvetica", "bold"); doc.setFontSize(60); doc.setTextColor(200, 200, 200);
+      doc.text("PREVIEW: NOT VALID", cx, 340, { align: "center", angle: 18 });
+    }
+    return doc;
+  }
+
+  function renderCertificate(content) {
+    var host = document.getElementById("cert-app");
+    var due = (content.course.certificateDueTime ? content.course.certificateDueTime + " on " : "") + fmtDate(content.course.certificateDue);
+    completionReport(content).then(function (rows) {
+      host.textContent = "";
+      var missing = rows.filter(function (r) { return !r.ok; });
+      if (missing.length) {
+        var ul = el("ul", { class: "cert-missing" });
+        missing.forEach(function (r) {
+          var why = r.L.layout === "synthesis"
+            ? (r.short ? r.short + (r.short === 1 ? " answer is" : " answers are") + " under the word minimum" : "not started")
+            : (r.bad ? r.bad + (r.bad === 1 ? " item needs" : " items need") + " another look" : "not started");
+          ul.appendChild(el("li", null, [el("a", { href: "lessons/" + r.L.slug + ".html", text: "Lesson " + Number(r.L.id) + ": " + r.L.title }), " — " + why]));
+        });
+        host.appendChild(el("div", { class: "locked-panel cert-locked" }, [
+          el("h2", { text: "Not available yet" }),
+          el("p", { text: "The certificate opens when every lesson's saved answers are correct. " + (missing.length === 1 ? "One lesson is" : missing.length + " lessons are") + " not complete:" }),
+          ul,
+          el("p", { class: "muted", text: "If you passed a lesson and later changed an answer, open the lesson and check it again." })
+        ]));
+        return;
+      }
+
+      var p = load();
+      var completedAt = rows.map(function (r) { return r.passedAt || ""; }).sort().pop();
+      if (!completedAt) completedAt = new Date().toISOString();   // passed flags missing (edited file): use now
+      var input = el("input", { id: "cert-name", type: "text", autocomplete: "name", spellcheck: "false", value: (p.certificate && p.certificate.name) || p.studentName || "" });
+      var make = el("button", { class: "btn primary", type: "button", text: "Create certificate" });
+      var msg = el("span", { class: "result", role: "status" });
+      var out = el("div", { class: "cert-out", hidden: "" });
+
+      host.appendChild(el("div", { class: "cert-form" }, [
+        el("p", { class: "result ok", text: "All " + rows.length + " lessons complete." }),
+        el("label", { for: "cert-name", text: "Your name exactly as it appears in Canvas" }),
+        el("div", { class: "btn-row" }, [input, make, msg])
+      ]));
+      host.appendChild(out);
+
+      var show = function (cert) {
+        out.textContent = "";
+        var pdfBtn = el("button", { class: "btn primary", type: "button", text: "1. Download certificate (PDF)" });
+        var jsonBtn = el("button", { class: "btn primary", type: "button", text: "2. Download progress file (JSON)" });
+        pdfBtn.addEventListener("click", function () { certificatePDF(content, cert).save("SPR-certificate-" + fileSafe(cert.name) + ".pdf"); });
+        jsonBtn.addEventListener("click", exportProgress);
+        out.appendChild(el("dl", { class: "cert-summary" }, [
+          el("div", null, [el("dt", { text: "Name" }), el("dd", { text: cert.name })]),
+          el("div", null, [el("dt", { text: "Completed" }), el("dd", { text: longDate(cert.completedAt) })]),
+          el("div", null, [el("dt", { text: "Verification code" }), el("dd", { class: "cert-code", text: window.SPRCheck.shortCode(cert.code) })])
+        ]));
+        out.appendChild(el("div", { class: "btn-row" }, [pdfBtn, jsonBtn]));
+        out.appendChild(el("p", { class: "cert-upload", text: "3. Upload both files to the Block 0 certificate assignment in Canvas by " + due + ". The code on the certificate is checked against the progress file, so upload the progress file downloaded from this page after creating the certificate. If you change any answer or your name, create the certificate again and upload both new files." }));
+        if (content.course.canvasUrl) out.appendChild(el("p", null, [el("a", { class: "btn", href: content.course.canvasUrl, target: "_blank", rel: "noopener", text: "Open the Canvas assignment" })]));
+        out.removeAttribute("hidden");
+      };
+
+      var create = function () {
+        var name = window.SPRCheck.certName(input.value);
+        if (name.length < 3 || !/\S+ \S+/.test(name)) { msg.className = "result bad"; msg.textContent = "Enter your first and last name as Canvas shows them."; input.focus(); return; }
+        make.disabled = true;
+        window.SPRCheck.certificateCode(content.salt, name, completedAt, content, p).then(function (r) {
+          var prev = p.certificate;
+          var cert = { version: 1, name: name, completedAt: completedAt, code: r.code, answersHash: r.answersHash,
+            issuedAt: prev && prev.code === r.code ? prev.issuedAt : new Date().toISOString(), term: content.term };
+          p.studentName = name; p.certificate = cert; save(); input.value = name;
+          msg.className = "result ok"; msg.textContent = "Certificate created.";
+          make.disabled = false; make.textContent = "Create again";
+          show(cert);
+        }).catch(function () {
+          msg.className = "result bad"; msg.textContent = "This browser could not create the code. Use a current version of Chrome, Edge, Firefox, or Safari.";
+          make.disabled = false;
+        });
+      };
+      make.addEventListener("click", create);
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") create(); });
+
+      /* A certificate already saved and still matching the answers is shown again as is. */
+      if (p.certificate && p.certificate.name) {
+        window.SPRCheck.certificateCode(content.salt, p.certificate.name, completedAt, content, p).then(function (r) {
+          if (r.code === p.certificate.code) { make.textContent = "Create again"; show(p.certificate); }
+          else { msg.className = "result bad"; msg.textContent = "Your answers changed since your last certificate. Create it again and upload both new files."; }
+        });
+      }
+      if (!window.jspdf) { msg.className = "result bad"; msg.textContent = "The PDF tool did not load. Reload the page."; make.disabled = true; }
+    }).catch(function () {
+      host.textContent = "";
+      host.appendChild(el("p", { class: "storage-warn", text: "This browser could not check your answers. Use a current version of Chrome, Edge, Firefox, or Safari." }));
+    });
+    wireProgressButtons();
+  }
+
   /* ---------- boot ---------- */
   load();
   fetch(ROOT + "/data/content.json", { cache: "no-cache" })
@@ -596,6 +767,7 @@
       if (PAGE === "index") renderIndex(content);
       else if (PAGE === "lesson") renderLesson(content);
       else if (PAGE === "sources") renderSources(content);
+      else if (PAGE === "certificate") renderCertificate(content);
       else wireProgressButtons();
     })
     .catch(function () {

@@ -339,3 +339,21 @@ body.show-all-pages .paged .matrix-section { display: block; }
 textarea.synth { width: 100%; font: inherit; line-height: 1.5; padding: .7rem .8rem; border: 1px solid #c9c4b8; border-radius: 6px; background: #fff; resize: vertical; }
 textarea.synth:focus-visible { outline: 2px solid #1f3a5f; outline-offset: 1px; }
 .word-count { display: block; margin-top: .3rem; font-size: .85rem; color: #6b665c; }
+
+/* ---------- certificate ---------- */
+.cert-app { margin-top: 2rem; font-family: var(--sans); }
+.cert-locked { text-align: left; padding: 2rem; }
+.cert-missing { margin: 1rem 0; padding-left: 1.2rem; }
+.cert-missing li { margin: .3rem 0; }
+.cert-form { background: var(--panel); border: 1px solid var(--rule); border-radius: var(--radius); padding: 1.4rem 1.6rem; }
+.cert-form label { display: block; font-weight: 600; margin: .6rem 0 .4rem; }
+.cert-form input[type=text] { font: inherit; font-size: 1.05rem; padding: .5rem .7rem; min-width: 22rem; border: 1px solid #c9c4b8; border-radius: 6px; background: #fff; }
+.cert-form input[type=text]:focus-visible { outline: 2px solid #1f3a5f; outline-offset: 1px; }
+.cert-out { margin-top: 1.4rem; background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 1.4rem 1.6rem; }
+.cert-summary { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; margin: 0 0 1.2rem; }
+.cert-summary dt { font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.cert-summary dd { margin: .2rem 0 0; font-size: 1.1rem; }
+.cert-code { font-family: var(--mono); font-weight: 700; color: var(--accent); letter-spacing: .05em; }
+.cert-upload { margin: 1.1rem 0 0; max-width: var(--measure); color: var(--ink-2); }
+.cert-move { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); font-family: var(--sans); }
+.cert-move h2 { font-size: 1.05rem; }

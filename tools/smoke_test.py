@@ -66,6 +66,93 @@ def answer(page, cid, typ, value):
         page.select_option(f"#{sid(cid)}", value)
 
 
+def certificate_checks(browser, page, base):
+    """Certificate page: locked for an empty browser; after every lesson passes, creates a PDF and
+    a progress file that tools/verify.py accepts; tampered files fail verification."""
+    import copy, json, pathlib, subprocess, tempfile
+    fails, tmp = [], pathlib.Path(tempfile.mkdtemp(prefix="spr-cert-"))
+    verify = pathlib.Path(__file__).resolve().parent / "verify.py"
+
+    fresh = browser.new_page()
+    fresh.goto(f"{base}/certificate.html")
+    fresh.wait_for_selector(".cert-locked, .cert-form")
+    if fresh.locator(".cert-form").count() or fresh.locator(".cert-missing li").count() != 10:
+        fails.append("certificate: an empty browser is not locked out with all ten lessons listed")
+    fresh.close()
+
+    page.goto(f"{base}/certificate.html")
+    page.wait_for_selector(".cert-form, .cert-locked")
+    if not page.locator(".cert-form").count():
+        return fails + ["certificate: form not shown after every lesson passed: " + page.text_content("#cert-app")]
+    page.fill("#cert-name", "Pat")
+    page.click("text=Create certificate")
+    if "first and last name" not in page.text_content(".cert-form .result.bad"):
+        fails.append("certificate: a one-word name was accepted")
+    page.fill("#cert-name", "  Pat   Smoke-Test ")
+    page.click("text=Create certificate")
+    page.wait_for_selector(".cert-out:not([hidden])")
+    shown = page.text_content(".cert-code").strip()
+    with page.expect_download() as d:
+        page.click("text=Download certificate (PDF)")
+    d.value.save_as(tmp / "smoketestpat_101_1_SPR-certificate-pat-smoke-test.pdf")
+    with page.expect_download() as d:
+        page.click("text=Download progress file (JSON)")
+    d.value.save_as(tmp / "smoketestpat_101_2_spr-progress-pat-smoke-test.json")
+    prog = json.loads((tmp / "smoketestpat_101_2_spr-progress-pat-smoke-test.json").read_text())
+    if prog.get("certificate", {}).get("name") != "Pat Smoke-Test":
+        fails.append(f"certificate: name not normalized/saved: {prog.get('certificate', {}).get('name')!r}")
+    page.screenshot(path="/home/claude/shots/certificate.png", full_page=True)
+
+    # a reload shows the same certificate, same code
+    page.reload(); page.wait_for_selector(".cert-out:not([hidden])")
+    if page.text_content(".cert-code").strip() != shown:
+        fails.append("certificate: code changed on reload")
+
+    import csv, shutil
+
+    def run_verify(folder):
+        r = subprocess.run([sys.executable, str(verify), str(folder), "--out", str(folder / "reports")], capture_output=True, text=True)
+        if r.returncode:
+            raise RuntimeError("verify.py crashed:\n" + r.stderr)
+        return {row["file"]: row for row in csv.DictReader(open(folder / "reports/certificates.csv"))}
+
+    # the genuine pair, alone
+    gdir = tmp / "genuine"; gdir.mkdir()
+    for f in tmp.glob("smoketestpat_*"):
+        shutil.copy(f, gdir)
+    res = run_verify(gdir)
+    good = res.get("smoketestpat_101_2_spr-progress-pat-smoke-test.json", {})
+    if good.get("verdict") != "VERIFIED" or not good.get("pdf_check", "").startswith("matches"):
+        fails.append(f"certificate: genuine pair not verified: {good}")
+    if good.get("code") != shown:
+        fails.append(f"certificate: page shows {shown}, verify.py computes {good.get('code')}")
+    if "Pat Smoke-Test" not in (gdir / "reports/synthesis.md").read_text():
+        fails.append("certificate: synthesis.md missing the student's answers")
+
+    # tampered copies next to it: one answer changed; name changed (a classmate's file renamed)
+    t1 = copy.deepcopy(prog); L = next(k for k in t1["lessons"] if t1["lessons"][k].get("answers"))
+    cid = next(iter(t1["lessons"][L]["answers"])); t1["lessons"][L]["answers"][cid] = "Edited"
+    t2 = copy.deepcopy(prog); t2["certificate"]["name"] = "Someone Else"
+    mdir = tmp / "mixed"; shutil.copytree(gdir, mdir, ignore=shutil.ignore_patterns("reports"))
+    (mdir / "tamperanswer_102_1_x.json").write_text(json.dumps(t1))
+    (mdir / "tampername_103_1_x.json").write_text(json.dumps(t2))
+    res = run_verify(mdir)
+    for nm, why in (("tamperanswer_102_1_x.json", "wrong or blank"), ("tampername_103_1_x.json", "changed after")):
+        row = res.get(nm, {})
+        if row.get("verdict") != "CHECK" or why not in row.get("problems", ""):
+            fails.append(f"certificate: tampered file {nm} not caught: {row.get('problems')}")
+    if "shares a browser seed" not in res.get("tampername_103_1_x.json", {}).get("problems", ""):
+        fails.append("certificate: copied file not flagged by shared seed")
+
+    # changing an answer after the certificate locks the page until the lesson is fixed
+    page.evaluate("([l, id]) => { const p = JSON.parse(localStorage.getItem('spr-block0-progress')); p.lessons[l].answers[id] = 'Edited'; localStorage.setItem('spr-block0-progress', JSON.stringify(p)); }", [L, cid])
+    page.reload(); page.wait_for_selector(".cert-locked, .cert-form")
+    if page.locator(".cert-missing li").count() != 1:
+        fails.append("certificate: a changed answer after passing did not lock the certificate")
+    print(f"certificate: created {shown}; verify.py: genuine pair {good.get('verdict')}, tampered files caught; files in {tmp}")
+    return fails
+
+
 def main(path, base):
     data = key_answers(path)
     fails = []
@@ -157,6 +244,7 @@ def main(path, base):
         passed = page.locator(".status.passed").count()
         print(f"landing shows {passed} lessons passed")
         page.screenshot(path="/home/claude/shots/after-pass.png", full_page=False)
+        fails += certificate_checks(b, page, base)
         b.close()
     if errs:
         fails.append(f"page errors: {errs}")
