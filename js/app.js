@@ -718,7 +718,7 @@
           el("div", null, [el("dt", { text: "Verification code" }), el("dd", { class: "cert-code", text: window.SPRCheck.shortCode(cert.code) })])
         ]));
         out.appendChild(el("div", { class: "btn-row" }, [pdfBtn, jsonBtn]));
-        out.appendChild(el("p", { class: "cert-upload", text: "3. Upload both files to the Block 0 certificate assignment in Canvas by " + due + ". The code on the certificate is checked against the progress file, so upload the progress file downloaded from this page after creating the certificate. If you change any answer or your name, create the certificate again and upload both new files." }));
+        out.appendChild(el("p", { class: "cert-upload", text: "3. Upload both files to the Unit 0 Certificate assignment in Canvas by " + due + ". The code on the certificate is checked against the progress file, so upload the progress file downloaded from this page after creating the certificate. If you change any answer or your name, create the certificate again and upload both new files." }));
         out.appendChild(el("p", { class: "cert-upload" }, ["Your answers are also assembled into a printable reference: ", el("a", { href: "atlas.html", text: "open your Field Atlas" }), ". Bring it to every in-person unit."]));
         if (content.course.canvasUrl) out.appendChild(el("p", null, [el("a", { class: "btn", href: content.course.canvasUrl, target: "_blank", rel: "noopener", text: "Open the Canvas assignment" })]));
         out.removeAttribute("hidden");

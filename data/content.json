@@ -10,7 +10,7 @@
    "Lyle Danley, MS, LAT, ATC, CSCS",
    "E. Joanna Soles, DHSc, LAT, ATC"
   ],
-  "certificateDue": "2026-11-20",
+  "certificateDue": "2026-11-18",
   "certificateDueTime": "11:59 pm",
   "unit1": "2026-11-20",
   "contact": "danley@uiwtx.edu, soles@uiwtx.edu",
@@ -8536,6 +8536,6 @@
    }
   ]
  },
- "built": "2026-11-18T15:57Z",
+ "built": "2026-11-18T15:59Z",
  "keySource": "SPR_answer_key_L01-L10 updated 2026-11-11.xlsx"
 }
