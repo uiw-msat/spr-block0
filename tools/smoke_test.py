@@ -138,6 +138,11 @@ def certificate_checks(browser, page, base):
     if prog.get("certificate", {}).get("name") != "Pat Smoke-Test":
         fails.append(f"certificate: name not normalized/saved: {prog.get('certificate', {}).get('name')!r}")
     page.screenshot(path="/home/claude/shots/certificate.png", full_page=True)
+    canvas = page.locator("text=Open the Canvas assignment")
+    if canvas.count() != 1 or "canvas.uiw.edu/courses/" not in (canvas.get_attribute("href") or ""):
+        fails.append("certificate: Canvas assignment button missing or not a Canvas course link")
+    if page.locator('a[href="atlas.html"]').count() < 2:
+        fails.append("certificate: no link to the Field Atlas after creating the certificate")
 
     # a reload shows the same certificate, same code
     page.reload(); page.wait_for_selector(".cert-out:not([hidden])")

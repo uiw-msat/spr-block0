@@ -14,7 +14,7 @@
   "certificateDueTime": "11:59 pm",
   "unit1": "2026-11-20",
   "contact": "danley@uiwtx.edu, soles@uiwtx.edu",
-  "canvasUrl": ""
+  "canvasUrl": "https://canvas.uiw.edu/courses/56074/assignments/1054033"
  },
  "lessons": [
   {
@@ -36,8 +36,12 @@
    ],
    "where": [
     {
-     "label": "Neumann 2017, Ch. 1, pp. 5-6 (planes and axes); Ch. 12, pp. 493-497 (femoral-on-pelvic and pelvic-on-femoral osteokinematics)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 1, pp. 5-6: planes and axes (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297893"
+    },
+    {
+     "label": "Neumann 2017, Ch. 12, pp. 493-497: femoral-on-pelvic and pelvic-on-femoral osteokinematics (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297902"
     },
     {
      "label": "Neumann 2010, Kinesiology of the hip (JOSPT): femoral-on-pelvic vs pelvic-on-femoral",
@@ -1139,8 +1143,8 @@
      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
     },
     {
-     "label": "Neumann 2017, Ch. 11, p. 457 (diaphragm)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 11, p. 457 (diaphragm) (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297899"
     },
     {
      "label": "Boyle, Olinick & Lewis 2010, The value of blowing up a balloon (hemidiaphragms)",
@@ -1319,16 +1323,16 @@
    ],
    "where": [
     {
-     "label": "Neumann 2017, Appendix II, Part F (pp. 311-312): serratus anterior, trapezius, pectoralis minor, latissimus dorsi",
-     "url": ""
+     "label": "Neumann 2017, Appendix II, Part F (pp. 311-312): serratus anterior, trapezius, pectoralis minor, latissimus dorsi (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297896"
     },
     {
-     "label": "Neumann 2017, Appendix III, Part C (pp. 470-473): erector spinae, abdominal muscles, quadratus lumborum, diaphragm",
-     "url": ""
+     "label": "Neumann 2017, Appendix III, Part C (pp. 470-473): erector spinae, abdominal muscles, quadratus lumborum, diaphragm (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297901"
     },
     {
-     "label": "Neumann 2017, Appendix IV, Part D (pp. 731-732): hip muscles",
-     "url": ""
+     "label": "Neumann 2017, Appendix IV, Part D (pp. 731-732): hip muscles (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297906"
     },
     {
      "label": "OpenStax A&P 2e, 11.4 Axial Muscles of the Abdominal Wall and Thorax (figures for orientation; attachments follow Neumann)",
@@ -2044,16 +2048,20 @@
      "url": "https://www.jospt.org/doi/10.2519/jospt.2010.3025"
     },
     {
-     "label": "Neumann 2017, Ch. 12: Hip, Table 12.3 (p. 499): hip muscles by primary and secondary action",
-     "url": ""
+     "label": "Neumann 2017, Ch. 12: Hip, Table 12.3 (p. 499): hip muscles by primary and secondary action (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297903"
     },
     {
-     "label": "Neumann 2017, Ch. 10: Table 10.3 (p. 403) and Table 10.4 (p. 407): actions of the trunk muscles",
-     "url": ""
+     "label": "Neumann 2017, Ch. 10: Table 10.3 (p. 403) and Table 10.4 (p. 407): actions of the trunk muscles (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297898"
     },
     {
-     "label": "Neumann 2017, Ch. 5: scapulothoracic muscles (p. 149); latissimus dorsi at the glenohumeral joint (pp. 160-161)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 5, p. 149: scapulothoracic muscles (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297894"
+    },
+    {
+     "label": "Neumann 2017, Ch. 5, pp. 160-161: latissimus dorsi at the glenohumeral joint (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297895"
     }
    ],
    "layout": "matrix",
@@ -3375,20 +3383,28 @@
    ],
    "where": [
     {
-     "label": "Neumann 2017, Ch. 12, pp. 493-497: femoral-on-pelvic and pelvic-on-femoral osteokinematics",
-     "url": ""
+     "label": "Neumann 2017, Ch. 12, pp. 493-497: femoral-on-pelvic and pelvic-on-femoral osteokinematics (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297902"
     },
     {
-     "label": "Neumann 2017, Ch. 12, Table 12.3 (p. 499): hip muscles by primary and secondary action",
-     "url": ""
+     "label": "Neumann 2017, Ch. 12, Table 12.3 (p. 499): hip muscles by primary and secondary action (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297903"
     },
     {
-     "label": "Neumann 2017, Ch. 10, p. 395 (which end of a trunk muscle is fixed); Table 10.3 (p. 403) and pp. 404, 406",
-     "url": ""
+     "label": "Neumann 2017, Ch. 10, p. 395: which end of a trunk muscle is fixed (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297897"
     },
     {
-     "label": "Neumann 2017, Ch. 5, pp. 150-152 (scapular depressors and protractors with the scapula fixed); p. 161 (latissimus dorsi)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 10, Table 10.3 (p. 403) and pp. 404, 406 (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297898"
+    },
+    {
+     "label": "Neumann 2017, Ch. 5, pp. 150-152: scapular depressors and protractors with the scapula fixed (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297894"
+    },
+    {
+     "label": "Neumann 2017, Ch. 5, p. 161: latissimus dorsi (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297895"
     },
     {
      "label": "Neumann 2010, Kinesiology of the hip: a focus on muscular actions (JOSPT)",
@@ -4441,16 +4457,16 @@
    ],
    "where": [
     {
-     "label": "Neumann 2017, Ch. 11, pp. 456-457: diaphragm muscle; Table 11.4, primary muscles of inspiration",
-     "url": ""
+     "label": "Neumann 2017, Ch. 11, pp. 456-457: diaphragm muscle; Table 11.4, primary muscles of inspiration (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297899"
     },
     {
-     "label": "Neumann 2017, Ch. 11, p. 460: Table 11.5, muscles of forced inspiration",
-     "url": ""
+     "label": "Neumann 2017, Ch. 11, p. 460: Table 11.5, muscles of forced inspiration (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297899"
     },
     {
-     "label": "Neumann 2017, Appendix III, Part C, p. 473: diaphragm attachments",
-     "url": ""
+     "label": "Neumann 2017, Appendix III, Part C, p. 473: diaphragm attachments (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297901"
     },
     {
      "label": "Boyle, Olinick and Lewis 2010, The value of blowing up a balloon (zone of apposition)",
@@ -4708,24 +4724,24 @@
    ],
    "where": [
     {
-     "label": "Neumann 2017, Ch. 15, pp. 660-661: gait cycle periods (Fig. 15.12)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 15, pp. 660-661: gait cycle periods (Fig. 15.12) (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297905"
     },
     {
-     "label": "Neumann 2017, Ch. 15, pp. 662-664: sagittal plane kinematics (Fig. 15.13)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 15, pp. 662-664: sagittal plane kinematics (Fig. 15.13) (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297905"
     },
     {
-     "label": "Neumann 2017, Ch. 15, p. 665: frontal plane kinematics of the pelvis and hip (Fig. 15.15)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 15, p. 665: frontal plane kinematics of the pelvis and hip (Fig. 15.15) (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297905"
     },
     {
-     "label": "Neumann 2017, Ch. 15, pp. 668-669: horizontal plane kinematics (Figs. 15.20, 15.21); trunk and shoulder",
-     "url": ""
+     "label": "Neumann 2017, Ch. 15, pp. 668-669: horizontal plane kinematics (Figs. 15.20, 15.21); trunk and shoulder (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297905"
     },
     {
-     "label": "Neumann 2017, Ch. 15, pp. 675-679: muscle activity (Fig. 15.29)",
-     "url": ""
+     "label": "Neumann 2017, Ch. 15, pp. 675-679: muscle activity (Fig. 15.29) (Canvas PDF)",
+     "url": "https://canvas.uiw.edu/courses/56074/files/9297905"
     },
     {
      "label": "Physiopedia, The Gait Cycle (orientation only)",
@@ -8198,7 +8214,7 @@
    ],
    "where": [
     {
-     "label": "Your Field Atlas pages from Lessons 1 to 9",
+     "label": "Your answers in Lessons 1 to 9",
      "url": ""
     }
    ],
@@ -8520,6 +8536,6 @@
    }
   ]
  },
- "built": "2026-11-18T15:24Z",
+ "built": "2026-11-18T15:57Z",
  "keySource": "SPR_answer_key_L01-L10 updated 2026-11-11.xlsx"
 }
