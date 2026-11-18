@@ -1,0 +1,54 @@
+/* A heading, its table, and its sources stay on one page. */
+.a-block { break-inside: avoid; }
+
+/* Field Atlas: screen preview and print. Letter portrait; the gait chart prints landscape. */
+.atlas { margin: 1.5rem 0 3rem; }
+.atlas-page { background: #fff; border: 1px solid var(--rule); border-radius: var(--radius); padding: 2.2rem 2.4rem; margin: 0 0 1.5rem; font-family: var(--sans); font-size: .82rem; line-height: 1.4; color: var(--ink); }
+.atlas-page h2 { font-family: var(--serif); font-size: 1.45rem; color: var(--accent); margin: 0 0 .15rem; }
+.atlas-page .a-sub { color: var(--ink-3); margin: 0 0 1rem; font-size: .8rem; }
+.atlas-page h3 { font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); margin: 1.1rem 0 .35rem; }
+.atlas-page h3:first-of-type { margin-top: .4rem; }
+.a-run { display: flex; justify-content: space-between; font-size: .68rem; color: var(--ink-3); border-bottom: 1px solid var(--rule-2); padding-bottom: .35rem; margin-bottom: 1rem; }
+table.a-tab { width: 100%; border-collapse: collapse; margin: 0 0 .4rem; break-inside: auto; }
+table.a-tab th, table.a-tab td { border: 1px solid #d9d4ca; padding: .22rem .4rem; text-align: left; vertical-align: top; }
+table.a-tab thead th { background: #f3efe8; font-weight: 600; font-size: .72rem; }
+table.a-tab thead tr.grp th { background: #ebe5da; text-align: center; color: var(--accent); }
+table.a-tab th.rh { font-weight: 600; background: #faf8f4; white-space: nowrap; }
+table.a-tab td.none { color: var(--ink-3); }
+table.a-tab td.src, table.a-tab th.src { font-size: .66rem; color: var(--ink-3); width: 18%; }
+table.a-tab tr { break-inside: avoid; }
+table.a-tab tr.guess td, table.a-tab tr.guess th { font-style: italic; background: #fbf9f4; }
+table.a-tab td.split { border-left: 2px solid var(--accent); }
+.a-qa td:first-child { width: 52%; }
+.a-note { font-size: .7rem; color: var(--ink-2); background: var(--paper); border-left: 3px solid var(--rule); padding: .4rem .6rem; margin: .7rem 0 0; }
+.a-refs { font-size: .66rem; color: var(--ink-3); margin: .15rem 0 .6rem; }
+.a-two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.a-cover { text-align: center; padding-top: 5rem; padding-bottom: 5rem; }
+.a-cover .a-kicker { letter-spacing: .14em; text-transform: uppercase; font-size: .72rem; color: var(--ink-3); }
+.a-cover h2 { font-size: 2.6rem; margin: .6rem 0 .2rem; }
+.a-cover .a-course { font-family: var(--serif); font-size: 1.15rem; }
+.a-cover .a-name { font-family: var(--serif); font-size: 1.9rem; margin: 2.6rem 0 .3rem; }
+.a-cover .a-meta { color: var(--ink-2); }
+.a-toc { text-align: left; max-width: 28rem; margin: 2.6rem auto 0; padding: 0; list-style: none; counter-reset: toc; }
+.a-toc li { counter-increment: toc; display: flex; gap: .6rem; padding: .25rem 0; border-bottom: 1px dotted var(--rule); }
+.a-toc li::before { content: counter(toc) "."; color: var(--accent); font-weight: 600; width: 1.4rem; }
+.a-synth p { margin: .3rem 0 .9rem; white-space: pre-wrap; }
+.a-synth .a-q { font-weight: 600; margin-top: 1rem; }
+.gait-tab th.ph { text-align: center; font-size: .66rem; }
+.gait-tab td { font-size: .7rem; }
+.gait-tab tbody.keep { break-inside: avoid; }
+.gait-tab th.grp-row { background: #ebe5da; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; font-size: .66rem; }
+
+@media print {
+  @page { size: letter portrait; margin: .55in .55in .6in; }
+  @page gait { size: letter landscape; margin: .45in; }
+  body { background: #fff; }
+  .site-header, .site-footer, .atlas-intro, .skip, .banner, .storage-warn { display: none !important; }
+  main.wrap { max-width: none; padding: 0; margin: 0; }
+  .atlas { margin: 0; }
+  .atlas-page { border: 0; border-radius: 0; padding: 0; margin: 0; break-after: page; font-size: 8.6pt; }
+  .atlas-page:last-child { break-after: auto; }
+  .atlas-page.landscape { page: gait; }
+  table.a-tab thead { display: table-header-group; }
+  a { color: inherit; text-decoration: none; }
+}

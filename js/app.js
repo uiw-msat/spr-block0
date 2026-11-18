@@ -719,6 +719,7 @@
         ]));
         out.appendChild(el("div", { class: "btn-row" }, [pdfBtn, jsonBtn]));
         out.appendChild(el("p", { class: "cert-upload", text: "3. Upload both files to the Block 0 certificate assignment in Canvas by " + due + ". The code on the certificate is checked against the progress file, so upload the progress file downloaded from this page after creating the certificate. If you change any answer or your name, create the certificate again and upload both new files." }));
+        out.appendChild(el("p", { class: "cert-upload" }, ["Your answers are also assembled into a printable reference: ", el("a", { href: "atlas.html", text: "open your Field Atlas" }), ". Bring it to every in-person unit."]));
         if (content.course.canvasUrl) out.appendChild(el("p", null, [el("a", { class: "btn", href: content.course.canvasUrl, target: "_blank", rel: "noopener", text: "Open the Canvas assignment" })]));
         out.removeAttribute("hidden");
       };
@@ -758,6 +759,208 @@
     wireProgressButtons();
   }
 
+  /* ---------- Field Atlas ----------
+     The student's own answers, assembled into a printable reference. Opens on the same
+     condition as the certificate. Printed with the browser's print dialog (Save as PDF). */
+  function renderAtlas(content) {
+    var host = document.getElementById("atlas");
+    var p = load();
+    var byId = {};
+    content.lessons.forEach(function (L) { byId[L.id] = L; });
+    var ans = function (L, c) { return ((p.lessons[L.id] || {}).answers || {})[c.id] || ""; };
+    var region = function (s) { return String(s || "").split(" · ")[0]; };
+    var name = (p.certificate && p.certificate.name) || p.studentName || "";
+
+    function page(title, sub, kids, cls) {
+      var pg = el("section", { class: "atlas-page" + (cls ? " " + cls : "") }, [
+        el("div", { class: "a-run" }, [el("span", { text: content.course.code + " Field Atlas" }), el("span", { text: name })]),
+        el("h2", { text: title }), sub ? el("p", { class: "a-sub", text: sub }) : null
+      ]);
+      (kids || []).forEach(function (k) { if (k) pg.appendChild(k); });
+      return pg;
+    }
+    function cellTd(text, extra) { return el("td", { class: (text === "None" ? "none " : "") + (extra || ""), text: text || "—" }); }
+    /* Sources under a table: Neumann refs shortened to chapter, table, and page
+       ("Ch. 12, Table 12.3, p. 499"), duplicates dropped, others kept as written. */
+    function shortRef(r) {
+      var m = /^Neumann 2017, (Ch\. [\d.]+)(?:, (Table [\d.]+(?:; Table [\d.]+)?))?.*?,\s*(pp?\. [\d\-, ]+)$/.exec(r);
+      if (!m) return r;
+      return m[2] ? m[1] + ", " + m[2] + ", " + m[3] : r.replace(/^Neumann 2017, /, "");
+    }
+    function refsOf(cells) {
+      var seen = {}, neu = [], other = [];
+      cells.forEach(function (c) {
+        if (!c.ref) return;
+        var r = shortRef(c.ref);
+        if (seen[r]) return;
+        seen[r] = 1;
+        (/^Neumann 2017/.test(c.ref) ? neu : other).push(r);
+      });
+      if (!neu.length && !other.length) return null;
+      var txt = (neu.length ? "Neumann 2017: " + neu.join("; ") + "." : "") + (other.length ? (neu.length ? " " : "") + other.join("; ") + "." : "");
+      return el("p", { class: "a-refs", text: "Sources. " + txt });
+    }
+    /* Prompt, answer, source: Lessons 1, 2, 3, 7, 9. */
+    function qaTable(L, head) {
+      var tb = el("tbody");
+      L.cells.filter(function (c) { return !c.optional; }).forEach(function (c) {
+        tb.appendChild(el("tr", null, [el("td", { text: c.prompt }), cellTd(ans(L, c))]));
+      });
+      var frag = document.createDocumentFragment();
+      frag.appendChild(el("table", { class: "a-tab a-qa" }, [el("thead", null, [el("tr", null, [el("th", { text: head[0] }), el("th", { text: head[1] })])]), tb]));
+      var r = refsOf(L.cells); if (r) frag.appendChild(r);
+      return frag;
+    }
+    /* One table per group, rows by muscle: Lesson 4. */
+    function groupTables(L) {
+      var groups = [], by = {};
+      L.cells.forEach(function (c) {
+        var g = c.group || "";
+        if (!by[g]) { by[g] = { rows: [], cols: [], m: {} }; groups.push(g); }
+        var G = by[g];
+        if (G.cols.indexOf(c.col) < 0) G.cols.push(c.col);
+        if (!G.m[c.row]) { G.m[c.row] = {}; G.rows.push(c.row); }
+        G.m[c.row][c.col] = c;
+      });
+      var out = [];
+      groups.forEach(function (g) {
+        var G = by[g];
+        var blk = el("div", { class: "a-block" }); out.push(blk);
+        blk.appendChild(el("h3", { text: g }));
+        var tb = el("tbody");
+        G.rows.forEach(function (r) {
+          tb.appendChild(el("tr", null, [el("th", { class: "rh", text: r })].concat(G.cols.map(function (k) { var c = G.m[r][k]; return c ? cellTd(ans(L, c)) : cellTd(""); }))));
+        });
+        blk.appendChild(el("table", { class: "a-tab" }, [el("thead", null, [el("tr", null, [el("th", { text: "Muscle" })].concat(G.cols.map(function (k) { return el("th", { text: k }); })))]), tb]));
+        var rf = refsOf(L.cells.filter(function (c) { return (c.group || "") === g; }));
+        if (rf) blk.appendChild(rf);
+      });
+      return out;
+    }
+    /* Lessons 5 and 6 side by side, one table per body region. */
+    function actionTables(A, B) {
+      var regions = [], R = {};
+      [[A, "a"], [B, "b"]].forEach(function (pair) {
+        pair[0].cells.forEach(function (c) {
+          var r = region(c.section || c.group);
+          if (!R[r]) { R[r] = { rows: [], a: { cols: [], label: "" }, b: { cols: [], label: "" }, m: {} }; regions.push(r); }
+          var side = R[r][pair[1]];
+          if (!side.label) side.label = String(c.section || c.group).split(" · ")[1] || pair[0].title;
+          if (side.cols.indexOf(c.col) < 0) side.cols.push(c.col);
+          if (R[r].rows.indexOf(c.row) < 0) R[r].rows.push(c.row);
+          R[r].m[pair[1] + "|" + c.row + "|" + c.col] = [pair[0], c];
+        });
+      });
+      var out = [];
+      regions.forEach(function (r) {
+        var X = R[r];
+        var blk = el("div", { class: "a-block" }); out.push(blk);
+        blk.appendChild(el("h3", { text: r }));
+        var grp = el("tr", { class: "grp" }, [el("th", { text: "" }),
+          el("th", { colspan: String(X.a.cols.length), text: "Distal-on-proximal: " + X.a.label }),
+          el("th", { colspan: String(X.b.cols.length), text: "Proximal-on-distal: " + X.b.label })]);
+        var hd = el("tr", null, [el("th", { text: "Muscle" })].concat(X.a.cols.concat(X.b.cols).map(function (k) { return el("th", { text: k }); })));
+        var tb = el("tbody");
+        X.rows.forEach(function (row) {
+          var tds = [el("th", { class: "rh", text: row })];
+          ["a", "b"].forEach(function (s) {
+            X[s].cols.forEach(function (k, i) {
+              var hit = X.m[s + "|" + row + "|" + k];
+              tds.push(cellTd(hit ? ans(hit[0], hit[1]) : "", s === "b" && i === 0 ? "split" : ""));
+            });
+          });
+          tb.appendChild(el("tr", null, tds));
+        });
+        blk.appendChild(el("table", { class: "a-tab" }, [el("thead", null, [grp, hd]), tb]));
+        var rf = refsOf(A.cells.concat(B.cells).filter(function (c) { return region(c.section || c.group) === r; }));
+        if (rf) blk.appendChild(rf);
+      });
+      return out;
+    }
+    /* Lesson 8 pivoted: one row per chart item, one column per phase. */
+    function gaitTable(L) {
+      var phases = [], items = [], seen = {}, m = {};
+      L.cells.forEach(function (c) {
+        if (phases.indexOf(c.section) < 0) phases.push(c.section);
+        var multiCol = L.cells.some(function (d) { return d.group === c.group && d.row === c.row && d.col !== c.col; });
+        var key = c.group + "|" + c.row + "|" + c.col;
+        if (!seen[key]) { seen[key] = 1; items.push({ key: key, group: c.group, label: multiCol ? c.row + ", " + c.col.toLowerCase() : c.row, optional: c.optional }); }
+        m[key + "|" + c.section] = c;
+      });
+      var shortPh = function (s) { var t = s.split(" · "); return [t[0].replace(/^\d+\.\s*/, ""), t[1] || ""]; };
+      var hd = el("tr", null, [el("th", { text: "Right gait cycle" })].concat(phases.map(function (s) {
+        var t = shortPh(s); return el("th", { class: "ph" }, [t[0], el("br"), el("span", { class: "muted", text: t[1].replace(" of the cycle", "") })]);
+      })));
+      /* One tbody per group, kept whole on a page, so a group heading never sits alone at a page foot. */
+      var bodies = [], tb = null, last = null;
+      items.forEach(function (it) {
+        if (it.group !== last) { last = it.group; tb = el("tbody", { class: "keep" }); bodies.push(tb); tb.appendChild(el("tr", null, [el("th", { class: "grp-row", colspan: String(phases.length + 1), text: it.group })])); }
+        tb.appendChild(el("tr", { class: it.optional ? "guess" : "" }, [el("th", { class: "rh", text: it.label })].concat(phases.map(function (s) {
+          var c = m[it.key + "|" + s]; return cellTd(c ? ans(L, c) : "");
+        }))));
+      });
+      return [el("table", { class: "a-tab gait-tab" }, [el("thead", null, [hd])].concat(bodies)),
+        el("p", { class: "a-note", text: "Italic rows are your ungraded best guesses, worked through in Unit 3. Key: Neumann Ch. 15. Positions are at the end of each phase." })];
+    }
+
+    completionReport(content).then(function (rows) {
+      host.textContent = "";
+      if (rows.some(function (r) { return !r.ok; })) {
+        host.appendChild(el("div", { class: "locked-panel" }, [el("h2", { text: "Not available yet" }),
+          el("p", { text: "The Field Atlas opens when every lesson is complete, the same condition as the certificate." }),
+          el("a", { class: "btn", href: "certificate.html", text: "See which lessons are left" })]));
+        return;
+      }
+      var L1 = byId["01"], L2 = byId["02"], L3 = byId["03"], L4 = byId["04"], L5 = byId["05"], L6 = byId["06"], L7 = byId["07"], L8 = byId["08"], L9 = byId["09"], L10 = byId["10"];
+      var done = rows.map(function (r) { return r.passedAt || ""; }).sort().pop();
+      var toc = ["Conventions", "Landmarks and viscera", "Attachments", "Muscle actions", "The diaphragm", "Gait phase chart", "Pattern-to-phase map", "Synthesis"];
+
+      host.appendChild(el("section", { class: "atlas-page a-cover" }, [
+        el("div", { class: "a-kicker", text: content.course.program }),
+        el("h2", { text: "Field Atlas" }),
+        el("div", { class: "a-course", text: content.course.code + " " + content.course.title + " · " + content.course.block }),
+        el("div", { class: "a-name", text: name || "Your name" }),
+        el("div", { class: "a-meta", text: (done ? "Block 0 completed " + longDate(done) : "") + (p.certificate ? " · certificate " + window.SPRCheck.shortCode(p.certificate.code) : "") }),
+        el("ol", { class: "a-toc" }, toc.map(function (t) { return el("li", { text: t }); })),
+        el("p", { class: "a-note", style: "text-align:left;max-width:28rem;margin:2rem auto 0", text: "These are your answers, each checked against the course key. Sources point to Neumann, Kinesiology of the Musculoskeletal System, 3rd ed., 2017, unless noted. Bring this atlas to every in-person unit." })
+      ]));
+
+      var ringNote = L1.cells.some(function (c) { return /innominate|ring/i.test(c.prompt + (c.options || []).join(" ")); });
+      host.appendChild(page("Conventions", "Planes and axes, the pelvic convention, segment naming, and the three rings (Lesson 1).", [
+        qaTable(L1, ["Item", "Your answer"]),
+        el("h3", { text: "Rancho Los Amigos gait phases" }),
+        el("p", null, [L8.cells.map(function (c) { return c.section; }).filter(function (s, i, a) { return a.indexOf(s) === i; }).join("; ")]),
+        el("p", { class: "a-note", text: "Segment naming: the first segment named moves; the second is held fixed. Hip: FA (femur-on-pelvis) and AF (pelvis-on-femur). Shoulder girdle: ST and TS. Glenohumeral: HG and GH." }),
+        ringNote ? el("p", { class: "a-note", text: "Course usage: “innominate” names any bony ring that positions a spinal region (pelvic ring, rib cage ring, cranium and mandible). Standard anatomy, including Neumann, uses it for the hip bone only." }) : null
+      ]));
+
+      host.appendChild(page("Landmarks and viscera", "Which bone carries each landmark (Lesson 2); where the lateralized viscera sit (Lesson 3).", [
+        el("div", { class: "a-two" }, [
+          el("div", null, [el("h3", { text: "Landmarks" }), qaTable(L2, ["Landmark", "Bone"])]),
+          el("div", null, [el("h3", { text: "Viscera" }), qaTable(L3, ["Structure", "Your answer"])])
+        ])
+      ]));
+
+      host.appendChild(page("Attachments", "In Neumann's terms for each muscle (Lesson 4).", groupTables(L4)));
+      host.appendChild(page("Muscle actions", "The same muscle with either segment fixed: distal-on-proximal (Lesson 5) beside proximal-on-distal (Lesson 6). Hip actions from anatomical position; a plane Neumann does not list is None.", actionTables(L5, L6)));
+      host.appendChild(page("The diaphragm", "Attachments, crural and costal parts, zone of apposition (Lesson 7).", [qaTable(L7, ["Item", "Your answer"])]));
+      host.appendChild(page("Gait phase chart", "The right gait cycle in eight Rancho Los Amigos phases (Lesson 8).", gaitTable(L8), "landscape"));
+      host.appendChild(page("Pattern-to-phase map", "The Left AIC resting pattern read against your gait chart (Lesson 9).", [qaTable(L9, ["Item", "Your answer"]),
+        el("p", { class: "a-note", text: "Chain and opposition muscle roles follow the Postural Restoration Institute's published lists, cited and not reproduced. Reading a resting pattern as a moment of gait is a clinical model; the component facts are evidenced, the full causal chain has case-level support." })]));
+
+      var syn = p.synthesis || {};
+      host.appendChild(page("Synthesis", "Your three written answers (Lesson 10). Read by the instructors; the bridge into Unit 1.", [
+        el("div", { class: "a-synth" }, (L10.prompts || []).reduce(function (acc, pr, i) {
+          return acc.concat([el("p", { class: "a-q", text: (i + 1) + ". " + pr.text }), el("p", { text: syn[pr.id] || "" })]);
+        }, []))
+      ]));
+
+      var pb = document.getElementById("atlas-print");
+      pb.removeAttribute("hidden");
+      pb.addEventListener("click", function () { window.print(); });
+    });
+  }
+
   /* ---------- boot ---------- */
   load();
   fetch(ROOT + "/data/content.json", { cache: "no-cache" })
@@ -768,6 +971,7 @@
       else if (PAGE === "lesson") renderLesson(content);
       else if (PAGE === "sources") renderSources(content);
       else if (PAGE === "certificate") renderCertificate(content);
+      else if (PAGE === "atlas") renderAtlas(content);
       else wireProgressButtons();
     })
     .catch(function () {

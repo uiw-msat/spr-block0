@@ -66,6 +66,42 @@ def answer(page, cid, typ, value):
         page.select_option(f"#{sid(cid)}", value)
 
 
+def atlas_checks(browser, page, base):
+    """Field Atlas: locked for an empty browser; after every lesson passes, every section renders,
+    the gait chart has a column per phase, and the printed PDF has the gait pages in landscape."""
+    import tempfile, pathlib
+    fails = []
+    fresh = browser.new_page()
+    fresh.goto(f"{base}/atlas.html")
+    fresh.wait_for_selector("#atlas .locked-panel, #atlas .a-cover", state="attached")
+    if fresh.locator(".a-cover").count():
+        fails.append("atlas: an empty browser can open the atlas")
+    fresh.close()
+    page.goto(f"{base}/atlas.html")
+    page.wait_for_selector("#atlas .locked-panel, #atlas .a-cover", state="attached")
+    if not page.locator(".a-cover").count():
+        return fails + ["atlas: not shown after every lesson passed"]
+    n = page.locator(".atlas-page").count()
+    if n != 9:
+        fails.append(f"atlas: {n} sections (expected cover + 8)")
+    phases = page.locator(".gait-tab thead th.ph").count()
+    if phases != 8:
+        fails.append(f"atlas: gait chart has {phases} phase columns")
+    blanks = page.eval_on_selector_all(".atlas-page td", "els => els.filter(e => e.textContent === '\u2014' && !e.closest('.gait-tab, .a-block')).length")
+    if blanks:
+        fails.append(f"atlas: {blanks} blank answer cells outside the matrix tables")
+    if page.get_attribute("#atlas-print", "hidden") is not None:
+        fails.append("atlas: print button hidden")
+    pdf = pathlib.Path(tempfile.mkdtemp(prefix="spr-atlas-")) / "atlas.pdf"
+    page.pdf(path=str(pdf), prefer_css_page_size=True, print_background=True)
+    from pypdf import PdfReader
+    sizes = [(round(float(pg.mediabox.width)), round(float(pg.mediabox.height))) for pg in PdfReader(str(pdf)).pages]
+    if not any(w > h for w, h in sizes) or not any(h > w for w, h in sizes):
+        fails.append(f"atlas: expected portrait pages and landscape gait pages, got {set(sizes)}")
+    print(f"atlas: {n} sections, {len(sizes)} printed pages ({sum(w > h for w, h in sizes)} landscape); {pdf}")
+    return fails
+
+
 def certificate_checks(browser, page, base):
     """Certificate page: locked for an empty browser; after every lesson passes, creates a PDF and
     a progress file that tools/verify.py accepts; tampered files fail verification."""
@@ -244,6 +280,7 @@ def main(path, base):
         passed = page.locator(".status.passed").count()
         print(f"landing shows {passed} lessons passed")
         page.screenshot(path="/home/claude/shots/after-pass.png", full_page=False)
+        fails += atlas_checks(b, page, base)
         fails += certificate_checks(b, page, base)
         b.close()
     if errs:
